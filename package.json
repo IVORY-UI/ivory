@@ -1,0 +1,19 @@
+{
+  "name": "ivory",
+  "description": "IVORY is simple and highly customizable CSS framework, gives you all to build your pages faster and easier.",
+  "version": "4.0.0",
+  "scripts": {
+    "clean": "node ./scripts/build/clean",
+    "build": "node-sass --include-path scss src/ivory.scss dist/ivory.min.css --output-style compressed"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "del": "^5.1.0",
+    "node-sass": "^4.13.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "author": {
+    "name": "Lakshmikanth Vallampati",
+    "url": "https://github.com/kanthvallampati/"
+  }
+}

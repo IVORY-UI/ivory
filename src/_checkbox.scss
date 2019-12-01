@@ -1,0 +1,73 @@
+.ivory-checkbox {
+  position: relative;
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    top: 0.25rem;
+    left: 0;
+    height: 1rem;
+    width: 1rem;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+    & + label {
+      position: relative;
+      padding-left: 1.4rem;
+      line-height: 1.5rem;
+      &::before {
+        position: absolute;
+        content: "";
+        left: 0;
+        top: 0;
+        height: 1rem;
+        width: 1rem;
+        box-sizing: border-box;
+        border: 1px solid #C9C9C9;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+    }
+    &:disabled {
+      cursor: not-allowed;
+      & + label {
+        &::before {
+          background-color: #F4F4F4;
+          cursor: not-allowed;
+        }
+      }
+    }
+    &:checked {
+      & + label {
+        &::before {
+          background-color: #3C7EED;
+          border: none;
+        }
+        &::after {
+          position: absolute;
+          content: "";
+          height: 0.25rem;
+          width: 0.5rem;
+          border-left: 0.125rem solid #FFF;
+          border-bottom: 0.125rem solid #FFF;
+          top: 0;
+          left: 0.188rem;
+          -webkit-transform: translateY(4px) rotate(-45deg);
+          transform: translateY(4px) rotate(-45deg);
+        }
+      }
+      &:disabled {
+        cursor: not-allowed;
+        & + label {
+          &::before {
+            background-color: #3C7EED;
+            opacity: 0.65;
+            cursor: not-allowed;
+          }
+          &::after {
+            cursor: not-allowed;
+          }
+        }
+      }
+    }
+  }
+}

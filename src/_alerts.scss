@@ -1,0 +1,37 @@
+.ivory-alert {
+  display: flex;
+  margin: 1.25rem 0;
+  border-radius: 0.25rem;
+  padding: 0.6rem 1rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.2rem;
+  color: #575757;
+  &.success {
+    background-color: #f6ffed;
+    border: 1px solid #a0d911;
+  }
+  &.info {
+    background-color: #f0f5ff;
+    border: 1px solid #adc6ff;
+  }
+  &.warning {
+    background-color: #fff7e6;
+    border: 1px solid #ffc067;
+  }
+  &.error {
+    background-color: #fff1f0;
+    border: 1px solid #ffa39e;
+  }
+  .ivory-alert-icon {
+    flex: 0 0 1.0416666667rem;
+    align-self: start;
+    padding-right: 0.5625rem;
+  }
+  .ivory-alert-action {
+    flex: 0 0 1.0416666667rem;
+    align-self: start;
+    padding-left: 0.5625rem;
+  }
+}
