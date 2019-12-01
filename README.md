@@ -4,33 +4,22 @@ IVORY is simple and highly customizable CSS framework, gives you all to build yo
 
 ## How to use
 
-Using npm:
+Install using npm:
 
 ```shell
-To be updated...
-```
-
-Using bower:
-
-```shell
-To be updated...
-```
-
-Using yarn:
-
-```shell
-To be updated...
-```
-
-Using CDN:
-
-```shell
-To be updated...
+npm i ivoryui-ivory
 ```
 
 ## Features
 
-To be updated...
+- HTML Reset
+- Font
+- Typography
+- Grid
+- Alerts
+- Buttons
+- Checkbox
+- Radio
 
 ## Browser Support
 
