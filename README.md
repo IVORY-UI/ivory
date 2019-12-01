@@ -9,6 +9,7 @@ Install using npm:
 ```shell
 npm i ivoryui-ivory
 ```
+import `node_modules/ivoryui-ivory/dist/ivory.min.css` to your project
 
 ## Features
 
