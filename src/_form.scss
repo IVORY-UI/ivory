@@ -1,0 +1,52 @@
+.ivory-form {
+  .form-field {
+    margin-bottom: 12px;
+  }
+  .form-label {
+    position: relative;
+    display: block;
+    font-size: 12px;
+    line-height: 30px;
+  }
+  .form-input {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: 200;
+    border: none;
+    border-bottom: 1px solid #B5B7BD;
+		border-radius: 0;
+    outline: none;
+  }
+  .form-select {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    background: #ffffff;
+    border: 1px solid #B5B7BD;
+    padding: 5px 10px;
+    outline: none;
+    font-weight: 200;
+    font-size: 14px;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+  }
+  .form-textarea {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 120px;
+    font-size: 13px;
+    line-height: 21px;
+    font-family:  'Montserrat', sans-serif;
+    border: none;
+    border-bottom: 1px solid #B5B7BD;
+		border-radius: 0;
+  }
+}
