@@ -1,5 +1,6 @@
 .ivory-checkbox {
   position: relative;
+  margin-bottom: 0.5rem;
   input[type="checkbox"] {
     position: absolute;
     opacity: 0;
@@ -14,6 +15,7 @@
       position: relative;
       padding-left: 1.4rem;
       line-height: 1.5rem;
+      font-size: 0.875rem;
       &::before {
         position: absolute;
         content: "";
@@ -45,8 +47,8 @@
         &::after {
           position: absolute;
           content: "";
-          height: 0.25rem;
-          width: 0.5rem;
+          height: 0.313rem;
+          width: 0.563rem;
           border-left: 0.125rem solid #FFF;
           border-bottom: 0.125rem solid #FFF;
           top: 0;
