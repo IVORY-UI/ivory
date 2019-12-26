@@ -1,20 +1,58 @@
 .docs-wrapper {
   position: relative;
-  font-family: 'Montserrat';
+  display: flex;
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+.doc-nav {
+  position: relative;
+  width: 280px;
+  height: 100vh;
+  padding: 2rem 0;
+}
+.doc-nav nav {
+  width: 100%;
+  height: auto;
+  border-right: 1px solid #E8E8E8;
+}
+
+.doc-nav nav ul li a {
+  display: block;
+  padding-left: 5rem;
+  font-size: 0.875rem;
+  line-height: 2.25rem;
+  color: #314659;
+}
+.doc-nav nav ul li:hover a {
+  color: #4691f6;
+}
+.doc-nav nav ul li a.active {
+  margin-right: -1px;
+  color: #4691f6;
+  border-right: 3px solid #4691f6;
+  background-color: #E3EFFE;
 }
 .docs-container {
+  position: relative;
   width: 100%;
   max-width: 960px;
   margin: 0 auto;
+  padding: 2rem;
 }
 .docs-section {
+  display: none;
   position: relative;
   margin-bottom: 1.5rem;
 }
-.docs-section .section-title,
-.docs-section .section-subtitle {
+.section-active {
+  display: block;
+}
+.docs-section .section-title {
   font-weight: 500;
   color: #161616;
+}
+.docs-section .section-subtitle {
+  font-weight: 500;
+  color: #2d3033;
 }
 .docs-section .section-body {
   color: #314659;
@@ -26,8 +64,8 @@
 }
 .icon-frame {
   position: relative;
-  width: 72px;
-  height: 72px;
+  width: 64px;
+  height: 64px;
   font-size: 28px;
   display: flex;
   align-items: center;

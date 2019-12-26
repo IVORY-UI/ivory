@@ -2,18 +2,64 @@
 <html>
   <head>
     <title>IVORY UI</title>
-    <link type="text/css" rel="stylesheet" href="../dist/ivory-icons.css" />
-    <link type="text/css" rel="stylesheet" href="../dist/ivory.min.css" />
-    <link type="text/css" rel="stylesheet" href="./docs-styles.css" />
+    <link rel="stylesheet" href="../dist/ivory-icons.css" />
+    <link rel="stylesheet" href="../dist/ivory.min.css" />
+
+    <script rel="preload" src="https://code.jquery.com/jquery-3.4.1.min.js" as="script"></script>
+
+    <link rel="stylesheet" href="./docs-styles.css" />
+    <script>
+      $( document ).ready(function() {
+        $('.nav-item a').click(function(e) {
+          e.preventDefault();
+          let target = e.target.attributes['data-target'].value;
+          $('.nav-item a').removeClass('active');
+          $('.docs-section').removeClass('section-active');
+          $(e.target).addClass('active');
+          $('#'+target).addClass('section-active');
+        });
+      });
+    </script>
   </head>
   <body>
 
     <div class="docs-wrapper">
+      <div class="doc-nav">
+        <nav>
+          <ul>
+            <li class="nav-item">
+              <a href="#" data-target="intro" class="active">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="font">Font</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="icons">Icons</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="grid">Grid</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="alerts">Alerts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="buttons">Buttons</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="checkbox">Checkbox</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="radio">Radio</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <div class="docs-container">
 
         <!--Intro-->
-        <section id="intro" class="docs-section section-intro">
-          <h4 class="section-title">Introduction</h4>
+        <section id="intro" class="docs-section section-active">
+          <h1 class="section-title">Introduction</h1>
           <div class="section-body">
             <p>IVORY is a CSS framework, specially created for web applications and committed to improve the experience of users. 
               It gives you all the basic integrants to build your pages faster and easier. </p>
@@ -21,11 +67,12 @@
         </section>
 
         <!--Font-->
-        <section id="font" class="docs-section section-font">
-          <h4 class="section-title">Font</h4>
+        <section id="font" class="docs-section">
+          <h1 class="section-title">Font</h1>
           <div class="section-body">
-            <p>IVORY UI prefers to use Montserrat font family and then also provides a set of fallback font libraries 
-              to maintain readability for screens on different platforms and browsers.</p>
+            <p>IVORY UI use Montserrat font family and then also provides a set of fallback font libraries to 
+              maintain readability for screens on different platforms and browsers. Montserrat font family has 
+              many styles but IVORY UI prefers to use the following. </p>
             <cite class="font-highlight" style="font-weight: 700;">Montserrat 700</cite>
             <cite class="font-highlight" style="font-weight: 600;">Montserrat 600</cite>
             <cite class="font-highlight" style="font-weight: 500;">Montserrat 500</cite>
@@ -35,10 +82,9 @@
         </section>
 
         <!--Icons-->
-        <section id="icons" class="docs-section section-icons">
-          <h4 class="section-title">Icons</h4>
+        <section id="icons" class="docs-section">
+          <h1 class="section-title">Icons</h1>
           <div class="section-body">
-            <p> </p>
             <div class="row">
               <div class="icon-frame">
                 <i class="icon-angle-down"></i>
@@ -107,6 +153,9 @@
                 <i class="icon-chat"></i>
               </div>
               <div class="icon-frame">
+                <i class="icon-envelope"></i>
+              </div>
+              <div class="icon-frame">
                 <i class="icon-forward"></i>
               </div>
               <div class="icon-frame">
@@ -153,8 +202,8 @@
         </section>
 
         <!--Grid-->
-        <section id="grid" class="docs-section section-grid">
-          <h4 class="section-title">Grid</h4>
+        <section id="grid" class="docs-section">
+          <h1 class="section-title">Grid</h1>
           <div class="section-body">
             <p>IVORY provides a 12-column grid system built with flexbox and is fully responsive.</p>
             
@@ -185,7 +234,7 @@
               </div>              
             </div>
 
-            <h6 class="section-subtitle">Equal Width</h6>
+            <h5 class="section-subtitle">Equal Width</h5>
 
             <p>Creating the equal width columns will be more simpler with IVORY. With <code>.col</code> class you can do this.</p> 
             <div class="example-grid">
@@ -198,7 +247,7 @@
               </div>
             </div>
 
-            <h6 class="section-subtitle">Gutter</h6>
+            <h5 class="section-subtitle">Gutter</h5>
             <p>IVORY grid has the gutter width	of 30px i.e. 15px on each side of a column. IVORY also provides the gutter 
               less grid system. To avail the gutter less grid layout, add <code>.no-gutter</code> class to the row 
               container.</p>
@@ -224,10 +273,10 @@
               </div>
             </div>
 
-            <h6 class="section-subtitle">Auto width column</h6>
+            <h5 class="section-subtitle">Auto width column</h5>
             <p></p>
 
-            <h6 class="section-subtitle">Responsive Breakpoints</h6>
+            <h5 class="section-subtitle">Responsive Breakpoints</h5>
             <p>The breakpoints of responsive grid as below:</p>
 
             <p>Extra small devices (portrait phones, less than 576px) <br/>
@@ -246,8 +295,8 @@
         </section>
 
         <!--Alerts-->
-        <section id="alerts" class="docs-section section-alerts">
-          <h4 class="section-title">Alerts</h4>
+        <section id="alerts" class="docs-section">
+          <h1 class="section-title">Alerts</h1>
           <div class="section-body">
             <p>IVORY has success, info, warning and error alert types denoted by the following classes:</p>
             <ul>
@@ -274,8 +323,8 @@
         </section>
 
         <!--Buttons-->
-        <section id="buttons" class="docs-section section-buttons">
-          <h4 class="section-title">Buttons</h4>
+        <section id="buttons" class="docs-section">
+          <h1 class="section-title">Buttons</h1>
           <div class="section-body">
             <h6 class="section-subtitle">Solid Buttons</h6>
             <div style="margin-bottom:1rem;">
@@ -313,8 +362,8 @@
         </section>
 
         <!--Checkbox-->
-        <section id="checkbox" class="docs-section section-checkbox">
-          <h4 class="section-title">Checkbox</h4>
+        <section id="checkbox" class="docs-section">
+          <h1 class="section-title">Checkbox</h1>
           <div class="section-body">
             <div class="ivory-checkbox">
               <input type="checkbox" id="check1" />
@@ -335,35 +384,27 @@
           </div>
         </section>
 
-        <!--Form-->
-        <section id="form" class="docs-section section-form">
-          <h4 class="section-title">Form</h4>
-          <div class="section-body">
-            
-          </div>
-        </section>
-
         <!--Radio-->
-        <section id="radio" class="docs-section section-radio">
-          <h4 class="section-title">Radio</h4>
+        <section id="radio" class="docs-section">
+          <h1 class="section-title">Radio</h1>
           <div class="section-body">
             <div class="ivory-radio">
-              <input type="radio" id="radio1" name="myradio" />
+              <input type="radio" id="radio1" name="myradio1" />
               <label for="radio1">Normal Radio</label>
             </div>
 
             <div class="ivory-radio">
-              <input type="radio" id="radio2" name="myradio" checked />
+              <input type="radio" id="radio2" name="myradio1" checked />
               <label for="radio2">Checked Radio</label>
             </div>
 
             <div class="ivory-radio">
-              <input type="radio" id="radio3" name="myradio" disabled />
+              <input type="radio" id="radio3" name="myradio2" disabled />
               <label for="radio3">Disabled Radio</label>
             </div>
 
             <div class="ivory-radio">
-              <input type="radio" id="radio4" name="myradio" disabled checked />
+              <input type="radio" id="radio4" name="myradio2" disabled checked />
               <label for="radio4">Radio disabled & checked</label>
             </div>
           </div>
