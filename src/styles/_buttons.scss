@@ -6,11 +6,10 @@
   padding: 0 1.5rem;
   border-radius: 1.5rem;
   border: 1px solid rgba(0, 0, 0, 0.42);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 500;
   font-size: 0.875rem;
   line-height: 2rem;
-  letter-spacing: 1px;
   color: rgba(0, 0, 0, 0.65);
   outline: none;
   cursor: pointer;
@@ -29,8 +28,8 @@
     }
   }
   &.btn-success {
-    border: 1px solid #7CB305;
-    background: #7CB305;
+    border: 1px solid #35C65D;
+    background: #35C65D;
     color: #FFFFFF;
     &:hover {
       box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
@@ -69,8 +68,8 @@
     cursor: not-allowed;
   }
    &.btn-success {
-    border: 1px solid #7CB305;
-    color: #7CB305;
+    border: 1px solid #35C65D;
+    color: #35C65D;
     &:hover {
       background-color: rgba(124, 179, 5, 0.1);
     }
@@ -94,7 +93,7 @@
     box-shadow: none;
   }
   &.btn-success {
-    color: #7CB305;
+    color: #35C65D;
     &:hover {
       background-color: rgba(124, 179, 5, 0.1);
     }
