@@ -6,7 +6,7 @@
     "clean": "node ./scripts/build/clean",
     "build:styles": "node-sass --include-path scss src/ivory.scss dist/ivory.min.css --output-style compressed",
     "build:fonts": "cp src/ivory_icons/** dist/",
-    "build": "npm run build:styles && npm run build:fonts"
+    "build": "npm run clean && npm run build:styles && npm run build:fonts"
   },
   "dependencies": {},
   "devDependencies": {
