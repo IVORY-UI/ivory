@@ -1,6 +1,6 @@
 # IVORY
 
-IVORY is simple and highly customizable CSS framework, gives you all to build your pages faster and easier.
+IVORY is a CSS framework, specially created for web applications and committed to improve the experience of users. It gives you all the basic integrants to build your pages faster and easier.
 
 ## How to use
 
