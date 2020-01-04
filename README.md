@@ -2,6 +2,8 @@
 
 IVORY is a CSS framework, specially created for web applications and committed to improve the experience of users. It gives you all the basic integrants to build your pages faster and easier.
 
+Documentation : http://ivoryui.com
+
 ## How to use
 
 Install using npm:
@@ -14,13 +16,17 @@ import `node_modules/ivoryui-ivory/dist/ivory.min.css` to your project
 ## Features
 
 - HTML Reset
-- Font
+- Color System
 - Typography
+- Icons
 - Grid
 - Alerts
 - Buttons
+- Forms
+- Input
 - Checkbox
 - Radio
+- Select
 
 ## Browser Support
 

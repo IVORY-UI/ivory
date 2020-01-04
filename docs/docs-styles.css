@@ -1,10 +1,10 @@
 .docs-wrapper {
   position: relative;
   display: flex;
-  font-family: "Montserrat", Helvetica, sans-serif;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .doc-nav {
-  position: relative;
+  position: fixed;
   width: 280px;
   height: 100vh;
   padding: 2rem 0;
@@ -14,13 +14,15 @@
   height: auto;
   border-right: 1px solid #E8E8E8;
 }
-
 .doc-nav nav ul li a {
   display: block;
+  text-decoration: none;
+  border: none;
   padding-left: 5rem;
   font-size: 0.875rem;
   line-height: 2.25rem;
   color: #424242;
+  margin: 0.2rem 0;
 }
 .doc-nav nav ul li:hover a {
   color: #40A0FF;
@@ -69,19 +71,60 @@
   font-size: 18px;
   line-height: 32px;
 }
+.type-system {
+  background-color: #FFEC99;
+}
+.type-system table {
+  width: 100%;
+}
+.type-system th {
+  padding: 0 2.5rem;
+  font-family: 'Courier Prime', monospace;
+  font-size: 0.875rem;
+  line-height: 3rem;
+  text-align: left;
+  border-bottom: 1px solid #495057;
+  border-right: 1px solid #495057;
+}
+.type-system th:last-child,
+.type-system td:last-child {
+  border-right: none;
+}
+.type-system tr:last-child td {
+  border-bottom: none;
+}
+.type-system td {
+  padding: 0 2.5rem;
+  vertical-align: middle;
+  border-bottom: 1px solid #495057;
+  border-right: 1px solid #495057;
+}
+.type-system td span {
+  font-family: 'Courier Prime', monospace;
+  font-size: 14px;
+}
 .icon-frame {
   position: relative;
-  width: 64px;
-  height: 64px;
-  font-size: 28px;
   display: flex;
+  width: 120px;
+  height: 90px;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 24px;
-  color: #40A0FF;
+  margin: 0.5rem;
+  color: #868E96;
+}
+.icon-frame {
+  font-size: 24px;
+}
+.icon-frame cite {
+  display: flex;
+  font-size: 12px;
+  line-height: 32px;
 }
 .icon-frame:hover {
-  background-color: #EAF5FF;
+  background-color: #40A0FF;
+  color: #FAFAFA;
   border-radius: 0.4rem;
 }
 .color-palette-panel {

@@ -1,7 +1,17 @@
 {
   "name": "ivoryui-ivory",
   "description": "IVORY is simple and highly customizable CSS framework, gives you all to build your pages faster and easier.",
-  "version": "4.0.0",
+  "version": "4.0.1",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IVORY-UI/ivory.git"
+  },
+  "keywords": [
+    "CSS",
+    "library",
+    "framework",
+    "components"
+  ],
   "scripts": {
     "clean": "node ./scripts/build/clean",
     "build:styles": "node-sass --include-path scss src/ivory.scss dist/ivory.min.css --output-style compressed",

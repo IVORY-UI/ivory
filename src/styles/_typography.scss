@@ -15,36 +15,46 @@ h4,
 h5,
 h6 {
   display: block;
-  font-weight: 500;
   margin-top: 0;
   margin-bottom: 1.0rem;
 }
 h1 {
-  font-size: 2rem;
-	line-height: 3rem;
+  font-size: 2.22rem;
+  line-height: 3rem;
+  font-weight: 500;
 }
 h2 {
-  font-size: 1.75rem;
-	line-height: 3rem;
+  font-size: 2rem;
+  line-height: 2.75rem;
+  font-weight: 500;
 }
 h3 {
-  font-size: 1.5rem;
-	line-height: 2.5rem;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+  font-weight: 500;
 }
 h4 {
-  font-size: 1.375rem;
-	letter-spacing: 0;
-	line-height: 2.25rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 500;
 }
 h5 {
-  font-size: 1.125rem;
-	letter-spacing: 0;
-	line-height: 1.75rem;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 600;
 }
 h6 {
+  font-size: 1.125rem;
+  line-height: 1.9rem;
+  font-weight: 500;
+}
+
+.subtitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
   font-size: 1rem;
-	letter-spacing: 0;
-	line-height: 1.75rem;
+  line-height: 1.75rem;
+  font-weight: 600;
 }
 
 p {
@@ -55,7 +65,24 @@ p {
   font-weight: 400;
 }
 
-.p1, .p2, .p3, .p4 {
+.small1, .small2 {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
+  font-size: 12px;
+  line-height: 1.5rem;
+}
+.small1 {
+  font-weight: 400;
+}
+.small2 {
+  font-weight: 500;
+}
+
+
+a {
+  text-decoration: none;
+  color: #2285F6;
+  &:hover, &:focus {
+    border-bottom: 1px solid #40A0FF;
+  }
 }
