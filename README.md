@@ -11,7 +11,12 @@ Install using npm:
 ```shell
 npm i ivoryui-ivory
 ```
-import `node_modules/ivoryui-ivory/dist/ivory.min.css` to your project
+
+import the following files to your project:
+```shell
+node_modules/ivoryui-ivory/dist/ivory-icons.css
+node_modules/ivoryui-ivory/dist/ivory.min.css
+```
 
 ## Features
 

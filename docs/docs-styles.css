@@ -158,9 +158,16 @@
   background-color: #F1F3F5;
   border: 1px solid #DEE2E6;
 }
-
 code {
   font-family: 'Courier Prime', monospace;
   background-color: #FFF4E6;
   padding: 0.2rem 0.5rem;
+}
+pre {
+  font-family: 'Courier Prime', monospace;
+  background-color: #FFF4E6;
+  padding: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
 }
