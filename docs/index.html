@@ -82,8 +82,16 @@
           </section>
           <h1 class="section-title">Introduction</h1>
           <div class="section-body">
-            <p>IVORY is a CSS framework, specially created for web applications and committed to improve the experience of users. 
-              It gives you all the basic integrants to build your pages faster and easier. </p>
+            <div style="margin-bottom: 2rem;">
+              <p>IVORY is a CSS framework, specially created for web applications and committed to improve the experience of users. 
+                It gives you all the basic integrants to build your pages faster and easier. </p>
+            </div>
+            
+            <div style="margin-bottom: 2rem;">
+              <h5 class="section-subtitle">About The Journey</h5>
+              <p>The project IVORY was started in Aug 2012, as a side project by a Software Engineer named Lakshmikanth Vallampati. 
+                The initial idea of the project IVORY is to create the CSS library which contains the commonly used web components.</p>
+            </div>
           </div>
         </section>
 
@@ -91,10 +99,32 @@
         <section id="getstart" class="docs-section">
           <h1 class="section-title">Get Started</h1>
           <div class="section-body">
-            <h6>Install using npm : </h6>
-            <pre>npm i ivoryui-ivory</pre>
-            <h6>Import the following files to your project : </h6>
-            <pre>node_modules/ivoryui-ivory/dist/ivory-icons.css <br/>node_modules/ivoryui-ivory/dist/ivory.min.css</pre>
+            <div style="margin-bottom: 2rem;">
+              <h5 class="section-subtitle">Using NPM</h5>
+              <p class="subtitle2">Run the below command to install via npm</p>
+              <pre>
+                <code>
+                  npm i ivoryui-ivory
+                </code>
+              </pre>
+              <p class="subtitle2">Import the following files to your project</p>
+              <pre>
+                <code>
+                  node_modules/ivoryui-ivory/dist/ivory-icons.css <br/>
+                  node_modules/ivoryui-ivory/dist/ivory.min.css
+                </code>
+              </pre>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <h5 class="section-subtitle">Using CDN</h5>
+              <pre>
+                <code>
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory.min.css" /&gt; <br/>
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory-icons.css" /&gt;
+                </code>
+              </pre>
+            </div>
           </div>
         </section>
 
@@ -352,16 +382,17 @@
                 and elegance of the interface. In IVORY UI Montserrat will be the base font and then also provides a set of 
                 fallback font libraries to maintain readability for screens on different platforms and browsers. </p>
               
-              <p><code>font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;</code></p>  
+              <p><span class="code">font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;</span></p>  
             </div>
 
             <div style="margin-bottom: 2rem;">
               <h5 class="section-subtitle">Font Weight</h5>
               <div class="row">
                 <div class="col-8">
-                  <p>Montserrat font family has 10 differnt font-weights from <code>100</code> to <code>900</code>. For 
-                    good readability, IVORY prefers to use <code>light(300)</code>, <code>regular(400)</code>, 
-                    <code>medium(500)</code>, <code>semi-bold(600)</code>, <code>bold(700)</code> font weights.</p>
+                  <p>Montserrat font family has 10 differnt font-weights from <span class="code">100</span> to 
+                    <span class="code">900</span>. For good readability, IVORY prefers to use <span class="code">light(300)</span>, 
+                    <span class="code">regular(400)</span>, <span class="code">medium(500)</span>, <span class="code">semi-bold(600)</span>, 
+                    <span class="code">bold(700)</span> font weights.</p>
                 </div>
                 <div class="col-4">
                   <cite class="font-highlight" style="font-weight: 700;">Montserrat 700</cite>
@@ -374,7 +405,7 @@
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>IVORY type system has 9 styles.</p>
+              <p>IVORY type system has 11 styles.</p>
               <div class="type-system">
                 <table>
                   <thead>
@@ -423,10 +454,16 @@
                       <td><span>30px</span></td>
                     </tr>
                     <tr>
-                      <td><p class="subtitle">Subtitle</p></td>
+                      <td><p class="subtitle1">Subtitle</p></td>
                       <td><span>600</span></td>
                       <td><span>16px</span></td>
                       <td><span>28px</span></td>
+                    </tr>
+                    <tr>
+                      <td><p class="subtitle2">Subtitle</p></td>
+                      <td><span>500</span></td>
+                      <td><span>14px</span></td>
+                      <td><span>20px</span></td>
                     </tr>
                     <tr>
                       <td><p>Body Text</p></td>
@@ -664,7 +701,7 @@
 
             <h5 class="section-subtitle">Equal Width</h5>
 
-            <p>Creating the equal width columns will be more simpler with IVORY. With <code>.col</code> class you can do this.</p> 
+            <p>Creating the equal width columns will be more simpler with IVORY. With <span class="code">.col</span> class you can do this.</p> 
             <div class="example-grid">
               <div class="row">
                 <div class="col">one</div>
@@ -677,7 +714,7 @@
 
             <h5 class="section-subtitle">Gutter</h5>
             <p>IVORY grid has the gutter width	of 30px i.e. 15px on each side of a column. IVORY also provides the gutter 
-              less grid system. To avail the gutter less grid layout, add <code>.no-gutter</code> class to the row 
+              less grid system. To avail the gutter less grid layout, add <span class="code">.no-gutter</span> class to the row 
               container.</p>
             
             <div class="example-grid">
@@ -711,13 +748,13 @@
               No media query since this is the default</p>
 
             <p>Small devices (landscape phones, 576px and up) <br/>
-              <code>@media (min-width: 576px) { ... }</code></p>
+              <pre><code>@media (min-width: 576px) { ... }</code></pre></p>
 
             <p>Medium devices (tablets, 768px and up) <br />
-              <code>@media (min-width: 768px) { ... }</code></p>
+              <pre><code>@media (min-width: 768px) { ... }</code></pre></p>
             
             <p>Large devices (large desktops, 1200px and up) <br/>
-              <code>@media (min-width: 1200px) { ... }</code></p>
+              <pre><code>@media (min-width: 1200px) { ... }</code></pre></p>
 
           </div>
         </section>

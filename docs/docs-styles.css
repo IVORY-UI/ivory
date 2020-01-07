@@ -37,7 +37,7 @@
   position: relative;
   width: 100%;
   max-width: 960px;
-  margin: 0 auto;
+  margin: 0 auto 0 360px;
   padding: 2rem;
 }
 .docs-section {
@@ -72,7 +72,7 @@
   line-height: 32px;
 }
 .type-system {
-  background-color: #FFEC99;
+  background-color: #FFF9D0;
 }
 .type-system table {
   width: 100%;
@@ -158,7 +158,7 @@
   background-color: #F1F3F5;
   border: 1px solid #DEE2E6;
 }
-code {
+.code {
   font-family: 'Courier Prime', monospace;
   background-color: #FFF4E6;
   padding: 0.2rem 0.5rem;
@@ -169,5 +169,7 @@ pre {
   padding: 1rem;
   font-size: 0.875rem;
   line-height: 1.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
 }
