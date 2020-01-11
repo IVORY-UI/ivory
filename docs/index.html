@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="./docs-styles.css" />
 
     <script rel="preload" src="https://code.jquery.com/jquery-3.4.1.min.js" as="script"></script>
+    <script src="./docs.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155990043-1"></script>
     <script>
-      $( document ).ready(function() {
-        $('.nav-item a').click(function(e) {
-          e.preventDefault();
-          let target = e.target.attributes['data-target'].value;
-          $('.nav-item a').removeClass('active');
-          $('.docs-section').removeClass('section-active');
-          $(e.target).addClass('active');
-          $('#'+target).addClass('section-active');
-        });
-      });
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-155990043-1');
     </script>
+
   </head>
   <body>
 
@@ -92,6 +92,28 @@
               <p>The project IVORY was started in Aug 2012, as a side project by a Software Engineer named Lakshmikanth Vallampati. 
                 The initial idea of the project IVORY is to create the CSS library which contains the commonly used web components.</p>
             </div>
+
+            <div class="timeline-content">
+              <ul class="timeline">
+                <li class="event" data-date="Aug 11, 2012">
+                  <cite>v1</cite>
+                  <p>The first version of IVORY released with widely used web components.</p>
+                </li>
+                <li class="event" data-date="Sep 09, 2012">
+                  <cite>v2</cite>
+                  <p>The Grid system was added to the IVORY.</p>
+                </li>
+                <li class="event" data-date="Nov 17, 2012">
+                  <cite>v3</cite>
+                  <p>IVORY published in GitHub.</p>
+                </li>
+                <li class="event" data-date="Jan 01, 2019">
+                  <cite>v4</cite>
+                  <p>IVORY is revamped with a new design system and advanced grid system.</p>
+                </li>
+              </ul>
+            </div>
+
           </div>
         </section>
 
@@ -180,16 +202,16 @@
               <div class="col-4">
                 <h5 class="section-subtitle">Purple</h5>
                 <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #f8f0fc;">#f8f0fc</div>
-                  <div class="color-cell" style="background-color: #f3d9fa;">#f3d9fa</div>
-                  <div class="color-cell" style="background-color: #eebefa;">#eebefa</div>
-                  <div class="color-cell" style="background-color: #e599f7;">#e599f7</div>
-                  <div class="color-cell" style="background-color: #da77f2;">#da77f2</div>
-                  <div class="color-cell" style="background-color: #cc5de8; color: #FAFAFA;">#cc5de8</div>
-                  <div class="color-cell" style="background-color: #be4bdb; color: #FAFAFA;">#be4bdb</div>
-                  <div class="color-cell" style="background-color: #ae3ec9; color: #FAFAFA;">#ae3ec9</div>
-                  <div class="color-cell" style="background-color: #9c36b5; color: #FAFAFA;">#9c36b5</div>
-                  <div class="color-cell" style="background-color: #862e9c; color: #FAFAFA;">#862e9c</div>
+                  <div class="color-cell" style="background-color: #F8F0FC;">#F8F0FC</div>
+                  <div class="color-cell" style="background-color: #F3D9FA;">#F3D9FA</div>
+                  <div class="color-cell" style="background-color: #EEBEFA;">#EEBEFA</div>
+                  <div class="color-cell" style="background-color: #E599F7;">#E599F7</div>
+                  <div class="color-cell" style="background-color: #DA77F2;">#DA77F2</div>
+                  <div class="color-cell" style="background-color: #CC5DE8; color: #FAFAFA;">#CC5DE8</div>
+                  <div class="color-cell" style="background-color: #BE4BDB; color: #FAFAFA;">#BE4BDB</div>
+                  <div class="color-cell" style="background-color: #AE3EC9; color: #FAFAFA;">#AE3EC9</div>
+                  <div class="color-cell" style="background-color: #9C36B5; color: #FAFAFA;">#9C36B5</div>
+                  <div class="color-cell" style="background-color: #862E9C; color: #FAFAFA;">#862E9C</div>
                 </div>
               </div>
             </div>
@@ -249,16 +271,16 @@
               <div class="col-4">
                 <h5 class="section-subtitle">Teal</h5>
                 <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #e6fcf5;">#e6fcf5</div>
-                  <div class="color-cell" style="background-color: #c3fae8;">#c3fae8</div>
-                  <div class="color-cell" style="background-color: #96f2d7;">#96f2d7</div>
-                  <div class="color-cell" style="background-color: #63e6be;">#63e6be</div>
-                  <div class="color-cell" style="background-color: #38d9a9;">#38d9a9</div>
-                  <div class="color-cell" style="background-color: #20c997;">#20c997</div>
-                  <div class="color-cell" style="background-color: #12b886; color: #FAFAFA;">#12b886</div>
-                  <div class="color-cell" style="background-color: #0ca678; color: #FAFAFA;">#0ca678</div>
+                  <div class="color-cell" style="background-color: #E6FCF5;">#E6FCF5</div>
+                  <div class="color-cell" style="background-color: #C3FAE8;">#C3FAE8</div>
+                  <div class="color-cell" style="background-color: #96F2D7;">#96F2D7</div>
+                  <div class="color-cell" style="background-color: #63E6BE;">#63E6BE</div>
+                  <div class="color-cell" style="background-color: #38D9A9;">#38D9A9</div>
+                  <div class="color-cell" style="background-color: #20C997;">#20C997</div>
+                  <div class="color-cell" style="background-color: #12B886; color: #FAFAFA;">#12B886</div>
+                  <div class="color-cell" style="background-color: #0CA678; color: #FAFAFA;">#0CA678</div>
                   <div class="color-cell" style="background-color: #099268; color: #FAFAFA;">#099268</div>
-                  <div class="color-cell" style="background-color: #087f5b; color: #FAFAFA;">#087f5b</div>
+                  <div class="color-cell" style="background-color: #087F5B; color: #FAFAFA;">#087F5B</div>
                 </div>
               </div>
 
@@ -308,7 +330,7 @@
                   <div class="color-cell" style="background-color: #FD7E14; color: #FAFAFA;">#FD7E14</div>
                   <div class="color-cell" style="background-color: #F76707; color: #FAFAFA;">#F76707</div>
                   <div class="color-cell" style="background-color: #E8590C; color: #FAFAFA;">#E8590C</div>
-                  <div class="color-cell" style="background-color: #fff;">...</div>
+                  <div class="color-cell" style="background-color: #d9480f; color: #FAFAFA;">#D9480F</div>
                 </div>
               </div>
               
@@ -324,22 +346,22 @@
                   <div class="color-cell" style="background-color: #FA541C; color: #FAFAFA;">#FA541C</div>
                   <div class="color-cell" style="background-color: #E84619; color: #FAFAFA;">#E84619</div>
                   <div class="color-cell" style="background-color: #D4380D; color: #FAFAFA;">#D4380D</div>
-                  <div class="color-cell" style="background-color: #fff;">...</div>
+                  <div class="color-cell" style="background-color: #BC3618; color: #FAFAFA;">#BC3618</div>
                 </div>
               </div>
 
               <div class="col-4">
                 <h5 class="section-subtitle">Silver</h5>
                 <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #f8f9fa;">#f8f9fa</div>
-                  <div class="color-cell" style="background-color: #f1f3f5;">#f1f3f5</div>
-                  <div class="color-cell" style="background-color: #e9ecef;">#e9ecef</div>
-                  <div class="color-cell" style="background-color: #dee2e6;">#dee2e6</div>
-                  <div class="color-cell" style="background-color: #ced4da;">#ced4da</div>
-                  <div class="color-cell" style="background-color: #adb5bd;">#adb5bd</div>
-                  <div class="color-cell" style="background-color: #868e96; color: #FAFAFA;">#868e96</div>
+                  <div class="color-cell" style="background-color: #F8F9FA;">#F8F9FA</div>
+                  <div class="color-cell" style="background-color: #F1F3F5;">#F1F3F5</div>
+                  <div class="color-cell" style="background-color: #E9ECEF;">#E9ECEF</div>
+                  <div class="color-cell" style="background-color: #DEE2E6;">#DEE2E6</div>
+                  <div class="color-cell" style="background-color: #CED4DA;">#CED4DA</div>
+                  <div class="color-cell" style="background-color: #ADB5BD;">#ADB5BD</div>
+                  <div class="color-cell" style="background-color: #868E96; color: #FAFAFA;">#868E96</div>
                   <div class="color-cell" style="background-color: #495057; color: #FAFAFA;">#495057</div>
-                  <div class="color-cell" style="background-color: #343a40; color: #FAFAFA;">#343a40</div>
+                  <div class="color-cell" style="background-color: #343A40; color: #FAFAFA;">#343A40</div>
                   <div class="color-cell" style="background-color: #212529; color: #FAFAFA;">#212529</div>
                 </div>
               </div>
