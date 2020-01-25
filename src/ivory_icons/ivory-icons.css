@@ -46,9 +46,9 @@
 .ivory-icon-key,
 .ivory-icon-layers,
 .ivory-icon-leaf,
+.ivory-icon-like,
 .ivory-icon-link,
 .ivory-icon-location,
-.ivory-icon-love,
 .ivory-icon-map,
 .ivory-icon-minus-circle,
 .ivory-icon-paper-plane,
@@ -188,14 +188,14 @@
 .ivory-icon-leaf:before {
   content: "\e923";
 }
+.ivory-icon-like:before {
+  content: "\e926";
+}
 .ivory-icon-link:before {
   content: "\e924";
 }
 .ivory-icon-location:before {
   content: "\e925";
-}
-.ivory-icon-love:before {
-  content: "\e926";
 }
 .ivory-icon-map:before {
   content: "\e927";
