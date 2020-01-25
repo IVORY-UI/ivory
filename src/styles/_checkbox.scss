@@ -31,8 +31,9 @@
       }
     }
     &:disabled {
-      cursor: not-allowed;
       & + label {
+        opacity: 0.65;
+        cursor: not-allowed;
         &::before {
           background-color: #F4F4F4;
           cursor: not-allowed;
@@ -59,11 +60,11 @@
         }
       }
       &:disabled {
-        cursor: not-allowed;
         & + label {
+          opacity: 0.65;
+          cursor: not-allowed;
           &::before {
             background-color: #3C7EED;
-            opacity: 0.65;
             cursor: not-allowed;
           }
           &::after {

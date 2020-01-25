@@ -10,44 +10,63 @@
   font-display: block;
 }
 
-.icon-angle-down,
-.icon-angle-left,
-.icon-angle-right,
-.icon-angle-up,
-.icon-angle-down-circle,
-.icon-angle-left-circle,
-.icon-angle-right-circle,
-.icon-angle-up-circle,
-.icon-arrow-down,
-.icon-arrow-left,
-.icon-arrow-right,
-.icon-arrow-up,
-.icon-check,
-.icon-times,
-.icon-check-circle,
-.icon-times-circle,
-.icon-minus-circle,
-.icon-plus-circle,
-.icon-audio,
-.icon-brightness,
-.icon-calendar,
-.icon-chat,
-.icon-forward,
-.icon-inbox,
-.icon-link,
-.icon-location,
-.icon-love,
-.icon-map,
-.icon-paper-plane,
-.icon-reply,
-.icon-search,
-.icon-share,
-.icon-star,
-.icon-trash,
-.icon-user,
-.icon-envelope,
-.icon-printer,
-.icon-webcamera {
+.ivory-icon-angle-down-circle,
+.ivory-icon-angle-down,
+.ivory-icon-angle-left-circle,
+.ivory-icon-angle-left,
+.ivory-icon-angle-right-circle,
+.ivory-icon-angle-right,
+.ivory-icon-angle-up-circle,
+.ivory-icon-angle-up,
+.ivory-icon-arrow-down,
+.ivory-icon-arrow-left,
+.ivory-icon-arrow-right,
+.ivory-icon-arrow-up,
+.ivory-icon-attachment,
+.ivory-icon-audio,
+.ivory-icon-brightness,
+.ivory-icon-calendar,
+.ivory-icon-cart,
+.ivory-icon-chat,
+.ivory-icon-check,
+.ivory-icon-check-circle,
+.ivory-icon-database,
+.ivory-icon-envelope,
+.ivory-icon-eye-hide,
+.ivory-icon-eye,
+.ivory-icon-file-text,
+.ivory-icon-file,
+.ivory-icon-filter,
+.ivory-icon-fire,
+.ivory-icon-forward,
+.ivory-icon-headphones,
+.ivory-icon-home,
+.ivory-icon-hour-glass,
+.ivory-icon-inbox,
+.ivory-icon-key,
+.ivory-icon-layers,
+.ivory-icon-leaf,
+.ivory-icon-link,
+.ivory-icon-location,
+.ivory-icon-love,
+.ivory-icon-map,
+.ivory-icon-minus-circle,
+.ivory-icon-paper-plane,
+.ivory-icon-plus-circle,
+.ivory-icon-printer,
+.ivory-icon-reply,
+.ivory-icon-search,
+.ivory-icon-settings,
+.ivory-icon-share,
+.ivory-icon-star,
+.ivory-icon-tag,
+.ivory-icon-times-circle,
+.ivory-icon-times,
+.ivory-icon-trash,
+.ivory-icon-user,
+.ivory-icon-wallet,
+.ivory-icon-webcamera,
+.ivory-icon-wifi {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Ivory Icons' !important;
   font-style: normal;
@@ -61,117 +80,174 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-angle-down-circle:before {
+.ivory-icon-angle-down-circle:before {
   content: "\e900";
 }
-.icon-angle-down:before {
+.ivory-icon-angle-down:before {
   content: "\e901";
 }
-.icon-angle-left-circle:before {
+.ivory-icon-angle-left-circle:before {
   content: "\e902";
 }
-.icon-angle-left:before {
+.ivory-icon-angle-left:before {
   content: "\e903";
 }
-.icon-angle-right-circle:before {
+.ivory-icon-angle-right-circle:before {
   content: "\e904";
 }
-.icon-angle-right:before {
+.ivory-icon-angle-right:before {
   content: "\e905";
 }
-.icon-angle-up-circle:before {
+.ivory-icon-angle-up-circle:before {
   content: "\e906";
 }
-.icon-angle-up:before {
+.ivory-icon-angle-up:before {
   content: "\e907";
 }
-.icon-arrow-down:before {
+.ivory-icon-arrow-down:before {
   content: "\e908";
 }
-.icon-arrow-left:before {
+.ivory-icon-arrow-left:before {
   content: "\e909";
 }
-.icon-arrow-right:before {
+.ivory-icon-arrow-right:before {
   content: "\e90a";
 }
-.icon-arrow-up:before {
+.ivory-icon-arrow-up:before {
   content: "\e90b";
 }
-.icon-audio:before {
+.ivory-icon-attachment:before {
+  content: "\e90c";
+}
+.ivory-icon-audio:before {
   content: "\e90d";
 }
-.icon-brightness:before {
+.ivory-icon-brightness:before {
   content: "\e90e";
 }
-.icon-calendar:before {
+.ivory-icon-calendar:before {
   content: "\e90f";
 }
-.icon-chat:before {
+.ivory-icon-cart:before {
   content: "\e910";
 }
-.icon-check:before {
+.ivory-icon-chat:before {
   content: "\e911";
 }
-.icon-check-circle:before {
+.ivory-icon-check:before {
   content: "\e912";
 }
-.icon-envelope:before {
+.ivory-icon-check-circle:before {
   content: "\e913";
 }
-.icon-forward:before {
+.ivory-icon-database:before {
   content: "\e914";
 }
-.icon-inbox:before {
+.ivory-icon-envelope:before {
   content: "\e915";
 }
-.icon-link:before {
+.ivory-icon-eye-hide:before {
   content: "\e916";
 }
-.icon-location:before {
+.ivory-icon-eye:before {
   content: "\e917";
 }
-.icon-love:before {
+.ivory-icon-file-text:before {
   content: "\e918";
 }
-.icon-map:before {
+.ivory-icon-file:before {
   content: "\e919";
 }
-.icon-minus-circle:before {
+.ivory-icon-filter:before {
   content: "\e91a";
 }
-.icon-paper-plane:before {
+.ivory-icon-fire:before {
   content: "\e91b";
 }
-.icon-plus-circle:before {
+.ivory-icon-forward:before {
   content: "\e91c";
 }
-.icon-printer:before {
+.ivory-icon-headphones:before {
   content: "\e91d";
 }
-.icon-reply:before {
+.ivory-icon-home:before {
   content: "\e91e";
 }
-.icon-search:before {
+.ivory-icon-hour-glass:before {
   content: "\e91f";
 }
-.icon-share:before {
+.ivory-icon-inbox:before {
   content: "\e920";
 }
-.icon-star:before {
+.ivory-icon-key:before {
   content: "\e921";
 }
-.icon-times-circle:before {
+.ivory-icon-layers:before {
   content: "\e922";
 }
-.icon-times:before {
+.ivory-icon-leaf:before {
   content: "\e923";
 }
-.icon-trash:before {
+.ivory-icon-link:before {
   content: "\e924";
 }
-.icon-user:before {
+.ivory-icon-location:before {
   content: "\e925";
 }
-.icon-webcamera:before {
+.ivory-icon-love:before {
   content: "\e926";
+}
+.ivory-icon-map:before {
+  content: "\e927";
+}
+.ivory-icon-minus-circle:before {
+  content: "\e928";
+}
+.ivory-icon-paper-plane:before {
+  content: "\e929";
+}
+.ivory-icon-plus-circle:before {
+  content: "\e92a";
+}
+.ivory-icon-printer:before {
+  content: "\e92b";
+}
+.ivory-icon-reply:before {
+  content: "\e92c";
+}
+.ivory-icon-search:before {
+  content: "\e92d";
+}
+.ivory-icon-settings:before {
+  content: "\e92e";
+}
+.ivory-icon-share:before {
+  content: "\e92f";
+}
+.ivory-icon-star:before {
+  content: "\e930";
+}
+.ivory-icon-tag:before {
+  content: "\e931";
+}
+.ivory-icon-times-circle:before {
+  content: "\e932";
+}
+.ivory-icon-times:before {
+  content: "\e933";
+}
+.ivory-icon-trash:before {
+  content: "\e934";
+}
+.ivory-icon-user:before {
+  content: "\e935";
+}
+.ivory-icon-wallet:before {
+  content: "\e936";
+}
+.ivory-icon-webcamera:before {
+  content: "\e937";
+}
+.ivory-icon-wifi:before {
+  content: "\e938";
 }

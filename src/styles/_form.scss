@@ -21,11 +21,18 @@
   background-color: transparent;
   outline: none;
 }
+@mixin webappearance($property) {
+  -webkit-appearance: $property;
+  -moz-appearance: $property;
+  -ms-appearance: $property;
+  -o-appearance: $property;
+}
 .ivory-input {
   @extend %default-form-element;
   padding: 0.25rem;
   border-bottom: 1px solid #B7B7B7;
   border-radius: 0;
+  max-width: 200px;
   &:not([readonly]):focus {
     border-bottom: 1px solid #0875e1;
   }
@@ -33,18 +40,18 @@
 
 .ivory-select-wrapper {
   position: relative;
+  cursor: pointer;
   .ivory-select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
+    @include webappearance(none);
     @extend %default-form-element;
     margin: 0;
     padding: 0 1.5rem 0 0.25rem;
-    border: 1px solid #B7B7B7;
-    border-radius: 0.25rem;
+    border: none;
+    border-bottom: 1px solid #B7B7B7;
+    border-radius: 0;
+    cursor: pointer;
     &:focus {
-      border: 1px solid #0875e1;
+      border-bottom: 1px solid #0875e1;
     }
   }
   &:after {
@@ -59,6 +66,7 @@
     background-size: contain;
     vertical-align: middle;
     margin: 0;
+    z-index: -1;
   }
 }
 
