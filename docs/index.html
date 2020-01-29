@@ -1,417 +1,474 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>IVORY UI</title>
-    <link rel="stylesheet" href="../dist/ivory-icons.css" />
-    <link rel="stylesheet" href="../dist/ivory.min.css" />
 
-    <script rel="preload" src="https://code.jquery.com/jquery-3.4.1.min.js" as="script"></script>
+<head>
+  <title>IVORY UI</title>
+  <link rel="stylesheet" href="../dist/ivory-icons.css" />
+  <link rel="stylesheet" href="../dist/ivory.min.css" />
 
-    <link rel="stylesheet" href="./docs-styles.css" />
-    <script>
-      $( document ).ready(function() {
-        $('.nav-item a').click(function(e) {
-          e.preventDefault();
-          let target = e.target.attributes['data-target'].value;
-          $('.nav-item a').removeClass('active');
-          $('.docs-section').removeClass('section-active');
-          $(e.target).addClass('active');
-          $('#'+target).addClass('section-active');
-        });
+  <script rel="preload" src="https://code.jquery.com/jquery-3.4.1.min.js" as="script"></script>
+
+  <link rel="stylesheet" href="./docs-styles.css" />
+  <script>
+    $(document).ready(function () {
+      $('.nav-item a').click(function (e) {
+        e.preventDefault();
+        let target = e.target.attributes['data-target'].value;
+        $('.nav-item a').removeClass('active');
+        $('.docs-section').removeClass('section-active');
+        $(e.target).addClass('active');
+        $('#' + target).addClass('section-active');
       });
-    </script>
-  </head>
-  <body>
+    });
+  </script>
+</head>
 
-    <div class="docs-wrapper">
-      <div class="doc-nav">
-        <nav>
-          <ul>
-            <li class="nav-item">
-              <a href="#" data-target="intro" class="active">Introduction</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="font">Font</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="icons">Icons</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="grid">Grid</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="alerts">Alerts</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="buttons">Buttons</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="checkbox">Checkbox</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="radio">Radio</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+<body>
 
-      <div class="docs-container">
-
-        <!--Intro-->
-        <section id="intro" class="docs-section section-active">
-          <h1 class="section-title">Introduction</h1>
-          <div class="section-body">
-            <p>IVORY is a CSS framework, specially created for web applications and committed to improve the experience of users. 
-              It gives you all the basic integrants to build your pages faster and easier. </p>
-          </div>
-        </section>
-
-        <!--Font-->
-        <section id="font" class="docs-section">
-          <h1 class="section-title">Font</h1>
-          <div class="section-body">
-            <p>IVORY UI use Montserrat font family and then also provides a set of fallback font libraries to 
-              maintain readability for screens on different platforms and browsers. Montserrat font family has 
-              many styles but IVORY UI prefers to use the following. </p>
-            <cite class="font-highlight" style="font-weight: 700;">Montserrat 700</cite>
-            <cite class="font-highlight" style="font-weight: 600;">Montserrat 600</cite>
-            <cite class="font-highlight" style="font-weight: 500;">Montserrat 500</cite>
-            <cite class="font-highlight" style="font-weight: 400;">Montserrat 400</cite>
-            <cite class="font-highlight" style="font-weight: 300;">Montserrat 300</cite>
-          </div>
-        </section>
-
-        <!--Icons-->
-        <section id="icons" class="docs-section">
-          <h1 class="section-title">Icons</h1>
-          <div class="section-body">
-            <div class="row">
-              <div class="icon-frame">
-                <i class="icon-angle-down"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-angle-left"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-angle-right"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-angle-up"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-angle-down-circle"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-angle-left-circle"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-angle-right-circle"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-angle-up-circle"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-arrow-down"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-arrow-left"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-arrow-right"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-arrow-up"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-check"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-times"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-check-circle"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-times-circle"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-plus-circle"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-minus-circle"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-audio"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-brightness"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-calendar"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-chat"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-envelope"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-forward"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-reply"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-inbox"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-link"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-location"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-map"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-paper-plane"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-search"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-share"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-trash"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-user"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-star"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-love"></i>
-              </div>
-              <div class="icon-frame">
-                <i class="icon-webcamera"></i>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!--Grid-->
-        <section id="grid" class="docs-section">
-          <h1 class="section-title">Grid</h1>
-          <div class="section-body">
-            <p>IVORY provides a 12-column grid system built with flexbox and is fully responsive.</p>
-            
-            <div class="example-grid">
-              <div class="row">
-                <div class="col-1">One</div>
-                <div class="col-11">Eleven</div>
-              </div>
-              <div class="row">
-                <div class="col-2">Two</div>
-                <div class="col-10">Ten</div>
-              </div>
-              <div class="row">
-                <div class="col-3">Three</div>
-                <div class="col-9">Nine</div>
-              </div>
-              <div class="row">
-                <div class="col-4">Four</div>
-                <div class="col-8">Eight</div>
-              </div>
-              <div class="row">
-                <div class="col-5">Five</div>
-                <div class="col-7">Seven</div>
-              </div>
-              <div class="row">
-                <div class="col-6">Six</div>
-                <div class="col-6">Six</div>
-              </div>              
-            </div>
-
-            <h5 class="section-subtitle">Equal Width</h5>
-
-            <p>Creating the equal width columns will be more simpler with IVORY. With <code>.col</code> class you can do this.</p> 
-            <div class="example-grid">
-              <div class="row">
-                <div class="col">one</div>
-                <div class="col">one</div>
-                <div class="col">one</div>
-                <div class="col">one</div>
-                <div class="col">one</div>
-              </div>
-            </div>
-
-            <h5 class="section-subtitle">Gutter</h5>
-            <p>IVORY grid has the gutter width	of 30px i.e. 15px on each side of a column. IVORY also provides the gutter 
-              less grid system. To avail the gutter less grid layout, add <code>.no-gutter</code> class to the row 
-              container.</p>
-            
-            <div class="example-grid">
-              <div class="row no-gutter">
-                <div class="col-12">Twelve</div>
-              </div>
-              <div class="row no-gutter">
-                <div class="col-6">Six</div>
-                <div class="col-6">Six</div>
-              </div>
-              <div class="row no-gutter">
-                <div class="col-4">Four</div>
-                <div class="col-4">Four</div>
-                <div class="col-4">Four</div>
-              </div>
-              <div class="row no-gutter">
-                <div class="col-3">Three</div>
-                <div class="col-3">Three</div>
-                <div class="col-3">Three</div>
-                <div class="col-3">Three</div>
-              </div>
-            </div>
-
-            <h5 class="section-subtitle">Auto width column</h5>
-            <p></p>
-
-            <h5 class="section-subtitle">Responsive Breakpoints</h5>
-            <p>The breakpoints of responsive grid as below:</p>
-
-            <p>Extra small devices (portrait phones, less than 576px) <br/>
-              No media query since this is the default</p>
-
-            <p>Small devices (landscape phones, 576px and up) <br/>
-              <code>@media (min-width: 576px) { ... }</code></p>
-
-            <p>Medium devices (tablets, 768px and up) <br />
-              <code>@media (min-width: 768px) { ... }</code></p>
-            
-            <p>Large devices (large desktops, 1200px and up) <br/>
-              <code>@media (min-width: 1200px) { ... }</code></p>
-
-          </div>
-        </section>
-
-        <!--Alerts-->
-        <section id="alerts" class="docs-section">
-          <h1 class="section-title">Alerts</h1>
-          <div class="section-body">
-            <p>IVORY has success, info, warning and error alert types denoted by the following classes:</p>
-            <ul>
-              <li><code>.ivory-alert .success</code></li>
-              <li><code>.ivory-alert .info</code></li>
-              <li><code>.ivory-alert .warning</code></li>
-              <li><code>.ivory-alert .error</code></li>
-            </ul>
-
-            <div class="ivory-alert success">
-              Success Text
-            </div>
-            <div class="ivory-alert info">
-              Info Text
-            </div>
-            <div class="ivory-alert warning">
-              Warning Text
-            </div>
-            <div class="ivory-alert error">
-              Error Text
-            </div>
-
-          </div>
-        </section>
-
-        <!--Buttons-->
-        <section id="buttons" class="docs-section">
-          <h1 class="section-title">Buttons</h1>
-          <div class="section-body">
-            <h6 class="section-subtitle">Solid Buttons</h6>
-            <div style="margin-bottom:1rem;">
-              <button class="ivory-btn">Default</button>
-              <button class="ivory-btn btn-primary">Confirm</button>
-              <button class="ivory-btn btn-success">Success</button>
-              <button class="ivory-btn btn-danger">Delete</button>
-              <button class="ivory-btn btn-primary" disabled>Disabled</button>
-            </div>
-
-            <h6 class="section-subtitle">Outline Buttons</h6>
-            <div style="margin-bottom:1rem;">
-              <button class="ivory-btn-outline btn-primary">Confirm</button>
-              <button class="ivory-btn-outline btn-success">Success</button>
-              <button class="ivory-btn-outline btn-danger">Delete</button>
-              <button class="ivory-btn-outline btn-primary" disabled>Disabled</button>
-            </div>
-
-            <h6 class="section-subtitle">Flat Buttons</h6>
-            <div style="margin-bottom:1rem;">
-              <button class="ivory-btn-link btn-primary">Confirm</button>
-              <button class="ivory-btn-link btn-success">Success</button>
-              <button class="ivory-btn-link btn-danger">Delete</button>
-              <button class="ivory-btn-link btn-primary" disabled>Disabled</button>
-            </div>
-
-            <h6 class="section-subtitle">Small Buttons</h6>
-            <div style="margin-bottom:1rem;">
-              <button class="ivory-btn btn-primary btn-small">Confirm</button>
-              <button class="ivory-btn-outline btn-primary btn-small">Confirm</button>
-              <button class="ivory-btn-link btn-primary btn-small">Confirm</button>
-            </div>
-            
-          </div>
-        </section>
-
-        <!--Checkbox-->
-        <section id="checkbox" class="docs-section">
-          <h1 class="section-title">Checkbox</h1>
-          <div class="section-body">
-            <div class="ivory-checkbox">
-              <input type="checkbox" id="check1" />
-              <label for="check1">Normal Checkbox</label>
-            </div>
-            <div class="ivory-checkbox">
-              <input type="checkbox" id="check2" checked />
-              <label for="check2">Checked Checkbox</label>
-            </div>
-            <div class="ivory-checkbox">
-              <input type="checkbox" id="check3" disabled />
-              <label for="check3">Disabled Checkbox</label>
-            </div>
-            <div class="ivory-checkbox">
-              <input type="checkbox" id="check4" disabled checked />
-              <label for="check4">Checkbox disabled & checked</label>
-            </div>
-          </div>
-        </section>
-
-        <!--Radio-->
-        <section id="radio" class="docs-section">
-          <h1 class="section-title">Radio</h1>
-          <div class="section-body">
-            <div class="ivory-radio">
-              <input type="radio" id="radio1" name="myradio1" />
-              <label for="radio1">Normal Radio</label>
-            </div>
-
-            <div class="ivory-radio">
-              <input type="radio" id="radio2" name="myradio1" checked />
-              <label for="radio2">Checked Radio</label>
-            </div>
-
-            <div class="ivory-radio">
-              <input type="radio" id="radio3" name="myradio2" disabled />
-              <label for="radio3">Disabled Radio</label>
-            </div>
-
-            <div class="ivory-radio">
-              <input type="radio" id="radio4" name="myradio2" disabled checked />
-              <label for="radio4">Radio disabled & checked</label>
-            </div>
-          </div>
-        </section>
-
-      </div>
+  <div class="docs-wrapper">
+    <div class="doc-nav">
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <a href="#" data-target="intro" class="active">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-target="font">Font</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-target="icons">Icons</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-target="grid">Grid</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-target="alerts">Alerts</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-target="buttons">Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-target="checkbox">Checkbox</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-target="radio">Radio</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-target="badge">Badges</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" data-target="tags">Tags</a>
+          </li>
+        </ul>
+      </nav>
     </div>
 
-  </body>
+    <div class="docs-container">
+
+      <!--Intro-->
+      <section id="intro" class="docs-section section-active">
+        <h1 class="section-title">Introduction</h1>
+        <div class="section-body">
+          <p>IVORY is a CSS framework, specially created for web applications and committed to improve the experience of
+            users.
+            It gives you all the basic integrants to build your pages faster and easier. </p>
+        </div>
+      </section>
+
+      <!--Font-->
+      <section id="font" class="docs-section">
+        <h1 class="section-title">Font</h1>
+        <div class="section-body">
+          <p>IVORY UI use Montserrat font family and then also provides a set of fallback font libraries to
+            maintain readability for screens on different platforms and browsers. Montserrat font family has
+            many styles but IVORY UI prefers to use the following. </p>
+          <cite class="font-highlight" style="font-weight: 700;">Montserrat 700</cite>
+          <cite class="font-highlight" style="font-weight: 600;">Montserrat 600</cite>
+          <cite class="font-highlight" style="font-weight: 500;">Montserrat 500</cite>
+          <cite class="font-highlight" style="font-weight: 400;">Montserrat 400</cite>
+          <cite class="font-highlight" style="font-weight: 300;">Montserrat 300</cite>
+        </div>
+      </section>
+
+      <!--Icons-->
+      <section id="icons" class="docs-section">
+        <h1 class="section-title">Icons</h1>
+        <div class="section-body">
+          <div class="row">
+            <div class="icon-frame">
+              <i class="icon-angle-down"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-angle-left"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-angle-right"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-angle-up"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-angle-down-circle"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-angle-left-circle"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-angle-right-circle"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-angle-up-circle"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-arrow-down"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-arrow-left"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-arrow-right"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-arrow-up"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-check"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-times"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-check-circle"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-times-circle"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-plus-circle"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-minus-circle"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-audio"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-brightness"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-calendar"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-chat"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-envelope"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-forward"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-reply"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-inbox"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-link"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-location"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-map"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-paper-plane"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-search"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-share"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-trash"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-user"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-star"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-love"></i>
+            </div>
+            <div class="icon-frame">
+              <i class="icon-webcamera"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--Grid-->
+      <section id="grid" class="docs-section">
+        <h1 class="section-title">Grid</h1>
+        <div class="section-body">
+          <p>IVORY provides a 12-column grid system built with flexbox and is fully responsive.</p>
+
+          <div class="example-grid">
+            <div class="row">
+              <div class="col-1">One</div>
+              <div class="col-11">Eleven</div>
+            </div>
+            <div class="row">
+              <div class="col-2">Two</div>
+              <div class="col-10">Ten</div>
+            </div>
+            <div class="row">
+              <div class="col-3">Three</div>
+              <div class="col-9">Nine</div>
+            </div>
+            <div class="row">
+              <div class="col-4">Four</div>
+              <div class="col-8">Eight</div>
+            </div>
+            <div class="row">
+              <div class="col-5">Five</div>
+              <div class="col-7">Seven</div>
+            </div>
+            <div class="row">
+              <div class="col-6">Six</div>
+              <div class="col-6">Six</div>
+            </div>
+          </div>
+
+          <h5 class="section-subtitle">Equal Width</h5>
+
+          <p>Creating the equal width columns will be more simpler with IVORY. With <code>.col</code> class you can do
+            this.</p>
+          <div class="example-grid">
+            <div class="row">
+              <div class="col">one</div>
+              <div class="col">one</div>
+              <div class="col">one</div>
+              <div class="col">one</div>
+              <div class="col">one</div>
+            </div>
+          </div>
+
+          <h5 class="section-subtitle">Gutter</h5>
+          <p>IVORY grid has the gutter width of 30px i.e. 15px on each side of a column. IVORY also provides the gutter
+            less grid system. To avail the gutter less grid layout, add <code>.no-gutter</code> class to the row
+            container.</p>
+
+          <div class="example-grid">
+            <div class="row no-gutter">
+              <div class="col-12">Twelve</div>
+            </div>
+            <div class="row no-gutter">
+              <div class="col-6">Six</div>
+              <div class="col-6">Six</div>
+            </div>
+            <div class="row no-gutter">
+              <div class="col-4">Four</div>
+              <div class="col-4">Four</div>
+              <div class="col-4">Four</div>
+            </div>
+            <div class="row no-gutter">
+              <div class="col-3">Three</div>
+              <div class="col-3">Three</div>
+              <div class="col-3">Three</div>
+              <div class="col-3">Three</div>
+            </div>
+          </div>
+
+          <h5 class="section-subtitle">Auto width column</h5>
+          <p></p>
+
+          <h5 class="section-subtitle">Responsive Breakpoints</h5>
+          <p>The breakpoints of responsive grid as below:</p>
+
+          <p>Extra small devices (portrait phones, less than 576px) <br />
+            No media query since this is the default</p>
+
+          <p>Small devices (landscape phones, 576px and up) <br />
+            <code>@media (min-width: 576px) { ... }</code></p>
+
+          <p>Medium devices (tablets, 768px and up) <br />
+            <code>@media (min-width: 768px) { ... }</code></p>
+
+          <p>Large devices (large desktops, 1200px and up) <br />
+            <code>@media (min-width: 1200px) { ... }</code></p>
+
+        </div>
+      </section>
+
+      <!--Alerts-->
+      <section id="alerts" class="docs-section">
+        <h1 class="section-title">Alerts</h1>
+        <div class="section-body">
+          <p>IVORY has success, info, warning and error alert types denoted by the following classes:</p>
+          <ul>
+            <li><code>.ivory-alert .success</code></li>
+            <li><code>.ivory-alert .info</code></li>
+            <li><code>.ivory-alert .warning</code></li>
+            <li><code>.ivory-alert .error</code></li>
+          </ul>
+
+          <div class="ivory-alert success">
+            Success Text
+          </div>
+          <div class="ivory-alert info">
+            Info Text
+          </div>
+          <div class="ivory-alert warning">
+            Warning Text
+          </div>
+          <div class="ivory-alert error">
+            Error Text
+          </div>
+
+        </div>
+      </section>
+
+      <!--Buttons-->
+      <section id="buttons" class="docs-section">
+        <h1 class="section-title">Buttons</h1>
+        <div class="section-body">
+          <h6 class="section-subtitle">Solid Buttons</h6>
+          <div style="margin-bottom:1rem;">
+            <button class="ivory-btn">Default</button>
+            <button class="ivory-btn btn-primary">Confirm</button>
+            <button class="ivory-btn btn-success">Success</button>
+            <button class="ivory-btn btn-danger">Delete</button>
+            <button class="ivory-btn btn-primary" disabled>Disabled</button>
+          </div>
+
+          <h6 class="section-subtitle">Outline Buttons</h6>
+          <div style="margin-bottom:1rem;">
+            <button class="ivory-btn-outline btn-primary">Confirm</button>
+            <button class="ivory-btn-outline btn-success">Success</button>
+            <button class="ivory-btn-outline btn-danger">Delete</button>
+            <button class="ivory-btn-outline btn-primary" disabled>Disabled</button>
+          </div>
+
+          <h6 class="section-subtitle">Flat Buttons</h6>
+          <div style="margin-bottom:1rem;">
+            <button class="ivory-btn-link btn-primary">Confirm</button>
+            <button class="ivory-btn-link btn-success">Success</button>
+            <button class="ivory-btn-link btn-danger">Delete</button>
+            <button class="ivory-btn-link btn-primary" disabled>Disabled</button>
+          </div>
+
+          <h6 class="section-subtitle">Small Buttons</h6>
+          <div style="margin-bottom:1rem;">
+            <button class="ivory-btn btn-primary btn-small">Confirm</button>
+            <button class="ivory-btn-outline btn-primary btn-small">Confirm</button>
+            <button class="ivory-btn-link btn-primary btn-small">Confirm</button>
+          </div>
+
+        </div>
+      </section>
+
+      <!--Checkbox-->
+      <section id="checkbox" class="docs-section">
+        <h1 class="section-title">Checkbox</h1>
+        <div class="section-body">
+          <div class="ivory-checkbox">
+            <input type="checkbox" id="check1" />
+            <label for="check1">Normal Checkbox</label>
+          </div>
+          <div class="ivory-checkbox">
+            <input type="checkbox" id="check2" checked />
+            <label for="check2">Checked Checkbox</label>
+          </div>
+          <div class="ivory-checkbox">
+            <input type="checkbox" id="check3" disabled />
+            <label for="check3">Disabled Checkbox</label>
+          </div>
+          <div class="ivory-checkbox">
+            <input type="checkbox" id="check4" disabled checked />
+            <label for="check4">Checkbox disabled & checked</label>
+          </div>
+        </div>
+      </section>
+
+      <!--Radio-->
+      <section id="radio" class="docs-section">
+        <h1 class="section-title">Radio</h1>
+        <div class="section-body">
+          <div class="ivory-radio">
+            <input type="radio" id="radio1" name="myradio1" />
+            <label for="radio1">Normal Radio</label>
+          </div>
+
+          <div class="ivory-radio">
+            <input type="radio" id="radio2" name="myradio1" checked />
+            <label for="radio2">Checked Radio</label>
+          </div>
+
+          <div class="ivory-radio">
+            <input type="radio" id="radio3" name="myradio2" disabled />
+            <label for="radio3">Disabled Radio</label>
+          </div>
+
+          <div class="ivory-radio">
+            <input type="radio" id="radio4" name="myradio2" disabled checked />
+            <label for="radio4">Radio disabled & checked</label>
+          </div>
+        </div>
+      </section>
+
+      <!--Badges-->
+      <section id="badge" class="docs-section">
+        <h1 class="section-title">Badges</h1>
+        <div class="section-body">
+          <h6 class="section-subtitle">Standalone Badges</h6>
+          <div style="margin-bottom:1rem;">
+            <span class="ivory-badge">5</span>
+            <span class="ivory-badge red">345+</span>
+            <span class="ivory-badge green">8765</span>
+          </div>
+          <h6 class="section-subtitle">Status Badges</h6>
+          <div style="margin-bottom:1rem;">
+            <p>
+              <span class="ivory-badge-status success"></span>
+              <span class="ivory-badge-status-text">Success</span>
+            </p>
+            <p>
+              <span class="ivory-badge-status failed"></span>
+              <span class="ivory-badge-status-text">Failed</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!--Tags-->
+      <section id="badge" class="docs-section">
+        <h1 class="section-title">Badge</h1>
+        <div class="section-body">
+          <h6 class="section-subtitle">Standalone Badges</h6>
+          <div style="margin-bottom:1rem;">
+            
+          </div>
+          <h6 class="section-subtitle">Status Badges</h6>
+          <div style="margin-bottom:1rem;">
+            <p>
+              <span class="ivory-badge-status success"></span>
+              <span class="ivory-badge-status-text">Success</span>
+            </p>
+            <p>
+              <span class="ivory-badge-status failed"></span>
+              <span class="ivory-badge-status-text">Failed</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+</body>
+
 </html>
