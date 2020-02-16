@@ -9,14 +9,14 @@
   font-size: 0.875rem;
   line-height: 1.75rem;
   color: #424242;
-  .ivory-alert-icon {
+  .alert-icon {
     flex: 0 0 1.0416666667rem;
     align-self: flex-start;
     padding-right: 0.5625rem;
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
-  .ivory-alert-action {
+  .alert-action {
     position: absolute;
     top: 0.688rem;
     right: 0.688rem;
@@ -33,28 +33,28 @@
   &.success {
     background-color: #F6FFED;
     border: 1px solid #95DE64;
-    .ivory-alert-icon {
+    .alert-icon {
       color: #52C41A;
     }
   }
   &.info {
     background-color: #EAF5FF;
     border: 1px solid #74B9FF;
-    .ivory-alert-icon {
-      
+    .alert-icon {
+      color: #2285F6;
     }
   }
   &.warning {
     background-color: #FFFBE6;
-    border: 1px solid #FFD43b;
-    .ivory-alert-icon {
-      
+    border: 1px solid #FFD43B;
+    .alert-icon {
+      color: #FAB005;
     }
   }
   &.error {
     background-color: #FFF1F5;
     border: 1px solid #FFA8A8;
-    .ivory-alert-icon {
+    .alert-icon {
       color: #FA5252;
     }
   }

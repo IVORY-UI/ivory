@@ -522,7 +522,7 @@
           <div class="section-body">
             <div style="margin-bottom: 2rem;">
               <p>IVORY provides a consistent and unique icon set that were friendly and approachable.</p>
-              <p><small class="small2" style="color:#868e96">Note: IVORY icon set has 64 icons now and more will be added soon.</small></p>
+              <p><small class="small2" style="color:#868e96">Note: Currently IVORY icon library has 71 icons. And more will be added.</small></p>
             </div>
             <h6 class="section-subtitle">Directional Icons</h6>
             <div class="row" style="margin-bottom: 2rem;">
@@ -579,28 +579,40 @@
             <h6 class="section-subtitle">Suggested Icons</h6>
             <div class="row" style="margin-bottom: 2rem;">
               <div class="icon-frame">
-                <i class="ivory-icon-check"></i>
-                <cite>check</cite>
+                <i class="ivory-icon-attention"></i>
+                <cite>attention</cite>
               </div>
               <div class="icon-frame">
-                <i class="ivory-icon-times"></i>
-                <cite>times</cite>
+                <i class="ivory-icon-check"></i>
+                <cite>check</cite>
               </div>
               <div class="icon-frame">
                 <i class="ivory-icon-check-circle"></i>
                 <cite>check-circle</cite>
               </div>
               <div class="icon-frame">
-                <i class="ivory-icon-times-circle"></i>
-                <cite>times-circle</cite>
+                <i class="ivory-icon-help"></i>
+                <cite>help</cite>
+              </div>
+              <div class="icon-frame">
+                <i class="ivory-icon-info"></i>
+                <cite>info</cite>
+              </div>
+              <div class="icon-frame">
+                <i class="ivory-icon-minus-circle"></i>
+                <cite>minus-circle</cite>
               </div>
               <div class="icon-frame">
                 <i class="ivory-icon-plus-circle"></i>
                 <cite>plus-circle</cite>
               </div>
               <div class="icon-frame">
-                <i class="ivory-icon-minus-circle"></i>
-                <cite>minus-circle</cite>
+                <i class="ivory-icon-times"></i>
+                <cite>times</cite>
+              </div>
+              <div class="icon-frame">
+                <i class="ivory-icon-times-circle"></i>
+                <cite>times-circle</cite>
               </div>
               <div class="icon-frame">
                 <i class="ivory-icon-warning"></i>
@@ -615,12 +627,20 @@
                 <cite>attachment</cite>
               </div>
               <div class="icon-frame">
+                <i class="ivory-icon-bell"></i>
+                <cite>bell</cite>
+              </div>
+              <div class="icon-frame">
                 <i class="ivory-icon-calendar"></i>
                 <cite>calendar</cite>
               </div>
               <div class="icon-frame">
                 <i class="ivory-icon-chat"></i>
                 <cite>chat</cite>
+              </div>
+              <div class="icon-frame">
+                <i class="ivory-icon-clock"></i>
+                <cite>clock</cite>
               </div>
               <div class="icon-frame">
                 <i class="ivory-icon-cloud"></i>
@@ -681,6 +701,10 @@
               <div class="icon-frame">
                 <i class="ivory-icon-key"></i>
                 <cite>key</cite>
+              </div>
+              <div class="icon-frame">
+                <i class="ivory-icon-launch"></i>
+                <cite>launch</cite>
               </div>
               <div class="icon-frame">
                 <i class="ivory-icon-layers"></i>
@@ -761,6 +785,10 @@
               <div class="icon-frame">
                 <i class="ivory-icon-brightness"></i>
                 <cite>brightness</cite>
+              </div>
+              <div class="icon-frame">
+                <i class="ivory-icon-camera"></i>
+                <cite>camera</cite>
               </div>
               <div class="icon-frame">
                 <i class="ivory-icon-headphone"></i>
@@ -935,13 +963,13 @@
                 <code>
                   &lt;div class="ivory-alert success"&gt;<br/>
                   &nbsp;&nbsp;Success Text<br/>
-                  &lt;div&gt;<br/>
+                  &lt;div&gt;<br/><br/>
                   &lt;div class="ivory-alert info"&gt;<br/>
                   &nbsp;&nbsp;Info Text<br/>
-                  &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/><br/>
                   &lt;div class="ivory-alert warning"&gt;<br/>
                   &nbsp;&nbsp;Warning Text<br/>
-                  &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/><br/>
                   &lt;div class="ivory-alert error"&gt;<br/>
                   &nbsp;&nbsp;Error Text<br/>
                   &lt;/div&gt;
@@ -956,17 +984,19 @@
               </div>
               <div class="col-6">
                 <div class="ivory-alert success">
-                  <i class="ivory-alert-icon icon-check-circle"></i>
+                  <i class="alert-icon ivory-icon-check-circle"></i>
                   Success Text
                 </div>
                 <div class="ivory-alert info">
+                  <i class="alert-icon ivory-icon-info"></i>
                   Info Text
                 </div>
                 <div class="ivory-alert warning">
+                  <i class="alert-icon ivory-icon-warning"></i>
                   Warning Text
                 </div>
                 <div class="ivory-alert error">
-                  <i class="ivory-alert-icon icon-times-circle"></i>
+                  <i class="alert-icon ivory-icon-attention"></i>
                   Error Text
                 </div>
               </div>
@@ -974,18 +1004,20 @@
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;div class="ivory-alert success"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="ivory-alert-icon icon-check-circle"&gt;&lt;/i&gt;<br/>
+                  &lt;div class="ivory-icon-alert success"&gt;<br/>
+                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-check-circle"&gt;&lt;/i&gt;<br/>
                   &nbsp;&nbsp;Success Text<br/>
-                  &lt;div&gt;<br/>
+                  &lt;div&gt;<br/><br/>
                   &lt;div class="ivory-alert info"&gt;<br/>
+                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-info"&gt;&lt;/i&gt;<br/>
                   &nbsp;&nbsp;Info Text<br/>
-                  &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/><br/>
                   &lt;div class="ivory-alert warning"&gt;<br/>
+                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-warning"&gt;&lt;/i&gt;<br/>
                   &nbsp;&nbsp;Warning Text<br/>
-                  &lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/><br/>
                   &lt;div class="ivory-alert error"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="ivory-alert-icon icon-times-circle"&gt;&lt;/i&gt;<br/>
+                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-attention"&gt;&lt;/i&gt;<br/>
                   &nbsp;&nbsp;Error Text<br/>
                   &lt;/div&gt;
                 </code>
@@ -999,23 +1031,31 @@
               </div>
               <div class="col-6">
                 <div class="ivory-alert success">
-                  <i class="ivory-alert-icon icon-check-circle"></i>
+                  <i class="alert-icon ivory-icon-check-circle"></i>
                   Success Text
-                  <span class="ivory-alert-action">
-                    <i class="icon-times"></i>
+                  <span class="alert-action">
+                    <i class="ivory-icon-times"></i>
                   </span>
                 </div>
                 <div class="ivory-alert info">
+                  <i class="alert-icon ivory-icon-info"></i>
                   Info Text
+                  <span class="alert-action">
+                    <i class="ivory-icon-times"></i>
+                  </span>
                 </div>
                 <div class="ivory-alert warning">
+                  <i class="alert-icon ivory-icon-warning"></i>
                   Warning Text
+                  <span class="alert-action">
+                    <i class="ivory-icon-times"></i>
+                  </span>
                 </div>
                 <div class="ivory-alert error">
-                  <i class="ivory-alert-icon icon-times-circle"></i>
+                  <i class="alert-icon ivory-icon-attention"></i>
                   Error Text
-                  <span class="ivory-alert-action">
-                    <i class="icon-times"></i>
+                  <span class="alert-action">
+                    <i class="ivory-icon-times"></i>
                   </span>
                 </div>
               </div>
@@ -1024,18 +1064,32 @@
               <pre>
                 <code>
                   &lt;div class="ivory-alert success"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="ivory-alert-icon icon-check-circle"&gt;&lt;/i&gt;<br/>
+                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-check-circle"&gt;&lt;/i&gt;<br/>
                   &nbsp;&nbsp;Success Text<br/>
-                  &lt;div&gt;<br/>
+                  &nbsp;&nbsp;&lt;span class="alert-action"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="ivory-icon-times"&gt;&lt;/i&gt;<br/>
+                  &nbsp;&nbsp;&lt;/span&gt;<br/>
+                  &lt;div&gt;<br/><br/>
                   &lt;div class="ivory-alert info"&gt;<br/>
+                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-info"&gt;&lt;/i&gt;<br/>
                   &nbsp;&nbsp;Info Text<br/>
-                  &lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;span class="alert-action"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="ivory-icon-times"&gt;&lt;/i&gt;<br/>
+                  &nbsp;&nbsp;&lt;/span&gt;<br/>
+                  &lt;/div&gt;<br/><br/>
                   &lt;div class="ivory-alert warning"&gt;<br/>
+                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-warning"&gt;&lt;/i&gt;<br/>
                   &nbsp;&nbsp;Warning Text<br/>
-                  &lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;span class="alert-action"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="ivory-icon-times"&gt;&lt;/i&gt;<br/>
+                  &nbsp;&nbsp;&lt;/span&gt;<br/>
+                  &lt;/div&gt;<br/><br/>
                   &lt;div class="ivory-alert error"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="ivory-alert-icon icon-times-circle"&gt;&lt;/i&gt;<br/>
+                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-attention"&gt;&lt;/i&gt;<br/>
                   &nbsp;&nbsp;Error Text<br/>
+                  &nbsp;&nbsp;&lt;span class="alert-action"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="ivory-icon-times"&gt;&lt;/i&gt;<br/>
+                  &nbsp;&nbsp;&lt;/span&gt;<br/>
                   &lt;/div&gt;
                 </code>
               </pre>
