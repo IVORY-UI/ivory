@@ -33,13 +33,18 @@
     <div class="docs-wrapper">
       <div class="doc-nav">
         <nav>
-          <ul>
+          <cite class="nav-section-title">Intro</cite>
+          <ul class="nav-section">
             <li class="nav-item">
               <a href="#" data-target="intro" class="active">Introduction</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="getstart">Get Started</a>
             </li>
+          </ul>
+
+          <cite class="nav-section-title">Visual</cite>
+          <ul class="nav-section">
             <li class="nav-item">
               <a href="#" data-target="colors">Colors</a>
             </li>
@@ -49,9 +54,10 @@
             <li class="nav-item">
               <a href="#" data-target="icons">Icons</a>
             </li>
-            <li class="nav-item">
-              <a href="#" data-target="grid">Grid</a>
-            </li>
+          </ul>
+
+          <cite class="nav-section-title">Components</cite>
+          <ul class="nav-section">
             <li class="nav-item">
               <a href="#" data-target="alerts">Alerts</a>
             </li>
@@ -62,16 +68,34 @@
               <a href="#" data-target="checkbox">Checkbox</a>
             </li>
             <li class="nav-item">
+              <a href="#" data-target="dropdown">Dropdown</a>
+            </li>
+            <li class="nav-item">
               <a href="#" data-target="form">Form</a>
             </li>
             <li class="nav-item">
+              <a href="#" data-target="grid">Grid</a>
+            </li>
+            <li class="nav-item">
               <a href="#" data-target="input">Input</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="list">List</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="radio">Radio</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="select">Select</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="table">Table</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="textarea">Textarea</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="tooltip">Tooltip</a>
             </li>
           </ul>
         </nav>
@@ -84,7 +108,7 @@
           <section class="hero">
             IVORY UI
           </section>
-          <h1 class="section-title">Introduction</h1>
+          
           <div class="section-body">
             <div style="margin-bottom: 2rem;">
               <p>IVORY is a CSS framework, specially created for web applications and committed to improve the experience of users.
@@ -93,27 +117,29 @@
 
             <div style="margin-bottom: 2rem;">
               <h6 class="section-subtitle">About The Journey</h6>
-              <p>The project IVORY was started in Aug 2012, as a side project by a Software Engineer named Lakshmikanth Vallampati.
-                The initial idea of the project IVORY is to create the CSS library which contains the commonly used web components.</p>
+              <p>The project IVORY was started in July 2012, as a side project by a Software Engineer named Lakshmikanth Vallampati.
+                The initial idea of the project IVORY is to create the CSS library for forms.</p>
             </div>
 
             <div class="timeline-content">
               <ul class="timeline">
                 <li class="event" data-date="Aug 11, 2012">
                   <cite>v1</cite>
-                  <p>The first version of IVORY released with widely used web components.</p>
+                  <p><small class="small">The first version of IVORY Forms released.</small></p>
                 </li>
                 <li class="event" data-date="Sep 09, 2012">
                   <cite>v2</cite>
-                  <p>The Grid system was added in the IVORY.</p>
+                  <p><small class="small">The IVORY Forms enhanced by adding more components like grid-system(non-responsive), tooltips, 
+                    tabs, accordion and toggle switch. IVORY Forms turned into IVORY Framework.</small></p>
                 </li>
                 <li class="event" data-date="Nov 17, 2012">
                   <cite>v3</cite>
-                  <p>IVORY published in GitHub.</p>
+                  <p><small class="small">The responsiveness added to v2. IVORY source code published in 
+                    <a href="https://github.com/kanthvallampati/ivory/" target="_blank">GitHub</a> for the first time.</small></p>
                 </li>
                 <li class="event" data-date="Jan 01, 2019">
                   <cite>v4</cite>
-                  <p>IVORY is revamped with a new design system and advanced grid system.</p>
+                  <p><small class="small">The IVORY Framework is revamped with a new design system and advanced grid system.</small></p>
                 </li>
               </ul>
             </div>
@@ -403,7 +429,7 @@
 
             <div style="margin-bottom: 2rem;">
               <h6 class="section-subtitle">Font Family</h6>
-              <p>IVORY uses the<a href="https://github.com/JulietaUla/Montserrat">Montserrat Font Family</a> designed by
+              <p>IVORY uses the <a href="https://github.com/JulietaUla/Montserrat">Montserrat Font Family</a> designed by
                 <a href="https://github.com/JulietaUla">Julieta Ulanovsky</a>, to greatly enhance the user experience
                 and elegance of the interface. In IVORY UI Montserrat will be the base font and then also provides a set of
                 fallback font libraries to maintain readability for screens on different platforms and browsers. </p>
@@ -415,10 +441,8 @@
               <h6 class="section-subtitle">Font Weight</h6>
               <div class="row">
                 <div class="col-8">
-                  <p>Montserrat font family has 10 differnt font-weights from <span class="code">100</span> to
-                    <span class="code">900</span>. For good readability, IVORY prefers to use <span class="code">light(300)</span>,
-                    <span class="code">regular(400)</span>, <span class="code">medium(500)</span>, <span class="code">semi-bold(600)</span>,
-                    <span class="code">bold(700)</span> font weights.</p>
+                  <p>Montserrat font family has 10 differnt font-weights from 100 to 900. For good readability, IVORY prefers 
+                    to use light(300), regular(400), medium(500), semi-bold(600), bold(700) font weights.</p>
                 </div>
                 <div class="col-4">
                   <cite class="font-highlight" style="font-weight: 700;">Montserrat 700</cite>
@@ -444,52 +468,46 @@
                   </thead>
                   <tbody>
                     <tr>
-                      <td><h1>Heading 1</h1></td>
-                      <td><span>500</span></td>
-                      <td><span>36px</span></td>
-                      <td><span>48px</span></td>
-                    </tr>
-                    <tr>
-                      <td><h2>Heading 2</h2></td>
+                      <td><h1>Heading1</h1></td>
                       <td><span>500</span></td>
                       <td><span>32px</span></td>
                       <td><span>44px</span></td>
                     </tr>
                     <tr>
-                      <td><h3>Heading 3</h3></td>
+                      <td><h2>Heading2</h2></td>
                       <td><span>500</span></td>
                       <td><span>28px</span></td>
                       <td><span>40px</span></td>
                     </tr>
                     <tr>
-                      <td><h4>Heading 4</h4></td>
+                      <td><h3>Heading3</h3></td>
                       <td><span>500</span></td>
                       <td><span>24px</span></td>
                       <td><span>36px</span></td>
                     </tr>
                     <tr>
-                      <td><h5>Heading 5</h5></td>
-                      <td><span>600</span></td>
+                      <td><h4>Heading4</h4></td>
+                      <td><span>500</span></td>
                       <td><span>20px</span></td>
                       <td><span>32px</span></td>
                     </tr>
                     <tr>
-                      <td><h6>Heading 6</h6></td>
-                      <td><span>500</span></td>
+                      <td><h5>Heading5</h5></td>
+                      <td><span>600</span></td>
                       <td><span>18px</span></td>
                       <td><span>30px</span></td>
                     </tr>
                     <tr>
-                      <td><p class="subtitle1">Subtitle 1</p></td>
-                      <td><span>600</span></td>
+                      <td><h6>Heading6</h6></td>
+                      <td><span>500</span></td>
                       <td><span>16px</span></td>
                       <td><span>28px</span></td>
                     </tr>
                     <tr>
-                      <td><p class="subtitle2">Subtitle 2</p></td>
-                      <td><span>500</span></td>
-                      <td><span>14px</span></td>
-                      <td><span>20px</span></td>
+                      <td><p class="h6-bold">Heading6 Bold</p></td>
+                      <td><span>600</span></td>
+                      <td><span>16px</span></td>
+                      <td><span>28px</span></td>
                     </tr>
                     <tr>
                       <td><p>Body Text</p></td>
@@ -498,14 +516,20 @@
                       <td><span>28px</span></td>
                     </tr>
                     <tr>
-                      <td><small class="small1">Small Text 1</small></td>
-                      <td><span>400</span></td>
+                      <td><p class="p-bold">P Bold</p></td>
+                      <td><span>600</span></td>
+                      <td><span>14px</span></td>
+                      <td><span>20px</span></td>
+                    </tr>
+                    <tr>
+                      <td><small class="small">Small</small></td>
+                      <td><span>500</span></td>
                       <td><span>12px</span></td>
                       <td><span>24px</span></td>
                     </tr>
                     <tr>
-                      <td><small class="small2">Small Text 2</small></td>
-                      <td><span>500</span></td>
+                      <td><small class="small-bold">Small Bold</small></td>
+                      <td><span>600</span></td>
                       <td><span>12px</span></td>
                       <td><span>24px</span></td>
                     </tr>
@@ -522,7 +546,7 @@
           <div class="section-body">
             <div style="margin-bottom: 2rem;">
               <p>IVORY provides a consistent and unique icon set that were friendly and approachable.</p>
-              <p><small class="small2" style="color:#868e96">Note: Currently IVORY icon library has 71 icons. And more will be added.</small></p>
+              <p><small class="small" style="color:#868e96">Note: Currently IVORY icon library has 71 icons and more will be added.</small></p>
             </div>
             <h6 class="section-subtitle">Directional Icons</h6>
             <div class="row" style="margin-bottom: 2rem;">
@@ -840,99 +864,6 @@
           </div>
         </section>
 
-        <!--Grid-->
-        <section id="grid" class="docs-section">
-          <h1 class="section-title">Grid</h1>
-          <div class="section-body">
-            <p>IVORY provides a 12-column grid system built with flexbox and is fully responsive.</p>
-
-            <div class="example-grid">
-              <div class="row">
-                <div class="col-1">One</div>
-                <div class="col-11">Eleven</div>
-              </div>
-              <div class="row">
-                <div class="col-2">Two</div>
-                <div class="col-10">Ten</div>
-              </div>
-              <div class="row">
-                <div class="col-3">Three</div>
-                <div class="col-9">Nine</div>
-              </div>
-              <div class="row">
-                <div class="col-4">Four</div>
-                <div class="col-8">Eight</div>
-              </div>
-              <div class="row">
-                <div class="col-5">Five</div>
-                <div class="col-7">Seven</div>
-              </div>
-              <div class="row">
-                <div class="col-6">Six</div>
-                <div class="col-6">Six</div>
-              </div>
-            </div>
-
-            <h6 class="section-subtitle">Equal Width</h6>
-
-            <p>Creating the equal width columns will be more simpler with IVORY. With <span class="code">.col</span> class you can do this.</p>
-            <div class="example-grid">
-              <div class="row">
-                <div class="col">one</div>
-                <div class="col">one</div>
-                <div class="col">one</div>
-                <div class="col">one</div>
-                <div class="col">one</div>
-              </div>
-            </div>
-
-            <h6 class="section-subtitle">Gutter</h6>
-            <p>IVORY grid has the gutter width	of 30px i.e. 15px on each side of a column. IVORY also provides the gutter
-              less grid system. To avail the gutter less grid layout, add <span class="code">.no-gutter</span> class to the row
-              container.</p>
-
-            <div class="example-grid">
-              <div class="row no-gutter">
-                <div class="col-12">Twelve</div>
-              </div>
-              <div class="row no-gutter">
-                <div class="col-6">Six</div>
-                <div class="col-6">Six</div>
-              </div>
-              <div class="row no-gutter">
-                <div class="col-4">Four</div>
-                <div class="col-4">Four</div>
-                <div class="col-4">Four</div>
-              </div>
-              <div class="row no-gutter">
-                <div class="col-3">Three</div>
-                <div class="col-3">Three</div>
-                <div class="col-3">Three</div>
-                <div class="col-3">Three</div>
-              </div>
-            </div>
-
-            <h6 class="section-subtitle">Auto width column</h6>
-            <p></p>
-
-            <h6 class="section-subtitle">Responsive Breakpoints</h6>
-            <p>The breakpoints of responsive grid as below:</p>
-
-            <p>Extra small devices (portrait phones, less than 576px) <br/>
-              No media query since this is the default</p>
-
-            <p>Small devices (landscape phones, 576px and up) <br/>
-              <pre><code>@media (min-width: 576px) { ... }</code></pre></p>
-
-            <p>Medium devices (tablets, 768px and up) <br />
-              <pre><code>@media (min-width: 768px) { ... }</code></pre></p>
-
-            <p>Large devices (large desktops, 1200px and up) <br/>
-              <pre><code>@media (min-width: 1200px) { ... }</code></pre></p>
-
-          </div>
-        </section>
-
         <!--Alerts-->
         <section id="alerts" class="docs-section">
           <h1 class="section-title">Alerts</h1>
@@ -1101,7 +1032,12 @@
         <!--Buttons-->
         <section id="buttons" class="docs-section">
           <h1 class="section-title">Buttons</h1>
+          
           <div class="section-body">
+            <div style="margin-bottom: 1rem;">
+              <p>A button is used to trigger an operation. IVORY buttons are native &lt;button&gt; elements enhanced with rounded edge design.</p>
+            </div>
+
             <h6 class="section-subtitle">Default Button</h6>
             <div style="margin-bottom: 1rem;">
               <button class="ivory-btn">Default</button>
@@ -1116,7 +1052,7 @@
 
             <h6 class="section-subtitle">Solid Buttons</h6>
             <div style="margin-bottom:1rem;">
-              <button class="ivory-btn btn-primary">Confirm</button>
+              <button class="ivory-btn btn-primary">Primary</button>
               <button class="ivory-btn btn-success">Success</button>
               <button class="ivory-btn btn-danger">Delete</button>
               <button class="ivory-btn btn-primary" disabled>Disabled</button>
@@ -1124,7 +1060,7 @@
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn btn-primary"&gt;Confirm&lt;/button&gt;<br/>
+                  &lt;button class="ivory-btn btn-primary"&gt;Primary&lt;/button&gt;<br/>
                   &lt;button class="ivory-btn btn-success"&gt;Success&lt;/button&gt;<br/>
                   &lt;button class="ivory-btn btn-danger"&gt;Delete&lt;/button&gt;<br/>
                   &lt;button class="ivory-btn btn-primary" disabled&gt;Disabled&lt;/button&gt;
@@ -1241,6 +1177,14 @@
           </div>
         </section>
 
+        <!--Dropdown-->
+        <section id="dropdown" class="docs-section">
+          <h1 class="section-title">Dropdown</h1>
+          <div class="section-body">
+
+          </div>
+        </section>
+
         <!--Form-->
         <section id="form" class="docs-section">
           <h1 class="section-title">Form</h1>
@@ -1248,6 +1192,99 @@
             <div class="form">
 
             </div>
+          </div>
+        </section>
+
+        <!--Grid-->
+        <section id="grid" class="docs-section">
+          <h1 class="section-title">Grid</h1>
+          <div class="section-body">
+            <p>IVORY provides a 12-column grid system built with flexbox and is fully responsive.</p>
+
+            <div class="example-grid">
+              <div class="row">
+                <div class="col-1">One</div>
+                <div class="col-11">Eleven</div>
+              </div>
+              <div class="row">
+                <div class="col-2">Two</div>
+                <div class="col-10">Ten</div>
+              </div>
+              <div class="row">
+                <div class="col-3">Three</div>
+                <div class="col-9">Nine</div>
+              </div>
+              <div class="row">
+                <div class="col-4">Four</div>
+                <div class="col-8">Eight</div>
+              </div>
+              <div class="row">
+                <div class="col-5">Five</div>
+                <div class="col-7">Seven</div>
+              </div>
+              <div class="row">
+                <div class="col-6">Six</div>
+                <div class="col-6">Six</div>
+              </div>
+            </div>
+
+            <h6 class="section-subtitle">Equal Width</h6>
+
+            <p>Creating the equal width columns will be more simpler with IVORY. With <span class="code">.col</span> class you can do this.</p>
+            <div class="example-grid">
+              <div class="row">
+                <div class="col">one</div>
+                <div class="col">one</div>
+                <div class="col">one</div>
+                <div class="col">one</div>
+                <div class="col">one</div>
+              </div>
+            </div>
+
+            <h6 class="section-subtitle">Gutter</h6>
+            <p>IVORY grid has the gutter width	of 30px i.e. 15px on each side of a column. IVORY also provides the gutter
+              less grid system. To avail the gutter less grid layout, add <span class="code">.no-gutter</span> class to the row
+              container.</p>
+
+            <div class="example-grid">
+              <div class="row no-gutter">
+                <div class="col-12">Twelve</div>
+              </div>
+              <div class="row no-gutter">
+                <div class="col-6">Six</div>
+                <div class="col-6">Six</div>
+              </div>
+              <div class="row no-gutter">
+                <div class="col-4">Four</div>
+                <div class="col-4">Four</div>
+                <div class="col-4">Four</div>
+              </div>
+              <div class="row no-gutter">
+                <div class="col-3">Three</div>
+                <div class="col-3">Three</div>
+                <div class="col-3">Three</div>
+                <div class="col-3">Three</div>
+              </div>
+            </div>
+
+            <h6 class="section-subtitle">Auto width column</h6>
+            <p></p>
+
+            <h6 class="section-subtitle">Responsive Breakpoints</h6>
+            <p>The breakpoints of responsive grid as below:</p>
+
+            <p>Extra small devices (portrait phones, less than 576px) <br/>
+              No media query since this is the default</p>
+
+            <p>Small devices (landscape phones, 576px and up) <br/>
+              <pre><code>@media (min-width: 576px) { ... }</code></pre></p>
+
+            <p>Medium devices (tablets, 768px and up) <br />
+              <pre><code>@media (min-width: 768px) { ... }</code></pre></p>
+
+            <p>Large devices (large desktops, 1200px and up) <br/>
+              <pre><code>@media (min-width: 1200px) { ... }</code></pre></p>
+
           </div>
         </section>
 
@@ -1259,6 +1296,11 @@
               <input class="ivory-input" type="text" placeholder="Enter Text Here" value="" />
             </div>
           </div>
+        </section>
+
+        <!--List-->
+        <section id="list" class="docs-section">
+          <h1 class="section-title">List</h1>
         </section>
 
         <!--Radio-->
@@ -1334,6 +1376,155 @@
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <!--Table-->
+        <section id="table" class="docs-section">
+          <h1 class="section-title">Table</h1>
+          <div class="section-body">
+            <p>A table is used to display the collection of structured data in row column manner.</p>
+            
+            <div style="margin-bottom: 2rem;">
+              <table class="ivory-table">
+                <thead>
+                  <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                    <th>City</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>32</td>
+                    <td>Barcelona</td>
+                  </tr>
+                  <tr>
+                    <td>Jane</td>
+                    <td>Doe</td>
+                    <td>28</td>
+                    <td>Milan</td>
+                  </tr>
+                  <tr>
+                    <td>Joe</td>
+                    <td>Doe</td>
+                    <td>8</td>
+                    <td>Monaco</td>
+                  </tr>
+                  <tr>
+                    <td>Jim</td>
+                    <td>Doe</td>
+                    <td>6</td>
+                    <td>Florance</td>
+                  </tr>
+                  <tr>
+                    <td>Jene</td>
+                    <td>Doe</td>
+                    <td>3</td>
+                    <td>Rotterdam</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div>
+              <pre>
+                <code>
+                  &lt;table class="ivory-table"&gt;<br/>
+                  &nbsp;&nbsp;&lt;thead&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Firstname&lt;/th&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Lastname&lt;/th&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;City&lt;/th&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                  &nbsp;&nbsp;&lt;/thead&gt;<br/>
+                  &nbsp;&nbsp;&lt;tbody&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;32&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Barcelona&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;28&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Milan&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Joe&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;8&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Monaco&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jim&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;6&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Florance&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jene&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Rotterdam&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                  &nbsp;&nbsp;&lt;/tbody&gt;<br/>
+                  &lt;/table&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--Textarea-->
+        <section id="textarea" class="docs-section">
+          <h1 class="section-title">Textarea</h1>
+          <div class="section-body">
+
+          </div>
+        </section>
+
+        <!--Tooltip-->
+        <section id="tooltip" class="docs-section">
+          <h1 class="section-title">Tooltip</h1>
+          <div class="section-body">
+            <div style="margin-bottom: 2rem;">
+              <p>A tooltip provides a short details about a specific text or element on the UI in a pop-over. The tip is shown on mouse enter, 
+                and is hidden on mouse leave. The Tooltip doesn't support complex text or operations.</p>
+              <p>The tooltip supports 4 placements. It can be defined by using one of the following classes with the <code>.tooltip-content</code> 
+                class:<br/>
+                .top<br/>
+                .right<br/>
+                .bottom<br/>
+                .left
+            </div>
+            
+            <h6>Example:</h6>
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for top tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs top">A tooltip provides a short description of a 
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for bottom tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom">A tooltip provides a short description of a 
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for left tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs left">A tooltip provides a short description of a 
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for right tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs right">A tooltip provides a short description of a 
+                UI element.</span></a> to preview.</p>
+            </div>
+            
           </div>
         </section>
 

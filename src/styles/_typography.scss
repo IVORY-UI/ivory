@@ -27,68 +27,68 @@ strong {
   font-size: 0.875rem;
   line-height: 1.75rem;
 }
-h1 {
-  @extend %big-heading;
-  font-size: 2.22rem;
-  line-height: 3rem;  
-}
-h2 {
-  @extend %big-heading;
-  font-size: 2rem;
-  line-height: 2.75rem;
-}
-h3 {
-  @extend %big-heading;
-  font-size: 1.75rem;
-  line-height: 2.5rem;
-}
-h4 {
-  @extend %small-heading;
-  font-size: 1.5rem;
-  line-height: 2.25rem;
-  font-weight: 500;
-}
-h5 {
-  @extend %small-heading;
-  font-size: 1.25rem;
-  line-height: 2rem;
-  font-weight: 600;
-}
-h6 {
-  @extend %small-heading;
-  font-size: 1.125rem;
-  line-height: 1.9rem;
-  font-weight: 500;
-}
-.subtitle1 {
-  @extend %small-heading;
-  font-size: 1rem;
-  line-height: 1.75rem;
-  font-weight: 600;
-}
-.subtitle2 {
-  @extend %p-default;
-  font-weight: 600;
-  color: #212121;
-}
-p {
-  @extend %p-default;
-  font-weight: 400;
-  color: #424242;
-}
 %small-default {
   margin-top: 0;
   margin-bottom: 0.5rem;
   font-size: 0.75rem;
   line-height: 1.5rem;
 }
-.small1 {
-  @extend %small-default;
-  font-weight: 400;
+h1 {
+  @extend %big-heading;
+  font-size: 2rem;
+  line-height: 2.75rem;  
 }
-.small2 {
+h2 {
+  @extend %big-heading;
+  font-size: 1.75rem;
+  line-height: 2.5rem;
+}
+h3 {
+  @extend %big-heading;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+}
+h4 {
+  @extend %small-heading;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  font-weight: 500;
+}
+h5 {
+  @extend %small-heading;
+  font-size: 1.125rem;
+  line-height: 1.9rem;
+  font-weight: 600;
+}
+h6 {
+  @extend %small-heading;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+.h6-bold {
+  @extend %small-heading;
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+p {
+  @extend %p-default;
+  font-weight: 400;
+  color: #424242;
+}
+.p-bold {
+  @extend %p-default;
+  font-weight: 600;
+  color: #212121;
+}
+.small {
   @extend %small-default;
   font-weight: 500;
+}
+.small-bold {
+  @extend %small-default;
+  font-weight: 600;
 }
 a {
   text-decoration: none;
