@@ -38,10 +38,11 @@
   }
 }
 
-.ivory-select-wrapper {
+.ivory-select {
   position: relative;
   cursor: pointer;
-  .ivory-select {
+  max-width: 200px;
+  select {
     @include webappearance(none);
     @extend %default-form-element;
     margin: 0;
