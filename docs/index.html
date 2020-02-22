@@ -68,6 +68,9 @@
               <a href="#" data-target="checkbox">Checkbox</a>
             </li>
             <li class="nav-item">
+              <a href="#" data-target="dropdown">Dropdown</a>
+            </li>
+            <li class="nav-item">
               <a href="#" data-target="form">Form</a>
             </li>
             <li class="nav-item">
@@ -133,10 +136,6 @@
                   <cite>v3</cite>
                   <p><small class="small">The responsiveness added to v2. IVORY source code published in 
                     <a href="https://github.com/kanthvallampati/ivory/" target="_blank">GitHub</a> for the first time.</small></p>
-                </li>
-                <li class="event" data-date="Jun 01, 2014">
-                  <cite>100,000 Downloads</cite>
-                  <p><small class="small">IVORY reached new milestone.</small></p>
                 </li>
                 <li class="event" data-date="Jan 01, 2019">
                   <cite>v4</cite>
@@ -1178,6 +1177,14 @@
           </div>
         </section>
 
+        <!--Dropdown-->
+        <section id="dropdown" class="docs-section">
+          <h1 class="section-title">Dropdown</h1>
+          <div class="section-body">
+
+          </div>
+        </section>
+
         <!--Form-->
         <section id="form" class="docs-section">
           <h1 class="section-title">Form</h1>
@@ -1192,11 +1199,8 @@
         <section id="grid" class="docs-section">
           <h1 class="section-title">Grid</h1>
           <div class="section-body">
-            <p>IVORY provides a 12-column mobile first grid system built with flexbox and is fully responsive.</p>
+            <p>IVORY provides a 12-column grid system built with flexbox and is fully responsive.</p>
 
-            <p>The below examples will give you an idea of how to build Flexbox grid structure using IVORY.</p>
-
-            <h6 class="section-subtitle">Basic Grid</h6>
             <div class="example-grid">
               <div class="row">
                 <div class="col-1">One</div>
@@ -1224,35 +1228,17 @@
               </div>
             </div>
 
-            <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;div class="row"&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-1"&gt;One&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-11"&gt;Eleven&lt;/div&gt;<br/>
-                  &lt;/div&gt;<br/>
-                  &lt;div class="row"&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-2"&gt;Two&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-10"&gt;Ten&lt;/div&gt;<br/>
-                  &lt;/div&gt;<br/>
-                  &lt;div class="row"&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-3"&gt;Three&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-9"&gt;Nine&lt;/div&gt;<br/>
-                  &lt;/div&gt;<br/>
-                  &lt;div class="row"&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-4"&gt;Four&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-8"&gt;Eight&lt;/div&gt;<br/>
-                  &lt;/div&gt;<br/>
-                  &lt;div class="row"&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-5"&gt;Five&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-7"&gt;Seven&lt;/div&gt;<br/>
-                  &lt;/div&gt;<br/>
-                  &lt;div class="row"&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-6"&gt;Six&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col-6"&gt;Six&lt;/div&gt;<br/>
-                  &lt;/div&gt;
-                </code>
-              </pre>
+            <h6 class="section-subtitle">Equal Width</h6>
+
+            <p>Creating the equal width columns will be more simpler with IVORY. With <span class="code">.col</span> class you can do this.</p>
+            <div class="example-grid">
+              <div class="row">
+                <div class="col">one</div>
+                <div class="col">one</div>
+                <div class="col">one</div>
+                <div class="col">one</div>
+                <div class="col">one</div>
+              </div>
             </div>
 
             <h6 class="section-subtitle">Gutter</h6>
@@ -1281,36 +1267,10 @@
               </div>
             </div>
 
-            <h6 class="section-subtitle">Equal Width Columns</h6>
-            <p>You no need do much, to create the equal width columns. It's became more simpler with IVORY. In a row just create 
-              the <span class="code">div</span>s with <span class="code">.col</span> class. How many <span class="code">div</span>s 
-              you create, those number of equal width columns will be created.</p>
-            <div class="example-grid">
-              <div class="row">
-                <div class="col">one</div>
-                <div class="col">Two</div>
-                <div class="col">Three</div>
-                <div class="col">Four</div>
-                <div class="col">Five</div>
-              </div>
-            </div>
+            <h6 class="section-subtitle">Auto width column</h6>
+            <p></p>
 
-            <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;div class="row"&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col"&gt;One&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col"&gt;Two&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col"&gt;Three&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col"&gt;Four&lt;/div&gt;<br/>
-                  &nbsp;&nbsp;&lt;div class="col"&gt;Five&lt;/div&gt;<br/>
-                  &lt;/div&gt;
-                </code>
-              </pre>
-            </div>
-
-
-            <h6 class="section-subtitle">Responsive</h6>
+            <h6 class="section-subtitle">Responsive Breakpoints</h6>
             <p>The breakpoints of responsive grid as below:</p>
 
             <p>Extra small devices (portrait phones, less than 576px) <br/>
@@ -1470,7 +1430,7 @@
               </table>
             </div>
             
-            <div style="margin-bottom: 2rem;">
+            <div>
               <pre>
                 <code>
                   &lt;table class="ivory-table"&gt;<br/>
