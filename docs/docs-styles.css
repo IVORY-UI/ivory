@@ -24,17 +24,15 @@
   line-height: 2.25rem;
   font-weight: 500;
   color: #212121;
-  margin: .2rem 0;
 }
 .doc-nav .nav-section li a {
 	display: block;
 	text-decoration: none;
 	border: none;
 	padding-left: 5rem;
-	font-size: .875rem;
-	line-height: 2.25rem;
+	font-size: .813rem;
+	line-height: 2rem;
 	color: #424242;
-	margin: .2rem 0
 }
 .doc-nav .nav-section li:hover a {
 	color: #40a0ff
@@ -165,8 +163,8 @@
 	height: 2.625rem;
 	line-height: 2.625rem;
 	margin-bottom: 1rem;
-	background-color: #f1f3f5;
-	border: 1px solid #dee2e6
+	background-color: #DEE2E6;
+	border: 1px solid #CED4DA;
 }
 .code {
 	font-family: 'Courier Prime', monospace;
