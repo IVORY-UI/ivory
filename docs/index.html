@@ -1341,47 +1341,113 @@
         <!--List-->
         <section id="list" class="docs-section">
           <h1 class="section-title">List</h1>
-          <p>The HTML suuports 3 types of lists by default: Unordered, Ordered and Description list.</p>
+          <div style="margin-bottom: 2rem;">
+            <p>The HTML suuports 3 types of lists by default: Unordered, Ordered and Description list. Just add 
+              <span class="code">.ivory-list</span> to your <span class="code">&lt;ul&gt;</span> or <span class="code">&lt;ol&gt;</span> 
+              or <span class="code">&lt;dl&gt;</span>.</p>
+          </div>
           
           <div style="margin-bottom: 2rem;">
             <h6 class="section-subtitle">Unordered List</h6>
-            <ul class="ivory-list disc">
-              <li>Amsterdam</li>
-              <li>Manali</li>
-              <li>Monaco</li>
-              <li>Milano</li>
-              <li>Auckland</li>
-              <li>Florance</li>
-            </ul>
+            <p>For Unordered List you can use the addon classes like: <span class="code">.disc</span>, <span class="code">.circle</span>, 
+              <span class="code">.square</span> to display the respective list styles. Here is an example:</p>
+            <div class="row">
+              <div class="col-6">
+                <ul class="ivory-list disc">
+                  <li>Amsterdam</li>
+                  <li>Manali</li>
+                  <li>Monaco</li>
+                  <li>Milano</li>
+                  <li>Auckland</li>
+                  <li>Florance</li>
+                </ul>
+              </div>
+              <div class="col-6">
+                <pre>
+                  <code>
+                    &lt;ul class="ivory-list disc"&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Amsterdam&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Manali&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Monaco&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Milano&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Auckland&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Florance&lt;/li&gt;<br/>
+                    &lt;/ul&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
           </div>
 
           <div style="margin-bottom: 2rem;">
             <h6 class="section-subtitle">Ordered List</h6>
-            <ol class="ivory-list decimal">
-              <li>One</li>
-              <li>Two</li>
-              <li>Three</li>
-              <li>Four</li>
-              <li>Five</li>
-            </ol>
+            <p>For Ordered List you can use the addon classes like: <span class="code">decimal</span>, <span class="code">lower-alpha</span>, 
+              <span class="code">.upper-roman</span> to display the respective list styles. Here is an example:</p>
+            <div class="row">
+              <div class="col-6">
+                <ol class="ivory-list decimal">
+                  <li>One</li>
+                  <li>Two</li>
+                  <li>Three</li>
+                  <li>Four</li>
+                  <li>Five</li>
+                </ol>
+              </div>
+              <div class="col-6">
+                <pre>
+                  <code>
+                    &lt;ol class="ivory-list decimal"&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;One&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Two&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Three&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Four&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Five&lt;/li&gt;<br/>
+                    &lt;/ol&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
           </div>
 
           <div style="margin-bottom: 2rem;">
             <h6 class="section-subtitle">Description List</h6>
-            <dl class="ivory-list">
-              <dt>Coffee</dt>
-              <dd>Black Coffee</dd>
-              <dd>Cappuccino</dd>
-              <dd>Espresso</dd>
-              <dd>Flat White</dd>
-              <dd>Long Black</dd>
-              <dd>Macchiato</dd>
-              <dd>Mochaccino</dd>
-              <dd>Irish Coffee</dd>
-              <dt>Tea</dt>
-              <dd>Green Tea</dd>
-              <dd>Lemon Tea</dd>
-            </dl>
+            <p>Here is an example for description list:</p>
+            <div class="row">
+              <div class="col-6">
+                <dl class="ivory-list">
+                  <dt>Coffee</dt>
+                  <dd>Black Coffee</dd>
+                  <dd>Cappuccino</dd>
+                  <dd>Espresso</dd>
+                  <dd>Flat White</dd>
+                  <dd>Macchiato</dd>
+                  <dt>Tea</dt>
+                  <dd>Green Tea</dd>
+                  <dd>Lemon Tea</dd>
+                  <dd>Fermented Tea</dd>
+                  <dd>Herbal Tea</dd>
+                </dl>
+              </div>
+              <div class="col-6">
+                <pre>
+                  <code>
+                    &lt;dl class="ivory-list"&gt;<br/>
+                    &nbsp;&nbsp;&lt;dt&gt;Coffee&lt;/dt&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Black Coffee&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Cappuccino&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Espresso&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Flat White&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Macchiato&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dt&gt;Tea&lt;/dt&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Green Tea&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Lemon Tea&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Fermented Tea&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Herbal Tea&lt;/dd&gt;<br/>
+                    &lt;/dl&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
           </div>
           
         </section>
