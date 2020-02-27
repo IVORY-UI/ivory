@@ -1,0 +1,69 @@
+.ivory-toggle-switch {
+  position: relative;
+  display: inline-block;
+  outline: 0;
+  vertical-align: baseline;
+  font-style: normal;
+  min-height: 1.5rem;
+  font-size: 1rem;
+  line-height: 1rem;
+  min-width: 1rem;
+  input[type="checkbox"] {
+    width: 2rem;
+    height: 1rem;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    outline: 0;
+    margin: 0;
+    &:checked~label{
+      &:before {
+        background-color: #2285F6;
+      }
+      &:after {
+        left: 1rem;
+        box-shadow: none;
+      }
+    }
+  }
+  label {
+    padding-left: 38px;
+    &:before {
+      display: block;
+      position: absolute;
+      content: '';
+      z-index: 1;
+      -webkit-transform: none;
+      transform: none;
+      border: none;
+      top: 0;
+      background: rgba(0,0,0,.05);
+      box-shadow: none;
+      width: 32px;
+      height: 16px;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+    &:after {
+      background: #fff -webkit-linear-gradient(transparent, rgba(0,0,0,.05));
+      background: #fff -moz-linear-gradient(transparent, rgba(0,0,0,.05));
+      background: #fff -o-linear-gradient(transparent, rgba(0,0,0,.05));
+      background: #fff linear-gradient(transparent, rgba(0,0,0,.05));
+      position: absolute;
+      content: ''!important;
+      opacity: 1;
+      z-index: 2;
+      border: none;
+      box-shadow: 0 1px 2px 0 rgba(34,36,38,.15), 0 0 0 1px rgba(34,36,38,.15) inset;
+      width: 16px;
+      height: 16px;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      -webkit-transition: background .3s ease,left .3s ease;
+      transition: background .3s ease,left .3s ease;
+    }
+  }
+}
