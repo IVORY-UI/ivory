@@ -6,5 +6,6 @@ $( document ).ready(function() {
     $('.docs-section').removeClass('section-active');
     $(e.target).addClass('active');
     $('#'+target).addClass('section-active');
+    window.scrollTo(0,0);
   });
 });
