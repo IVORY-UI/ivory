@@ -1,0 +1,95 @@
+%tooltip-pointer {
+  position: absolute;
+  content: '';
+  border-style: solid;
+}
+
+.ivory-tooltip {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+  .tooltip-content {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    background-color: #212121;
+    font-size: 0.75rem;
+    border-radius: 0.5rem;
+    box-sizing: border-box;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    z-index: 9999;
+    display: none;
+    &.top {
+      top: auto;
+      bottom: calc(100% + 0.5rem);
+      left: 50%;
+      transform: translateX(-50%);
+      &::before {
+        @extend %tooltip-pointer;
+        border-width: 0.5rem 0.5rem 0 0.5rem;
+        border-color: #212121 transparent transparent transparent;
+        top: 100%;
+        bottom: auto;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &.bottom {
+      top: calc(100% + 0.5rem);
+      bottom: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      &::before {
+        @extend %tooltip-pointer;
+        border-width: 0 0.5rem 0.5rem 0.5rem;
+        border-color: transparent transparent #212121 transparent;
+        top: auto;
+        bottom: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    &.right {
+      top: 50%;
+      bottom: auto;
+      left: calc(100% + 0.5rem);
+      transform: translateY(-50%);
+      &::before {
+        @extend %tooltip-pointer;
+        border-width: 0.5rem 0.5rem 0.5rem 0;
+        border-color: transparent #212121 transparent transparent;
+        right: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &.left {
+      top: 50%;
+      bottom: auto;
+      right: calc(100% + 0.5rem);
+      transform: translateY(-50%);
+      &::before {
+        @extend %tooltip-pointer;
+        border-width: 0.5rem 0 0.5rem 0.5rem;
+        border-color: transparent transparent transparent #212121;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    &.tooltip-xs {
+      width: 200px;
+    }
+    &.tooltip-md {
+      width: 420px;
+    }
+    &.tooltip-lg {
+      width: 640px;
+    }
+  }
+}
+.ivory-tooltip:hover {
+  .tooltip-content {
+    display: block;
+  }
+}

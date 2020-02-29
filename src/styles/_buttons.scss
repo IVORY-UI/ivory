@@ -1,0 +1,122 @@
+%ivory-button {
+  border: none;
+  height: 2.25rem;
+  margin: 0.75rem 0;
+  padding: 0 1.5rem;
+  border-radius: 1.5rem;
+  font-family: 'Montserrat', Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  line-height: 2rem;
+  color: #161616;
+  background-color: #F0F1F2;
+  outline: none;
+  cursor: pointer;
+  &:hover {
+    background-color: #E8EBED;
+  }
+}
+/* Buttons */
+.ivory-btn {
+  @extend %ivory-button;
+  &.btn-primary {
+    border: 1px solid #0875E1;
+    background-color: #0875E1;
+    color: #FFFFFF;
+    &:hover {
+      border-color: #005CB9;
+      background-color: #005CB9;
+    }
+  }
+  &.btn-success {
+    border: 1px solid #52C41A;
+    background-color: #52C41A;
+    color: #FFFFFF;
+    &:hover {
+      border-color: #389E0D;
+      background-color: #389E0D;
+    }
+  }
+  &.btn-danger {
+    border: 1px solid #F03E3E;
+    background-color: #F03E3E;
+    color: #FFFFFF;
+    &:hover {
+      border-color: #E03131;
+      background-color: #E03131;
+    }
+  }
+  &.disabled, &:disabled, &[disabled] {
+    background-color: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+    border: none;
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.12);
+      color: rgba(0, 0, 0, 0.25);
+    }
+  }  
+}
+.ivory-btn-outline {
+  @extend %ivory-button;
+  border: 1px solid #0875e1;
+  background: #FFFFFF;
+  color: #0875e1;
+  &:hover {
+    background-color: #F4F9FF;
+  }
+   &.btn-success {
+    border: 1px solid #52C41A;
+    color: #389E0D;
+    &:hover {
+      background-color: #F6FFED;
+    }
+  }
+  &.btn-danger {
+    border: 1px solid #F03E3E;
+    color: #F03E3E;
+    &:hover {
+      background-color: #FFF1F5;
+    }
+  }
+  &.disabled, &:disabled, &[disabled] {
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+  }
+}
+.ivory-btn-link {
+  @extend %ivory-button;
+  background: transparent;
+  border: none;
+  color: #0875e1;
+  &:hover {
+    background-color: #E3EFFE;
+  }
+  &.btn-success {
+    color: #389E0D;
+    &:hover {
+      background-color: #E8FCCF;
+    }
+  }
+  &.btn-danger {
+    color: #F03E3E;
+    &:hover {
+      background-color: #FFE8E8;
+    }
+  }
+  &.disabled, &:disabled, &[disabled] {
+    background: transparent;
+    color: rgba(0, 0, 0, 0.25);
+    cursor: not-allowed;
+  }
+}
+.btn-small {
+  height: 2rem;
+  padding-left: 0.875rem;
+  padding-right: 0.875rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  line-height: 1.5rem;
+}
