@@ -92,10 +92,10 @@
               <a href="#" data-target="textarea">Textarea</a>
             </li>
             <li class="nav-item">
-              <a href="#" data-target="tooltip">Tooltip</a>
+              <a href="#" data-target="toggle">Toggle Switch</a>
             </li>
             <li class="nav-item">
-              <a href="#" data-target="toggle">Toggle Switch</a>
+              <a href="#" data-target="tooltip">Tooltip</a>
             </li>
           </ul>
         </nav>
@@ -1187,7 +1187,7 @@
           
           <div class="section-body">
             <h6 class="section-subtitle">Standard Form</h6>
-            <p>IVORY standard form is </p>
+            <p>In IVORY standard form, the label and the form element will be arranged one after one in a row manner.</p>
             <div style="margin-bottom: 4rem;">
               <div class="ivory-form" style="max-width: 500px;">
                 <div class="form-field">
@@ -1372,8 +1372,11 @@
         <section id="input" class="docs-section">
           <h1 class="section-title">Input</h1>
           <div class="section-body">
-            <div style="margin-bottom: 1rem;">
-              <input class="ivory-input" type="text" placeholder="Enter Text Here" value="" />
+            <p>IVORY follows the native input element for the input field, which should be having the class <span>.ivory-input</span></p>
+            <div class="row">
+              <div class="col-4">
+                <input class="ivory-input" type="text" placeholder="Enter Text Here" value="" />
+              </div>
             </div>
           </div>
         </section>
@@ -1556,12 +1559,16 @@
           <div class="section-body">
             <p>A select box gives the provision to select one item from the list items.</p>
             <p>Here is an example for sample dropdown</p>
-            <div class="ivory-select">
-              <select placeholder="Select">
-                <option value="1">Maryland</option>
-                <option value="2">Chicago</option>
-                <option value="3">Hamilton</option>
-              </select>
+            <div class="row">
+              <div class="col-4">
+                <div class="ivory-select">
+                  <select placeholder="Select">
+                    <option value="1">Maryland</option>
+                    <option value="2">Chicago</option>
+                    <option value="3">Hamilton</option>
+                  </select>
+                </div>
+              </div>
             </div>
             
             <div style="margin: 2rem 0">
@@ -1691,6 +1698,29 @@
           </div>
         </section>
 
+        <!--Toggle Switch-->
+        <section id="toggle" class="docs-section">
+          <h1 class="section-title">Toggle Switch</h1>
+          <div class="section-body">
+            <p>Toggle Switch is an on/off control, built on top of the checkbox. It can be toggled by clicking.</p>
+            <h6>Here is a sample toggle</h6>
+            <div class="ivory-toggle-switch" style="margin-bottom: 2rem;">
+              <input type="checkbox" name="phone" value="phone" id="phone">
+              <label for="phone"></label>
+            </div>
+            <div>
+              <pre>
+                <code>
+                  &lt;div class="ivory-toggle-switch"&gt;<br/>
+                  &nbsp;&nbsp;&lt;input type="checkbox" name="phone" value="phone" id="phone"&gt;<br/>
+                  &nbsp;&nbsp;&lt;label for="phone"&gt;&lt;/label&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
         <!--Tooltip-->
         <section id="tooltip" class="docs-section">
           <h1 class="section-title">Tooltip</h1>
@@ -1727,16 +1757,6 @@
                 UI element.</span></a> to preview.</p>
             </div>
             
-          </div>
-        </section>
-
-        <section id="toggle" class="docs-section">
-          <h1 class="section-title">Toggle Switch</h1>
-          <div class="section-body">
-            <div class="ivory-toggle-switch">
-              <input type="checkbox" name="phone" value="phone" id="phone">
-              <label for="phone"></label>
-            </div>
           </div>
         </section>
 
