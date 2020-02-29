@@ -6,7 +6,7 @@ Documentation : http://ivoryui.com
 
 ## How to use
 
-Install using npm:
+### via npm:
 
 ```shell
 npm i ivoryui-ivory
@@ -18,24 +18,36 @@ node_modules/ivoryui-ivory/dist/ivory-icons.css
 node_modules/ivoryui-ivory/dist/ivory.min.css
 ```
 
+### via CDN:
+
+```shell
+<link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory-icons.css" />
+```
+
 ## Features
 
 - HTML Reset
 - Color System
 - Typography
 - Icons
-- Grid
 - Alerts
 - Buttons
-- Forms
-- Input
 - Checkbox
+- Forms
+- Grid
+- Input
+- List
 - Radio
 - Select
+- Table
+- Textarea
+- Toggle
+- Tooltip
 
 ## Browser Support
 
-To be updated...
+IVORY supports all the latest browsers.
 
 ## Contributing
 
