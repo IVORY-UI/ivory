@@ -1,7 +1,35 @@
+.top-right-end {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+}
+.stat-icons {
+	display: flex;
+	font-size: 24px;
+}
+.stat-item {
+	display: block;
+}
+.stat-icon {
+	display: block;
+	width: 24px;
+	height: 24px;
+}
+.stat-icon:hover {
+	border-bottom: none;
+	text-decoration: none;
+}
+.stat-icon svg {
+	fill: #868E96;
+}
+.stat-icon svg:hover {
+	fill: #495057;
+}
+
 .docs-wrapper {
 	position: relative;
 	display: flex;
-	font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif
+	font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .doc-nav {
 	position: fixed;
@@ -53,12 +81,13 @@
 .docs-section {
 	display: none;
 	position: relative;
-	margin-bottom: 1.5rem
+	margin-bottom: 1.5rem;
+	padding-top: 3rem;
 }
 .hero {
 	font-size: 64px;
 	font-weight: 400;
-	letter-spacing: 1rem;
+	letter-spacing: 0.5rem;
 	padding: 6rem 0;
 	text-align: center
 }
