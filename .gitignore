@@ -9,3 +9,6 @@ Desktop.ini
 
 # Node Modules
 node_modules/
+
+# Package Lock
+package-lock.json
