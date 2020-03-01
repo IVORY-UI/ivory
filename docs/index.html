@@ -557,6 +557,8 @@
           <div class="section-body">
             <div style="margin-bottom: 2rem;">
               <p>IVORY provides a consistent and unique icon set that were friendly and approachable.</p>
+              <p>To use IVORY icons, first make sure <span class="code">ivory-icons.css</span> file loading in your page. Every icon listed
+                below has unique name, add the same name to the class of the element with <span class="code">ivory-icon-</span> prefix.</p>
               <p><small class="small" style="color:#868e96">Note: Currently IVORY icon library has 71 icons and more will be added.</small></p>
             </div>
             <h6 class="section-subtitle">Directional Icons</h6>
@@ -1379,7 +1381,7 @@
         <section id="input" class="docs-section">
           <h1 class="section-title">Input</h1>
           <div class="section-body">
-            <p>IVORY follows the native input element for the input field, which should be having the class <span>.ivory-input</span></p>
+            <p>IVORY follows the native input element for the input field, which should be having the class <span class="code">ivory-input</span></p>
             <div class="row">
               <div class="col-4">
                 <input class="ivory-input" type="text" placeholder="Enter Text Here" value="" />
@@ -1702,6 +1704,7 @@
           <h1 class="section-title">Textarea</h1>
           <div class="section-body">
             <p>Textarea is used to enter long text input.</p>
+            <p>Just to add the class <span class="code">ivory-textarea</span> to native textarea. </p>
             <div class="row">
               <div class="col-6">
                 <textarea class="ivory-textarea"></textarea>
@@ -1740,12 +1743,22 @@
             <div style="margin-bottom: 2rem;">
               <p>A tooltip provides a short details about a specific text or element on the UI in a pop-over. The tip is shown on mouse enter, 
                 and is hidden on mouse leave. The Tooltip doesn't support complex text or operations.</p>
+              
+              <h6>Tooltip Placement:</h6>
               <p>The tooltip supports 4 placements. It can be defined by using one of the following classes with the <code>.tooltip-content</code> 
                 class:<br/>
                 .top<br/>
                 .right<br/>
                 .bottom<br/>
                 .left
+              </p>
+
+              <h6>Tooltip Size:</h6>
+              <p>The size of the tooltip content box can be changed. IVORY provides 3 different sizes, with the following classes:<br/>
+                .tooltip-xs<br/>
+                .tooltip-md<br/>
+                .tooltip-lg
+              </p>
             </div>
             
             <h6>Example:</h6>
@@ -1767,6 +1780,18 @@
             <div style="margin-bottom: 2rem;">
               <p>Here is an example for right tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs right">A tooltip provides a short description of a 
                 UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;p&gt; <br/>
+                  &nbsp;&nbsp;&lt;a class="ivory-tooltip"&gt;Hover me<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="tooltip-content tooltip-xs top"&gt;Tooltip text&lt;/span&gt;<br/>
+                  &nbsp;&nbsp;&lt;/a&gt;<br/>
+                  &lt;/p&gt;
+                </code>
+              </pre>
             </div>
             
           </div>

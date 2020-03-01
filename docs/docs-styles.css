@@ -197,9 +197,9 @@
 }
 .code {
 	font-family: 'Courier Prime', monospace;
-	background-color: #343A40;
-	color: #fafafa;
-	padding: .2rem .5rem
+	background-color: #F1F3F5;
+	padding: .2rem .5rem;
+	border-radius: 1rem;
 }
 pre {
 	font-family: 'Courier Prime', monospace;
