@@ -6,7 +6,7 @@ Documentation : http://ivoryui.com
 
 ## How to use
 
-### via npm:
+### Install via npm:
 
 ```shell
 npm i ivoryui-ivory
@@ -18,7 +18,7 @@ node_modules/ivoryui-ivory/dist/ivory-icons.css
 node_modules/ivoryui-ivory/dist/ivory.min.css
 ```
 
-### via CDN:
+### Load the files from CDN:
 
 ```shell
 <link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory.min.css" />
@@ -51,7 +51,8 @@ IVORY supports all the latest browsers.
 
 ## Contributing
 
-To be updated...
+The IVORY team welcomes contributions from the community. For more detailed information, 
+see [CONTRIBUTING.md](https://github.com/IVORY-UI/ivory/blob/master/.github/CONTRIBUTING.md).
 
 
 ## Support
