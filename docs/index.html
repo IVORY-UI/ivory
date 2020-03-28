@@ -102,6 +102,9 @@
               <a href="#" data-target="select">Select</a>
             </li>
             <li class="nav-item">
+              <a href="#" data-target="spinner">Spinner</a>
+            </li>
+            <li class="nav-item">
               <a href="#" data-target="table">Table</a>
             </li>
             <li class="nav-item">
@@ -1055,92 +1058,139 @@
           <h1 class="section-title">Buttons</h1>
           
           <div class="section-body">
-            <div style="margin-bottom: 1rem;">
-              <p>A button is used to trigger an operation. IVORY buttons are native &lt;button&gt; elements enhanced with rounded edge design.</p>
-            </div>
-
-            <h6 class="section-subtitle">Default Button</h6>
-            <div style="margin-bottom: 1rem;">
-              <button class="ivory-btn">Default</button>
-            </div>
             <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;button class="ivory-btn"&gt;Default&lt;/button&gt;
-                </code>
-              </pre>
+              <p>Buttons are user interface elements which allows users to take actions throughout the project. It is important 
+              that they have ample click space and help communicate the importance of their actions.</p>
+              
+              <p>IVORY provides 3 styles of buttons, in 2 sizes. Each style is explained below, detailing how and where to use these styles.</p>
+              <ul class="ivory-list disc">
+                <li>Solid Buttons</li>
+                <li>Outline Buttons</li>
+                <li>Flat Buttons</li>
+              </ul>
+              <p><b>Note:</b> IVORY also provides rounded buttons in solid & outline styles.</p>
             </div>
 
+            <h4>Default Buttons</h4>
+            <div style="margin-bottom: 2rem;">
+              <p>In IVORY secondary style buttons are the default buttons. To incorporate these, use <span class="code">.ivory-btn</span> class
+                for solid button, <span class="code">.ivory-btn-o</span> class for outline button, and <span class="code">.ivory-btn-f</span> for 
+                flat button.</p>
+              <p>Rounded edge buttons are only available in solid & outline styles. To get the rounded edge buttons use <span class="code">.btn-ro</span> 
+                class along with the above classes.</p>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div style="margin-bottom: 1rem;">
+                    <button class="ivory-btn">Default</button> &nbsp;
+                    <button class="ivory-btn btn-ro">Default</button>
+                  </div>
+                  <div style="margin-bottom: 1rem;">
+                    <button class="ivory-btn-o">Default</button> &nbsp;
+                    <button class="ivory-btn-o btn-ro">Default</button>
+                  </div>
+                  <div style="margin-bottom: 1rem;">
+                    <button class="ivory-btn-f">Default</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="ivory-btn"&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="ivory-btn btn-ro&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="ivory-btn-o"&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="ivory-btn-o btn-ro"&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="ivory-btn-f"&gt;Default&lt;/button&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
+            <h4>Primary Buttons</h4>
+            <p>IVORY primary buttons are defined with blue color. Use <span class="code">.btn-primary</span> class along with the button style 
+            class.</p>
             <h6 class="section-subtitle">Solid Buttons</h6>
-            <div style="margin-bottom:1rem;">
-              <button class="ivory-btn btn-primary">Primary</button>
-              <button class="ivory-btn btn-success">Success</button>
-              <button class="ivory-btn btn-danger">Delete</button>
-              <button class="ivory-btn btn-primary" disabled>Disabled</button>
+            <p>Solid buttons are used to highlight the most important actions. To avoid confusing users, don’t use more than one primary solid 
+              button within a section or view.</p>
+            <div style="margin-bottom: 1rem;">
+              <button class="ivory-btn btn-primary">Confirm</button> &nbsp;
+              <button class="ivory-btn btn-primary btn-sm">Confirm</button> &nbsp;
+              <button class="ivory-btn btn-primary btn-ro">Confirm</button> &nbsp;
+              <button class="ivory-btn btn-primary btn-ro btn-sm ">Confirm</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn btn-primary"&gt;Primary&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn btn-success"&gt;Success&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn btn-danger"&gt;Delete&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn btn-primary" disabled&gt;Disabled&lt;/button&gt;
+                  &lt;button class="ivory-btn btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
                 </code>
               </pre>
             </div>
 
             <h6 class="section-subtitle">Outline Buttons</h6>
-            <div style="margin-bottom:1rem;">
-              <button class="ivory-btn-outline btn-primary">Confirm</button>
-              <button class="ivory-btn-outline btn-success">Success</button>
-              <button class="ivory-btn-outline btn-danger">Delete</button>
-              <button class="ivory-btn-outline btn-primary" disabled>Disabled</button>
+            <div style="margin-bottom: 1rem;">
+              <button class="ivory-btn-o btn-primary">Confirm</button> &nbsp;
+              <button class="ivory-btn-o btn-primary btn-sm">Confirm</button> &nbsp;
+              <button class="ivory-btn-o btn-primary btn-ro">Confirm</button> &nbsp;
+              <button class="ivory-btn-o btn-primary btn-ro btn-sm">Confirm</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn-outline btn-primary"&gt;Confirm&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-outline btn-success"&gt;Success&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-outline btn-danger"&gt;Delete&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-outline btn-primary" disabled&gt;Disabled&lt;/button&gt;
+                  &lt;button class="ivory-btn-o btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-o btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-o btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-o btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
                 </code>
               </pre>
             </div>
 
             <h6 class="section-subtitle">Flat Buttons</h6>
+            <p>Flat buttons have significant purpose, don't get confused with hyperlink. Flat buttons can be used inline 
+              scenarios where user can identify this as a button.</p>
             <div style="margin-bottom:1rem;">
-              <button class="ivory-btn-link btn-primary">Confirm</button>
-              <button class="ivory-btn-link btn-success">Success</button>
-              <button class="ivory-btn-link btn-danger">Delete</button>
-              <button class="ivory-btn-link btn-primary" disabled>Disabled</button>
+              <button class="ivory-btn-f btn-primary">Confirm</button> &nbsp;
+              <button class="ivory-btn-f btn-primary btn-sm">Confirm</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn-link btn-primary"&gt;Confirm&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-link btn-success"&gt;Success&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-link btn-danger"&gt;Delete&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-link btn-primary" disabled&gt;Disabled&lt;/button&gt;
+                  &lt;button class="ivory-btn-f btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-f btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
                 </code>
               </pre>
             </div>
 
-            <h6 class="section-subtitle">Small Buttons</h6>
-            <div style="margin-bottom:1rem;">
-              <button class="ivory-btn btn-primary btn-small">Confirm</button>
-              <button class="ivory-btn-outline btn-primary btn-small">Confirm</button>
-              <button class="ivory-btn-link btn-primary btn-small">Confirm</button>
+            <h6 class="section-subtitle">Disabled Buttons</h6>
+            <p>IVORY provides 2 ways to disable the button. One is <span class="code">disabled</span> attribute, other way is 
+            <span class="code">.disabled</span> class.</p>
+            <div style="margin-bottom:2rem;">
+              <button class="ivory-btn" disabled>Submit</button>
+              <button class="ivory-btn-o" disabled>Submit</button>
+              <button class="ivory-btn-f" disabled>Submit</button>
+            </div>
+
+            <h6 class="section-subtitle">Action-based color</h6>
+            <p>Different colors may be used based on the severity/purpose of an action's result. For example, using a red button when 
+              "deleting" files indicates high severity. Same way, green button to indicates go-ahead.</p>
+            <div style="margin-bottom: 1rem;">
+              <button class="ivory-btn btn-primary btn-danger">Delete</button>
+              <button class="ivory-btn-o btn-primary btn-danger">Delete</button>
+              <button class="ivory-btn btn-primary btn-success">Go Ahead</button>
+              <button class="ivory-btn-o btn-primary btn-success">Go Ahead</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn btn-primary"&gt;Confirm&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-outline btn-primary"&gt;Success&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-link btn-primary"&gt;Delete&lt;/button&gt;
+                  &lt;button class="ivory-btn btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-o btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn btn-primary btn-success"&gt;Go Ahead&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-o btn-primary btn-success"&gt;Go Ahead&lt;/button&gt;
                 </code>
               </pre>
             </div>
-
           </div>
         </section>
 
@@ -1389,7 +1439,7 @@
         <section id="input" class="docs-section">
           <h1 class="section-title">Input</h1>
           <div class="section-body">
-            <p>IVORY follows the native input element for the input field, which should be having the class <span class="code">ivory-input</span></p>
+            <p>IVORY follows the native input element for the input field, which should be having the class <span class="code">.ivory-input</span></p>
             <div class="row">
               <div class="col-4">
                 <input class="ivory-input" type="text" placeholder="Enter Text Here" value="" />
@@ -1605,6 +1655,42 @@
           </div>
         </section>
 
+        <!--Spinner-->
+        <section id="spinner" class="docs-section">
+          <h1 class="section-title">Spinner</h1>
+          <div class="section-body">
+            <p>A loading spinner is used for indicating a loading state of a page or section. It can be colored according to the applied 
+              colors on the current page.</p>
+            <p>IVORY provides the spinner in 4 sizes:</p>
+            <div style="width: 400px; margin-bottom: 2rem;">
+              <div class="row">
+                <div class="col">
+                  <div class="ivory-spinner-sm"></div>
+                </div>
+                <div class="col">
+                  <div class="ivory-spinner-md"></div>
+                </div>
+                <div class="col">
+                  <div class="ivory-spinner"></div>
+                </div>
+                <div class="col">
+                  <div class="ivory-spinner-lg"></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <pre>
+                <code>
+                  &lt;div class="ivory-spinner-sm"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="ivory-spinner-md"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="ivory-spinner"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="ivory-spinner-lg"&gt;&lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
         <!--Table-->
         <section id="table" class="docs-section">
           <h1 class="section-title">Table</h1>
@@ -1675,30 +1761,7 @@
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;32&lt;/td&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Barcelona&lt;/td&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;28&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Milan&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Joe&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;8&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Monaco&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jim&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;6&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Florance&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jene&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Rotterdam&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;...<br/>
                   &nbsp;&nbsp;&lt;/tbody&gt;<br/>
                   &lt;/table&gt;
                 </code>
