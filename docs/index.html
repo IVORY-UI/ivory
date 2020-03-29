@@ -96,6 +96,9 @@
               <a href="#" data-target="list">List</a>
             </li>
             <li class="nav-item">
+              <a href="#" data-target="progress">Progress</a>
+            </li>
+            <li class="nav-item">
               <a href="#" data-target="radio">Radio</a>
             </li>
             <li class="nav-item">
@@ -539,7 +542,7 @@
                     </tr>
                     <tr>
                       <td><p class="p-bold">P Bold</p></td>
-                      <td><span>600</span></td>
+                      <td><span>500</span></td>
                       <td><span>14px</span></td>
                       <td><span>20px</span></td>
                     </tr>
@@ -1560,6 +1563,40 @@
             </div>
           </div>
           
+        </section>
+
+        <!--Progress-->
+        <section id="progress" class="docs-section">
+          <h1 class="section-title">Progress</h1>
+          <div class="section-body">
+            <p>To incorporate the IVORY progress bar use <span class="code">.ivory-progress</span> class on top of the HTML native  
+              <span class="code">progress</span> element. IVORY provides the progress bar in two variants.</p>
+            
+            <div style="margin-bottom: 2rem;">
+              <p class="p-bold">Regular variant</p>
+              <progress class="ivory-progress" value="30" max="100"> 30% </progress>
+              <div style="margin-top: 1rem;">
+                <pre>
+                  <code>
+                    &lt;progress class="ivory-progress" value="30" max="100"&gt; 30% &lt;/progress&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p class="p-bold">Small variant</p>
+              <progress class="ivory-progress progress-sm" value="30" max="100"> 30% </progress>
+              <div style="margin-top: 1rem;">
+                <pre>
+                  <code>
+                    &lt;progress class="ivory-progress progress-sm" value="30" max="100"&gt; 30% &lt;/progress&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            
+          </div>
         </section>
 
         <!--Radio-->
