@@ -15,7 +15,6 @@
   margin-right: 0.9375rem;
 }
 
-/* For extra small size <576px */
 .col-1 {
   flex: 0 0 calc(8.33% - 1.875rem);
 }
@@ -109,7 +108,7 @@
 }
 
 /* For small size ≥576px */
-@media only screen and (min-width: 576px) {
+@media (min-width: 576px) {
   .col-sm-1 {
     flex: 0 0 calc(8.33% - 1.875rem);
   }
@@ -187,7 +186,7 @@
 }
 
 /* For medium size ≥768px */
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .col-md-1 {
     flex: 0 0 calc(8.33% - 1.875rem);
   }
@@ -265,7 +264,7 @@
 }
 
 /* For large size ≥1200px */
-@media only screen and (min-width: 1200px) {
+@media (min-width: 1024px) {
   .col-lg-1 {
     flex: 0 0 calc(8.33% - 1.875rem);
   }

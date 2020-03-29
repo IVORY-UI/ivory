@@ -31,6 +31,22 @@
   <body>
 
     <div class="docs-wrapper">
+      
+      <div class="top-right-end stat-icons">
+        <div class="stat-item">
+          <a class="stat-icon" href="https://github.com/ivory-ui/ivory">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>GitHub</title><path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="burger-container">
+        <div class="burger">
+          <div class="bar topBar"></div>
+          <div class="bar btmBar"></div>
+        </div>
+      </div>
+
       <div class="doc-nav">
         <nav>
           <cite class="nav-section-title">Intro</cite>
@@ -80,10 +96,16 @@
               <a href="#" data-target="list">List</a>
             </li>
             <li class="nav-item">
+              <a href="#" data-target="progress">Progress</a>
+            </li>
+            <li class="nav-item">
               <a href="#" data-target="radio">Radio</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="select">Select</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="spinner">Spinner</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="table">Table</a>
@@ -102,14 +124,6 @@
       </div>
 
       <div class="docs-container">
-        <div class="top-right-end stat-icons">
-          <div class="stat-item">
-            <a class="stat-icon" href="https://github.com/ivory-ui/ivory">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>GitHub</title><path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path></svg>
-            </a>
-          </div>
-        </div>
-
         <!--Intro-->
         <section id="intro" class="docs-section section-active">
           <section class="hero">
@@ -208,7 +222,7 @@
             </div>
 
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Red</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #FFF1F5;">#FFF1F5</div>
@@ -224,7 +238,7 @@
                 </div>
               </div>
 
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Pink</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color:#FFF0F6;">#FFF0F6</div>
@@ -240,7 +254,7 @@
                 </div>
               </div>
 
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Purple</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #F8F0FC;">#F8F0FC</div>
@@ -258,7 +272,7 @@
             </div>
 
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Indigo</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #EDF2FF;">#EDF2FF</div>
@@ -274,7 +288,7 @@
                 </div>
               </div>
 
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Blue</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #EAF5FF;">#EAF5FF</div>
@@ -291,7 +305,7 @@
                 </div>
               </div>
 
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Cyan</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #E3FAFC;">#E3FAFC</div>
@@ -309,7 +323,7 @@
             </div>
 
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Teal</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #E6FCF5;">#E6FCF5</div>
@@ -325,7 +339,7 @@
                 </div>
               </div>
 
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Green</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #F6FFED;">#F6FFED</div>
@@ -341,7 +355,7 @@
                 </div>
               </div>
 
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Yellow</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #FFFBE6;">#FFFBE6</div>
@@ -359,7 +373,7 @@
             </div>
 
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Orange</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #FFF4E6;">#FFF4E6</div>
@@ -375,7 +389,7 @@
                 </div>
               </div>
 
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Deep Orange</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #FFF4E8;">#FFF4E8</div>
@@ -391,7 +405,7 @@
                 </div>
               </div>
 
-              <div class="col-4">
+              <div class="col-12 col-md-4">
                 <h6 class="section-subtitle">Silver</h6>
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #F8F9FA;">#F8F9FA</div>
@@ -410,12 +424,12 @@
 
             <h6 class="section-subtitle">Neutral Color Palette</h6>
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-8">
+              <div class="col-12 col-md-6 col-lg-8">
                 <p>Neutral color is widely used in the interface as surface color, background, borders, dividers, heading,
                   text and etc. The neutral color palette is balanced with readability, aesthetics and usability. The neutral
                   color palette of IVORY UI, as shown on the right:</p>
               </div>
-              <div class="col-4">
+              <div class="col-12 col-md-6 col-lg-4">
                 <div class="color-palette-panel">
                   <div class="color-cell" style="background-color: #FFFFFF;">#FFFFFF</div>
                   <div class="color-cell" style="background-color: #FAFAFA;">#FAFAFA</div>
@@ -528,7 +542,7 @@
                     </tr>
                     <tr>
                       <td><p class="p-bold">P Bold</p></td>
-                      <td><span>600</span></td>
+                      <td><span>500</span></td>
                       <td><span>14px</span></td>
                       <td><span>20px</span></td>
                     </tr>
@@ -557,6 +571,8 @@
           <div class="section-body">
             <div style="margin-bottom: 2rem;">
               <p>IVORY provides a consistent and unique icon set that were friendly and approachable.</p>
+              <p>To use IVORY icons, first make sure <span class="code">ivory-icons.css</span> file loading in your page. Every icon listed
+                below has unique name, add the same name to the class of the element with <span class="code">ivory-icon-</span> prefix.</p>
               <p><small class="small" style="color:#868e96">Note: Currently IVORY icon library has 71 icons and more will be added.</small></p>
             </div>
             <h6 class="section-subtitle">Directional Icons</h6>
@@ -882,10 +898,10 @@
 
             <h6 class="section-subtitle">Basic</h6>
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-6">
+              <div class="col-12 col-md-4 col-sm-12 col-lg-6">
                 <p>IVORY has success, info, warning and error alert types.</p>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-8 col-sm-12 col-lg-6">
                 <div class="ivory-alert success">
                   Success Text
                 </div>
@@ -1045,92 +1061,139 @@
           <h1 class="section-title">Buttons</h1>
           
           <div class="section-body">
-            <div style="margin-bottom: 1rem;">
-              <p>A button is used to trigger an operation. IVORY buttons are native &lt;button&gt; elements enhanced with rounded edge design.</p>
-            </div>
-
-            <h6 class="section-subtitle">Default Button</h6>
-            <div style="margin-bottom: 1rem;">
-              <button class="ivory-btn">Default</button>
-            </div>
             <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;button class="ivory-btn"&gt;Default&lt;/button&gt;
-                </code>
-              </pre>
+              <p>Buttons are user interface elements which allows users to take actions throughout the project. It is important 
+              that they have ample click space and help communicate the importance of their actions.</p>
+              
+              <p>IVORY provides 3 styles of buttons, in 2 sizes. Each style is explained below, detailing how and where to use these styles.</p>
+              <ul class="ivory-list disc">
+                <li>Solid Buttons</li>
+                <li>Outline Buttons</li>
+                <li>Flat Buttons</li>
+              </ul>
+              <p><b>Note:</b> IVORY also provides rounded buttons in solid & outline styles.</p>
             </div>
 
+            <h4>Default Buttons</h4>
+            <div style="margin-bottom: 2rem;">
+              <p>In IVORY secondary style buttons are the default buttons. To incorporate these, use <span class="code">.ivory-btn</span> class
+                for solid button, <span class="code">.ivory-btn-o</span> class for outline button, and <span class="code">.ivory-btn-f</span> for 
+                flat button.</p>
+              <p>Rounded edge buttons are only available in solid & outline styles. To get the rounded edge buttons use <span class="code">.btn-ro</span> 
+                class along with the above classes.</p>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div style="margin-bottom: 1rem;">
+                    <button class="ivory-btn">Default</button> &nbsp;
+                    <button class="ivory-btn btn-ro">Default</button>
+                  </div>
+                  <div style="margin-bottom: 1rem;">
+                    <button class="ivory-btn-o">Default</button> &nbsp;
+                    <button class="ivory-btn-o btn-ro">Default</button>
+                  </div>
+                  <div style="margin-bottom: 1rem;">
+                    <button class="ivory-btn-f">Default</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="ivory-btn"&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="ivory-btn btn-ro&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="ivory-btn-o"&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="ivory-btn-o btn-ro"&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="ivory-btn-f"&gt;Default&lt;/button&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
+            <h4>Primary Buttons</h4>
+            <p>IVORY primary buttons are defined with blue color. Use <span class="code">.btn-primary</span> class along with the button style 
+            class.</p>
             <h6 class="section-subtitle">Solid Buttons</h6>
-            <div style="margin-bottom:1rem;">
-              <button class="ivory-btn btn-primary">Primary</button>
-              <button class="ivory-btn btn-success">Success</button>
-              <button class="ivory-btn btn-danger">Delete</button>
-              <button class="ivory-btn btn-primary" disabled>Disabled</button>
+            <p>Solid buttons are used to highlight the most important actions. To avoid confusing users, don’t use more than one primary solid 
+              button within a section or view.</p>
+            <div style="margin-bottom: 1rem;">
+              <button class="ivory-btn btn-primary">Confirm</button> &nbsp;
+              <button class="ivory-btn btn-primary btn-sm">Confirm</button> &nbsp;
+              <button class="ivory-btn btn-primary btn-ro">Confirm</button> &nbsp;
+              <button class="ivory-btn btn-primary btn-ro btn-sm ">Confirm</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn btn-primary"&gt;Primary&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn btn-success"&gt;Success&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn btn-danger"&gt;Delete&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn btn-primary" disabled&gt;Disabled&lt;/button&gt;
+                  &lt;button class="ivory-btn btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
                 </code>
               </pre>
             </div>
 
             <h6 class="section-subtitle">Outline Buttons</h6>
-            <div style="margin-bottom:1rem;">
-              <button class="ivory-btn-outline btn-primary">Confirm</button>
-              <button class="ivory-btn-outline btn-success">Success</button>
-              <button class="ivory-btn-outline btn-danger">Delete</button>
-              <button class="ivory-btn-outline btn-primary" disabled>Disabled</button>
+            <div style="margin-bottom: 1rem;">
+              <button class="ivory-btn-o btn-primary">Confirm</button> &nbsp;
+              <button class="ivory-btn-o btn-primary btn-sm">Confirm</button> &nbsp;
+              <button class="ivory-btn-o btn-primary btn-ro">Confirm</button> &nbsp;
+              <button class="ivory-btn-o btn-primary btn-ro btn-sm">Confirm</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn-outline btn-primary"&gt;Confirm&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-outline btn-success"&gt;Success&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-outline btn-danger"&gt;Delete&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-outline btn-primary" disabled&gt;Disabled&lt;/button&gt;
+                  &lt;button class="ivory-btn-o btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-o btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-o btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-o btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
                 </code>
               </pre>
             </div>
 
             <h6 class="section-subtitle">Flat Buttons</h6>
+            <p>Flat buttons have significant purpose, don't get confused with hyperlink. Flat buttons can be used inline 
+              scenarios where user can identify this as a button.</p>
             <div style="margin-bottom:1rem;">
-              <button class="ivory-btn-link btn-primary">Confirm</button>
-              <button class="ivory-btn-link btn-success">Success</button>
-              <button class="ivory-btn-link btn-danger">Delete</button>
-              <button class="ivory-btn-link btn-primary" disabled>Disabled</button>
+              <button class="ivory-btn-f btn-primary">Confirm</button> &nbsp;
+              <button class="ivory-btn-f btn-primary btn-sm">Confirm</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn-link btn-primary"&gt;Confirm&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-link btn-success"&gt;Success&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-link btn-danger"&gt;Delete&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-link btn-primary" disabled&gt;Disabled&lt;/button&gt;
+                  &lt;button class="ivory-btn-f btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-f btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
                 </code>
               </pre>
             </div>
 
-            <h6 class="section-subtitle">Small Buttons</h6>
-            <div style="margin-bottom:1rem;">
-              <button class="ivory-btn btn-primary btn-small">Confirm</button>
-              <button class="ivory-btn-outline btn-primary btn-small">Confirm</button>
-              <button class="ivory-btn-link btn-primary btn-small">Confirm</button>
+            <h6 class="section-subtitle">Disabled Buttons</h6>
+            <p>IVORY provides 2 ways to disable the button. One is <span class="code">disabled</span> attribute, other way is 
+            <span class="code">.disabled</span> class.</p>
+            <div style="margin-bottom:2rem;">
+              <button class="ivory-btn" disabled>Submit</button>
+              <button class="ivory-btn-o" disabled>Submit</button>
+              <button class="ivory-btn-f" disabled>Submit</button>
+            </div>
+
+            <h6 class="section-subtitle">Action-based color</h6>
+            <p>Different colors may be used based on the severity/purpose of an action's result. For example, using a red button when 
+              "deleting" files indicates high severity. Same way, green button to indicates go-ahead.</p>
+            <div style="margin-bottom: 1rem;">
+              <button class="ivory-btn btn-primary btn-danger">Delete</button>
+              <button class="ivory-btn-o btn-primary btn-danger">Delete</button>
+              <button class="ivory-btn btn-primary btn-success">Go Ahead</button>
+              <button class="ivory-btn-o btn-primary btn-success">Go Ahead</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn btn-primary"&gt;Confirm&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-outline btn-primary"&gt;Success&lt;/button&gt;<br/>
-                  &lt;button class="ivory-btn-link btn-primary"&gt;Delete&lt;/button&gt;
+                  &lt;button class="ivory-btn btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-o btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn btn-primary btn-success"&gt;Go Ahead&lt;/button&gt;<br>
+                  &lt;button class="ivory-btn-o btn-primary btn-success"&gt;Go Ahead&lt;/button&gt;
                 </code>
               </pre>
             </div>
-
           </div>
         </section>
 
@@ -1246,28 +1309,28 @@
             <h6 class="section-subtitle">Basic Grid</h6>
             <div class="example-grid">
               <div class="row">
-                <div class="col-1">One</div>
-                <div class="col-11">Eleven</div>
+                <div class="col-12 col-md-1">One</div>
+                <div class="col-12 col-md-11">Eleven</div>
               </div>
               <div class="row">
-                <div class="col-2">Two</div>
-                <div class="col-10">Ten</div>
+                <div class="col-12 col-md-2">Two</div>
+                <div class="col-12 col-md-10">Ten</div>
               </div>
               <div class="row">
-                <div class="col-3">Three</div>
-                <div class="col-9">Nine</div>
+                <div class="col-12 col-md-3">Three</div>
+                <div class="col-12 col-md-9">Nine</div>
               </div>
               <div class="row">
-                <div class="col-4">Four</div>
-                <div class="col-8">Eight</div>
+                <div class="col-12 col-md-4">Four</div>
+                <div class="col-12 col-md-8">Eight</div>
               </div>
               <div class="row">
-                <div class="col-5">Five</div>
-                <div class="col-7">Seven</div>
+                <div class="col-12 col-md-5">Five</div>
+                <div class="col-12 col-md-7">Seven</div>
               </div>
               <div class="row">
-                <div class="col-6">Six</div>
-                <div class="col-6">Six</div>
+                <div class="col-12 col-md-6">Six</div>
+                <div class="col-12 col-md-6">Six</div>
               </div>
             </div>
 
@@ -1379,7 +1442,7 @@
         <section id="input" class="docs-section">
           <h1 class="section-title">Input</h1>
           <div class="section-body">
-            <p>IVORY follows the native input element for the input field, which should be having the class <span>.ivory-input</span></p>
+            <p>IVORY follows the native input element for the input field, which should be having the class <span class="code">.ivory-input</span></p>
             <div class="row">
               <div class="col-4">
                 <input class="ivory-input" type="text" placeholder="Enter Text Here" value="" />
@@ -1402,7 +1465,7 @@
             <p>For Unordered List you can use the addon classes like: <span class="code">.disc</span>, <span class="code">.circle</span>, 
               <span class="code">.square</span> to display the respective list styles. Here is an example:</p>
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <ul class="ivory-list disc">
                   <li>Amsterdam</li>
                   <li>Manali</li>
@@ -1412,7 +1475,7 @@
                   <li>Florance</li>
                 </ul>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <pre>
                   <code>
                     &lt;ul class="ivory-list disc"&gt;<br/>
@@ -1434,7 +1497,7 @@
             <p>For Ordered List you can use the addon classes like: <span class="code">.decimal</span>, <span class="code">.lower-alpha</span>, 
               <span class="code">.upper-roman</span> to display the respective list styles. Here is an example:</p>
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <ol class="ivory-list decimal">
                   <li>One</li>
                   <li>Two</li>
@@ -1443,7 +1506,7 @@
                   <li>Five</li>
                 </ol>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <pre>
                   <code>
                     &lt;ol class="ivory-list decimal"&gt;<br/>
@@ -1463,7 +1526,7 @@
             <h6 class="section-subtitle">Description List</h6>
             <p>Here is an example for description list:</p>
             <div class="row">
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <dl class="ivory-list">
                   <dt>Coffee</dt>
                   <dd>Black Coffee</dd>
@@ -1478,7 +1541,7 @@
                   <dd>Herbal Tea</dd>
                 </dl>
               </div>
-              <div class="col-6">
+              <div class="col-12 col-md-6">
                 <pre>
                   <code>
                     &lt;dl class="ivory-list"&gt;<br/>
@@ -1500,6 +1563,40 @@
             </div>
           </div>
           
+        </section>
+
+        <!--Progress-->
+        <section id="progress" class="docs-section">
+          <h1 class="section-title">Progress</h1>
+          <div class="section-body">
+            <p>To incorporate the IVORY progress bar use <span class="code">.ivory-progress</span> class on top of the HTML native  
+              <span class="code">progress</span> element. IVORY provides the progress bar in two variants.</p>
+            
+            <div style="margin-bottom: 2rem;">
+              <p class="p-bold">Regular variant</p>
+              <progress class="ivory-progress" value="30" max="100"> 30% </progress>
+              <div style="margin-top: 1rem;">
+                <pre>
+                  <code>
+                    &lt;progress class="ivory-progress" value="30" max="100"&gt; 30% &lt;/progress&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p class="p-bold">Small variant</p>
+              <progress class="ivory-progress progress-sm" value="30" max="100"> 30% </progress>
+              <div style="margin-top: 1rem;">
+                <pre>
+                  <code>
+                    &lt;progress class="ivory-progress progress-sm" value="30" max="100"&gt; 30% &lt;/progress&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+            
+          </div>
         </section>
 
         <!--Radio-->
@@ -1595,6 +1692,42 @@
           </div>
         </section>
 
+        <!--Spinner-->
+        <section id="spinner" class="docs-section">
+          <h1 class="section-title">Spinner</h1>
+          <div class="section-body">
+            <p>A loading spinner is used for indicating a loading state of a page or section. It can be colored according to the applied 
+              colors on the current page.</p>
+            <p>IVORY provides the spinner in 4 sizes:</p>
+            <div style="width: 400px; margin-bottom: 2rem;">
+              <div class="row">
+                <div class="col">
+                  <div class="ivory-spinner-sm"></div>
+                </div>
+                <div class="col">
+                  <div class="ivory-spinner-md"></div>
+                </div>
+                <div class="col">
+                  <div class="ivory-spinner"></div>
+                </div>
+                <div class="col">
+                  <div class="ivory-spinner-lg"></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <pre>
+                <code>
+                  &lt;div class="ivory-spinner-sm"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="ivory-spinner-md"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="ivory-spinner"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="ivory-spinner-lg"&gt;&lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
         <!--Table-->
         <section id="table" class="docs-section">
           <h1 class="section-title">Table</h1>
@@ -1665,30 +1798,7 @@
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;32&lt;/td&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Barcelona&lt;/td&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jane&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;28&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Milan&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Joe&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;8&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Monaco&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jim&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;6&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Florance&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Jene&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;3&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Rotterdam&lt;/td&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;...<br/>
                   &nbsp;&nbsp;&lt;/tbody&gt;<br/>
                   &lt;/table&gt;
                 </code>
@@ -1702,6 +1812,7 @@
           <h1 class="section-title">Textarea</h1>
           <div class="section-body">
             <p>Textarea is used to enter long text input.</p>
+            <p>Just to add the class <span class="code">ivory-textarea</span> to native textarea. </p>
             <div class="row">
               <div class="col-6">
                 <textarea class="ivory-textarea"></textarea>
@@ -1740,12 +1851,22 @@
             <div style="margin-bottom: 2rem;">
               <p>A tooltip provides a short details about a specific text or element on the UI in a pop-over. The tip is shown on mouse enter, 
                 and is hidden on mouse leave. The Tooltip doesn't support complex text or operations.</p>
+              
+              <h6>Tooltip Placement:</h6>
               <p>The tooltip supports 4 placements. It can be defined by using one of the following classes with the <code>.tooltip-content</code> 
                 class:<br/>
                 .top<br/>
                 .right<br/>
                 .bottom<br/>
                 .left
+              </p>
+
+              <h6>Tooltip Size:</h6>
+              <p>The size of the tooltip content box can be changed. IVORY provides 3 different sizes, with the following classes:<br/>
+                .tooltip-xs<br/>
+                .tooltip-md<br/>
+                .tooltip-lg
+              </p>
             </div>
             
             <h6>Example:</h6>
@@ -1767,6 +1888,18 @@
             <div style="margin-bottom: 2rem;">
               <p>Here is an example for right tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs right">A tooltip provides a short description of a 
                 UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;p&gt; <br/>
+                  &nbsp;&nbsp;&lt;a class="ivory-tooltip"&gt;Hover me<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="tooltip-content tooltip-xs top"&gt;Tooltip text&lt;/span&gt;<br/>
+                  &nbsp;&nbsp;&lt;/a&gt;<br/>
+                  &lt;/p&gt;
+                </code>
+              </pre>
             </div>
             
           </div>

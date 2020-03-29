@@ -1,14 +1,21 @@
 %default-form-element {
+  position: relative;
   display: block;
   width: 100%;
-  height: 1.875rem;
-  line-height: 1.875rem;
-  font-size: 0.875rem;
+  padding: 0.25rem;
+  font-size: 0.8125rem;
   font-weight: 400;
-  border: none;
-  background-color: transparent;
-  outline: none;
+  border: 1px solid #B7B7B7;
+  border-radius: 0.1875rem;
+  background-color: #FFFFFF;
+  color: #212121;
 }
+%defualt-element-focus {
+  border: 1px solid #5CACFC;
+  box-shadow: 0 0 0 0.25rem #EAF5FF;
+  outline: 0;
+}
+
 @mixin webappearance($property) {
   -webkit-appearance: $property;
   -moz-appearance: $property;
@@ -17,11 +24,10 @@
 }
 .ivory-input {
   @extend %default-form-element;
-  padding: 0.25rem;
-  border-bottom: 1px solid #B7B7B7;
-  border-radius: 0;
+  height: 2rem;
+  line-height: 2rem;
   &:not([readonly]):focus {
-    border-bottom: 1px solid #5CACFC;
+    @extend %defualt-element-focus
   }
 }
 .ivory-select {
@@ -30,14 +36,13 @@
   select {
     @include webappearance(none);
     @extend %default-form-element;
+    height: 2rem;
+    line-height: 2rem;
     margin: 0;
     padding: 0 1.5rem 0 0.25rem;
-    border: none;
-    border-bottom: 1px solid #B7B7B7;
-    border-radius: 0;
     cursor: pointer;
     &:focus {
-      border-bottom: 1px solid #5CACFC;
+      @extend %defualt-element-focus
     }
   }
   &:after {
@@ -52,24 +57,17 @@
     background-size: contain;
     vertical-align: middle;
     margin: 0;
-    z-index: -1;
   }
 }
 .ivory-textarea {
-  position: relative;
-  display: block;
+  @extend %default-form-element;
   min-height: 120px;
   min-width: 200px;
-  font-size: 14px;
-  line-height: 21px;
-  font-family:  'Montserrat', sans-serif;
-  border: none;
-  border-bottom: 1px solid #B7B7B7;
-  border-radius: 0;
   &:not([readonly]):focus {
-    border-bottom: 1px solid #5CACFC;
+    @extend %defualt-element-focus
   }
 }
+
 .ivory-form {
   .form-field {
     margin-bottom: 1rem;
