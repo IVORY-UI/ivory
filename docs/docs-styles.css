@@ -338,6 +338,7 @@ pre {
 		height: calc(100vh - 50px);
 		padding: 0;
 		z-index: 999;
+		overflow-y: scroll;
 	}
 	.doc-nav.menu-opened {
 		display: block; 
