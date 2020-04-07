@@ -35,7 +35,8 @@
 	position: fixed;
 	width: 280px;
 	height: 100vh;
-	padding: 2rem 0
+	padding: 2rem 0;
+	overflow-y: scroll;
 }
 .doc-nav nav {
 	width: 100%;
