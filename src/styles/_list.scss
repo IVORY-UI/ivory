@@ -3,7 +3,7 @@ ul.ivory-list, ol.ivory-list, dl.ivory-list {
 	list-style-position: inside;
   text-indent: 0.5rem;
   font-size: 0.875rem;
-  li, dd {
+  li {
     font-size: 0.875rem;
     line-height: 1.5rem;
   }
@@ -39,11 +39,69 @@ ol.ivory-list li ol.ivory-list {
 }
 dl.ivory-list {
   dt {
-    font-size: 1rem;
-    line-height: 1.75rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
     font-weight: 500;
   }
   dd { 
+    font-size: 0.813rem;
+    line-height: 1.5rem;
     margin-left: 1rem;
   }
+}
+
+ul.ivory-styled-list1 {
+  margin: 0;
+  padding-left: 1.2rem;
+  li {
+    position: relative;
+    list-style-type: none;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+  }
+  li:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 2px;
+    width: 5px;
+    height: 11px;
+    border-width: 0 2px 2px 0;
+    border-style: solid;
+    border-color: #40A0FF;
+    transform-origin: bottom left;
+    transform: rotate(45deg);
+  }
+}
+
+ul.ivory-styled-list2 {
+  li {
+    counter-increment: index; 
+    display: flex;
+    -webkit-box-align: center;
+            align-items: center;
+    padding: 12px 0;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    &:before {
+      content: counters(index, ".", decimal-leading-zero);
+      font-size: 1.5rem;
+      text-align: right;
+      font-weight: 700;
+      min-width: 50px;
+      padding-right: 12px;
+      font-feature-settings: "tnum";
+      font-variant-numeric: tabular-nums;
+      align-self: flex-start;
+      background-color: #74B9FF;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    &+li {
+      border-top: 1px solid rgba(255,255,255,0.2);
+    }
+  }  
 }

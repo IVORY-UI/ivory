@@ -9,7 +9,7 @@ Documentation : http://ivoryui.com
 ### Install via npm:
 
 ```shell
-npm i ivoryui-ivory
+npm i ivoryui-ivory --save
 ```
 
 import the following files to your project:
@@ -24,26 +24,6 @@ node_modules/ivoryui-ivory/dist/ivory.min.css
 <link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory.min.css" />
 <link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory-icons.css" />
 ```
-
-## Features
-
-- HTML Reset
-- Color System
-- Typography
-- Icons
-- Alerts
-- Buttons
-- Checkbox
-- Forms
-- Grid
-- Input
-- List
-- Radio
-- Select
-- Table
-- Textarea
-- Toggle
-- Tooltip
 
 ## Browser Support
 

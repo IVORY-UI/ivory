@@ -36,7 +36,7 @@ strong {
 h1 {
   @extend %big-heading;
   font-size: 2rem;
-  line-height: 2.75rem;  
+  line-height: 2.75rem;
 }
 h2 {
   @extend %big-heading;
@@ -92,9 +92,11 @@ p {
 }
 a {
   text-decoration: none;
+  cursor: pointer;
   color: #2285F6;
   &:hover, &:focus {
-    border-bottom: 1px solid #40A0FF;
+    color: #005CB9;
+    text-decoration: underline;
   }
   &:visited {
     color: #E64980;
