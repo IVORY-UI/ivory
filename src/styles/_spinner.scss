@@ -1,11 +1,13 @@
-
 @mixin transform($transforms) {
 	-webkit-transform: $transforms;
 	-moz-transform: $transforms;
 	-ms-transform: $transforms;
 	transform: $transforms;
 }
-
+@mixin spin-size($size) {
+  border: $size solid #CED4DA;
+  border-left-color: #495057;
+}
 @keyframes spinnerrotate {
   0% {
     -webkit-transform: rotate(0deg);
@@ -29,32 +31,20 @@
 .ivory-spinner-lg{
   width: 48px;
   height: 48px;
-  border-top: 5px solid #CED4DA;
-  border-right: 5px solid #CED4DA;
-  border-bottom: 5px solid #CED4DA;
-  border-left: 5px solid #495057;
+  @include spin-size(5px);
 }
 .ivory-spinner {
   width: 32px;
   height: 32px;
-  border-top: 4px solid #CED4DA;
-  border-right: 4px solid #CED4DA;
-  border-bottom: 4px solid #CED4DA;
-  border-left: 4px solid #495057;
+  @include spin-size(4px);
 }
 .ivory-spinner-md {
   width: 24px;
   height: 24px;
-  border-top: 3px solid #CED4DA;
-  border-right: 3px solid #CED4DA;
-  border-bottom: 3px solid #CED4DA;
-  border-left: 3px solid #495057;
+  @include spin-size(3px);
 }
 .ivory-spinner-sm {
   width: 16px;
   height: 16px;
-  border-top: 2px solid #CED4DA;
-  border-right: 2px solid #CED4DA;
-  border-bottom: 2px solid #CED4DA;
-  border-left: 2px solid #495057;
+  @include spin-size(2px);
 }
