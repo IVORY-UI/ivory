@@ -19,7 +19,7 @@
     "copy:package-json": "cp package.json dist/",
     "copy:readme-md": "cp readme.md dist/",
     "build": "npm run clean && npm run build:styles && npm run build:fonts && npm run post-build",
-    "post-build": "npm run copy:package-json && npm run copy:read-md",
+    "post-build": "npm run copy:package-json && npm run copy:readme-md",
     "pub:ivory": "npm publish dist"
   },
   "dependencies": {},

@@ -5,3 +5,7 @@
 	-ms-transform: $transforms;
 	transform: $transforms;
 }
+@mixin margin-sides($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}

@@ -10,7 +10,7 @@
 }
 .hero {
   position: relative;
-  padding: 200px 0;
+  padding: 160px 0;
 }
 .hero .inner {
   position: relative;
@@ -40,6 +40,9 @@
   justify-content: center;
 }
 .feature-tiles {
+  padding: 64px 0;
+}
+.feature-tiles .inner {
   position: relative;
   max-width: 960px;
   margin: 0 auto;
@@ -49,7 +52,8 @@
   background: rgba(255, 255, 255, 0.85);
 }
 .evolve {
-  padding: 100px 0;
+  padding: 80px 0;
+  background-color: #F7F8FB;
 }
 .evolve .inner {
   max-width: 960px;
