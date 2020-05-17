@@ -59,6 +59,7 @@ $breakpoints: 576px, 768px, 1024px;
     }
   }
 }
+// responsive columns
 @each $break in $breakpoints {
   @media (min-width: $break) {
     $col-slug: set-col-slug($break);
