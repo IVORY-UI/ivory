@@ -1,11 +1,11 @@
 .ivory-badge {
-  padding: 0 4px;
-  background-color: #161616;
+  padding: 0 0.313rem;
+  background-color: #424242;
   color: #FFFFFF;
   display: inline-block;
-  font-size: 0.625rem;
-  font-weight: 600;
-  line-height: 0.938rem;
+  font-size: 0.75rem;
+  font-weight: 400;
+  line-height: 1rem;
   min-width: 0.938rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -34,8 +34,9 @@
   display: inline-block;
   .ivory-badge {
     position: absolute;
-    right: -0.188rem;
+    right: 0;
     top: 0;
     vertical-align: baseline;
+    transform: translate(50%,-50%);
   }
 }

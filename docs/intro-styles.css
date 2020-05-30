@@ -39,6 +39,20 @@
   flex-direction: row;
   justify-content: center;
 }
+.hero .guided .nav-item {
+  color: #212121;
+  margin-right: 30px;
+  text-decoration: none;
+  border: 1px solid #212121;
+  line-height: 32px;
+  border-radius: 16px;
+  padding: 0 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+.hero .guided .nav-item:hover{
+  background-color: #F2F2F2;
+}
 .feature-tiles {
   padding: 64px 0;
 }
