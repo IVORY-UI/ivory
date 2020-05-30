@@ -1,3 +1,11 @@
+@mixin alert-variant($background, $border, $iconcolor) {
+  background-color: $background;
+  border: 1px solid $border;
+  .alert-icon {
+    color: $iconcolor;
+  }
+}
+
 .ivory-alert {
   position: relative;
   display: flex;
@@ -31,32 +39,15 @@
     }
   }
   &.success {
-    background-color: #F6FFED;
-    border: 1px solid #95DE64;
-    .alert-icon {
-      color: #52C41A;
-    }
+    @include alert-variant(#F6FFED, #95DE64, #52C41A);
   }
   &.info {
-    background-color: #EAF5FF;
-    border: 1px solid #74B9FF;
-    .alert-icon {
-      color: #2285F6;
-    }
+    @include alert-variant(#EAF5FF, #74B9FF, #2285F6);
   }
   &.warning {
-    background-color: #FFFBE6;
-    border: 1px solid #FFD43B;
-    .alert-icon {
-      color: #FAB005;
-    }
+    @include alert-variant(#FFFBE6, #FFD43B, #FAB005);
   }
   &.error {
-    background-color: #FFF1F5;
-    border: 1px solid #FFA8A8;
-    .alert-icon {
-      color: #FA5252;
-    }
+    @include alert-variant(#FFF1F5, #FFA8A8, #FA5252);
   }
-  
 }

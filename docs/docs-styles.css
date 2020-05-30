@@ -361,3 +361,17 @@ pre {
 		padding-right: 1rem;
 	}
 }
+
+.ivory-badge-pivot {
+	position: relative;
+	margin: 0 30px 0 0;
+	width: 42px;
+	height: 42px;
+	border-radius: 2px;
+	background: #F2F2F2;
+	vertical-align: middle;
+}
+.ivory-badge-link {
+	font-size: 14px;
+	line-height: 18px;
+}

@@ -1,60 +1,30 @@
-
-@mixin transform($transforms) {
-	-webkit-transform: $transforms;
-	-moz-transform: $transforms;
-	-ms-transform: $transforms;
-	transform: $transforms;
-}
+@import './commons/mixins';
 
 @keyframes spinnerrotate {
   0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
+    @include transform(rotate(0deg));
   }
   100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+    @include transform(rotate(360deg));
   }
 }
-.ivory-spinner-lg,
-.ivory-spinner,
-.ivory-spinner-md,
-.ivory-spinner-sm {
+@for $i from 2 through 6 {
+  $size: ($i / 2) * 16;
+  .ivory-spinner-#{$size} {
+    height: #{$size + 'px'};
+    width: #{$size + 'px'};
+    border: #{$i + 'px'} solid #CED4DA;
+  }
+}
+.ivory-spinner-16,
+.ivory-spinner-24,
+.ivory-spinner-32,
+.ivory-spinner-40,
+.ivory-spinner-48 {
   position: relative;
   border-radius: 50%;
+  border-left-color: #495057;
   @include transform(translateZ(0));
   -webkit-animation: spinnerrotate 1.1s infinite linear;
   animation: spinnerrotate 1.1s infinite linear;
-}
-.ivory-spinner-lg{
-  width: 48px;
-  height: 48px;
-  border-top: 5px solid #CED4DA;
-  border-right: 5px solid #CED4DA;
-  border-bottom: 5px solid #CED4DA;
-  border-left: 5px solid #495057;
-}
-.ivory-spinner {
-  width: 32px;
-  height: 32px;
-  border-top: 4px solid #CED4DA;
-  border-right: 4px solid #CED4DA;
-  border-bottom: 4px solid #CED4DA;
-  border-left: 4px solid #495057;
-}
-.ivory-spinner-md {
-  width: 24px;
-  height: 24px;
-  border-top: 3px solid #CED4DA;
-  border-right: 3px solid #CED4DA;
-  border-bottom: 3px solid #CED4DA;
-  border-left: 3px solid #495057;
-}
-.ivory-spinner-sm {
-  width: 16px;
-  height: 16px;
-  border-top: 2px solid #CED4DA;
-  border-right: 2px solid #CED4DA;
-  border-bottom: 2px solid #CED4DA;
-  border-left: 2px solid #495057;
 }

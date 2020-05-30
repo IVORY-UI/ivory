@@ -1,3 +1,5 @@
+@import './commons/mixins';
+
 %default-form-element {
   position: relative;
   display: block;
@@ -16,12 +18,6 @@
   outline: 0;
 }
 
-@mixin webappearance($property) {
-  -webkit-appearance: $property;
-  -moz-appearance: $property;
-  -ms-appearance: $property;
-  -o-appearance: $property;
-}
 .ivory-input {
   @extend %default-form-element;
   height: 2rem;
@@ -67,7 +63,6 @@
     @extend %defualt-element-focus
   }
 }
-
 .ivory-form {
   .form-field {
     margin-bottom: 1rem;

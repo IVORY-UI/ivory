@@ -17,7 +17,10 @@
     "build:styles": "node-sass --include-path scss src/ivory.scss dist/ivory.min.css --output-style compressed",
     "build:fonts": "cp src/ivory_icons/** dist/",
     "copy:package-json": "cp package.json dist/",
-    "build": "npm run clean && npm run build:styles && npm run build:fonts && npm run copy:package-json"
+    "copy:readme-md": "cp readme.md dist/",
+    "build": "npm run clean && npm run build:styles && npm run build:fonts && npm run post-build",
+    "post-build": "npm run copy:package-json && npm run copy:readme-md",
+    "pub:ivory": "npm publish dist"
   },
   "dependencies": {},
   "devDependencies": {

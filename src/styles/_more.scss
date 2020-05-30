@@ -1,0 +1,21 @@
+.ivory-more {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 2.5rem);
+  margin: 1.25rem;
+  &:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #E8E8E8;
+  }
+  .ivory-btn-f {
+    z-index: 999;
+    box-shadow: 0 4px 4px rgba(0,0,0,.06);
+  }
+}

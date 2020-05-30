@@ -9,46 +9,44 @@
   font-size: 0.875rem;
   line-height: 1.75rem;
   color: #495057;
-  background-color: #E8EBED;
+  background-color: #DEE2E6;
   outline: none;
   cursor: pointer;
   &:hover, &:focus {
     outline: none;
-    background-color: #DEE2E6;
+    background-color: #F1F3F5;
   }
+}
+@mixin btn-s-colors($background, $border) {
+  background-color: $background;
+  border-color: $border;
 }
 /* Solid Buttons */
 .ivory-btn {
   @extend %ivory-button;
   border: 1px solid #E8EBED;
   &.btn-primary {
-    border: 1px solid #0875E1;
-    background-color: #0875E1;
+    @include btn-s-colors(#0875E1, #0875E1);
     color: #FFFFFF;
     &:hover, &:focus {
       outline: none;
-      border-color: #005CB9;
-      background-color: #005CB9;
+      @include btn-s-colors(#005CB9, #005CB9);
     }
   }
   &.btn-success {
-    border: 1px solid #52C41A;
-    background-color: #52C41A;
+    @include btn-s-colors(#52C41A, #52C41A);
     color: #FFFFFF;
     &:hover, &:focus {
       outline: none;
-      border-color: #389E0D;
-      background-color: #389E0D;
+      @include btn-s-colors(#389E0D, #389E0D);
     }
   }
   &.btn-danger {
-    border: 1px solid #F03E3E;
-    background-color: #F03E3E;
+    @include btn-s-colors(#F03E3E, #F03E3E);
     color: #FFFFFF;
     &:hover, &:focus {
       outline: none;
-      border-color: #E03131;
-      background-color: #E03131;
+      @include btn-s-colors(#E03131, #E03131);
     }
   }
   &.disabled, &:disabled, &[disabled] {
@@ -58,15 +56,13 @@
     border: none;
     &:hover, &:focus {
       outline: none;
-      background-color: rgba(0, 0, 0, 0.12);
-      color: rgba(0, 0, 0, 0.25);
+      @include btn-s-colors(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.25));
     }
   }
   &.btn-ro {
     border-radius: 1.5rem;
   }
 }
-
 /* Outline Buttons */
 .ivory-btn-o {
   @extend %ivory-button;
@@ -106,11 +102,10 @@
     border-radius: 1.5rem;
   }
 }
-
 /* Flat Buttons */
 .ivory-btn-f {
   @extend %ivory-button;
-  background: transparent;
+  background: #FFFFFF;
   border: none;
   &.btn-primary {
     color: #0875e1;
@@ -139,7 +134,6 @@
     cursor: not-allowed;
   }
 }
-
 .btn-sm {
   height: 1.75rem;
   padding-left: 0.875rem;

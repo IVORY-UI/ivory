@@ -1,3 +1,5 @@
+@import './commons/mixins';
+
 .ivory-checkbox {
   position: relative;
   margin-bottom: 0.5rem;
@@ -55,8 +57,7 @@
           border-bottom: 0.125rem solid #FFF;
           top: 0;
           left: 0.188rem;
-          -webkit-transform: translateY(4px) rotate(-45deg);
-          transform: translateY(4px) rotate(-45deg);
+          @include transform(translateY(4px) rotate(-45deg));
         }
       }
       &:disabled {

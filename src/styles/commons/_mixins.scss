@@ -1,0 +1,18 @@
+/* Cross browser hacks */
+@mixin transform($transforms) {
+	-webkit-transform: $transforms;
+	-moz-transform: $transforms;
+	-ms-transform: $transforms;
+	transform: $transforms;
+}
+@mixin webappearance($property) {
+  -webkit-appearance: $property;
+  -moz-appearance: $property;
+  -ms-appearance: $property;
+  -o-appearance: $property;
+}
+/* Common mixins */
+@mixin margin-sides($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}

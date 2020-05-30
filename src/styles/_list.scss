@@ -76,13 +76,12 @@ ul.ivory-styled-list1 {
     transform: rotate(45deg);
   }
 }
-
 ul.ivory-styled-list2 {
   li {
     counter-increment: index; 
     display: flex;
     -webkit-box-align: center;
-            align-items: center;
+    align-items: center;
     padding: 12px 0;
     font-size: 0.875rem;
     line-height: 1.5rem;
@@ -98,6 +97,7 @@ ul.ivory-styled-list2 {
       align-self: flex-start;
       background-color: #74B9FF;
       -webkit-background-clip: text;
+      background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     &+li {
