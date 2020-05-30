@@ -90,6 +90,11 @@ p {
   @extend %small-default;
   font-weight: 600;
 }
+.small-label {
+  font-size: 12px;
+  line-height: 24px;
+  color: #999999;
+}
 a {
   text-decoration: none;
   cursor: pointer;
