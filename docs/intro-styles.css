@@ -7,6 +7,7 @@
 .intro-wrapper {
   position: relative;
   font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
 }
 .hero {
   position: relative;
@@ -89,18 +90,31 @@
   background-color: #FFF4E8;
 }
 .x-pro .inner {
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
 }
 .x-pro-left .inner {
   float: right;
-  margin-right: 30px;
+  padding: 0 30px;
 }
 .x-pro-right .inner {
   float: left;
-  margin-left: 30px;
+  padding: 0 30px;
 }
 .footer .inner {
   max-width: 960px;
   margin: 0 auto;
   padding: 32px 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  .x-pro-left .inner {
+    float: left;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .feature-tiles, .evolve {
+    padding-left: 64px;
+    padding-right: 64px;
+  }
 }
