@@ -25,6 +25,7 @@ $breakpoints: 576px, 768px, 1024px;
 
 .row {
   display: flex;
+  flex: 1;
   flex-flow: row;
   flex-wrap: wrap;
   @include margin-sides(-0.9375rem, -0.9375rem);
