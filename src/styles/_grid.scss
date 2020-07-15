@@ -35,11 +35,11 @@ $breakpoints: 576px, 768px, 1024px;
 }
 .col {
   flex: 1;
-  margin-sides(0.625rem, 0.625rem);
+  @include margin-sides(0.625rem, 0.625rem);
 }
 .col-auto {
   flex: 0 0 auto;
-  margin-sides(0.625rem, 0.625rem);
+  @include margin-sides(0.625rem, 0.625rem);
 }
 
 // default columns - mobile first
