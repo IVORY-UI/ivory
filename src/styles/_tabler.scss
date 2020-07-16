@@ -1,0 +1,45 @@
+.ivory-tabler {
+  display: flex;
+  .tabler-item {
+    position: relative;
+    display: inline-flex;
+    &+.tabler-item{
+      margin-left: -1px;
+    }
+    &:first-child {
+      .tabler-button {
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+      }
+    }
+    &:last-child {
+      .tabler-button {
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+      }
+    }
+  }
+  .tabler-input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+    left: 0;
+  }
+  .tabler-button {
+    display: block;
+    border: 1px solid rgba(0, 40, 100, 0.12);
+    text-align: center;
+    padding: 0.375rem 1rem;
+    position: relative;
+    cursor: pointer;
+    color: #9a9a9a;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    min-width: 2.375rem;
+  }
+  input[type="radio"]:checked+.tabler-button {
+    border-color: #3C7EED;
+    color: #3C7EED;
+  }
+}
