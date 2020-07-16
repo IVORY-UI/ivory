@@ -14,15 +14,15 @@ npm i ivoryui-ivory --save
 
 import the following files to your project:
 ```shell
-node_modules/ivoryui-ivory/dist/ivory-icons.css
-node_modules/ivoryui-ivory/dist/ivory.min.css
+node_modules/ivoryui-ivory/ivory-icons.css
+node_modules/ivoryui-ivory/ivory.min.css
 ```
 
 ### Load the files from CDN:
 
 ```shell
-<link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory.min.css" />
-<link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory-icons.css" />
+<link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" />
+<link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory-icons.css" />
 ```
 
 ## Browser Support
