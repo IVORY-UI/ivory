@@ -197,8 +197,8 @@
               <p class="subtitle2">Import the following files to your project</p>
               <pre>
                 <code>
-                  node_modules/ivoryui-ivory/dist/ivory-icons.css <br/>
-                  node_modules/ivoryui-ivory/dist/ivory.min.css
+                  node_modules/ivoryui-ivory/ivory-icons.css <br/>
+                  node_modules/ivoryui-ivory/ivory.min.css
                 </code>
               </pre>
             </div>
@@ -207,8 +207,8 @@
               <h6 class="section-subtitle">Using CDN</h6>
               <pre>
                 <code>
-                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory.min.css" /&gt; <br/>
-                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/dist/ivory-icons.css" /&gt;
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" /&gt; <br/>
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory-icons.css" /&gt;
                 </code>
               </pre>
             </div>
@@ -909,8 +909,6 @@
                 <cite>tag</cite>
               </div>
             </div>
-
-
           </div>
         </section>
 
@@ -1739,6 +1737,7 @@
         <section id="radio" class="docs-section">
           <h1 class="section-title">Radio</h1>
           <div class="section-body">
+
             <div class="ivory-radio">
               <input type="radio" id="radio1" name="myradio1" />
               <label for="radio1">Radio Option 1</label>
@@ -1786,6 +1785,63 @@
                   &lt;div class="ivory-radio"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="radio" id="radio4" name="myradio2" disabled /&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="radio4">Radio Option 2&lt;/label&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+            <h4>Tabler Radio</h4>
+            <p>Tabler radio buttons are useful in various scenarios, especially in e-commerce applications.</p>
+            <h6>Example:</h6>
+            <div style="margin-bottom: 2rem;">
+              <p class="p-bold">Select Size</p>
+              <div class="ivory-tabler">
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblr1" name="mytblr1" value="S" />
+                  <label class="tabler-button" for="tblr1">S</label>
+                </div>
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblr2" name="mytblr1" value="M" />
+                  <label class="tabler-button" for="tblr2">M</label>
+                </div>
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblr3" name="mytblr1" value="L" />
+                  <label class="tabler-button" for="tblr3">L</label>
+                </div>
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblr4" name="mytblr1" value="XL" />
+                  <label class="tabler-button" for="tblr4">XL</label>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p class="p-bold">Select Color</p>
+              <div class="ivory-tabler">
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblrbk" name="mytblr2" value="Black" />
+                  <label class="tabler-button" for="tblrbk">Black</label>
+                </div>
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblrwh" name="mytblr2" value="White" />
+                  <label class="tabler-button" for="tblrwh">White</label>
+                </div>
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblrbl" name="mytblr2" value="Blue" />
+                  <label class="tabler-button" for="tblrbl">Blue</label>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;div class="ivory-tabler"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="tabler-item"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" class="tabler-input" id="t1" name="my-tabler" value="Black" /&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="tabler-button" for="t1"&gt;Black&lt;/label&gt;<br/>
+                  &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;...<br/>
                   &lt;/div&gt;
                 </code>
               </pre>
@@ -2034,13 +2090,17 @@
               <p>A tooltip provides a short details about a specific text or element on the UI in a pop-over. The tip is shown on mouse enter,
                 and is hidden on mouse leave. The Tooltip doesn't support complex text or operations.</p>
 
-              <h6>Tooltip Placement:</h6>
-              <p>The tooltip supports 4 placements. It can be defined by using one of the following classes with the <code>.tooltip-content</code>
+              <h6>Tooltip Directions:</h6>
+              <p>IVORY tooltip supports 8 directions, defined by using one of the following classes with the <code>.tooltip-content</code>
                 class:<br/>
-                .top<br/>
-                .right<br/>
-                .bottom<br/>
-                .left
+                <code>.top</code><br/>
+                <code>.right</code><br/>
+                <code>.bottom</code><br/>
+                <code>.left</code><br/>
+                <code>.top-left</code><br/>
+                <code>.top-right</code><br/>
+                <code>.bottom-right</code><br/>
+                <code>.bottom-left</code>
               </p>
 
               <h6>Tooltip Size:</h6>
@@ -2069,6 +2129,26 @@
 
             <div style="margin-bottom: 2rem;">
               <p>Here is an example for right tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs right">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for top-left tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs top-left">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for top-right tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs top-right">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for bottom-right tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom-right">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for bottom-left tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom-left">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 

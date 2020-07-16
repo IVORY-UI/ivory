@@ -1,6 +1,6 @@
 @import './commons/mixins';
 
-$gutter: 1.875;
+$gutter: 1.25;
 $grid-columns: 12;
 $col-slug: col !default;
 $breakpoints: 576px, 768px, 1024px;
@@ -25,17 +25,21 @@ $breakpoints: 576px, 768px, 1024px;
 
 .row {
   display: flex;
+  flex: 1;
   flex-flow: row;
   flex-wrap: wrap;
-  @include margin-sides(-0.9375rem, -0.9375rem);
+  @include margin-sides(-0.625rem, -0.625rem);
   & > [class*="col-"] {
-    @include margin-sides(0.9375rem, 0.9375rem);
+    @include margin-sides(0.625rem, 0.625rem);
   }
 }
 .col {
   flex: 1;
-  margin-left: 0.9375rem;
-  margin-right: 0.9375rem;
+  @include margin-sides(0.625rem, 0.625rem);
+}
+.col-auto {
+  flex: 0 0 auto;
+  @include margin-sides(0.625rem, 0.625rem);
 }
 
 // default columns - mobile first
