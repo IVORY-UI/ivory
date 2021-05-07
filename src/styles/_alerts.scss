@@ -1,12 +1,12 @@
 @mixin alert-variant($background, $border, $iconcolor) {
   background-color: $background;
   border: 1px solid $border;
-  .alert-icon {
+  .icon {
     color: $iconcolor;
   }
 }
 
-.ivory-alert {
+.iv-alert {
   position: relative;
   display: flex;
   margin: 1.25rem 0;
@@ -16,7 +16,7 @@
   font-weight: 400;
   font-size: 0.875rem;
   line-height: 1.75rem;
-  color: #424242;
+  color: $iv-neutral-7;
   .alert-icon {
     flex: 0 0 1.0416666667rem;
     align-self: flex-start;
@@ -24,30 +24,30 @@
     font-size: 1.5rem;
     line-height: 1.75rem;
   }
-  .alert-action {
+  .action {
     position: absolute;
     top: 0.688rem;
     right: 0.688rem;
     font-size: 1rem;
-    color: #424242;
+    color: $iv-neutral-7;
     cursor: pointer;
     height: 1rem;
     width: 1rem;
     line-height: 1rem;
     &:hover {
-      color: #161616;
+      color: $iv-neutral-9;
     }
   }
   &.success {
-    @include alert-variant(#F6FFED, #95DE64, #52C41A);
+    @include alert-variant($iv-green-0, $iv-green-4, $iv-green-7);
   }
   &.info {
-    @include alert-variant(#EAF5FF, #74B9FF, #2285F6);
+    @include alert-variant($iv-blue-0, $iv-blue-3, $iv-blue-6);
   }
   &.warning {
-    @include alert-variant(#FFFBE6, #FFD43B, #FAB005);
+    @include alert-variant($iv-yellow-0, $iv-yellow-5, $iv-yellow-7);
   }
   &.error {
-    @include alert-variant(#FFF1F5, #FFA8A8, #FA5252);
+    @include alert-variant($iv-red-0, $iv-red-3, $iv-red-6);
   }
 }

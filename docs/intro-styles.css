@@ -4,6 +4,16 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+.avatar {
+  position: fixed;
+  top: 2.5rem;
+  left: 2.5rem;
+  width: 48px;
+  height: 48px;
+}
+.avatar img {
+  width: 100%;
+}
 .intro-wrapper {
   position: relative;
   font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;

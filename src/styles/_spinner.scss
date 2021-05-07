@@ -1,4 +1,4 @@
-@import './commons/mixins';
+@import './common/mixins';
 
 @keyframes spinnerrotate {
   0% {
@@ -10,17 +10,17 @@
 }
 @for $i from 2 through 6 {
   $size: ($i / 2) * 16;
-  .ivory-spinner-#{$size} {
+  .iv-spinner-#{$size} {
     height: #{$size + 'px'};
     width: #{$size + 'px'};
     border: #{$i + 'px'} solid #CED4DA;
   }
 }
-.ivory-spinner-16,
-.ivory-spinner-24,
-.ivory-spinner-32,
-.ivory-spinner-40,
-.ivory-spinner-48 {
+.iv-spinner-16,
+.iv-spinner-24,
+.iv-spinner-32,
+.iv-spinner-40,
+.iv-spinner-48 {
   position: relative;
   border-radius: 50%;
   border-left-color: #495057;

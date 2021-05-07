@@ -1,12 +1,7 @@
-* {
-  font-size: 16px;
+body {
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 16px;
 }
-b,
-strong {
-  font-weight: 500;
-}
-
 %big-heading {
   display: block;
   margin-top: 0;
@@ -77,16 +72,16 @@ p {
   font-weight: 400;
   color: #424242;
 }
-.p-bold {
+p>b {
   @extend %p-default;
   font-weight: 500;
   color: #212121;
 }
-.small {
+p>small {
   @extend %small-default;
   font-weight: 500;
 }
-.small-bold {
+p>small>b {
   @extend %small-default;
   font-weight: 600;
 }

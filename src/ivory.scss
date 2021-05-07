@@ -1,7 +1,9 @@
-/*! IVORY UI - ivory v@VERSION | MIT license | https://github.com/IVORY-UI/ivory */
-
-@import './styles/reset';
-@import './styles/fonts';
+/*! IVORY UI | MIT license | https://github.com/IVORY-UI/ivory */
+@import './styles/common/alignments';
+@import './styles/common/colors';
+@import './styles/common/mixins';
+@import './styles/common/reset';
+@import './styles/common/variables';
 @import './styles/typography';
 @import './styles/grid';
 @import './styles/alerts';

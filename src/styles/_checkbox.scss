@@ -1,6 +1,5 @@
-@import './commons/mixins';
-
-.ivory-checkbox {
+@import './common/mixins';
+.iv-checkbox {
   position: relative;
   margin-bottom: 0.5rem;
   input[type="checkbox"] {
@@ -53,8 +52,8 @@
           content: "";
           height: 0.313rem;
           width: 0.563rem;
-          border-left: 0.125rem solid #FFF;
-          border-bottom: 0.125rem solid #FFF;
+          border-left: 0.125rem solid $iv-light;
+          border-bottom: 0.125rem solid $iv-light;
           top: 0;
           left: 0.188rem;
           @include transform(translateY(4px) rotate(-45deg));
