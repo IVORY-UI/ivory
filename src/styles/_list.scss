@@ -71,7 +71,7 @@ ul.iv-styled-list1 {
     height: 11px;
     border-width: 0 2px 2px 0;
     border-style: solid;
-    border-color: #40A0FF;
+    border-color: $iv-blue-5;
     transform-origin: bottom left;
     transform: rotate(45deg);
   }
@@ -95,7 +95,7 @@ ul.iv-styled-list2 {
       font-feature-settings: "tnum";
       font-variant-numeric: tabular-nums;
       align-self: flex-start;
-      background-color: #74B9FF;
+      background-color: $iv-blue-3;
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;

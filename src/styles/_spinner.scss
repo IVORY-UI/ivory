@@ -1,5 +1,3 @@
-@import './common/mixins';
-
 @keyframes spinnerrotate {
   0% {
     @include transform(rotate(0deg));
