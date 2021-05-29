@@ -15,9 +15,8 @@
   "scripts": {
     "clean": "node ./scripts/build/clean",
     "build:styles": "node-sass --include-path scss src/ivory.scss dist/ivory.min.css --output-style compressed && node-sass --include-path scss src/montserrat-font.scss dist/montserrat-font.css --output-style compressed",
-    "copy:package-json": "cp package.json dist/",
-    "copy:readme-md": "cp readme.md dist/",
-    "build": "npm run clean && npm run build:styles && npm run copy:package-json && npm run copy:readme-md",
+    "copy:files": "cp package.json dist/ && cp readme.md dist/",
+    "build": "npm run clean && npm run build:styles && npm run copy:files",
     "pub:ivory": "npm publish dist"
   },
   "dependencies": {},
