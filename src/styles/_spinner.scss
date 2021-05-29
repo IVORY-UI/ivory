@@ -11,7 +11,7 @@
   .iv-spinner-#{$size} {
     height: #{$size + 'px'};
     width: #{$size + 'px'};
-    border: #{$i + 'px'} solid #CED4DA;
+    border: #{$i + 'px'} solid $iv-neutral-4;
   }
 }
 .iv-spinner-16,
@@ -21,7 +21,7 @@
 .iv-spinner-48 {
   position: relative;
   border-radius: 50%;
-  border-left-color: #495057;
+  border-left-color: $iv-neutral-7;
   @include transform(translateZ(0));
   -webkit-animation: spinnerrotate 1.1s infinite linear;
   animation: spinnerrotate 1.1s infinite linear;

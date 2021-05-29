@@ -362,16 +362,16 @@ pre {
 	}
 }
 
-.ivory-badge-pivot {
+.badge-head {
 	position: relative;
 	margin: 0 30px 0 0;
 	width: 42px;
 	height: 42px;
 	border-radius: 2px;
-	background: #F2F2F2;
+	background: #eee;
 	vertical-align: middle;
 }
-.ivory-badge-link {
+.badge-link {
 	font-size: 14px;
 	line-height: 18px;
 }

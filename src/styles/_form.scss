@@ -2,13 +2,12 @@
   position: relative;
   display: block;
   width: 100%;
-  padding: 0.25rem;
   font-size: 0.8125rem;
   font-weight: 400;
   border: 1px solid #B7B7B7;
   border-radius: 0.1875rem;
   background-color: $iv-light;
-  color: #212121;
+  color: $iv-dark;
 }
 %defualt-element-focus {
   border: 1px solid $iv-blue-4;
@@ -19,6 +18,7 @@
   @extend %default-form-element;
   height: 2rem;
   line-height: 2rem;
+  padding: 0 0.5rem;
   &:not([readonly]):focus {
     @extend %defualt-element-focus
   }
@@ -30,7 +30,7 @@
     @include webappearance(none);
     @extend %default-form-element;
     height: 2rem;
-    line-height: 2rem;
+    line-height: 1rem;
     margin: 0;
     padding: 0 1.5rem 0 0.25rem;
     cursor: pointer;
@@ -56,6 +56,7 @@
   @extend %default-form-element;
   min-height: 120px;
   min-width: 200px;
+  padding: 0.5rem;
   &:not([readonly]):focus {
     @extend %defualt-element-focus
   }
