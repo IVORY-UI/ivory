@@ -24,9 +24,10 @@
     <meta name="twitter:image" content="http://ivoryui.com/assets/ivory.png">
 
     <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/montserrat-font.css" />
     <link rel="stylesheet" href="../dist/ivory.min.css" />
     <link rel="stylesheet" href="./docs-styles.css" />
-    <script rel="preload" src="https://code.jquery.com/jquery-3.4.1.min.js" as="script"></script>
+    <script rel="preload" src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js" as="script"></script>
     <script src="./docs.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -205,6 +206,7 @@
               <p class="subtitle2">Import the following files to your project</p>
               <pre>
                 <code>
+                  node_modules/ivoryui-ivory/montserrat-font.css<br/>
                   node_modules/ivoryui-ivory/ivory.min.css
                 </code>
               </pre>
@@ -214,6 +216,7 @@
               <h6 class="section-subtitle">Using CDN</h6>
               <pre>
                 <code>
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/montserrat-font.css" /&gt;<br/>
                   &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" /&gt;
                 </code>
               </pre>
@@ -749,36 +752,22 @@
         <section id="typo" class="docs-section">
           <h1 class="section-title">Typography</h1>
           <div class="section-body">
-
             <div style="margin-bottom: 2rem;">
               <h6 class="section-subtitle">Font Family</h6>
-              <p>IVORY uses the <a href="https://github.com/JulietaUla/Montserrat">Montserrat Font Family</a> designed by
-                <a href="https://github.com/JulietaUla">Julieta Ulanovsky</a>, to greatly enhance the user experience
-                and elegance of the interface. IVORY use Montserrat as the base font and then also provides a set of
-                fallback font libraries to maintain readability for screens on different platforms and browsers. </p>
-
-              <p><span class="code">font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;</span></p>
+              <p>To maintain great readability on different screens and browsers IVORY uses
+                <a href="https://github.com/JulietaUla/Montserrat">Montserrat</a> font as default font family. Montserrat font family has 10 
+                differnt font-weights from 100 to 900. For good readability, IVORY prefers to use light(300), regular(400), medium(500), 
+                semi-bold(600), bold(700) font weights.</p>
+              <p><b>Note:</b> If you want to use a different font family instead of suggested Montserrat font family, then don't import or use 
+                <b>montserrat-font.css</b> and use your own font css in your application.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <h6 class="section-subtitle">Font Weight</h6>
-              <div class="row">
-                <div class="col-8">
-                  <p>Montserrat font family has 10 differnt font-weights from 100 to 900. For good readability, IVORY prefers
-                    to use light(300), regular(400), medium(500), semi-bold(600), bold(700) font weights.</p>
-                </div>
-                <div class="col-4">
-                  <cite class="font-highlight" style="font-weight: 700;">Montserrat 700</cite>
-                  <cite class="font-highlight" style="font-weight: 600;">Montserrat 600</cite>
-                  <cite class="font-highlight" style="font-weight: 500;">Montserrat 500</cite>
-                  <cite class="font-highlight" style="font-weight: 400;">Montserrat 400</cite>
-                  <cite class="font-highlight" style="font-weight: 300;">Montserrat 300</cite>
-                </div>
-              </div>
+              
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>IVORY type system has 11 styles.</p>
+              <h6>Type System</h6>
               <div class="type-system">
                 <table>
                   <thead>

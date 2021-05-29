@@ -1,16 +1,17 @@
 /*! IVORY UI | MIT license | https://github.com/IVORY-UI/ivory */
+
+@import './styles/common/reset';
 @import './styles/common/alignments';
 @import './styles/common/colors';
 @import './styles/common/mixins';
-@import './styles/common/reset';
 @import './styles/common/variables';
 @import './styles/typography';
-@import './styles/grid';
 @import './styles/alerts';
 @import './styles/badges';
 @import './styles/buttons';
-@import './styles/form';
 @import './styles/checkbox';
+@import './styles/form';
+@import './styles/grid';
 @import './styles/list';
 @import './styles/more';
 @import './styles/progress';
