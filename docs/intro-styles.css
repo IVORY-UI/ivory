@@ -4,6 +4,10 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
+.avatar {
+  position: relative;
+  text-align: center;
+}
 .intro-wrapper {
   position: relative;
   font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -11,12 +15,13 @@
 }
 .hero {
   position: relative;
-  padding: 160px 0;
+  background: url('./assets/hero_background.png') center no-repeat;
 }
 .hero .inner {
   position: relative;
   max-width: 480px;
   margin: 0 auto;
+  padding: 160px 0;
 }
 .hero .highlight {
   font-size: 80px;
@@ -27,7 +32,6 @@
 .hero .text-lead {
   font-size: 18px;
   line-height: 28px;
-  font-weight: 300;
 }
 .hero .highlight,
 .hero .text-lead {
@@ -66,9 +70,12 @@
   position: relative;
   background: rgba(255, 255, 255, 0.85);
 }
+.feature-tiles .tile h5 {
+  color: #415C7A;
+}
 .evolve {
   padding: 80px 0;
-  background-color: #F7F8FB;
+  background-color: #F1F4F7;
 }
 .evolve .inner {
   max-width: 960px;
@@ -78,6 +85,7 @@
   font-size: 56px;
   line-height: 72px;
   font-weight: 600;
+  color: #415C7A;
 }
 .x-pro {
   padding-top: 32px;

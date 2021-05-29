@@ -1,20 +1,19 @@
-%ivory-button {
+%button {
   border: none;
   height: 2rem;
   margin: 0.75rem 0;
   padding: 0 1.25rem;
   border-radius: 0.25rem;
-  font-family: 'Montserrat', Helvetica, sans-serif;
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.75rem;
-  color: #495057;
-  background-color: #DEE2E6;
+  color: $iv-neutral-7;
+  background-color: $iv-neutral-3;
   outline: none;
   cursor: pointer;
   &:hover, &:focus {
     outline: none;
-    background-color: #F1F3F5;
+    background-color: $iv-neutral-1;
   }
 }
 @mixin btn-s-colors($background, $border) {
@@ -22,31 +21,31 @@
   border-color: $border;
 }
 /* Solid Buttons */
-.ivory-btn {
-  @extend %ivory-button;
+.iv-btn {
+  @extend %button;
   border: 1px solid #E8EBED;
   &.btn-primary {
-    @include btn-s-colors(#0875E1, #0875E1);
-    color: #FFFFFF;
+    @include btn-s-colors($iv-blue-7, $iv-blue-7);
+    color: $iv-light;
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors(#005CB9, #005CB9);
+      @include btn-s-colors($iv-blue-8, $iv-blue-8);
     }
   }
   &.btn-success {
-    @include btn-s-colors(#52C41A, #52C41A);
-    color: #FFFFFF;
+    @include btn-s-colors($iv-green-7, $iv-green-7);
+    color: $iv-light;
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors(#389E0D, #389E0D);
+      @include btn-s-colors($iv-green-8, $iv-green-8);
     }
   }
   &.btn-danger {
-    @include btn-s-colors(#F03E3E, #F03E3E);
-    color: #FFFFFF;
+    @include btn-s-colors($iv-red-7, $iv-red-7);
+    color: $iv-light;
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors(#E03131, #E03131);
+      @include btn-s-colors($iv-red-8, $iv-red-8);
     }
   }
   &.disabled, &:disabled, &[disabled] {
@@ -64,36 +63,36 @@
   }
 }
 /* Outline Buttons */
-.ivory-btn-o {
-  @extend %ivory-button;
-  border: 1px solid #868E96;
-  background: #FFFFFF;
+.iv-btn-o {
+  @extend %button;
+  border: 1px solid $iv-neutral-6;
+  background: $iv-light;
   &.btn-primary {
-    border: 1px solid #0875e1;
-    color: #0875e1;
+    border: 1px solid $iv-blue-7;
+    color: $iv-blue-7;
     &:hover {
       outline: none;
       background-color: #F4F9FF;
     }
   }
   &.btn-success {
-    border: 1px solid #52C41A;
-    color: #389E0D;
+    border: 1px solid $iv-green-7;
+    color: $iv-green-8;
     &:hover {
       outline: none;
-      background-color: #F6FFED;
+      background-color: $iv-green-0;
     }
   }
   &.btn-danger {
-    border: 1px solid #F03E3E;
-    color: #F03E3E;
+    border: 1px solid $iv-red-7;
+    color: $iv-red-7;
     &:hover {
       outline: none;
-      background-color: #FFF1F5;
+      background-color: $iv-red-0;
     }
   }
   &.disabled, &:disabled, &[disabled] {
-    background: #FFFFFF;
+    background: $iv-light;
     border: 1px solid #D9D9D9;
     color: rgba(0, 0, 0, 0.25);
     cursor: not-allowed;
@@ -103,29 +102,29 @@
   }
 }
 /* Flat Buttons */
-.ivory-btn-f {
-  @extend %ivory-button;
-  background: #FFFFFF;
+.iv-btn-f {
+  @extend %button;
+  background: $iv-light;
   border: none;
   &.btn-primary {
-    color: #0875e1;
+    color: $iv-blue-7;
     &:hover {
       outline: none;
       background-color: #E3EFFE;
     }
   }
   &.btn-success {
-    color: #389E0D;
+    color: $iv-green-8;
     &:hover {
       outline: none;
-      background-color: #E8FCCF;
+      background-color: $iv-green-1;
     }
   }
   &.btn-danger {
-    color: #F03E3E;
+    color: $iv-red-7;
     &:hover {
       outline: none;
-      background-color: #FFE8E8;
+      background-color: $iv-red-1;
     }
   }
   &.disabled, &:disabled, &[disabled] {

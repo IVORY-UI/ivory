@@ -1,7 +1,7 @@
 {
   "name": "ivoryui-ivory",
   "description": "IVORY is simple and highly customizable CSS framework, gives you all to build your pages faster and easier.",
-  "version": "4.0.8",
+  "version": "5.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IVORY-UI/ivory.git"
@@ -14,12 +14,9 @@
   ],
   "scripts": {
     "clean": "node ./scripts/build/clean",
-    "build:styles": "node-sass --include-path scss src/ivory.scss dist/ivory.min.css --output-style compressed",
-    "build:fonts": "cp src/ivory_icons/** dist/",
-    "copy:package-json": "cp package.json dist/",
-    "copy:readme-md": "cp readme.md dist/",
-    "build": "npm run clean && npm run build:styles && npm run build:fonts && npm run post-build",
-    "post-build": "npm run copy:package-json && npm run copy:readme-md",
+    "build:styles": "node-sass --include-path scss src/ivory.scss dist/ivory.min.css --output-style compressed && node-sass --include-path scss src/montserrat-font.scss dist/montserrat-font.css --output-style compressed",
+    "copy:files": "cp package.json dist/ && cp readme.md dist/",
+    "build": "npm run clean && npm run build:styles && npm run copy:files",
     "pub:ivory": "npm publish dist"
   },
   "dependencies": {},

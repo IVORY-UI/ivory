@@ -10,11 +10,24 @@
     <meta name="keywords" content="ivory, ui, CSS, framework, front-end, frontend, responsive, web development">
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="http://ivoryui.com/">
+
+    <meta property="og:title" content="IVORY UI">
+    <meta property="og:type" content="Website">
+    <meta property="og:url" content="http://ivoryui.com">
+    <meta property="og:image" content="http://ivoryui.com/assets/ivory.png">
+    <meta property="og:site_name" content="IVORY UI">
+    <meta property="og:description" content="Simple CSS framework makes your UI development faster and easier.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="IVORY UI">
+    <meta name="twitter:title" content="IOVRY UI">
+    <meta name="twitter:description" content="Simple CSS framework makes your UI development faster and easier.">
+    <meta name="twitter:image" content="http://ivoryui.com/assets/ivory.png">
+
     <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../dist/ivory-icons.css" />
+    <link rel="stylesheet" href="../dist/montserrat-font.css" />
     <link rel="stylesheet" href="../dist/ivory.min.css" />
     <link rel="stylesheet" href="./docs-styles.css" />
-    <script rel="preload" src="https://code.jquery.com/jquery-3.4.1.min.js" as="script"></script>
+    <script rel="preload" src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js" as="script"></script>
     <script src="./docs.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -23,7 +36,6 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'UA-155990043-1');
     </script>
   </head>
@@ -65,9 +77,6 @@
             </li>
             <li class="nav-item">
               <a href="#" data-target="typo">Typography</a>
-            </li>
-            <li class="nav-item">
-              <a href="#" data-target="icons">Icons</a>
             </li>
           </ul>
 
@@ -132,7 +141,7 @@
         <!--Intro-->
         <section id="intro" class="docs-section section-active">
           <section class="hero">
-            IVORY 
+            IVORY
           </section>
 
           <div class="section-body">
@@ -149,8 +158,8 @@
               <ul class="timeline">
                 <li class="event" data-date="Jul, 2012">
                   <cite>The First Step</cite>
-                  <p>The project IVORY was started in July 2012, as a side project by a Software Engineer named 
-                    <a target="_blank" href="https://github.com/kanthvallampati/">Lakshmikanth Vallampati</a>. The initial idea of the project 
+                  <p>The project IVORY was started in July 2012, as a side project by a Software Engineer named
+                    <a target="_blank" href="https://github.com/kanthvallampati/">Lakshmikanth Vallampati</a>. The initial idea of the project
                     IVORY is to create the CSS library for forms.</p>
                 </li>
                 <li class="event" data-date="Aug 11, 2012">
@@ -197,7 +206,7 @@
               <p class="subtitle2">Import the following files to your project</p>
               <pre>
                 <code>
-                  node_modules/ivoryui-ivory/ivory-icons.css <br/>
+                  node_modules/ivoryui-ivory/montserrat-font.css<br/>
                   node_modules/ivoryui-ivory/ivory.min.css
                 </code>
               </pre>
@@ -207,8 +216,8 @@
               <h6 class="section-subtitle">Using CDN</h6>
               <pre>
                 <code>
-                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" /&gt; <br/>
-                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory-icons.css" /&gt;
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/montserrat-font.css" /&gt;<br/>
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" /&gt;
                 </code>
               </pre>
             </div>
@@ -220,9 +229,8 @@
           <h1 class="section-title">Colors</h1>
           <div class="section-body">
             <div style="margin-bottom: 2rem;">
-              <p>IVORY color system is combination of 12 primary colors and a neutral color. Each color has a adequate
-                purpose. The color system designed in a way to help create a theme that is harmonious, ensures accessible
-                text, and distinguishes UI elements and surfaces from one another.</p>
+              <p>IVORY color system has 11 color palette. Each color has a adequate purpose. The color system designed in a way to help 
+                create a theme that is harmonious, ensures accessible text, and distinguishes UI elements and surfaces from one another.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
@@ -232,228 +240,511 @@
             </div>
 
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Red</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #FFF1F5;">#FFF1F5</div>
-                  <div class="color-cell" style="background-color: #FFE8E8;">#FFE8E8</div>
-                  <div class="color-cell" style="background-color: #FFCCC9;">#FFCCC9</div>
-                  <div class="color-cell" style="background-color: #FFA8A8;">#FFA8A8</div>
-                  <div class="color-cell" style="background-color: #FF8787;">#FF8787</div>
-                  <div class="color-cell" style="background-color: #FF6B6B; color: #FAFAFA;">#FF6B6B</div>
-                  <div class="color-cell" style="background-color: #FA5252; color: #FAFAFA;">#FA5252</div>
-                  <div class="color-cell" style="background-color: #F03E3E; color: #FAFAFA;">#F03E3E</div>
-                  <div class="color-cell" style="background-color: #E03131; color: #FAFAFA;">#E03131</div>
-                  <div class="color-cell" style="background-color: #C82F2F; color: #FAFAFA;">#C82F2F</div>
+              <h6 class="section-subtitle">Neutral Color</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F8F9FA"></div>
+                  <span class="color-hex">#F8F9FA</span>
                 </div>
-              </div>
-
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Pink</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color:#FFF0F6;">#FFF0F6</div>
-                  <div class="color-cell" style="background-color:#FFDEEB;">#FFDEEB</div>
-                  <div class="color-cell" style="background-color:#FCC2D7;">#FCC2D7</div>
-                  <div class="color-cell" style="background-color:#FAA2C1;">#FAA2C1</div>
-                  <div class="color-cell" style="background-color:#F783AC;">#F783AC</div>
-                  <div class="color-cell" style="background-color:#F06595;">#F06595</div>
-                  <div class="color-cell" style="background-color:#E64980; color: #FAFAFA;">#E64980</div>
-                  <div class="color-cell" style="background-color:#D6336C; color: #FAFAFA;">#D6336C</div>
-                  <div class="color-cell" style="background-color:#C2255C; color: #FAFAFA;">#C2255C</div>
-                  <div class="color-cell" style="background-color:#A61E4D; color: #FAFAFA;">#A61E4D</div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F1F3F5"></div>
+                  <span class="color-hex">#F1F3F5</span>
                 </div>
-              </div>
-
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Purple</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #F8F0FC;">#F8F0FC</div>
-                  <div class="color-cell" style="background-color: #F3D9FA;">#F3D9FA</div>
-                  <div class="color-cell" style="background-color: #EEBEFA;">#EEBEFA</div>
-                  <div class="color-cell" style="background-color: #E599F7;">#E599F7</div>
-                  <div class="color-cell" style="background-color: #DA77F2;">#DA77F2</div>
-                  <div class="color-cell" style="background-color: #CC5DE8; color: #FAFAFA;">#CC5DE8</div>
-                  <div class="color-cell" style="background-color: #BE4BDB; color: #FAFAFA;">#BE4BDB</div>
-                  <div class="color-cell" style="background-color: #AE3EC9; color: #FAFAFA;">#AE3EC9</div>
-                  <div class="color-cell" style="background-color: #9C36B5; color: #FAFAFA;">#9C36B5</div>
-                  <div class="color-cell" style="background-color: #862E9C; color: #FAFAFA;">#862E9C</div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E9ECEF"></div>
+                  <span class="color-hex">#E9ECEF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #DEE2E6"></div>
+                  <span class="color-hex">#DEE2E6</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #CED4DA"></div>
+                  <span class="color-hex">#CED4DA</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #ADB5BD"></div>
+                  <span class="color-hex">#ADB5BD</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #868E96"></div>
+                  <span class="color-hex">#868E96</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #495057"></div>
+                  <span class="color-hex">#495057</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #343A40"></div>
+                  <span class="color-hex">#343A40</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #212529"></div>
+                  <span class="color-hex">#212529</span>
                 </div>
               </div>
             </div>
 
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Indigo</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #EDF2FF;">#EDF2FF</div>
-                  <div class="color-cell" style="background-color: #DBE4FF;">#DBE4FF</div>
-                  <div class="color-cell" style="background-color: #BAC8FF;">#BAC8FF</div>
-                  <div class="color-cell" style="background-color: #91A7FF;">#91A7FF</div>
-                  <div class="color-cell" style="background-color: #748FFC;">#748FFC</div>
-                  <div class="color-cell" style="background-color: #5C7CFA; color: #FAFAFA;">#5C7CFA</div>
-                  <div class="color-cell" style="background-color: #4C6EF5; color: #FAFAFA;">#4C6EF5</div>
-                  <div class="color-cell" style="background-color: #4263EB; color: #FAFAFA;">#4263EB</div>
-                  <div class="color-cell" style="background-color: #3B5BDB; color: #FAFAFA;">#3B5BDB</div>
-                  <div class="color-cell" style="background-color: #364FC7; color: #FAFAFA;">#364FC7</div>
+              <h6 class="section-subtitle">Red</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFF1F5"></div>
+                  <span class="color-hex">#FFF1F5</span>
                 </div>
-              </div>
-
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Blue</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #EAF5FF;">#EAF5FF</div>
-                  <div class="color-cell" style="background-color: #D7EAFC;">#D7EAFC</div>
-                  <div class="color-cell" style="background-color: #A6D2FF;">#A6D2FF</div>
-                  <div class="color-cell" style="background-color: #74B9FF;">#74B9FF</div>
-                  <div class="color-cell" style="background-color: #5CACFC;">#5CACFC</div>
-                  <div class="color-cell" style="background-color: #40A0FF; color: #FAFAFA;">#40A0FF</div>
-                  <div class="color-cell" style="background-color: #2285F6; color: #FAFAFA;">#2285F6</div>
-                  <div class="color-cell" style="background-color: #0875E1; color: #FAFAFA;">#0875E1</div>
-                  <div class="color-cell" style="background-color: #005CB9; color: #FAFAFA;">#005CB9</div>
-                  <div class="color-cell" style="background-color: #004387; color: #FAFAFA;">#004387</div>
-
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFE8E8"></div>
+                  <span class="color-hex">#FFE8E8</span>
                 </div>
-              </div>
-
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Cyan</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #E3FAFC;">#E3FAFC</div>
-                  <div class="color-cell" style="background-color: #C5F6Fa;">#C5F6Fa</div>
-                  <div class="color-cell" style="background-color: #99E9F2;">#99E9F2</div>
-                  <div class="color-cell" style="background-color: #66D9E8;">#66D9E8</div>
-                  <div class="color-cell" style="background-color: #3BC9DB;">#3BC9DB</div>
-                  <div class="color-cell" style="background-color: #22B8CF; color: #FAFAFA;">#22B8CF</div>
-                  <div class="color-cell" style="background-color: #15AABF; color: #FAFAFA;">#15AABF</div>
-                  <div class="color-cell" style="background-color: #1098AD; color: #FAFAFA;">#1098AD</div>
-                  <div class="color-cell" style="background-color: #0C8599; color: #FAFAFA;">#0C8599</div>
-                  <div class="color-cell" style="background-color: #0B7285; color: #FAFAFA;">#0B7285</div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFCCC9"></div>
+                  <span class="color-hex">#FFCCC9</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFA8A8"></div>
+                  <span class="color-hex">#FFA8A8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FF8787"></div>
+                  <span class="color-hex">#FF8787</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FF6B6B"></div>
+                  <span class="color-hex">#FF6B6B</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FA5252"></div>
+                  <span class="color-hex">#FA5252</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F03E3E"></div>
+                  <span class="color-hex">#F03E3E</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E03131"></div>
+                  <span class="color-hex">#E03131</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #C82F2F"></div>
+                  <span class="color-hex">#C82F2F</span>
                 </div>
               </div>
             </div>
 
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Teal</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #E6FCF5;">#E6FCF5</div>
-                  <div class="color-cell" style="background-color: #C3FAE8;">#C3FAE8</div>
-                  <div class="color-cell" style="background-color: #96F2D7;">#96F2D7</div>
-                  <div class="color-cell" style="background-color: #63E6BE;">#63E6BE</div>
-                  <div class="color-cell" style="background-color: #38D9A9;">#38D9A9</div>
-                  <div class="color-cell" style="background-color: #20C997;">#20C997</div>
-                  <div class="color-cell" style="background-color: #12B886; color: #FAFAFA;">#12B886</div>
-                  <div class="color-cell" style="background-color: #0CA678; color: #FAFAFA;">#0CA678</div>
-                  <div class="color-cell" style="background-color: #099268; color: #FAFAFA;">#099268</div>
-                  <div class="color-cell" style="background-color: #087F5B; color: #FAFAFA;">#087F5B</div>
+              <h6 class="section-subtitle">Pink</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#FFF0F6"></div>
+                  <span class="color-hex">#FFF0F6</span>
                 </div>
-              </div>
-
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Green</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #F6FFED;">#F6FFED</div>
-                  <div class="color-cell" style="background-color: #E8FCCF;">#E8FCCF</div>
-                  <div class="color-cell" style="background-color: #D9F7BE;">#D9F7BE</div>
-                  <div class="color-cell" style="background-color: #B7EB8F;">#B7EB8F</div>
-                  <div class="color-cell" style="background-color: #95DE64;">#95DE64</div>
-                  <div class="color-cell" style="background-color: #84D750;">#84D750</div>
-                  <div class="color-cell" style="background-color: #73D13D; color: #FAFAFA;">#73D13D</div>
-                  <div class="color-cell" style="background-color: #52C41A; color: #FAFAFA;">#52C41A</div>
-                  <div class="color-cell" style="background-color: #389E0D; color: #FAFAFA;">#389E0D</div>
-                  <div class="color-cell" style="background-color: #237804; color: #FAFAFA;">#237804</div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#FFDEEB"></div>
+                  <span class="color-hex">#FFDEEB</span>
                 </div>
-              </div>
-
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Yellow</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #FFFBE6;">#FFFBE6</div>
-                  <div class="color-cell" style="background-color: #FFF9D0;">#FFF9D0</div>
-                  <div class="color-cell" style="background-color: #FFF3BF;">#FFF3BF</div>
-                  <div class="color-cell" style="background-color: #FFEC99;">#FFEC99</div>
-                  <div class="color-cell" style="background-color: #FFE066;">#FFE066</div>
-                  <div class="color-cell" style="background-color: #FFD43b;">#FFD43b</div>
-                  <div class="color-cell" style="background-color: #FCC419; color: #FAFAFA;">#FCC419</div>
-                  <div class="color-cell" style="background-color: #FAB005; color: #FAFAFA;">#FAB005</div>
-                  <div class="color-cell" style="background-color: #F59F00; color: #FAFAFA;">#F59F00</div>
-                  <div class="color-cell" style="background-color: #F08C00; color: #FAFAFA;">#F08C00</div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#FCC2D7"></div>
+                  <span class="color-hex">#FCC2D7</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#FAA2C1"></div>
+                  <span class="color-hex">#FAA2C1</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#F783AC"></div>
+                  <span class="color-hex">#F783AC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#F06595"></div>
+                  <span class="color-hex">#F06595</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#E64980"></div>
+                  <span class="color-hex">#E64980</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#D6336C"></div>
+                  <span class="color-hex">#D6336C</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#C2255C"></div>
+                  <span class="color-hex">#C2255C</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#A61E4D"></div>
+                  <span class="color-hex">#A61E4D</span>
                 </div>
               </div>
             </div>
 
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Orange</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #FFF4E6;">#FFF4E6</div>
-                  <div class="color-cell" style="background-color: #FFE8CC;">#FFE8CC</div>
-                  <div class="color-cell" style="background-color: #FFD8A8;">#FFD8A8</div>
-                  <div class="color-cell" style="background-color: #FFC078;">#FFC078</div>
-                  <div class="color-cell" style="background-color: #FFA94D;">#FFA94D</div>
-                  <div class="color-cell" style="background-color: #FF922B; color: #FAFAFA;">#FF922B</div>
-                  <div class="color-cell" style="background-color: #FD7E14; color: #FAFAFA;">#FD7E14</div>
-                  <div class="color-cell" style="background-color: #F76707; color: #FAFAFA;">#F76707</div>
-                  <div class="color-cell" style="background-color: #E8590C; color: #FAFAFA;">#E8590C</div>
-                  <div class="color-cell" style="background-color: #d9480f; color: #FAFAFA;">#D9480F</div>
+              <h6 class="section-subtitle">Purple</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F8F0FC"></div>
+                  <span class="color-hex">#F8F0FC</span>
                 </div>
-              </div>
-
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Deep Orange</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #FFF4E8;">#FFF4E8</div>
-                  <div class="color-cell" style="background-color: #FFEADB;">#FFEADB</div>
-                  <div class="color-cell" style="background-color: #FFD8BF;">#FFD8BF</div>
-                  <div class="color-cell" style="background-color: #FFBB96;">#FFBB96</div>
-                  <div class="color-cell" style="background-color: #FF9C6E;">#FF9C6E</div>
-                  <div class="color-cell" style="background-color: #FF7A45; color: #FAFAFA;">#FF7A45</div>
-                  <div class="color-cell" style="background-color: #FA541C; color: #FAFAFA;">#FA541C</div>
-                  <div class="color-cell" style="background-color: #E84619; color: #FAFAFA;">#E84619</div>
-                  <div class="color-cell" style="background-color: #D4380D; color: #FAFAFA;">#D4380D</div>
-                  <div class="color-cell" style="background-color: #BC3618; color: #FAFAFA;">#BC3618</div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F3D9FA"></div>
+                  <span class="color-hex">#F3D9FA</span>
                 </div>
-              </div>
-
-              <div class="col-12 col-md-4">
-                <h6 class="section-subtitle">Silver</h6>
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #F8F9FA;">#F8F9FA</div>
-                  <div class="color-cell" style="background-color: #F1F3F5;">#F1F3F5</div>
-                  <div class="color-cell" style="background-color: #E9ECEF;">#E9ECEF</div>
-                  <div class="color-cell" style="background-color: #DEE2E6;">#DEE2E6</div>
-                  <div class="color-cell" style="background-color: #CED4DA;">#CED4DA</div>
-                  <div class="color-cell" style="background-color: #ADB5BD;">#ADB5BD</div>
-                  <div class="color-cell" style="background-color: #868E96; color: #FAFAFA;">#868E96</div>
-                  <div class="color-cell" style="background-color: #495057; color: #FAFAFA;">#495057</div>
-                  <div class="color-cell" style="background-color: #343A40; color: #FAFAFA;">#343A40</div>
-                  <div class="color-cell" style="background-color: #212529; color: #FAFAFA;">#212529</div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #EEBEFA"></div>
+                  <span class="color-hex">#EEBEFA</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E599F7"></div>
+                  <span class="color-hex">#E599F7</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #DA77F2"></div>
+                  <span class="color-hex">#DA77F2</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #CC5DE8"></div>
+                  <span class="color-hex">#CC5DE8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #BE4BDB"></div>
+                  <span class="color-hex">#BE4BDB</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #AE3EC9"></div>
+                  <span class="color-hex">#AE3EC9</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #9C36B5"></div>
+                  <span class="color-hex">#9C36B5</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #862E9C"></div>
+                  <span class="color-hex">#862E9C</span>
                 </div>
               </div>
             </div>
 
-            <h6 class="section-subtitle">Neutral Color Palette</h6>
             <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-12 col-md-6 col-lg-8">
-                <p>Neutral color is widely used in the interface as surface color, background, borders, dividers, heading,
-                  text and etc. The neutral color palette is balanced with readability, aesthetics and usability. The neutral
-                  color palette of IVORY, as shown on the right:</p>
-              </div>
-              <div class="col-12 col-md-6 col-lg-4">
-                <div class="color-palette-panel">
-                  <div class="color-cell" style="background-color: #FFFFFF;">#FFFFFF</div>
-                  <div class="color-cell" style="background-color: #FAFAFA;">#FAFAFA</div>
-                  <div class="color-cell" style="background-color: #F2F2F2;">#F2F2F2</div>
-                  <div class="color-cell" style="background-color: #E8E8E8;">#E8E8E8</div>
-                  <div class="color-cell" style="background-color: #D9D9D9;">#D9D9D9</div>
-                  <div class="color-cell" style="background-color: #B7B7B7;">#B7B7B7</div>
-                  <div class="color-cell" style="background-color: #424242; color: #FAFAFA;">#424242</div>
-                  <div class="color-cell" style="background-color: #212121; color: #FAFAFA;">#212121</div>
-                  <div class="color-cell" style="background-color: #161616; color: #FAFAFA;">#161616</div>
-                  <div class="color-cell" style="background-color: #000000; color: #FAFAFA;">#000000</div>
+              <h6 class="section-subtitle">Indigo</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #EDF2FF"></div>
+                  <span class="color-hex">#EDF2FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #DBE4FF"></div>
+                  <span class="color-hex">#DBE4FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #BAC8FF"></div>
+                  <span class="color-hex">#BAC8FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #91A7FF"></div>
+                  <span class="color-hex">#91A7FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #748FFC"></div>
+                  <span class="color-hex">#748FFC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #5C7CFA"></div>
+                  <span class="color-hex">#5C7CFA</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #4C6EF5"></div>
+                  <span class="color-hex">#4C6EF5</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #4263EB"></div>
+                  <span class="color-hex">#4263EB</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #3B5BDB"></div>
+                  <span class="color-hex">#3B5BDB</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #364FC7"></div>
+                  <span class="color-hex">#364FC7</span>
                 </div>
               </div>
             </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Blue</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #EAF5FF"></div>
+                  <span class="color-hex">#EAF5FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #D7EAFC"></div>
+                  <span class="color-hex">#D7EAFC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #A6D2FF"></div>
+                  <span class="color-hex">#A6D2FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #74B9FF"></div>
+                  <span class="color-hex">#74B9FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #5CACFC"></div>
+                  <span class="color-hex">#5CACFC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #40A0FF"></div>
+                  <span class="color-hex">#40A0FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #2285F6"></div>
+                  <span class="color-hex">#2285F6</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #0875E1"></div>
+                  <span class="color-hex">#0875E1</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #005CB9"></div>
+                  <span class="color-hex">#005CB9</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #004387"></div>
+                  <span class="color-hex">#004387</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Cyan</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E3FAFC"></div>
+                  <span class="color-hex">#E3FAFC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #C5F6Fa"></div>
+                  <span class="color-hex">#C5F6Fa</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #99E9F2"></div>
+                  <span class="color-hex">#99E9F2</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #66D9E8"></div>
+                  <span class="color-hex">#66D9E8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #3BC9DB"></div>
+                  <span class="color-hex">#3BC9DB</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #22B8CF"></div>
+                  <span class="color-hex">#22B8CF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #15AABF"></div>
+                  <span class="color-hex">#15AABF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #1098AD"></div>
+                  <span class="color-hex">#1098AD</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #0C8599"></div>
+                  <span class="color-hex">#0C8599</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #0B7285"></div>
+                  <span class="color-hex">#0B7285</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Teal</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E6FCF5"></div>
+                  <span class="color-hex">#E6FCF5</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #C3FAE8"></div>
+                  <span class="color-hex">#C3FAE8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #96F2D7"></div>
+                  <span class="color-hex">#96F2D7</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #63E6BE"></div>
+                  <span class="color-hex">#63E6BE</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #38D9A9"></div>
+                  <span class="color-hex">#38D9A9</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #20C997"></div>
+                  <span class="color-hex">#20C997</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #12B886"></div>
+                  <span class="color-hex">#12B886</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #0CA678"></div>
+                  <span class="color-hex">#0CA678</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #099268"></div>
+                  <span class="color-hex">#099268</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #087F5B"></div>
+                  <span class="color-hex">#087F5B</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Green</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F6FFED"></div>
+                  <span class="color-hex">#F6FFED</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E8FCCF"></div>
+                  <span class="color-hex">#E8FCCF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #D9F7BE"></div>
+                  <span class="color-hex">#D9F7BE</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #B7EB8F"></div>
+                  <span class="color-hex">#B7EB8F</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #95DE64"></div>
+                  <span class="color-hex">#95DE64</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #84D750"></div>
+                  <span class="color-hex">#84D750</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #73D13D"></div>
+                  <span class="color-hex">#73D13D</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #52C41A"></div>
+                  <span class="color-hex">#52C41A</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #389E0D"></div>
+                  <span class="color-hex">#389E0D</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #237804"></div>
+                  <span class="color-hex">#237804</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Yellow</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFFBE6"></div>
+                  <span class="color-hex">#FFFBE6</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFF9D0"></div>
+                  <span class="color-hex">#FFF9D0</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFF3BF"></div>
+                  <span class="color-hex">#FFF3BF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFEC99"></div>
+                  <span class="color-hex">#FFEC99</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFE066"></div>
+                  <span class="color-hex">#FFE066</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFD43b"></div>
+                  <span class="color-hex">#FFD43b</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FCC419"></div>
+                  <span class="color-hex">#FCC419</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FAB005"></div>
+                  <span class="color-hex">#FAB005</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F59F00"></div>
+                  <span class="color-hex">#F59F00</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F08C00"></div>
+                  <span class="color-hex">#F08C00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Orange</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFF4E6"></div>
+                  <span class="color-hex">#FFF4E6</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFE8CC"></div>
+                  <span class="color-hex">#FFE8CC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFD8A8"></div>
+                  <span class="color-hex">#FFD8A8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFC078"></div>
+                  <span class="color-hex">#FFC078</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFA94D"></div>
+                  <span class="color-hex">#FFA94D</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FF922B"></div>
+                  <span class="color-hex">#FF922B</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FD7E14"></div>
+                  <span class="color-hex">#FD7E14</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F76707"></div>
+                  <span class="color-hex">#F76707</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E8590C"></div>
+                  <span class="color-hex">#E8590C</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #d9480f"></div>
+                  <span class="color-hex">#D9480F</span>
+                </div>
+              </div>
+            </div>
+
           </div>
         </section>
 
@@ -461,36 +752,22 @@
         <section id="typo" class="docs-section">
           <h1 class="section-title">Typography</h1>
           <div class="section-body">
-
             <div style="margin-bottom: 2rem;">
               <h6 class="section-subtitle">Font Family</h6>
-              <p>IVORY uses the <a href="https://github.com/JulietaUla/Montserrat">Montserrat Font Family</a> designed by
-                <a href="https://github.com/JulietaUla">Julieta Ulanovsky</a>, to greatly enhance the user experience
-                and elegance of the interface. IVORY use Montserrat as the base font and then also provides a set of
-                fallback font libraries to maintain readability for screens on different platforms and browsers. </p>
-
-              <p><span class="code">font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;</span></p>
+              <p>To maintain great readability on different screens and browsers IVORY uses
+                <a href="https://github.com/JulietaUla/Montserrat">Montserrat</a> font as default font family. Montserrat font family has 10 
+                differnt font-weights from 100 to 900. For good readability, IVORY prefers to use light(300), regular(400), medium(500), 
+                semi-bold(600), bold(700) font weights.</p>
+              <p><b>Note:</b> If you want to use a different font family instead of suggested Montserrat font family, then don't import or use 
+                <b>montserrat-font.css</b> and use your own font css in your application.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <h6 class="section-subtitle">Font Weight</h6>
-              <div class="row">
-                <div class="col-8">
-                  <p>Montserrat font family has 10 differnt font-weights from 100 to 900. For good readability, IVORY prefers
-                    to use light(300), regular(400), medium(500), semi-bold(600), bold(700) font weights.</p>
-                </div>
-                <div class="col-4">
-                  <cite class="font-highlight" style="font-weight: 700;">Montserrat 700</cite>
-                  <cite class="font-highlight" style="font-weight: 600;">Montserrat 600</cite>
-                  <cite class="font-highlight" style="font-weight: 500;">Montserrat 500</cite>
-                  <cite class="font-highlight" style="font-weight: 400;">Montserrat 400</cite>
-                  <cite class="font-highlight" style="font-weight: 300;">Montserrat 300</cite>
-                </div>
-              </div>
+              
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>IVORY type system has 11 styles.</p>
+              <h6>Type System</h6>
               <div class="type-system">
                 <table>
                   <thead>
@@ -588,330 +865,6 @@
           </div>
         </section>
 
-        <!--Icons-->
-        <section id="icons" class="docs-section">
-          <h1 class="section-title">Icons</h1>
-          <div class="section-body">
-            <div style="margin-bottom: 2rem;">
-              <p>IVORY provides a consistent and unique icon set that were friendly and approachable.</p>
-              <p>To use IVORY icons, first make sure <span class="code">ivory-icons.css</span> file loading in your page. Every icon listed
-                below has unique name, add the same name to the class of the element with <span class="code">ivory-icon-</span> prefix.</p>
-              <p><small class="small" style="color:#868e96">Note: Currently IVORY icon library has 71 icons and more will be added.</small></p>
-            </div>
-            <h6 class="section-subtitle">Directional Icons</h6>
-            <div class="row" style="margin-bottom: 2rem;">
-              <div class="icon-frame">
-                <i class="ivory-icon-angle-down"></i>
-                <cite>angle-down</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-angle-left"></i>
-                <cite>angle-left</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-angle-right"></i>
-                <cite>angle-right</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-angle-up"></i>
-                <cite>angle-up</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-angle-down-circle"></i>
-                <cite>angle-down-circle</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-angle-left-circle"></i>
-                <cite>angle-left-circle</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-angle-right-circle"></i>
-                <cite>angle-right-circle</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-angle-up-circle"></i>
-                <cite>angle-up-circle</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-arrow-down"></i>
-                <cite>arrow-down</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-arrow-left"></i>
-                <cite>arrow-left</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-arrow-right"></i>
-                <cite>arrow-right</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-arrow-up"></i>
-                <cite>arrow-up</cite>
-              </div>
-            </div>
-
-            <h6 class="section-subtitle">Suggested Icons</h6>
-            <div class="row" style="margin-bottom: 2rem;">
-              <div class="icon-frame">
-                <i class="ivory-icon-attention"></i>
-                <cite>attention</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-check"></i>
-                <cite>check</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-check-circle"></i>
-                <cite>check-circle</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-help"></i>
-                <cite>help</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-info"></i>
-                <cite>info</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-minus-circle"></i>
-                <cite>minus-circle</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-plus-circle"></i>
-                <cite>plus-circle</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-times"></i>
-                <cite>times</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-times-circle"></i>
-                <cite>times-circle</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-warning"></i>
-                <cite>warning</cite>
-              </div>
-            </div>
-
-            <h6 class="section-subtitle">Application Icons</h6>
-            <div class="row" style="margin-bottom: 2rem;">
-              <div class="icon-frame">
-                <i class="ivory-icon-attachment"></i>
-                <cite>attachment</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-bell"></i>
-                <cite>bell</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-calendar"></i>
-                <cite>calendar</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-chat"></i>
-                <cite>chat</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-clock"></i>
-                <cite>clock</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-cloud"></i>
-                <cite>cloud</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-download"></i>
-                <cite>download</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-envelope"></i>
-                <cite>envelope</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-eye"></i>
-                <cite>eye</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-eye-hide"></i>
-                <cite>eye-hide</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-file-copy"></i>
-                <cite>file-copy</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-file-text"></i>
-                <cite>file-text</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-file"></i>
-                <cite>file</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-filter"></i>
-                <cite>filter</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-fire"></i>
-                <cite>fire</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-forward"></i>
-                <cite>forward</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-home"></i>
-                <cite>home</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-hour-glass"></i>
-                <cite>hour-glass</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-inbox"></i>
-                <cite>inbox</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-key"></i>
-                <cite>key</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-launch"></i>
-                <cite>launch</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-layers"></i>
-                <cite>layers</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-leaf"></i>
-                <cite>leaf</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-link"></i>
-                <cite>link</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-location"></i>
-                <cite>location</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-map"></i>
-                <cite>map</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-minimize"></i>
-                <cite>minimize</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-paper-plane"></i>
-                <cite>paper-plane</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-reply"></i>
-                <cite>reply</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-resize"></i>
-                <cite>resize</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-search"></i>
-                <cite>search</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-settings"></i>
-                <cite>settings</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-trash"></i>
-                <cite>trash</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-upload"></i>
-                <cite>upload</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-user"></i>
-                <cite>user</cite>
-              </div>
-            </div>
-
-            <h6 class="section-subtitle">Commerce Icons</h6>
-            <div class="row" style="margin-bottom: 2rem;">
-              <div class="icon-frame">
-                <i class="ivory-icon-cart"></i>
-                <cite>cart</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-wallet"></i>
-                <cite>wallet</cite>
-              </div>
-            </div>
-
-            <h6 class="section-subtitle">Media Icons</h6>
-            <div class="row" style="margin-bottom: 2rem;">
-              <div class="icon-frame">
-                <i class="ivory-icon-audio"></i>
-                <cite>audio</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-brightness"></i>
-                <cite>brightness</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-camera"></i>
-                <cite>camera</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-headphone"></i>
-                <cite>headphone</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-printer"></i>
-                <cite>printer</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-webcamera"></i>
-                <cite>webcamera</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-wifi"></i>
-                <cite>wifi</cite>
-              </div>
-            </div>
-
-            <h6 class="section-subtitle">Technology Icons</h6>
-            <div class="row" style="margin-bottom: 2rem;">
-              <div class="icon-frame">
-                <i class="ivory-icon-database"></i>
-                <cite>database</cite>
-              </div>
-            </div>
-
-            <h6 class="section-subtitle">Social Icons</h6>
-            <div class="row" style="margin-bottom: 2rem;">
-              <div class="icon-frame">
-                <i class="ivory-icon-like"></i>
-                <cite>like</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-share"></i>
-                <cite>share</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-star"></i>
-                <cite>star</cite>
-              </div>
-              <div class="icon-frame">
-                <i class="ivory-icon-tag"></i>
-                <cite>tag</cite>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <!--Alerts-->
         <section id="alerts" class="docs-section">
           <h1 class="section-title">Alerts</h1>
@@ -923,16 +876,16 @@
                 <p>IVORY has success, info, warning and error alert types.</p>
               </div>
               <div class="col-12 col-md-8 col-sm-12 col-lg-6">
-                <div class="ivory-alert success">
+                <div class="iv-alert success">
                   Success Text
                 </div>
-                <div class="ivory-alert info">
+                <div class="iv-alert info">
                   Info Text
                 </div>
-                <div class="ivory-alert warning">
+                <div class="iv-alert warning">
                   Warning Text
                 </div>
-                <div class="ivory-alert error">
+                <div class="iv-alert error">
                   Error Text
                 </div>
               </div>
@@ -940,143 +893,31 @@
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;div class="ivory-alert success"&gt;<br/>
+                  &lt;div class="iv-alert success"&gt;<br/>
                   &nbsp;&nbsp;Success Text<br/>
                   &lt;div&gt;<br/><br/>
-                  &lt;div class="ivory-alert info"&gt;<br/>
+                  &lt;div class="iv-alert info"&gt;<br/>
                   &nbsp;&nbsp;Info Text<br/>
                   &lt;/div&gt;<br/><br/>
-                  &lt;div class="ivory-alert warning"&gt;<br/>
+                  &lt;div class="iv-alert warning"&gt;<br/>
                   &nbsp;&nbsp;Warning Text<br/>
                   &lt;/div&gt;<br/><br/>
-                  &lt;div class="ivory-alert error"&gt;<br/>
+                  &lt;div class="iv-alert error"&gt;<br/>
                   &nbsp;&nbsp;Error Text<br/>
                   &lt;/div&gt;
                 </code>
               </pre>
             </div>
 
-            <h6 class="section-subtitle">Icons</h6>
-            <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-6">
-                <p>A relevant icon will make information clearer and more friendly.</p>
+            <div class="row">
+              <div class="col">
+                <p>You can enhance the ivory alerts with your choice of icon set/library for alert type representation and action button.</p>
               </div>
-              <div class="col-6">
-                <div class="ivory-alert success">
-                  <i class="alert-icon ivory-icon-check-circle"></i>
-                  Success Text
-                </div>
-                <div class="ivory-alert info">
-                  <i class="alert-icon ivory-icon-info"></i>
-                  Info Text
-                </div>
-                <div class="ivory-alert warning">
-                  <i class="alert-icon ivory-icon-warning"></i>
-                  Warning Text
-                </div>
-                <div class="ivory-alert error">
-                  <i class="alert-icon ivory-icon-attention"></i>
-                  Error Text
-                </div>
-              </div>
-            </div>
-            <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;div class="ivory-icon-alert success"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-check-circle"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;Success Text<br/>
-                  &lt;div&gt;<br/><br/>
-                  &lt;div class="ivory-alert info"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-info"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;Info Text<br/>
-                  &lt;/div&gt;<br/><br/>
-                  &lt;div class="ivory-alert warning"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-warning"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;Warning Text<br/>
-                  &lt;/div&gt;<br/><br/>
-                  &lt;div class="ivory-alert error"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-attention"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;Error Text<br/>
-                  &lt;/div&gt;
-                </code>
-              </pre>
-            </div>
-
-            <h6 class="section-subtitle">Actions</h6>
-            <div class="row" style="margin-bottom: 2rem;">
-              <div class="col-6">
-
-              </div>
-              <div class="col-6">
-                <div class="ivory-alert success">
-                  <i class="alert-icon ivory-icon-check-circle"></i>
-                  Success Text
-                  <span class="alert-action">
-                    <i class="ivory-icon-times"></i>
-                  </span>
-                </div>
-                <div class="ivory-alert info">
-                  <i class="alert-icon ivory-icon-info"></i>
-                  Info Text
-                  <span class="alert-action">
-                    <i class="ivory-icon-times"></i>
-                  </span>
-                </div>
-                <div class="ivory-alert warning">
-                  <i class="alert-icon ivory-icon-warning"></i>
-                  Warning Text
-                  <span class="alert-action">
-                    <i class="ivory-icon-times"></i>
-                  </span>
-                </div>
-                <div class="ivory-alert error">
-                  <i class="alert-icon ivory-icon-attention"></i>
-                  Error Text
-                  <span class="alert-action">
-                    <i class="ivory-icon-times"></i>
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;div class="ivory-alert success"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-check-circle"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;Success Text<br/>
-                  &nbsp;&nbsp;&lt;span class="alert-action"&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="ivory-icon-times"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;&lt;/span&gt;<br/>
-                  &lt;div&gt;<br/><br/>
-                  &lt;div class="ivory-alert info"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-info"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;Info Text<br/>
-                  &nbsp;&nbsp;&lt;span class="alert-action"&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="ivory-icon-times"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;&lt;/span&gt;<br/>
-                  &lt;/div&gt;<br/><br/>
-                  &lt;div class="ivory-alert warning"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-warning"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;Warning Text<br/>
-                  &nbsp;&nbsp;&lt;span class="alert-action"&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="ivory-icon-times"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;&lt;/span&gt;<br/>
-                  &lt;/div&gt;<br/><br/>
-                  &lt;div class="ivory-alert error"&gt;<br/>
-                  &nbsp;&nbsp;&lt;i class="alert-icon ivory-icon-attention"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;Error Text<br/>
-                  &nbsp;&nbsp;&lt;span class="alert-action"&gt;<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="ivory-icon-times"&gt;&lt;/i&gt;<br/>
-                  &nbsp;&nbsp;&lt;/span&gt;<br/>
-                  &lt;/div&gt;
-                </code>
-              </pre>
             </div>
 
           </div>
         </section>
-        
+
         <!--Badges-->
         <section id="badges" class="docs-section">
           <h1 class="section-title">Badges</h1>
@@ -1088,43 +929,43 @@
             <h6>Standalone Badge</h6>
             <div style="margin-bottom: 2rem;">
               <p>
-                <span class="ivory-badge" style="margin-right: 15px;">5</span>
-                <span class="ivory-badge success" style="margin-right: 15px;">5</span>
-                <span class="ivory-badge warning" style="margin-right: 15px;">5</span>
-                <span class="ivory-badge error">5</span>
+                <span class="iv-badge" style="margin-right: 15px;">5</span>
+                <span class="iv-badge success" style="margin-right: 15px;">5</span>
+                <span class="iv-badge warning" style="margin-right: 15px;">5</span>
+                <span class="iv-badge error">5</span>
               </p>
             </div>
             <div style="margin-bottom: 3rem;">
               <pre>
                 <code>
-                  &lt;span class="ivory-badge"&gt;5&lt;/span&gt;<br/>
-                  &lt;span class="ivory-badge success"&gt;5&lt;/span&gt;<br/>
-                  &lt;span class="ivory-badge warning"&gt;5&lt;/span&gt;<br/>
-                  &lt;span class="ivory-badge error"&gt;5&lt;/span&gt;
+                  &lt;span class="iv-badge"&gt;5&lt;/span&gt;<br/>
+                  &lt;span class="iv-badge success"&gt;5&lt;/span&gt;<br/>
+                  &lt;span class="iv-badge warning"&gt;5&lt;/span&gt;<br/>
+                  &lt;span class="iv-badge error"&gt;5&lt;/span&gt;
                 </code>
               </pre>
             </div>
 
             <h6>Basic Badge</h6>
             <div style="margin-bottom: 2rem;">
-              <span class="ivory-badge-pivot ivory-badge-group">
-                <sup class="ivory-badge error">9</sup>
+              <span class="iv-badge-pivot iv-badge-group">
+                <sup class="iv-badge error">9</sup>
               </span>
-              <span class="ivory-badge-pivot ivory-badge-group">
-                <sup class="ivory-badge error">99</sup>
+              <span class="iv-badge-pivot iv-badge-group">
+                <sup class="iv-badge error">99</sup>
               </span>
-              <span class="ivory-badge-pivot ivory-badge-group">
-                <sup class="ivory-badge error">999</sup>
+              <span class="iv-badge-pivot iv-badge-group">
+                <sup class="iv-badge error">999</sup>
               </span>
-              <span class="ivory-badge-pivot ivory-badge-group">
-                <sup class="ivory-badge error">999+</sup>
+              <span class="iv-badge-pivot iv-badge-group">
+                <sup class="iv-badge error">999+</sup>
               </span>
             </div>
             <div style="margin-bottom: 3rem;">
               <pre>
                 <code>
-                  &lt;span class="ivory-badge-group"&gt;<br/>
-                  &nbsp;&nbsp;&lt;sup class="ivory-badge error"&gt;9&lt;/sup&gt;<br/>
+                  &lt;span class="iv-badge-group"&gt;<br/>
+                  &nbsp;&nbsp;&lt;sup class="iv-badge error"&gt;9&lt;/sup&gt;<br/>
                   &lt;/span&gt;
                 </code>
               </pre>
@@ -1132,18 +973,18 @@
 
             <h6>Dot Badge</h6>
             <div style="margin-bottom: 2rem;">
-              <span class="ivory-badge-link ivory-badge-group">
+              <span class="iv-badge-link iv-badge-group">
                 <a href="...">link</a>
-                <sup class="ivory-badge red dot"></sup>
+                <sup class="iv-badge red dot"></sup>
               </span>
               </p>
             </div>
             <div style="margin-bottom: 3rem;">
               <pre>
                 <code>
-                  &lt;span class="ivory-badge-group"&gt;<br/>
+                  &lt;span class="iv-badge-group"&gt;<br/>
                   &nbsp;&nbsp;...<br/>
-                  &nbsp;&nbsp;&lt;sup class="ivory-badge red dot"&gt;&lt;/sup&gt;<br/>
+                  &nbsp;&nbsp;&lt;sup class="iv-badge red dot"&gt;&lt;/sup&gt;<br/>
                   &lt;/span&gt;
                 </code>
               </pre>
@@ -1162,7 +1003,7 @@
               that they have ample click space and help communicate the importance of their actions.</p>
 
               <p>IVORY provides 3 styles of buttons, in 2 sizes. Each style is explained below, detailing how and where to use these styles.</p>
-              <ul class="ivory-list disc">
+              <ul class="iv-list disc">
                 <li>Solid Buttons</li>
                 <li>Outline Buttons</li>
                 <li>Flat Buttons</li>
@@ -1172,33 +1013,33 @@
 
             <h4>Default Buttons</h4>
             <div style="margin-bottom: 2rem;">
-              <p>In IVORY secondary style buttons are the default buttons. To incorporate these, use <span class="code">.ivory-btn</span> class
-                for solid button, <span class="code">.ivory-btn-o</span> class for outline button, and <span class="code">.ivory-btn-f</span> for
+              <p>In IVORY secondary style buttons are the default buttons. To incorporate these, use <span class="code">.iv-btn</span> class
+                for solid button, <span class="code">.iv-btn-o</span> class for outline button, and <span class="code">.iv-btn-f</span> for
                 flat button.</p>
               <p>Rounded edge buttons are only available in solid & outline styles. To get the rounded edge buttons use <span class="code">.btn-ro</span>
                 class along with the above classes.</p>
               <div class="row">
                 <div class="col-12 col-lg-5">
                   <div style="margin-bottom: 1rem;">
-                    <button class="ivory-btn">Default</button> &nbsp;
-                    <button class="ivory-btn btn-ro">Default</button>
+                    <button class="iv-btn">Default</button> &nbsp;
+                    <button class="iv-btn btn-ro">Default</button>
                   </div>
                   <div style="margin-bottom: 1rem;">
-                    <button class="ivory-btn-o">Default</button> &nbsp;
-                    <button class="ivory-btn-o btn-ro">Default</button>
+                    <button class="iv-btn-o">Default</button> &nbsp;
+                    <button class="iv-btn-o btn-ro">Default</button>
                   </div>
                   <div style="margin-bottom: 1rem;">
-                    <button class="ivory-btn-f">Default</button>
+                    <button class="iv-btn-f">Default</button>
                   </div>
                 </div>
                 <div class="col-12 col-lg-7">
                   <pre>
                     <code>
-                      &lt;button class="ivory-btn"&gt;Default&lt;/button&gt;<br>
-                      &lt;button class="ivory-btn btn-ro&gt;Default&lt;/button&gt;<br>
-                      &lt;button class="ivory-btn-o"&gt;Default&lt;/button&gt;<br>
-                      &lt;button class="ivory-btn-o btn-ro"&gt;Default&lt;/button&gt;<br>
-                      &lt;button class="ivory-btn-f"&gt;Default&lt;/button&gt;
+                      &lt;button class="iv-btn"&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="iv-btn btn-ro&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o"&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-ro"&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-f"&gt;Default&lt;/button&gt;
                     </code>
                   </pre>
                 </div>
@@ -1212,36 +1053,36 @@
             <p>Solid buttons are used to highlight the most important actions. To avoid confusing users, don’t use more than one primary solid
               button within a section or view.</p>
             <div style="margin-bottom: 1rem;">
-              <button class="ivory-btn btn-primary">Confirm</button> &nbsp;
-              <button class="ivory-btn btn-primary btn-sm">ADD</button> &nbsp;
-              <button class="ivory-btn btn-primary btn-ro">Confirm</button> &nbsp;
-              <button class="ivory-btn btn-primary btn-ro btn-sm ">ADD</button>
+              <button class="iv-btn btn-primary">Confirm</button> &nbsp;
+              <button class="iv-btn btn-primary btn-sm">ADD</button> &nbsp;
+              <button class="iv-btn btn-primary btn-ro">Confirm</button> &nbsp;
+              <button class="iv-btn btn-primary btn-ro btn-sm ">ADD</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn btn-primary"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="ivory-btn btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="ivory-btn btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="ivory-btn btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="iv-btn btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="iv-btn btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="iv-btn btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="iv-btn btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
                 </code>
               </pre>
             </div>
 
             <h6 class="section-subtitle">Outline Buttons</h6>
             <div style="margin-bottom: 1rem;">
-              <button class="ivory-btn-o btn-primary">Confirm</button> &nbsp;
-              <button class="ivory-btn-o btn-primary btn-sm">Confirm</button> &nbsp;
-              <button class="ivory-btn-o btn-primary btn-ro">Confirm</button> &nbsp;
-              <button class="ivory-btn-o btn-primary btn-ro btn-sm">Confirm</button>
+              <button class="iv-btn-o btn-primary">Confirm</button> &nbsp;
+              <button class="iv-btn-o btn-primary btn-sm">Confirm</button> &nbsp;
+              <button class="iv-btn-o btn-primary btn-ro">Confirm</button> &nbsp;
+              <button class="iv-btn-o btn-primary btn-ro btn-sm">Confirm</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn-o btn-primary"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="ivory-btn-o btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="ivory-btn-o btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="ivory-btn-o btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="iv-btn-o btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="iv-btn-o btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="iv-btn-o btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="iv-btn-o btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
                 </code>
               </pre>
             </div>
@@ -1250,14 +1091,14 @@
             <p>Flat buttons have significant purpose, don't get confused with hyperlink. Flat buttons can be used inline
               scenarios where user can identify this as a button.</p>
             <div style="margin-bottom:1rem;">
-              <button class="ivory-btn-f btn-primary">Confirm</button> &nbsp;
-              <button class="ivory-btn-f btn-primary btn-sm">Confirm</button>
+              <button class="iv-btn-f btn-primary">Confirm</button> &nbsp;
+              <button class="iv-btn-f btn-primary btn-sm">Confirm</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn-f btn-primary"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="ivory-btn-f btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="iv-btn-f btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                  &lt;button class="iv-btn-f btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
                 </code>
               </pre>
             </div>
@@ -1266,27 +1107,27 @@
             <p>IVORY provides 2 ways to disable the button. One is <span class="code">disabled</span> attribute, other way is
             <span class="code">.disabled</span> class.</p>
             <div style="margin-bottom:2rem;">
-              <button class="ivory-btn" disabled>Submit</button>
-              <button class="ivory-btn-o" disabled>Submit</button>
-              <button class="ivory-btn-f" disabled>Submit</button>
+              <button class="iv-btn" disabled>Submit</button>
+              <button class="iv-btn-o" disabled>Submit</button>
+              <button class="iv-btn-f" disabled>Submit</button>
             </div>
 
             <h6 class="section-subtitle">Action-based color</h6>
             <p>Different colors may be used based on the severity/purpose of an action's result. For example, using a red button when
               "deleting" files indicates high severity. Same way, green button to indicates go-ahead.</p>
             <div style="margin-bottom: 1rem;">
-              <button class="ivory-btn btn-primary btn-danger">Delete</button>
-              <button class="ivory-btn-o btn-primary btn-danger">Delete</button>
-              <button class="ivory-btn btn-primary btn-success">Go Ahead</button>
-              <button class="ivory-btn-o btn-primary btn-success">Go Ahead</button>
+              <button class="iv-btn btn-primary btn-danger">Delete</button>
+              <button class="iv-btn-o btn-primary btn-danger">Delete</button>
+              <button class="iv-btn btn-primary btn-success">Go Ahead</button>
+              <button class="iv-btn-o btn-primary btn-success">Go Ahead</button>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;button class="ivory-btn btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
-                  &lt;button class="ivory-btn-o btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
-                  &lt;button class="ivory-btn btn-primary btn-success"&gt;Go Ahead&lt;/button&gt;<br>
-                  &lt;button class="ivory-btn-o btn-primary btn-success"&gt;Go Ahead&lt;/button&gt;
+                  &lt;button class="iv-btn btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
+                  &lt;button class="iv-btn-o btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
+                  &lt;button class="iv-btn btn-primary btn-success"&gt;Go Ahead&lt;/button&gt;<br>
+                  &lt;button class="iv-btn-o btn-primary btn-success"&gt;Go Ahead&lt;/button&gt;
                 </code>
               </pre>
             </div>
@@ -1297,22 +1138,22 @@
         <section id="checkbox" class="docs-section">
           <h1 class="section-title">Checkbox</h1>
           <div class="section-body">
-            <div class="ivory-checkbox">
+            <div class="iv-checkbox">
               <input type="checkbox" id="check1" />
               <label for="check1">Checkbox</label>
             </div>
-            <div class="ivory-checkbox">
+            <div class="iv-checkbox">
               <input type="checkbox" id="check2" checked />
               <label for="check2">Checked Checkbox</label>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;div class="ivory-checkbox"&gt;<br/>
+                  &lt;div class="iv-checkbox"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="checkbox" id="check1" /&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="check1">Checkbox&lt;label&gt;<br/>
                   &lt;div&gt;<br/>
-                  &lt;div class="ivory-checkbox"&gt;<br/>
+                  &lt;div class="iv-checkbox"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="checkbox" id="check2" checked /&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="check2">Checked Checkbox&lt;/label&gt;<br/>
                   &lt;/div&gt;
@@ -1322,22 +1163,22 @@
 
             <h6 class="section-subtitle">Disabled</h6>
             <p>The checkbox can be disabled by <span class="code">disabled</span> attribute on the checkbox input.</p>
-            <div class="ivory-checkbox">
+            <div class="iv-checkbox">
               <input type="checkbox" id="check3" disabled />
               <label for="check3">Disabled Checkbox</label>
             </div>
-            <div class="ivory-checkbox">
+            <div class="iv-checkbox">
               <input type="checkbox" id="check4" disabled checked />
               <label for="check4">Checkbox disabled & checked</label>
             </div>
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;div class="ivory-checkbox"&gt;<br/>
+                  &lt;div class="iv-checkbox"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="checkbox" id="check3" disabled /&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="check3">Disabled Checkbox&lt;label&gt;<br/>
                   &lt;div&gt;<br/>
-                  &lt;div class="ivory-checkbox"&gt;<br/>
+                  &lt;div class="iv-checkbox"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="checkbox" id="check4" disabled checked /&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="check4">Checkbox disabled & checked&lt;/label&gt;<br/>
                   &lt;/div&gt;
@@ -1355,40 +1196,40 @@
             <h6 class="section-subtitle">Standard Form</h6>
             <p>In IVORY standard form, the label and the form element will be arranged one after one in a row manner.</p>
             <div style="margin-bottom: 4rem;">
-              <div class="ivory-form" style="max-width: 500px;">
+              <div class="iv-form" style="max-width: 500px;">
                 <div class="form-field">
                   <label class="form-label">Username</label>
-                  <input class="ivory-input" type="text" />
+                  <input class="iv-input" type="text" />
                 </div>
                 <div class="form-field">
                   <label class="form-label">Password</label>
-                  <input class="ivory-input" type="password" />
+                  <input class="iv-input" type="password" />
                 </div>
-                <button class="ivory-btn btn-primary">Signin</button>
+                <button class="iv-btn btn-primary">Signin</button>
               </div>
             </div>
 
             <h6 class="section-subtitle">Horizontally Aligned Form</h6>
             <p>In horizontal form, label & form element are aligned side-by-side.</p>
             <div style="margin-bottom: 4rem;">
-              <div class="ivory-form form-horizontal" style="max-width: 640px;">
+              <div class="iv-form form-horizontal" style="max-width: 640px;">
                 <div class="form-field">
                   <label class="form-label">Firstname</label>
-                  <input class="ivory-input" type="text" />
+                  <input class="iv-input" type="text" />
                 </div>
                 <div class="form-field">
                   <label class="form-label">Lastname</label>
-                  <input class="ivory-input" type="text" />
+                  <input class="iv-input" type="text" />
                 </div>
                 <div class="form-field">
                   <label class="form-label">Email</label>
-                  <input class="ivory-input" type="text" />
+                  <input class="iv-input" type="text" />
                 </div>
                 <div class="form-field">
                   <label class="form-label">Password</label>
-                  <input class="ivory-input" type="password" />
+                  <input class="iv-input" type="password" />
                 </div>
-                <button class="ivory-btn btn-primary">Register</button>
+                <button class="iv-btn btn-primary">Register</button>
               </div>
             </div>
           </div>
@@ -1538,10 +1379,10 @@
         <section id="input" class="docs-section">
           <h1 class="section-title">Input</h1>
           <div class="section-body">
-            <p>IVORY follows the native input element for the input field, which should be having the class <span class="code">.ivory-input</span></p>
+            <p>IVORY follows the native input element for the input field, which should be having the class <span class="code">.iv-input</span></p>
             <div class="row">
               <div class="col-4">
-                <input class="ivory-input" type="text" placeholder="Enter Text Here" value="" />
+                <input class="iv-input" type="text" placeholder="Enter Text Here" value="" />
               </div>
             </div>
           </div>
@@ -1552,9 +1393,9 @@
           <h1 class="section-title">List</h1>
           <div style="margin-bottom: 2rem;">
             <p>IVORY provides 2 types of lists; native HTML lists & styled lists.</p>
-            
+
             <p>The HTML suuports 3 types of lists by default: Unordered, Ordered and Description list. Just add
-              <span class="code">.ivory-list</span> to your <span class="code">&lt;ul&gt;</span> or <span class="code">&lt;ol&gt;</span>
+              <span class="code">.iv-list</span> to your <span class="code">&lt;ul&gt;</span> or <span class="code">&lt;ol&gt;</span>
               or <span class="code">&lt;dl&gt;</span>.</p>
           </div>
 
@@ -1566,7 +1407,7 @@
               <span class="code">.square</span> to display the respective list styles. Here is an example:</p>
             <div class="row">
               <div class="col-12 col-md-6">
-                <ul class="ivory-list disc">
+                <ul class="iv-list disc">
                   <li>Amsterdam</li>
                   <li>Manali</li>
                   <li>Monaco</li>
@@ -1578,7 +1419,7 @@
               <div class="col-12 col-md-6">
                 <pre>
                   <code>
-                    &lt;ul class="ivory-list disc"&gt;<br/>
+                    &lt;ul class="iv-list disc"&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;Amsterdam&lt;/li&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;Manali&lt;/li&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;Monaco&lt;/li&gt;<br/>
@@ -1598,7 +1439,7 @@
               <span class="code">.upper-roman</span> to display the respective list styles. Here is an example:</p>
             <div class="row">
               <div class="col-12 col-md-6">
-                <ol class="ivory-list decimal">
+                <ol class="iv-list decimal">
                   <li>One</li>
                   <li>Two</li>
                   <li>Three</li>
@@ -1609,7 +1450,7 @@
               <div class="col-12 col-md-6">
                 <pre>
                   <code>
-                    &lt;ol class="ivory-list decimal"&gt;<br/>
+                    &lt;ol class="iv-list decimal"&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;One&lt;/li&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;Two&lt;/li&gt;<br/>
                     &nbsp;&nbsp;&lt;li&gt;Three&lt;/li&gt;<br/>
@@ -1627,7 +1468,7 @@
             <p>Here is an example for description list:</p>
             <div class="row">
               <div class="col-12 col-md-6">
-                <dl class="ivory-list">
+                <dl class="iv-list">
                   <dt>Coffee</dt>
                   <dd>Black Coffee</dd>
                   <dd>Cappuccino</dd>
@@ -1644,7 +1485,7 @@
               <div class="col-12 col-md-6">
                 <pre>
                   <code>
-                    &lt;dl class="ivory-list"&gt;<br/>
+                    &lt;dl class="iv-list"&gt;<br/>
                     &nbsp;&nbsp;&lt;dt&gt;Coffee&lt;/dt&gt;<br/>
                     &nbsp;&nbsp;&lt;dd&gt;Black Coffee&lt;/dd&gt;<br/>
                     &nbsp;&nbsp;&lt;dd&gt;Cappuccino&lt;/dd&gt;<br/>
@@ -1670,7 +1511,7 @@
           <h6>Styled list 1</h6>
           <div class="row" style="margin-bottom: 2rem;">
             <div class="col-12 col-md-6">
-              <ul class="ivory-styled-list1">
+              <ul class="iv-styled-list1">
                 <li>Head</li>
                 <li>Shoulders</li>
                 <li>Knees</li>
@@ -1678,14 +1519,23 @@
               </ul>
             </div>
             <div class="col-12 col-md-6">
-
+              <pre>
+                <code>
+                  &lt;ul class="iv-styled-list1"&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Head&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Shoulders&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Knees&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Toes&lt;/li&gt;<br/>
+                  &lt;/ul&gt;
+                </code>
+              </pre>
             </div>
           </div>
 
           <h6>Styled list 2</h6>
           <div class="row" style="margin-bottom: 2rem;">
             <div class="col-12 col-md-6">
-              <ul class="ivory-styled-list2">
+              <ul class="iv-styled-list2">
                 <li>Lorem dolor amet sit</li>
                 <li>Lorem ipsum dolor sit amet consecutor adipiscingLorem ipsum dolor sit amet</li>
                 <li>Lorem ipsum dolor sit amet</li>
@@ -1693,7 +1543,16 @@
               </ul>
             </div>
             <div class="col-12 col-md-6">
-
+              <pre>
+                <code>
+                  &lt;ul class="iv-styled-list2"&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;One&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Two&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Three&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Four&lt;/li&gt;<br/>
+                  &lt;/ul&gt;
+                </code>
+              </pre>
             </div>
           </div>
 
@@ -1703,16 +1562,16 @@
         <section id="progress" class="docs-section">
           <h1 class="section-title">Progress</h1>
           <div class="section-body">
-            <p>To incorporate the IVORY progress bar use <span class="code">.ivory-progress</span> class on top of the HTML native
+            <p>To incorporate the IVORY progress bar use <span class="code">.iv-progress</span> class on top of the HTML native
               <span class="code">progress</span> element. IVORY provides the progress bar in two variants.</p>
 
             <div style="margin-bottom: 2rem;">
               <p class="p-bold">Regular variant</p>
-              <progress class="ivory-progress" value="30" max="100"> 30% </progress>
+              <progress class="iv-progress" value="30" max="100"> 30% </progress>
               <div style="margin-top: 1rem;">
                 <pre>
                   <code>
-                    &lt;progress class="ivory-progress" value="30" max="100"&gt; 30% &lt;/progress&gt;
+                    &lt;progress class="iv-progress" value="30" max="100"&gt; 30% &lt;/progress&gt;
                   </code>
                 </pre>
               </div>
@@ -1720,11 +1579,11 @@
 
             <div style="margin-bottom: 2rem;">
               <p class="p-bold">Small variant</p>
-              <progress class="ivory-progress progress-sm" value="30" max="100"> 30% </progress>
+              <progress class="iv-progress progress-sm" value="30" max="100"> 30% </progress>
               <div style="margin-top: 1rem;">
                 <pre>
                   <code>
-                    &lt;progress class="ivory-progress progress-sm" value="30" max="100"&gt; 30% &lt;/progress&gt;
+                    &lt;progress class="iv-progress progress-sm" value="30" max="100"&gt; 30% &lt;/progress&gt;
                   </code>
                 </pre>
               </div>
@@ -1738,12 +1597,12 @@
           <h1 class="section-title">Radio</h1>
           <div class="section-body">
 
-            <div class="ivory-radio">
+            <div class="iv-radio">
               <input type="radio" id="radio1" name="myradio1" />
               <label for="radio1">Radio Option 1</label>
             </div>
 
-            <div class="ivory-radio">
+            <div class="iv-radio">
               <input type="radio" id="radio2" name="myradio1" checked />
               <label for="radio2">Radio Option 2</label>
             </div>
@@ -1751,11 +1610,11 @@
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;div class="ivory-radio"&gt;<br/>
+                  &lt;div class="iv-radio"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="radio" id="radio1" name="myradio1" /&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="radio1">Radio Option 1&lt;label&gt;<br/>
                   &lt;div&gt;<br/>
-                  &lt;div class="ivory-radio"&gt;<br/>
+                  &lt;div class="iv-radio"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="radio" id="radio2" name="myradio1" checked /&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="radio2">Radio Option 2&lt;/label&gt;<br/>
                   &lt;/div&gt;
@@ -1765,12 +1624,12 @@
 
             <h6 class="section-subtitle">Disabled</h6>
             <p>The radio can be disabled by the <span class="code">disabled</span> attribute on the radio input</p>
-            <div class="ivory-radio">
+            <div class="iv-radio">
               <input type="radio" id="radio3" name="myradio2" disabled />
               <label for="radio3">Radio Option 1</label>
             </div>
 
-            <div class="ivory-radio">
+            <div class="iv-radio">
               <input type="radio" id="radio4" name="myradio2" disabled />
               <label for="radio4">Radio Option 2</label>
             </div>
@@ -1778,11 +1637,11 @@
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;div class="ivory-radio"&gt;<br/>
+                  &lt;div class="iv-radio"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="radio" id="radio3" name="myradio2" disabled /&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="radio3">Radio Option 1&lt;label&gt;<br/>
                   &lt;div&gt;<br/>
-                  &lt;div class="ivory-radio"&gt;<br/>
+                  &lt;div class="iv-radio"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="radio" id="radio4" name="myradio2" disabled /&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="radio4">Radio Option 2&lt;/label&gt;<br/>
                   &lt;/div&gt;
@@ -1795,7 +1654,7 @@
             <h6>Example:</h6>
             <div style="margin-bottom: 2rem;">
               <p class="p-bold">Select Size</p>
-              <div class="ivory-tabler">
+              <div class="iv-tabler">
                 <div class="tabler-item">
                   <input type="radio" class="tabler-input" id="tblr1" name="mytblr1" value="S" />
                   <label class="tabler-button" for="tblr1">S</label>
@@ -1817,7 +1676,7 @@
 
             <div style="margin-bottom: 2rem;">
               <p class="p-bold">Select Color</p>
-              <div class="ivory-tabler">
+              <div class="iv-tabler">
                 <div class="tabler-item">
                   <input type="radio" class="tabler-input" id="tblrbk" name="mytblr2" value="Black" />
                   <label class="tabler-button" for="tblrbk">Black</label>
@@ -1836,7 +1695,7 @@
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;div class="ivory-tabler"&gt;<br/>
+                  &lt;div class="iv-tabler"&gt;<br/>
                   &nbsp;&nbsp;&lt;div class="tabler-item"&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" class="tabler-input" id="t1" name="my-tabler" value="Black" /&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="tabler-button" for="t1"&gt;Black&lt;/label&gt;<br/>
@@ -1857,7 +1716,7 @@
             <p>Here is an example for sample dropdown</p>
             <div class="row">
               <div class="col-4">
-                <div class="ivory-select">
+                <div class="iv-select">
                   <select placeholder="Select">
                     <option value="1">Maryland</option>
                     <option value="2">Chicago</option>
@@ -1870,7 +1729,7 @@
             <div style="margin: 2rem 0">
               <pre>
                 <code>
-                  &lt;div class="ivory-select"&gt;<br/>
+                  &lt;div class="iv-select"&gt;<br/>
                   &nbsp;&nbsp;&lt;select placeholder="Select"&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1"&gt;Maryland&lt;/option&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;Chicago&lt;/option&gt;<br/>
@@ -1894,30 +1753,30 @@
             <div style="width: 420px; margin-bottom: 2rem;">
               <div class="row">
                 <div class="col">
-                  <div class="ivory-spinner-16"></div>
+                  <div class="iv-spinner-16"></div>
                 </div>
                 <div class="col">
-                  <div class="ivory-spinner-24"></div>
+                  <div class="iv-spinner-24"></div>
                 </div>
                 <div class="col">
-                  <div class="ivory-spinner-32"></div>
+                  <div class="iv-spinner-32"></div>
                 </div>
                 <div class="col">
-                  <div class="ivory-spinner-40"></div>
+                  <div class="iv-spinner-40"></div>
                 </div>
                 <div class="col">
-                  <div class="ivory-spinner-48"></div>
+                  <div class="iv-spinner-48"></div>
                 </div>
               </div>
             </div>
             <div>
               <pre>
                 <code>
-                  &lt;div class="ivory-spinner-16"&gt;&lt;/div&gt;<br/>
-                  &lt;div class="ivory-spinner-24"&gt;&lt;/div&gt;<br/>
-                  &lt;div class="ivory-spinner-32"&gt;&lt;/div&gt;<br/>
-                  &lt;div class="ivory-spinner-40"&gt;&lt;/div&gt;<br/>
-                  &lt;div class="ivory-spinner-48"&gt;&lt;/div&gt;
+                  &lt;div class="iv-spinner-16"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="iv-spinner-24"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="iv-spinner-32"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="iv-spinner-40"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="iv-spinner-48"&gt;&lt;/div&gt;
                 </code>
               </pre>
             </div>
@@ -1934,19 +1793,17 @@
 
             <h6>Example:</h6>
             <div style="margin-bottom: 2rem;">
-              <div class="ivory-more">
-                <button class="ivory-btn-f btn-sm">
+              <div class="iv-more">
+                <button class="iv-btn-f btn-sm">
                   Show More
-                  <i class="ivory-icon-angle-down"></i>
                 </button>
               </div>
             </div>
 
             <div class="margin-bottom: 2rem;">
-              <div class="ivory-more">
-                <button class="ivory-btn-f btn-sm">
+              <div class="iv-more">
+                <button class="iv-btn-f btn-sm">
                   Show Less
-                  <i class="ivory-icon-angle-up"></i>
                 </button>
               </div>
             </div>
@@ -1954,14 +1811,13 @@
             <div>
               <pre>
                 <code>
-                  &lt;div class="ivory-more"&gt;<br/>
-                  &nbsp;&nbsp;&lt;button class="ivory-btn-f btn-sm"&gt;<br/>
+                  &lt;div class="iv-more"&gt;<br/>
+                  &nbsp;&nbsp;&lt;button class="iv-btn-f btn-sm"&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;More<br/>
-                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;i class="ivory-icon-angle-up"&gt;&lt;/i&gt;<br/>
                   &nbsp;&nbsp;&lt;/button&gt;<br/>
                   &lt;/div&gt;
                 </code>
-              </pre>  
+              </pre>
             </div>
           </div>
         </section>
@@ -1973,7 +1829,7 @@
             <p>A table is used to display the collection of structured data in row column manner.</p>
 
             <div style="margin-bottom: 2rem;">
-              <table class="ivory-table">
+              <table class="iv-table">
                 <thead>
                   <tr>
                     <th>Firstname</th>
@@ -2020,7 +1876,7 @@
             <div style="margin-bottom: 2rem;">
               <pre>
                 <code>
-                  &lt;table class="ivory-table"&gt;<br/>
+                  &lt;table class="iv-table"&gt;<br/>
                   &nbsp;&nbsp;&lt;thead&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Firstname&lt;/th&gt;<br/>
@@ -2050,10 +1906,10 @@
           <h1 class="section-title">Textarea</h1>
           <div class="section-body">
             <p>Textarea is used to enter long text input.</p>
-            <p>Just to add the class <span class="code">ivory-textarea</span> to native textarea. </p>
+            <p>Just to add the class <span class="code">iv-textarea</span> to native textarea. </p>
             <div class="row">
               <div class="col-6">
-                <textarea class="ivory-textarea"></textarea>
+                <textarea class="iv-textarea"></textarea>
               </div>
             </div>
           </div>
@@ -2065,14 +1921,14 @@
           <div class="section-body">
             <p>Toggle Switch is an on/off control, built on top of the checkbox. It can be toggled by clicking.</p>
             <h6>Here is a sample toggle</h6>
-            <div class="ivory-toggle-switch" style="margin-bottom: 2rem;">
+            <div class="iv-toggle-switch" style="margin-bottom: 2rem;">
               <input type="checkbox" name="phone" value="phone" id="phone">
               <label for="phone"></label>
             </div>
             <div>
               <pre>
                 <code>
-                  &lt;div class="ivory-toggle-switch"&gt;<br/>
+                  &lt;div class="iv-toggle-switch"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="checkbox" name="phone" value="phone" id="phone"&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="phone"&gt;&lt;/label&gt;<br/>
                   &lt;/div&gt;
@@ -2113,42 +1969,42 @@
 
             <h6>Example:</h6>
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for top tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs top">A tooltip provides a short description of a
+              <p>Here is an example for top tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs top">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for bottom tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom">A tooltip provides a short description of a
+              <p>Here is an example for bottom tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for left tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs left">A tooltip provides a short description of a
+              <p>Here is an example for left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs left">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for right tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs right">A tooltip provides a short description of a
+              <p>Here is an example for right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs right">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for top-left tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs top-left">A tooltip provides a short description of a
+              <p>Here is an example for top-left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs top-left">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for top-right tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs top-right">A tooltip provides a short description of a
+              <p>Here is an example for top-right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs top-right">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for bottom-right tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom-right">A tooltip provides a short description of a
+              <p>Here is an example for bottom-right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom-right">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              <p>Here is an example for bottom-left tooltip. <a class="ivory-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom-left">A tooltip provides a short description of a
+              <p>Here is an example for bottom-left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom-left">A tooltip provides a short description of a
                 UI element.</span></a> to preview.</p>
             </div>
 
@@ -2156,7 +2012,7 @@
               <pre>
                 <code>
                   &lt;p&gt; <br/>
-                  &nbsp;&nbsp;&lt;a class="ivory-tooltip"&gt;Hover me<br/>
+                  &nbsp;&nbsp;&lt;a class="iv-tooltip"&gt;Hover me<br/>
                   &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="tooltip-content tooltip-xs top"&gt;Tooltip text&lt;/span&gt;<br/>
                   &nbsp;&nbsp;&lt;/a&gt;<br/>
                   &lt;/p&gt;

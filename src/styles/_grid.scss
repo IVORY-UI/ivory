@@ -1,10 +1,8 @@
-@import './commons/mixins';
-
+@import './common/mixins';
 $gutter: 1.25;
 $grid-columns: 12;
 $col-slug: col !default;
 $breakpoints: 576px, 768px, 1024px;
-
 @mixin col-gutter($colspan, $total) {
   $w: (100 / $total) * $colspan;
   flex: 0 0 calc(#{$w}% - #{$gutter}rem);
@@ -22,7 +20,6 @@ $breakpoints: 576px, 768px, 1024px;
     @return col-lg;
   }
 }
-
 .row {
   display: flex;
   flex: 1;
@@ -41,7 +38,6 @@ $breakpoints: 576px, 768px, 1024px;
   flex: 0 0 auto;
   @include margin-sides(0.625rem, 0.625rem);
 }
-
 // default columns - mobile first
 @for $i from 1 through $grid-columns {
   .#{$col-slug}-#{$i} {
@@ -67,7 +63,7 @@ $breakpoints: 576px, 768px, 1024px;
 @each $break in $breakpoints {
   @media (min-width: $break) {
     $col-slug: set-col-slug($break);
-    
+
     @for $i from 1 through $grid-columns {
       .#{$col-slug}-#{$i} {
         @include col-gutter($i, $grid-columns);

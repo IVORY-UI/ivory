@@ -1,5 +1,4 @@
-@import './commons/mixins';
-
+@import './common/mixins';
 %default-form-element {
   position: relative;
   display: block;
@@ -9,16 +8,15 @@
   font-weight: 400;
   border: 1px solid #B7B7B7;
   border-radius: 0.1875rem;
-  background-color: #FFFFFF;
+  background-color: $iv-light;
   color: #212121;
 }
 %defualt-element-focus {
-  border: 1px solid #5CACFC;
-  box-shadow: 0 0 0 0.25rem #EAF5FF;
+  border: 1px solid $iv-blue-4;
+  box-shadow: 0 0 0 0.25rem $iv-blue-0;
   outline: 0;
 }
-
-.ivory-input {
+.iv-input {
   @extend %default-form-element;
   height: 2rem;
   line-height: 2rem;
@@ -26,7 +24,7 @@
     @extend %defualt-element-focus
   }
 }
-.ivory-select {
+.iv-select {
   position: relative;
   cursor: pointer;
   select {
@@ -55,7 +53,7 @@
     margin: 0;
   }
 }
-.ivory-textarea {
+.iv-textarea {
   @extend %default-form-element;
   min-height: 120px;
   min-width: 200px;
@@ -63,7 +61,7 @@
     @extend %defualt-element-focus
   }
 }
-.ivory-form {
+.iv-form {
   .form-field {
     margin-bottom: 1rem;
   }
@@ -81,9 +79,9 @@
         display: flex;
         width: 40%;
       }
-      .ivory-input,
-      .ivory-select,
-      .ivory-textarea {
+      .iv-input,
+      .iv-select,
+      .iv-textarea {
         display: flex;
         width: 60%;
       }
