@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Documentation | IVORY</title>
 
@@ -19,13 +19,13 @@
     <meta property="og:description" content="Simple CSS framework makes your UI development faster and easier.">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="IVORY UI">
-    <meta name="twitter:title" content="IOVRY UI">
+    <meta name="twitter:title" content="IVORY UI">
     <meta name="twitter:description" content="Simple CSS framework makes your UI development faster and easier.">
     <meta name="twitter:image" content="http://ivoryui.com/assets/ivory.png">
 
     <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../dist/montserrat-font.css" />
     <link rel="stylesheet" href="../dist/ivory.min.css" />
+    <link rel="stylesheet" href="../dist/montserrat-font.css" />
     <link rel="stylesheet" href="./docs-styles.css" />
     <script rel="preload" src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js" as="script"></script>
     <script src="./docs.js"></script>
@@ -206,8 +206,8 @@
               <p class="subtitle2">Import the following files to your project</p>
               <pre>
                 <code>
-                  node_modules/ivoryui-ivory/montserrat-font.css<br/>
-                  node_modules/ivoryui-ivory/ivory.min.css
+                  node_modules/ivoryui-ivory/ivory.min.css<br/>
+                  node_modules/ivoryui-ivory/montserrat-font.css
                 </code>
               </pre>
             </div>
@@ -216,8 +216,8 @@
               <h6 class="section-subtitle">Using CDN</h6>
               <pre>
                 <code>
-                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/montserrat-font.css" /&gt;<br/>
-                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" /&gt;
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" /&gt;<br/>
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/montserrat-font.css" /&gt;
                 </code>
               </pre>
             </div>
@@ -229,7 +229,7 @@
           <h1 class="section-title">Colors</h1>
           <div class="section-body">
             <div style="margin-bottom: 2rem;">
-              <p>IVORY color system has 11 color palette. Each color has a adequate purpose. The color system designed in a way to help 
+              <p>IVORY color system has 11 color palette. Each color has a adequate purpose. The color system designed in a way to help
                 create a theme that is harmonious, ensures accessible text, and distinguishes UI elements and surfaces from one another.</p>
             </div>
 
@@ -755,15 +755,15 @@
             <div style="margin-bottom: 2rem;">
               <h6 class="section-subtitle">Font Family</h6>
               <p>To maintain great readability on different screens and browsers IVORY uses
-                <a href="https://github.com/JulietaUla/Montserrat">Montserrat</a> font as default font family. Montserrat font family has 10 
-                differnt font-weights from 100 to 900. For good readability, IVORY prefers to use light(300), regular(400), medium(500), 
+                <a href="https://github.com/JulietaUla/Montserrat">Montserrat</a> font as default font family. Montserrat font family has 10
+                differnt font-weights from 100 to 900. For good readability, IVORY prefers to use light(300), regular(400), medium(500),
                 semi-bold(600), bold(700) font weights.</p>
-              <p><b>Note:</b> If you want to use a different font family instead of suggested Montserrat font family, then don't import or use 
+              <p><b>Note:</b> If you want to use a different font family instead of suggested Montserrat font family, then don't import or use
                 <b>montserrat-font.css</b> and use your own font css in your application.</p>
             </div>
 
             <div style="margin-bottom: 2rem;">
-              
+
             </div>
 
             <div style="margin-bottom: 2rem;">
@@ -773,83 +773,83 @@
                   <thead>
                     <tr>
                       <th>Style</th>
+                      <th>Usage</th>
                       <th>Font Weight</th>
-                      <th>Font Size</th>
-                      <th>Line Height</th>
+                      <th>Font Size / Line Height</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td><h1>Heading1</h1></td>
+                      <td><span>&lt;h1&gt;...&lt;/h1&gt;</span></td>
                       <td><span>500</span></td>
-                      <td><span>32px</span></td>
-                      <td><span>44px</span></td>
+                      <td><span>32px / 44px</span></td>
                     </tr>
                     <tr>
                       <td><h2>Heading2</h2></td>
+                      <td><span>&lt;h2&gt;...&lt;/h2&gt;</span></td>
                       <td><span>500</span></td>
-                      <td><span>28px</span></td>
-                      <td><span>40px</span></td>
+                      <td><span>28px / 40px</span></td>
                     </tr>
                     <tr>
                       <td><h3>Heading3</h3></td>
+                      <td><span>&lt;h3&gt;...&lt;/h3&gt;</span></td>
                       <td><span>500</span></td>
-                      <td><span>24px</span></td>
-                      <td><span>36px</span></td>
+                      <td><span>24px / 36px</span></td>
                     </tr>
                     <tr>
                       <td><h4>Heading4</h4></td>
+                      <td><span>&lt;h4&gt;...&lt;/h4&gt;</span></td>
                       <td><span>500</span></td>
-                      <td><span>20px</span></td>
-                      <td><span>32px</span></td>
+                      <td><span>20px / 32px</span></td>
                     </tr>
                     <tr>
                       <td><h5>Heading5</h5></td>
+                      <td><span>&lt;h5&gt;...&lt;/h5&gt;</span></td>
                       <td><span>600</span></td>
-                      <td><span>18px</span></td>
-                      <td><span>30px</span></td>
+                      <td><span>18px / 30px</span></td>
                     </tr>
                     <tr>
                       <td><h6>Heading6</h6></td>
+                      <td><span>&lt;h6&gt;...&lt;/h6&gt;</span></td>
                       <td><span>500</span></td>
-                      <td><span>16px</span></td>
-                      <td><span>28px</span></td>
+                      <td><span>16px / 28px</span></td>
                     </tr>
                     <tr>
-                      <td><p class="h6-bold">Heading6 Bold</p></td>
+                      <td><h6><b>Heading6 Bold</b></h6></td>
+                      <td><span>&lt;h6&gt;&lt;b&gt;...&lt;/b&gt;&lt;/h6&gt;</span></td>
                       <td><span>600</span></td>
-                      <td><span>16px</span></td>
-                      <td><span>28px</span></td>
+                      <td><span>16px / 28px</span></td>
                     </tr>
                     <tr>
                       <td><p>Body Text</p></td>
+                      <td><span>&lt;p&gt;....&lt;/p&gt;</span></td>
                       <td><span>400</span></td>
-                      <td><span>14px</span></td>
-                      <td><span>28px</span></td>
+                      <td><span>14px / 28px</span></td>
                     </tr>
                     <tr>
-                      <td><p class="p-bold">P Bold</p></td>
-                      <td><span>500</span></td>
-                      <td><span>14px</span></td>
-                      <td><span>20px</span></td>
-                    </tr>
-                    <tr>
-                      <td><small class="small">Small</small></td>
-                      <td><span>500</span></td>
-                      <td><span>12px</span></td>
-                      <td><span>24px</span></td>
-                    </tr>
-                    <tr>
-                      <td><small class="small-bold">Small Bold</small></td>
+                      <td><p><b>P Bold<b></p></td>
+                      <td><span>&lt;p&gt;&lt;b&gt;...&lt;/b&gt;&lt;/p&gt;</span></td>
                       <td><span>600</span></td>
-                      <td><span>12px</span></td>
-                      <td><span>24px</span></td>
+                      <td><span>14px / 28px</span></td>
+                    </tr>
+                    <tr>
+                      <td><p><small>Small</small></p></td>
+                      <td><span>&lt;p&gt;&lt;small&gt;...&lt;/small&gt;&lt;/p&gt;</span></td>
+                      <td><span>500</span></td>
+                      <td><span>12px / 28px</span></td>
+                    </tr>
+                    <tr>
+                      <td><p><small><b>Small Bold</b></small></p></td>
+                      <td><span>&lt;p&gt;&lt;small&gt;&lt;b&gt;...&lt;/b&gt;&lt;/small&gt;&lt;/p&gt;</span></td>
+                      <td><span>600</span></td>
+                      <td><span>12px / 28px</span></td>
                     </tr>
                     <tr>
                       <td><small class="small-label">Small Label</small></td>
-                      <td><span>400</span></td>
-                      <td><span>12px</span></td>
-                      <td><span>24px</span></td>
+                      <td><span>&lt;p&gt;&lt;small class="small-label"&gt;...&lt;/small&gt;&lt;/p&gt;</span></td>
+                      <td><span>500</span></td>
+                      <td><span>12px / 28px</span></td>
                     </tr>
                   </tbody>
                 </table>
@@ -996,49 +996,130 @@
         <!--Buttons-->
         <section id="buttons" class="docs-section">
           <h1 class="section-title">Buttons</h1>
-
           <div class="section-body">
-            <div style="margin-bottom: 2rem;">
-              <p>Buttons are user interface elements which allows users to take actions throughout the project. It is important
-              that they have ample click space and help communicate the importance of their actions.</p>
+            <p>Buttons are user interface elements which allows users to take actions throughout the project. It is important
+            that they have ample click space and help communicate the importance of their actions. IVORY provides 3 types of
+            buttons.</p>
 
-              <p>IVORY provides 3 styles of buttons, in 2 sizes. Each style is explained below, detailing how and where to use these styles.</p>
-              <ul class="iv-list disc">
-                <li>Solid Buttons</li>
-                <li>Outline Buttons</li>
-                <li>Flat Buttons</li>
-              </ul>
-              <p><b>Note:</b> IVORY also provides rounded buttons in solid & outline styles.</p>
-            </div>
+            <h4>Primary Buttons</h4>
+            <div style="margin-bottom:2rem;">
+              <p>IVORY primary buttons are defined with blue color. Use <span class="code">.btn-primary</span> class along with the button style
+              class.</p>
 
-            <h4>Default Buttons</h4>
-            <div style="margin-bottom: 2rem;">
-              <p>In IVORY secondary style buttons are the default buttons. To incorporate these, use <span class="code">.iv-btn</span> class
-                for solid button, <span class="code">.iv-btn-o</span> class for outline button, and <span class="code">.iv-btn-f</span> for
-                flat button.</p>
-              <p>Rounded edge buttons are only available in solid & outline styles. To get the rounded edge buttons use <span class="code">.btn-ro</span>
-                class along with the above classes.</p>
+              <h6 class="section-subtitle">Solid Buttons</h6>
+              <p>Solid buttons are used to highlight the primary actions. To avoid confusing users, don’t use more than one primary solid
+              button within a section or view.</p>
               <div class="row">
                 <div class="col-12 col-lg-5">
                   <div style="margin-bottom: 1rem;">
-                    <button class="iv-btn">Default</button> &nbsp;
-                    <button class="iv-btn btn-ro">Default</button>
+                    <button class="iv-btn btn-primary">Confirm</button> &nbsp;
+                    <button class="iv-btn btn-primary btn-sm">ADD</button>
                   </div>
                   <div style="margin-bottom: 1rem;">
-                    <button class="iv-btn-o">Default</button> &nbsp;
-                    <button class="iv-btn-o btn-ro">Default</button>
-                  </div>
-                  <div style="margin-bottom: 1rem;">
-                    <button class="iv-btn-f">Default</button>
+                    <button class="iv-btn btn-primary btn-ro">Confirm</button> &nbsp;
+                    <button class="iv-btn btn-primary btn-ro btn-sm ">ADD</button>
                   </div>
                 </div>
                 <div class="col-12 col-lg-7">
                   <pre>
                     <code>
-                      &lt;button class="iv-btn"&gt;Default&lt;/button&gt;<br>
-                      &lt;button class="iv-btn btn-ro&gt;Default&lt;/button&gt;<br>
-                      &lt;button class="iv-btn-o"&gt;Default&lt;/button&gt;<br>
-                      &lt;button class="iv-btn-o btn-ro"&gt;Default&lt;/button&gt;<br>
+                      &lt;button class="iv-btn btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                    </code>
+                  </pre>
+                </div>
+              </div>
+
+              <h6 class="section-subtitle">Outline Buttons</h6>
+              <p>Outline buttons are used to indicate the secondary actions, when they are along with the solid buttons. Multiple Outline buttons can
+              be used in a section.</p>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div style="margin-bottom: 1rem;">
+                    <button class="iv-btn-o btn-primary">Confirm</button> &nbsp;
+                    <button class="iv-btn-o btn-primary btn-sm">Confirm</button>
+                  </div>
+                  <div>
+                    <button class="iv-btn-o btn-primary btn-ro">Confirm</button> &nbsp;
+                    <button class="iv-btn-o btn-primary btn-ro btn-sm">Confirm</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn-o btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                    </code>
+                  </pre>
+                </div>
+              </div>
+
+              <h6 class="section-subtitle">Flat Buttons</h6>
+              <p>Flat buttons have significant purpose, don't get confused with hyperlink. Flat buttons can be used inline
+              scenarios where user can identify this as a button.</p>
+
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <button class="iv-btn-f btn-primary">Confirm</button> &nbsp;
+                  <button class="iv-btn-f btn-primary btn-sm">Confirm</button>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn-f btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-f btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
+            <h4>Grey-Scale Buttons</h4>
+            <div style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Solid Buttons</h6>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <button class="iv-btn">Default</button> &nbsp;
+                  <button class="iv-btn btn-ro">Default</button>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn"&gt;Default&lt;/button&gt;<br/>
+                      &lt;button class="iv-btn btn-ro&gt;Default&lt;/button&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+
+              <h6 class="section-subtitle">Outline Buttons</h6>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <button class="iv-btn-o">Default</button> &nbsp;
+                  <button class="iv-btn-o btn-ro">Default</button>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn-o"&gt;Default&lt;/button&gt;<br/>
+                      &lt;button class="iv-btn-o btn-ro"&gt;Default&lt;/button&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+
+              <h6 class="section-subtitle">Flat Buttons</h6>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <button class="iv-btn-f">Default</button>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
                       &lt;button class="iv-btn-f"&gt;Default&lt;/button&gt;
                     </code>
                   </pre>
@@ -1046,91 +1127,43 @@
               </div>
             </div>
 
-            <h4>Primary Buttons</h4>
-            <p>IVORY primary buttons are defined with blue color. Use <span class="code">.btn-primary</span> class along with the button style
-            class.</p>
-            <h6 class="section-subtitle">Solid Buttons</h6>
-            <p>Solid buttons are used to highlight the most important actions. To avoid confusing users, don’t use more than one primary solid
-              button within a section or view.</p>
-            <div style="margin-bottom: 1rem;">
-              <button class="iv-btn btn-primary">Confirm</button> &nbsp;
-              <button class="iv-btn btn-primary btn-sm">ADD</button> &nbsp;
-              <button class="iv-btn btn-primary btn-ro">Confirm</button> &nbsp;
-              <button class="iv-btn btn-primary btn-ro btn-sm ">ADD</button>
-            </div>
+            <h4>Disabled State</h4>
             <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;button class="iv-btn btn-primary"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="iv-btn btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="iv-btn btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="iv-btn btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
-                </code>
-              </pre>
+              <p>You can disable the button by adding <span class="code">disabled</span> attribute to it.</p>
+              <div>
+                <button class="iv-btn" disabled>Submit</button>
+                <button class="iv-btn-o" disabled>Submit</button>
+                <button class="iv-btn-f" disabled>Submit</button>
+              </div>
             </div>
 
-            <h6 class="section-subtitle">Outline Buttons</h6>
-            <div style="margin-bottom: 1rem;">
-              <button class="iv-btn-o btn-primary">Confirm</button> &nbsp;
-              <button class="iv-btn-o btn-primary btn-sm">Confirm</button> &nbsp;
-              <button class="iv-btn-o btn-primary btn-ro">Confirm</button> &nbsp;
-              <button class="iv-btn-o btn-primary btn-ro btn-sm">Confirm</button>
-            </div>
+            <h4>Colored Buttons</h4>
             <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;button class="iv-btn-o btn-primary"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="iv-btn-o btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="iv-btn-o btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="iv-btn-o btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
-                </code>
-              </pre>
+              <p>IVORY provides the buttons 2 other colors: Red & Green. Red and Green buttons are used for a call to action.</p>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div style="margin-bottom: 1rem;">
+                    <button class="iv-btn btn-primary btn-danger">Delete</button>
+                    <button class="iv-btn-o btn-primary btn-danger">Delete</button>
+                  </div>
+                  <div>
+                    <button class="iv-btn btn-primary btn-success">Approve</button>
+                    <button class="iv-btn-o btn-primary btn-success">Approve</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
+                      &lt;button class="iv-btn btn-primary btn-success"&gt;Approve&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-primary btn-success"&gt;Approve&lt;/button&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
             </div>
 
-            <h6 class="section-subtitle">Flat Buttons</h6>
-            <p>Flat buttons have significant purpose, don't get confused with hyperlink. Flat buttons can be used inline
-              scenarios where user can identify this as a button.</p>
-            <div style="margin-bottom:1rem;">
-              <button class="iv-btn-f btn-primary">Confirm</button> &nbsp;
-              <button class="iv-btn-f btn-primary btn-sm">Confirm</button>
-            </div>
-            <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;button class="iv-btn-f btn-primary"&gt;Confirm&lt;/button&gt;<br>
-                  &lt;button class="iv-btn-f btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
-                </code>
-              </pre>
-            </div>
-
-            <h6 class="section-subtitle">Disabled Buttons</h6>
-            <p>IVORY provides 2 ways to disable the button. One is <span class="code">disabled</span> attribute, other way is
-            <span class="code">.disabled</span> class.</p>
-            <div style="margin-bottom:2rem;">
-              <button class="iv-btn" disabled>Submit</button>
-              <button class="iv-btn-o" disabled>Submit</button>
-              <button class="iv-btn-f" disabled>Submit</button>
-            </div>
-
-            <h6 class="section-subtitle">Action-based color</h6>
-            <p>Different colors may be used based on the severity/purpose of an action's result. For example, using a red button when
-              "deleting" files indicates high severity. Same way, green button to indicates go-ahead.</p>
-            <div style="margin-bottom: 1rem;">
-              <button class="iv-btn btn-primary btn-danger">Delete</button>
-              <button class="iv-btn-o btn-primary btn-danger">Delete</button>
-              <button class="iv-btn btn-primary btn-success">Go Ahead</button>
-              <button class="iv-btn-o btn-primary btn-success">Go Ahead</button>
-            </div>
-            <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;button class="iv-btn btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
-                  &lt;button class="iv-btn-o btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
-                  &lt;button class="iv-btn btn-primary btn-success"&gt;Go Ahead&lt;/button&gt;<br>
-                  &lt;button class="iv-btn-o btn-primary btn-success"&gt;Go Ahead&lt;/button&gt;
-                </code>
-              </pre>
-            </div>
           </div>
         </section>
 

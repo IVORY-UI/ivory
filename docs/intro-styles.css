@@ -4,24 +4,20 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-.avatar {
-  position: relative;
-  text-align: center;
-}
-.intro-wrapper {
-  position: relative;
-  font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  overflow-x: hidden;
-}
+
 .hero {
   position: relative;
-  background: url('./assets/hero_background.png') center no-repeat;
+  background-image: url('./assets/hero_background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 .hero .inner {
   position: relative;
   max-width: 480px;
   margin: 0 auto;
   padding: 160px 0;
+  text-align: center;
 }
 .hero .highlight {
   font-size: 80px;
@@ -44,7 +40,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.hero .guided .nav-item {
+.guided .nav-item {
   color: #212121;
   margin-right: 30px;
   text-decoration: none;
@@ -55,10 +51,11 @@
   font-size: 14px;
   font-weight: 500;
 }
-.hero .guided .nav-item:hover{
+.guided .nav-item:hover{
   background-color: #F2F2F2;
 }
 .feature-tiles {
+  position: relative;
   padding: 64px 0;
 }
 .feature-tiles .inner {
@@ -66,14 +63,11 @@
   max-width: 960px;
   margin: 0 auto;
 }
-.feature-tiles .tile {
-  position: relative;
-  background: rgba(255, 255, 255, 0.85);
-}
-.feature-tiles .tile h5 {
+.feature-tiles h5 {
   color: #415C7A;
 }
 .evolve {
+  position: relative;
   padding: 80px 0;
   background-color: #F1F4F7;
 }
@@ -88,6 +82,7 @@
   color: #415C7A;
 }
 .x-pro {
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -108,6 +103,9 @@
 .x-pro-right .inner {
   float: left;
   padding: 0 30px;
+}
+.footer {
+  position: relative;
 }
 .footer .inner {
   max-width: 960px;

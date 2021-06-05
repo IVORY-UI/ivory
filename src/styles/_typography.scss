@@ -9,19 +9,13 @@
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  color: #212121;
+  color: $iv-neutral-9;
 }
 %p-default {
   margin-top: 0;
   margin-bottom: 1rem;
-  font-size: 0.875rem;
   line-height: 1.75rem;
-}
-%small-default {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-  font-size: 0.75rem;
-  line-height: 1.5rem;
+  color: #212121;
 }
 h1 {
   @extend %big-heading;
@@ -56,7 +50,7 @@ h6 {
   line-height: 1.75rem;
   font-weight: 500;
 }
-.h6-bold {
+h6>b {
   @extend %small-heading;
   font-size: 1rem;
   line-height: 1.75rem;
@@ -65,26 +59,29 @@ h6 {
 p {
   @extend %p-default;
   display: block;
+  font-size: 0.875rem;
   font-weight: 400;
-  color: #424242;
 }
 p>b {
   @extend %p-default;
-  font-weight: 500;
-  color: #212121;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 p>small {
-  @extend %small-default;
+  @extend %p-default;
+  font-size: 0.75rem;
   font-weight: 500;
 }
 p>small>b {
-  @extend %small-default;
+  @extend %p-default;
+  font-size: 0.75rem;
   font-weight: 600;
 }
 .small-label {
-  font-size: 12px;
-  line-height: 24px;
-  color: #999999;
+  @extend %p-default;
+  font-size: 0.75rem;
+  color: #777 !important;
+  font-weight: 500;
 }
 a {
   text-decoration: none;

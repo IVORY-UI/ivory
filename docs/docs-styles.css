@@ -1,14 +1,10 @@
-.top-right-end {
-	position: absolute;
+
+.stat-icons {
+	position: fixed;
+	display: flex;
 	top: 1rem;
 	right: 1rem;
-}
-.stat-icons {
-	display: flex;
 	font-size: 24px;
-}
-.stat-item {
-	display: block;
 }
 .stat-icon {
 	display: block;
@@ -25,11 +21,9 @@
 .stat-icon svg:hover {
 	fill: #495057;
 }
-
 .docs-wrapper {
 	position: relative;
 	display: flex;
-	font-family: Montserrat, 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .doc-nav {
 	position: fixed;
@@ -103,9 +97,6 @@
 	font-weight: 500;
 	color: #212121
 }
-.docs-section .section-body {
-	color: #424242
-}
 .font-highlight {
 	display: block;
 	font-size: 18px;
@@ -118,13 +109,11 @@
 	width: 100%
 }
 .type-system th {
-	padding: 0 2.5rem;
 	font-family: 'Courier Prime', monospace;
 	font-size: .875rem;
-	line-height: 3rem;
+	line-height: 1.5rem;
 	text-align: left;
-	border-bottom: 1px solid #495057;
-	border-right: 1px solid #495057
+	vertical-align: middle;
 }
 .type-system td:last-child,
 .type-system th:last-child {
@@ -134,36 +123,17 @@
 	border-bottom: none
 }
 .type-system td {
-	padding: 0 2.5rem;
 	vertical-align: middle;
+}
+.type-system th,
+.type-system td {
+	padding: 0 2.5rem;
 	border-bottom: 1px solid #495057;
 	border-right: 1px solid #495057
 }
 .type-system td span {
 	font-family: 'Courier Prime', monospace;
 	font-size: 14px
-}
-.icon-frame {
-	position: relative;
-	display: flex;
-	width: 120px;
-	height: 90px;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-	margin: .5rem;
-	color: #868e96;
-	font-size: 24px
-}
-.icon-frame cite {
-	display: flex;
-	font-size: 12px;
-	line-height: 32px
-}
-.icon-frame:hover {
-	background-color: #40a0ff;
-	color: #fafafa;
-	border-radius: .4rem
 }
 .color-palette-panel {
 	display: flex;
@@ -361,7 +331,6 @@ pre {
 		padding-right: 1rem;
 	}
 }
-
 .badge-head {
 	position: relative;
 	margin: 0 30px 0 0;
