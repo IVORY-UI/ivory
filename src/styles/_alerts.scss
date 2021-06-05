@@ -5,15 +5,22 @@
     color: $iconcolor;
   }
 }
-.iv-alert {
+@mixin alert-banner($background, $color) {
+  background-color: $background;
+  color: $color;
+}
+%alert-default {
   position: relative;
   display: flex;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+}
+.iv-alert {
+  @extend %alert-default;
   margin: 1.25rem 0;
   border-radius: 0.25rem;
   padding: 0.32rem 1rem;
-  font-weight: 400;
-  font-size: 0.875rem;
-  line-height: 1.75rem;
   color: $iv-neutral-7;
   .alert-icon {
     flex: 0 0 1.0416666667rem;
@@ -47,5 +54,24 @@
   }
   &.error {
     @include alert-variant($iv-red-0, $iv-red-3, $iv-red-6);
+  }
+}
+.iv-alert-banner {
+  @extend %alert-default;
+  .content {
+    position: relative;
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0.5rem 0;
+  }
+  &.error {
+    @include alert-banner($iv-red-7, $iv-light);
+  }
+  &.warning {
+    @include alert-banner($iv-yellow-7, $iv-dark);
+  }
+  &.info {
+    @include alert-banner($iv-blue-7, $iv-light);
   }
 }

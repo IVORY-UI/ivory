@@ -870,12 +870,11 @@
           <h1 class="section-title">Alerts</h1>
           <div class="section-body">
 
-            <h6 class="section-subtitle">Basic</h6>
+            <h6 class="section-subtitle">Standard Alerts</h6>
+            <p>IVORY has success, info, warning and error alert types. You can enhance the ivory alerts with your choice of
+              icons for alert type representation and action button.</p>
             <div class="row" style="margin-bottom: 2rem;">
               <div class="col-12 col-md-4 col-sm-12 col-lg-6">
-                <p>IVORY has success, info, warning and error alert types.</p>
-              </div>
-              <div class="col-12 col-md-8 col-sm-12 col-lg-6">
                 <div class="iv-alert success">
                   Success Text
                 </div>
@@ -889,29 +888,42 @@
                   Error Text
                 </div>
               </div>
-            </div>
-            <div style="margin-bottom: 2rem;">
-              <pre>
-                <code>
-                  &lt;div class="iv-alert success"&gt;<br/>
-                  &nbsp;&nbsp;Success Text<br/>
-                  &lt;div&gt;<br/><br/>
-                  &lt;div class="iv-alert info"&gt;<br/>
-                  &nbsp;&nbsp;Info Text<br/>
-                  &lt;/div&gt;<br/><br/>
-                  &lt;div class="iv-alert warning"&gt;<br/>
-                  &nbsp;&nbsp;Warning Text<br/>
-                  &lt;/div&gt;<br/><br/>
-                  &lt;div class="iv-alert error"&gt;<br/>
-                  &nbsp;&nbsp;Error Text<br/>
-                  &lt;/div&gt;
-                </code>
-              </pre>
+              <div class="col-12 col-md-8 col-sm-12 col-lg-6">
+                <pre style="margin-top:20px;">
+                  <code>
+                    &lt;div class="iv-alert success"&gt;Success Text&lt;div&gt;<br/>
+                    &lt;div class="iv-alert info"&gt;Info Text&lt;/div&gt;<br/>
+                    &lt;div class="iv-alert warning"&gt;Warning Text&lt;/div&gt;<br/>
+                    &lt;div class="iv-alert error"&gt;Error Text&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
             </div>
 
-            <div class="row">
-              <div class="col">
-                <p>You can enhance the ivory alerts with your choice of icon set/library for alert type representation and action button.</p>
+            <h6 class="section-subtitle">Alert Banner</h6>
+            <p>These are application level alerts showed as a banner at top of page.</p>
+
+            <div style="margin-bottom:1rem;">
+              <div class="iv-alert-banner error">
+                <div class="content">
+                  Your trial period is about to expire in 1 day.
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <div class="iv-alert-banner warning">
+                <div class="content">
+                  Service Notice: There is a schduled maintainance on coming Sunday, from 6:00AM to 6:00PM.
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <div class="iv-alert-banner info">
+                <div class="content">
+                  A new version is available for this product. Restart the application if you want to upgrade.
+                </div>
               </div>
             </div>
 
