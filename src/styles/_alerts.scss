@@ -75,3 +75,11 @@
     @include alert-banner($iv-blue-7, $iv-light);
   }
 }
+@media only screen and (max-width: 960px) {
+  .iv-alert-banner {
+    .content {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
