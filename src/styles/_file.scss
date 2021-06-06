@@ -1,0 +1,25 @@
+.iv-file {
+  position: relative;
+  height: 2rem;
+  width: 20rem;
+  background-color: $iv-neutral-0;
+  border: 1px solid #B7B7B7;
+  border-radius: 0.1875rem;
+  input[type="file"] {
+    display: none;
+  }
+  .iv-file-select {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8125rem;
+    line-height: 1.75rem;
+    cursor: pointer;
+  }
+  &:hover, &:focus {
+    border: 1px solid $iv-blue-4;
+    outline: 0;
+  }
+}

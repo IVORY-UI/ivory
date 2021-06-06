@@ -1,0 +1,34 @@
+%item {
+  font-size: 0.8125rem;
+  line-height: 1.5rem;
+}
+.iv-breadcrumb {
+  position: relative;
+  display: block;
+  margin: 1.5rem 0;
+  &>li {
+    @extend %item;
+    display: inline-block;
+    &::after {
+      content: '/';
+    }
+    &:first-child {
+      a {
+        margin-left: 0;
+      }
+    }
+    &:last-child {
+      &::after {
+        content: '';
+      }
+    }
+    a {
+      @extend %item;
+      margin: 0 10px;
+    }
+    span {
+      @extend %item;
+      margin-left: 10px;
+    }
+  }
+}

@@ -89,10 +89,16 @@
               <a href="#" data-target="badges">Badges</a>
             </li>
             <li class="nav-item">
+              <a href="#" data-target="breadcrumb">Breadcrumb</a>
+            </li>
+            <li class="nav-item">
               <a href="#" data-target="buttons">Buttons</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="checkbox">Checkbox</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="file">File</a>
             </li>
             <li class="nav-item">
               <a href="#" data-target="form">Form</a>
@@ -1026,6 +1032,43 @@
           </div>
         </section>
 
+        <!--Breadcrumb-->
+        <section id="breadcrumb" class="docs-section">
+          <h1 class="section-title">Breadcrumb</h1>
+          <div class="section-body">
+            <p>A breadcrumb provides contextual path of the current page within the hierarchy.</p>
+            <ul class="iv-breadcrumb">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Profile</a>
+              </li>
+              <li>
+                <span>Settings</span>
+              </li>
+            </ul>
+
+            <div>
+              <pre>
+                <code>
+                  &lt;ul class="iv-breadcrumb"&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Home&lt;/a&gt;<br/>
+                  &nbsp;&nbsp;&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Profile&lt;/a&gt;<br/>
+                  &nbsp;&nbsp;&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Settings&lt;/span&gt;<br/>
+                  &nbsp;&nbsp;&lt;/li&gt;<br/>
+                  &lt;/ul&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
         <!--Buttons-->
         <section id="buttons" class="docs-section">
           <h1 class="section-title">Buttons</h1>
@@ -1247,6 +1290,32 @@
                   &lt;div class="iv-checkbox"&gt;<br/>
                   &nbsp;&nbsp;&lt;input type="checkbox" id="check4" disabled checked /&gt;<br/>
                   &nbsp;&nbsp;&lt;label for="check4">Checkbox disabled & checked&lt;/label&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--File-->
+        <section id="file" class="docs-section">
+          <h1 class="section-title">Input File</h1>
+          <div class="section-body">
+
+            <p>The file input uses the native HTML File Input.</p>
+
+            <div style="margin-bottom: 2rem;">
+              <div class="iv-file">
+                <label tabindex="0" for="upload1" class="iv-file-select" role="button">Browse to upload</label>
+                <input id="upload1" type="file" accept />
+              </div>
+            </div>
+            <div>
+              <pre>
+                <code>
+                  &lt;div class="iv-file"&gt;<br/>
+                  &nbsp;&nbsp;&lt;label tabindex="0" for="upload1" class="iv-file-select" role="button"&gt;Browse to upload&lt;/label&gt;<br/>
+                  &nbsp;&nbsp;&lt;input id="upload1" type="file" accept /&gt;<br/>
                   &lt;/div&gt;
                 </code>
               </pre>
