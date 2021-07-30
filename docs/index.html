@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>IVORY : A modern CSS framework for developing powerful web interfaces faster and easier.</title>
+    <title>Documentation | IVORY</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -23,9 +23,12 @@
     <meta name="twitter:description" content="Simple CSS framework makes your UI development faster and easier.">
     <meta name="twitter:image" content="http://ivoryui.com/assets/ivory.png">
 
-    <link rel="stylesheet" href="../dist/ivory.min.css" />
-    <link rel="stylesheet" href="../dist/montserrat-font.css" />
-    <link rel="stylesheet" href="intro-styles.css" />
+    <link href="https://fonts.googleapis.com/css?family=Courier+Prime&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ivoryui-ivory@5.1.0/ivory.min.css" integrity="sha256-eRQNw24+hJcGn7WKmhaPxzOb0n/40zv7oWm2vUW7Iuo=" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ivoryui-ivory@5.1.0/montserrat-font.css" integrity="sha256-roOTwWVeFjsF8PD7eAx2ZZVLdZaoIg5wxeSufIfq9MI=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./docs-styles.css" />
+    <script rel="preload" src="https://unpkg.com/jquery@3.4.1/dist/jquery.min.js" as="script"></script>
+    <script src="./docs.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155990043-1"></script>
@@ -38,85 +41,2136 @@
   </head>
   <body>
 
-    <section class="hero">
-      <div class="inner">
-        <img src="./assets/ivory.png" alt="IVORY UI" width="128" height="128" />
-        <p class="highlight">IVORY</p>
-        <p class="text-lead">A modern CSS framework for developing powerful web interfaces faster and easier.</p>
-        <div class="guided">
-          <a class="nav-item" href="docs.html">DOCS</a>
-          <a class="nav-item" target="_blank" rel="noopener" href="https://github.com/ivory-ui/ivory">GITHUB</a>
-        </div>
-      </div>
-    </section>
+    <div class="docs-wrapper">
 
-    <section class="feature-tiles">
-      <div class="inner">
-        <div class="row">
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <h5>Responsive</h5>
-            <p>Flexbox based mobile first responsive design</p>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <h5>Pure CSS</h5>
-            <p>Built with CSS only. So it integrates in any JS environment.</p>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <h5>Modern</h5>
-            <p>Elegantly designed and developed elements and components</p>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3">
-            <h5>Free</h5>
-            <p>Free forever and open source on GitHub</p>
-          </div>
+      <div class="top-right-end stat-icons">
+        <div class="stat-item">
+          <a class="stat-icon" href="https://github.com/ivory-ui/ivory">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><title>GitHub</title><path d="M10 0a10 10 0 0 0-3.16 19.49c.5.1.68-.22.68-.48l-.01-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.1-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.1.39-1.99 1.03-2.69a3.6 3.6 0 0 1 .1-2.64s.84-.27 2.75 1.02a9.58 9.58 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.4.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85l-.01 2.75c0 .26.18.58.69.48A10 10 0 0 0 10 0"></path></svg>
+          </a>
         </div>
       </div>
-    </section>
 
-    <section class="evolve">
-      <div class="inner">
-        <div class="row">
-          <div class="col-12 col-md-6">
-            <p class="evolving">Evolving the look and feel</p>
-          </div>
-          <div class="col-12 col-md-6">
-            <p>IVORY is specially created for web applications and committed to improve the experience of users. It gives you
-              modular and flexible components that are easily styled to build your pages faster and easier.</p>
-            <p>IVORY supports all the modern browsers and it is easy to customizable. You can customize and extend to get your
-              web interface ready.</p>
-          </div>
+      <div class="burger-container">
+        <div class="burger">
+          <div class="bar topBar"></div>
+          <div class="bar btmBar"></div>
         </div>
       </div>
-    </section>
 
-    <section style="margin: 30px 0;">
-      <div class="row">
-        <div class="col-sm-12 col-md-6 x-pro x-pro-left">
-          <div class="inner">
-            <h3>Support IVORY</h3>
-            <p>IVORY is 100% opensource and free to use. If you enjoy it, please consider donating for the further development.</p>
-            <p>Donate through <a target="_blank" rel="noopener" href="https://paypal.me/LakshmikanthV">paypal</a>.</p>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 x-pro x-pro-right">
-          <div class="inner">
-            <h3>Contribute</h3>
-            <p>Want to help us make IVORY even better? You can contribute to IVORY in many ways.</p>
-            <p>
-              Check <a target="_blank" rel="noopener" href="https://github.com/IVORY-UI/ivory/blob/master/.github/CONTRIBUTING.md">contribution guide</a> to know more.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
+      <div class="doc-nav">
+        <nav>
+          <cite class="nav-section-title">Intro</cite>
+          <ul class="nav-section">
+            <li class="nav-item">
+              <a href="#" data-target="intro" class="active">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="getstart">Get Started</a>
+            </li>
+          </ul>
 
-    <section class="footer">
-      <div class="inner">
-        <p class="small" style="text-align: center;">
-          Designed and built with the love by the <a target="_blank" rel="noopener" href="https://github.com/orgs/IVORY-UI/people">IVORY team</a>.
-        </p>
+          <cite class="nav-section-title">Visual</cite>
+          <ul class="nav-section">
+            <li class="nav-item">
+              <a href="#" data-target="colors">Colors</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="typo">Typography</a>
+            </li>
+          </ul>
+
+          <cite class="nav-section-title">Components</cite>
+          <ul class="nav-section">
+            <li class="nav-item">
+              <a href="#" data-target="alerts">Alerts</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="badges">Badges</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="breadcrumb">Breadcrumb</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="buttons">Buttons</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="checkbox">Checkbox</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="file">File</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="form">Form</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="grid">Grid</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="input">Input</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="list">List</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="progress">Progress</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="radio">Radio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="select">Select</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="spinner">Spinner</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="more">More</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="table">Table</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="textarea">Textarea</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="toggle">Toggle Switch</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" data-target="tooltip">Tooltip</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </section>
+
+      <div class="docs-container">
+        <!--Intro-->
+        <section id="intro" class="docs-section section-active">
+          <section class="hero">
+            IVORY
+          </section>
+
+          <div class="section-body">
+            <div style="margin-bottom: 2rem;">
+              <p>IVORY is a CSS framework, specially created for web applications and committed to improve the experience of users.
+                It gives you all the basic integrants to build your pages faster and easier. </p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">About The Journey</h6>
+            </div>
+
+            <div class="timeline-content">
+              <ul class="timeline">
+                <li class="event" data-date="Jul, 2012">
+                  <cite>The First Step</cite>
+                  <p>The project IVORY was started in July 2012, as a side project by a Software Engineer named
+                    <a target="_blank" href="https://github.com/kanthvallampati/">Lakshmikanth Vallampati</a>. The initial idea of the project
+                    IVORY is to create the CSS library for forms.</p>
+                </li>
+                <li class="event" data-date="Aug 11, 2012">
+                  <cite>v1</cite>
+                  <p>The first version of IVORY Forms released.</p>
+                </li>
+                <li class="event" data-date="Sep 09, 2012">
+                  <cite>v2</cite>
+                  <p>The IVORY Forms enhanced by adding more components like grid-system(non-responsive), tooltips,
+                    tabs, accordion and toggle switch. IVORY Forms turned into IVORY Framework.</p>
+                </li>
+                <li class="event" data-date="Nov 17, 2012">
+                  <cite>v3</cite>
+                  <p>The responsiveness added to v2. IVORY source code published in
+                    <a href="https://github.com/kanthvallampati/ivory/" target="_blank">GitHub</a> for the first time.</p>
+                </li>
+                <li class="event" data-date="Jun 01, 2014">
+                  <cite>100,000 Downloads</cite>
+                  <p>IVORY reached new milestone.</p>
+                </li>
+                <li class="event" data-date="Jan 01, 2019">
+                  <cite>v4</cite>
+                  <p><a target="_blank" href="https://github.com/saivallampati/">Satyasai Vallampati</a> joined in IVORY
+                    core team. The IVORY Framework is revamped with new design system and advanced grid system. Version 4 released.</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </section>
+
+        <!--Get Started-->
+        <section id="getstart" class="docs-section">
+          <h1 class="section-title">Get Started</h1>
+          <div class="section-body">
+            <div style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Using NPM</h6>
+              <p class="subtitle2">Run the below command to install via npm</p>
+              <pre>
+                <code>
+                  npm i ivoryui-ivory
+                </code>
+              </pre>
+              <p class="subtitle2">Import the following files to your project</p>
+              <p><small><b>Tip</b>: You no need to load montserrat-font.scss, if you want to use another font in your application.</small></p>
+              <pre>
+                <code>
+                  node_modules/ivoryui-ivory/ivory.min.css<br/>
+                  node_modules/ivoryui-ivory/montserrat-font.css
+                </code>
+              </pre>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Using UNPKG CDN</h6>
+              <pre>
+                <code>
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" /&gt;<br/>
+                  &lt;link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/montserrat-font.css" /&gt;
+                </code>
+              </pre>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Using JSDelivr CDN</h6>
+              <pre>
+                <code>
+                  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ivoryui-ivory@5.1.0/ivory.min.css" integrity="sha256-eRQNw24+hJcGn7WKmhaPxzOb0n/40zv7oWm2vUW7Iuo=" crossorigin="anonymous"&gt;<br/>
+                  &lt;link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ivoryui-ivory@5.1.0/montserrat-font.css" integrity="sha256-roOTwWVeFjsF8PD7eAx2ZZVLdZaoIg5wxeSufIfq9MI=" crossorigin="anonymous"&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--Colors-->
+        <section id="colors" class="docs-section">
+          <h1 class="section-title">Colors</h1>
+          <div class="section-body">
+            <div style="margin-bottom: 2rem;">
+              <p>IVORY color system has 11 color palette. Each color has a adequate purpose. The color system designed in a way to help
+                create a theme that is harmonious, ensures accessible text, and distinguishes UI elements and surfaces from one another.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Color Model</h6>
+              <p>Each color in IVORY's color system has 10 variants (both dark & light variants). Each variant can then be
+                applied to your UI in different ways.</p>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Neutral Color</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F8F9FA"></div>
+                  <span class="color-hex">#F8F9FA</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F1F3F5"></div>
+                  <span class="color-hex">#F1F3F5</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E9ECEF"></div>
+                  <span class="color-hex">#E9ECEF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #DEE2E6"></div>
+                  <span class="color-hex">#DEE2E6</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #CED4DA"></div>
+                  <span class="color-hex">#CED4DA</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #ADB5BD"></div>
+                  <span class="color-hex">#ADB5BD</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #868E96"></div>
+                  <span class="color-hex">#868E96</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #495057"></div>
+                  <span class="color-hex">#495057</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #343A40"></div>
+                  <span class="color-hex">#343A40</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #212529"></div>
+                  <span class="color-hex">#212529</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Red</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFF1F5"></div>
+                  <span class="color-hex">#FFF1F5</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFE8E8"></div>
+                  <span class="color-hex">#FFE8E8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFCCC9"></div>
+                  <span class="color-hex">#FFCCC9</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFA8A8"></div>
+                  <span class="color-hex">#FFA8A8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FF8787"></div>
+                  <span class="color-hex">#FF8787</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FF6B6B"></div>
+                  <span class="color-hex">#FF6B6B</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FA5252"></div>
+                  <span class="color-hex">#FA5252</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F03E3E"></div>
+                  <span class="color-hex">#F03E3E</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E03131"></div>
+                  <span class="color-hex">#E03131</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #C82F2F"></div>
+                  <span class="color-hex">#C82F2F</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Pink</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#FFF0F6"></div>
+                  <span class="color-hex">#FFF0F6</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#FFDEEB"></div>
+                  <span class="color-hex">#FFDEEB</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#FCC2D7"></div>
+                  <span class="color-hex">#FCC2D7</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#FAA2C1"></div>
+                  <span class="color-hex">#FAA2C1</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#F783AC"></div>
+                  <span class="color-hex">#F783AC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#F06595"></div>
+                  <span class="color-hex">#F06595</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#E64980"></div>
+                  <span class="color-hex">#E64980</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#D6336C"></div>
+                  <span class="color-hex">#D6336C</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#C2255C"></div>
+                  <span class="color-hex">#C2255C</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color:#A61E4D"></div>
+                  <span class="color-hex">#A61E4D</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Purple</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F8F0FC"></div>
+                  <span class="color-hex">#F8F0FC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F3D9FA"></div>
+                  <span class="color-hex">#F3D9FA</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #EEBEFA"></div>
+                  <span class="color-hex">#EEBEFA</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E599F7"></div>
+                  <span class="color-hex">#E599F7</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #DA77F2"></div>
+                  <span class="color-hex">#DA77F2</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #CC5DE8"></div>
+                  <span class="color-hex">#CC5DE8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #BE4BDB"></div>
+                  <span class="color-hex">#BE4BDB</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #AE3EC9"></div>
+                  <span class="color-hex">#AE3EC9</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #9C36B5"></div>
+                  <span class="color-hex">#9C36B5</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #862E9C"></div>
+                  <span class="color-hex">#862E9C</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Indigo</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #EDF2FF"></div>
+                  <span class="color-hex">#EDF2FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #DBE4FF"></div>
+                  <span class="color-hex">#DBE4FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #BAC8FF"></div>
+                  <span class="color-hex">#BAC8FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #91A7FF"></div>
+                  <span class="color-hex">#91A7FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #748FFC"></div>
+                  <span class="color-hex">#748FFC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #5C7CFA"></div>
+                  <span class="color-hex">#5C7CFA</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #4C6EF5"></div>
+                  <span class="color-hex">#4C6EF5</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #4263EB"></div>
+                  <span class="color-hex">#4263EB</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #3B5BDB"></div>
+                  <span class="color-hex">#3B5BDB</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #364FC7"></div>
+                  <span class="color-hex">#364FC7</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Blue</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #EAF5FF"></div>
+                  <span class="color-hex">#EAF5FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #D7EAFC"></div>
+                  <span class="color-hex">#D7EAFC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #A6D2FF"></div>
+                  <span class="color-hex">#A6D2FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #74B9FF"></div>
+                  <span class="color-hex">#74B9FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #5CACFC"></div>
+                  <span class="color-hex">#5CACFC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #40A0FF"></div>
+                  <span class="color-hex">#40A0FF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #2285F6"></div>
+                  <span class="color-hex">#2285F6</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #0875E1"></div>
+                  <span class="color-hex">#0875E1</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #005CB9"></div>
+                  <span class="color-hex">#005CB9</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #004387"></div>
+                  <span class="color-hex">#004387</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Cyan</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E3FAFC"></div>
+                  <span class="color-hex">#E3FAFC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #C5F6Fa"></div>
+                  <span class="color-hex">#C5F6Fa</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #99E9F2"></div>
+                  <span class="color-hex">#99E9F2</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #66D9E8"></div>
+                  <span class="color-hex">#66D9E8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #3BC9DB"></div>
+                  <span class="color-hex">#3BC9DB</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #22B8CF"></div>
+                  <span class="color-hex">#22B8CF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #15AABF"></div>
+                  <span class="color-hex">#15AABF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #1098AD"></div>
+                  <span class="color-hex">#1098AD</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #0C8599"></div>
+                  <span class="color-hex">#0C8599</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #0B7285"></div>
+                  <span class="color-hex">#0B7285</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Teal</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E6FCF5"></div>
+                  <span class="color-hex">#E6FCF5</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #C3FAE8"></div>
+                  <span class="color-hex">#C3FAE8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #96F2D7"></div>
+                  <span class="color-hex">#96F2D7</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #63E6BE"></div>
+                  <span class="color-hex">#63E6BE</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #38D9A9"></div>
+                  <span class="color-hex">#38D9A9</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #20C997"></div>
+                  <span class="color-hex">#20C997</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #12B886"></div>
+                  <span class="color-hex">#12B886</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #0CA678"></div>
+                  <span class="color-hex">#0CA678</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #099268"></div>
+                  <span class="color-hex">#099268</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #087F5B"></div>
+                  <span class="color-hex">#087F5B</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Green</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F6FFED"></div>
+                  <span class="color-hex">#F6FFED</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E8FCCF"></div>
+                  <span class="color-hex">#E8FCCF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #D9F7BE"></div>
+                  <span class="color-hex">#D9F7BE</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #B7EB8F"></div>
+                  <span class="color-hex">#B7EB8F</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #95DE64"></div>
+                  <span class="color-hex">#95DE64</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #84D750"></div>
+                  <span class="color-hex">#84D750</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #73D13D"></div>
+                  <span class="color-hex">#73D13D</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #52C41A"></div>
+                  <span class="color-hex">#52C41A</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #389E0D"></div>
+                  <span class="color-hex">#389E0D</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #237804"></div>
+                  <span class="color-hex">#237804</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Yellow</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFFBE6"></div>
+                  <span class="color-hex">#FFFBE6</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFF9D0"></div>
+                  <span class="color-hex">#FFF9D0</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFF3BF"></div>
+                  <span class="color-hex">#FFF3BF</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFEC99"></div>
+                  <span class="color-hex">#FFEC99</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFE066"></div>
+                  <span class="color-hex">#FFE066</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFD43b"></div>
+                  <span class="color-hex">#FFD43b</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FCC419"></div>
+                  <span class="color-hex">#FCC419</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FAB005"></div>
+                  <span class="color-hex">#FAB005</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F59F00"></div>
+                  <span class="color-hex">#F59F00</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F08C00"></div>
+                  <span class="color-hex">#F08C00</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="row" style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Orange</h6>
+              <div class="color-palette-panel">
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFF4E6"></div>
+                  <span class="color-hex">#FFF4E6</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFE8CC"></div>
+                  <span class="color-hex">#FFE8CC</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFD8A8"></div>
+                  <span class="color-hex">#FFD8A8</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFC078"></div>
+                  <span class="color-hex">#FFC078</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FFA94D"></div>
+                  <span class="color-hex">#FFA94D</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FF922B"></div>
+                  <span class="color-hex">#FF922B</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #FD7E14"></div>
+                  <span class="color-hex">#FD7E14</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #F76707"></div>
+                  <span class="color-hex">#F76707</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #E8590C"></div>
+                  <span class="color-hex">#E8590C</span>
+                </div>
+                <div class="color-cell">
+                  <div class="color-cell-bg" style="background-color: #d9480f"></div>
+                  <span class="color-hex">#D9480F</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!--Typography-->
+        <section id="typo" class="docs-section">
+          <h1 class="section-title">Typography</h1>
+          <div class="section-body">
+            <div style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Font Family</h6>
+              <p>To maintain great readability on different screens and browsers IVORY uses
+                <a href="https://github.com/JulietaUla/Montserrat">Montserrat</a> font as default font family. Montserrat font family has 10
+                differnt font-weights from 100 to 900. For good readability, IVORY prefers to use light(300), regular(400), medium(500),
+                semi-bold(600), bold(700) font weights.</p>
+              <p><b>Note:</b> If you want to use a different font family instead of suggested Montserrat font family, then don't import or use
+                <b>montserrat-font.css</b> and use your own font css in your application.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <h6>Type System</h6>
+              <div class="type-system">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Style</th>
+                      <th>Usage</th>
+                      <th>Font Weight</th>
+                      <th>Font Size / Line Height</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><h1>Heading1</h1></td>
+                      <td><span>&lt;h1&gt;...&lt;/h1&gt;</span></td>
+                      <td><span>500</span></td>
+                      <td><span>32px / 44px</span></td>
+                    </tr>
+                    <tr>
+                      <td><h2>Heading2</h2></td>
+                      <td><span>&lt;h2&gt;...&lt;/h2&gt;</span></td>
+                      <td><span>500</span></td>
+                      <td><span>28px / 40px</span></td>
+                    </tr>
+                    <tr>
+                      <td><h3>Heading3</h3></td>
+                      <td><span>&lt;h3&gt;...&lt;/h3&gt;</span></td>
+                      <td><span>500</span></td>
+                      <td><span>24px / 36px</span></td>
+                    </tr>
+                    <tr>
+                      <td><h4>Heading4</h4></td>
+                      <td><span>&lt;h4&gt;...&lt;/h4&gt;</span></td>
+                      <td><span>500</span></td>
+                      <td><span>20px / 32px</span></td>
+                    </tr>
+                    <tr>
+                      <td><h5>Heading5</h5></td>
+                      <td><span>&lt;h5&gt;...&lt;/h5&gt;</span></td>
+                      <td><span>600</span></td>
+                      <td><span>18px / 30px</span></td>
+                    </tr>
+                    <tr>
+                      <td><h6>Heading6</h6></td>
+                      <td><span>&lt;h6&gt;...&lt;/h6&gt;</span></td>
+                      <td><span>500</span></td>
+                      <td><span>16px / 28px</span></td>
+                    </tr>
+                    <tr>
+                      <td><h6><b>Heading6 Bold</b></h6></td>
+                      <td><span>&lt;h6&gt;&lt;b&gt;...&lt;/b&gt;&lt;/h6&gt;</span></td>
+                      <td><span>600</span></td>
+                      <td><span>16px / 28px</span></td>
+                    </tr>
+                    <tr>
+                      <td><p>Body Text</p></td>
+                      <td><span>&lt;p&gt;....&lt;/p&gt;</span></td>
+                      <td><span>400</span></td>
+                      <td><span>14px / 28px</span></td>
+                    </tr>
+                    <tr>
+                      <td><p><b>P Bold<b></p></td>
+                      <td><span>&lt;p&gt;&lt;b&gt;...&lt;/b&gt;&lt;/p&gt;</span></td>
+                      <td><span>600</span></td>
+                      <td><span>14px / 28px</span></td>
+                    </tr>
+                    <tr>
+                      <td><p><small>Small</small></p></td>
+                      <td><span>&lt;p&gt;&lt;small&gt;...&lt;/small&gt;&lt;/p&gt;</span></td>
+                      <td><span>500</span></td>
+                      <td><span>12px / 28px</span></td>
+                    </tr>
+                    <tr>
+                      <td><p><small><b>Small Bold</b></small></p></td>
+                      <td><span>&lt;p&gt;&lt;small&gt;&lt;b&gt;...&lt;/b&gt;&lt;/small&gt;&lt;/p&gt;</span></td>
+                      <td><span>600</span></td>
+                      <td><span>12px / 28px</span></td>
+                    </tr>
+                    <tr>
+                      <td><small class="small-label">Small Label</small></td>
+                      <td><span>&lt;p&gt;&lt;small class="small-label"&gt;...&lt;/small&gt;&lt;/p&gt;</span></td>
+                      <td><span>500</span></td>
+                      <td><span>12px / 28px</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Text Links</h6>
+              <p>
+                <a href="javascript:void(0)">Text Link</a>
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!--Alerts-->
+        <section id="alerts" class="docs-section">
+          <h1 class="section-title">Alerts</h1>
+          <div class="section-body">
+
+            <h6 class="section-subtitle">Standard Alerts</h6>
+            <p>IVORY has success, info, warning and error alert types. You can enhance the ivory alerts with your choice of
+              icons for alert type representation and action button.</p>
+            <div class="row" style="margin-bottom: 2rem;">
+              <div class="col-12 col-md-4 col-sm-12 col-lg-6">
+                <div class="iv-alert success">
+                  Success Text
+                </div>
+                <div class="iv-alert info">
+                  Info Text
+                </div>
+                <div class="iv-alert warning">
+                  Warning Text
+                </div>
+                <div class="iv-alert error">
+                  Error Text
+                </div>
+              </div>
+              <div class="col-12 col-md-8 col-sm-12 col-lg-6">
+                <pre style="margin-top:20px;">
+                  <code>
+                    &lt;div class="iv-alert success"&gt;Success Text&lt;div&gt;<br/>
+                    &lt;div class="iv-alert info"&gt;Info Text&lt;/div&gt;<br/>
+                    &lt;div class="iv-alert warning"&gt;Warning Text&lt;/div&gt;<br/>
+                    &lt;div class="iv-alert error"&gt;Error Text&lt;/div&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+
+            <h6 class="section-subtitle">Alert Banner</h6>
+            <p>These are application level alerts showed as a banner at top of page.</p>
+
+            <div style="margin-bottom:1rem;">
+              <div class="iv-alert-banner error">
+                <div class="content">
+                  Your trial period is about to expire in 1 day.
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <div class="iv-alert-banner warning">
+                <div class="content">
+                  Service Notice: There is a schduled maintainance on coming Sunday, from 6:00AM to 6:00PM.
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-bottom:1rem;">
+              <div class="iv-alert-banner info">
+                <div class="content">
+                  A new version is available for this product. Restart the application if you want to upgrade.
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <pre>
+                <code>
+                  &lt;div class="iv-alert-banner error"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="content"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Your trial period is about to expire in 1 day.<br/>
+                  &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="iv-alert-banner warning"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="content"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;Service Notice: There is a schduled maintainance on coming Sunday, from 6:00AM to 6:00PM.<br/>
+                  &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="iv-alert-banner info"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="content"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;A new version is available for this product. Restart the application if you want to upgrade.<br/>
+                  &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--Badges-->
+        <section id="badges" class="docs-section">
+          <h1 class="section-title">Badges</h1>
+          <div class="section-body">
+            <div style="margin-bottom: 2rem;">
+              <p>Badge is a status descriptor for UI elements. Badge normally appears in proximity to notifications with eye-catching appeal.</p>
+            </div>
+
+            <h6>Standalone Badge</h6>
+            <div style="margin-bottom: 2rem;">
+              <p>
+                <span class="iv-badge" style="margin-right: 15px;">5</span>
+                <span class="iv-badge success" style="margin-right: 15px;">5</span>
+                <span class="iv-badge warning" style="margin-right: 15px;">5</span>
+                <span class="iv-badge error">5</span>
+              </p>
+            </div>
+            <div style="margin-bottom: 3rem;">
+              <pre>
+                <code>
+                  &lt;span class="iv-badge"&gt;5&lt;/span&gt;<br/>
+                  &lt;span class="iv-badge success"&gt;5&lt;/span&gt;<br/>
+                  &lt;span class="iv-badge warning"&gt;5&lt;/span&gt;<br/>
+                  &lt;span class="iv-badge error"&gt;5&lt;/span&gt;
+                </code>
+              </pre>
+            </div>
+
+            <h6>Basic Badge</h6>
+            <div style="margin-bottom: 2rem;">
+              <span class="badge-head iv-badge-group">
+                <sup class="iv-badge error">9</sup>
+              </span>
+              <span class="badge-head iv-badge-group">
+                <sup class="iv-badge error">99</sup>
+              </span>
+              <span class="badge-head iv-badge-group">
+                <sup class="iv-badge error">999</sup>
+              </span>
+              <span class="badge-head iv-badge-group">
+                <sup class="iv-badge error">999+</sup>
+              </span>
+            </div>
+            <div style="margin-bottom: 3rem;">
+              <pre>
+                <code>
+                  &lt;span class="iv-badge-group"&gt;<br/>
+                  &nbsp;&nbsp;&lt;sup class="iv-badge error"&gt;9&lt;/sup&gt;<br/>
+                  &lt;/span&gt;
+                </code>
+              </pre>
+            </div>
+
+            <h6>Dot Badge</h6>
+            <div style="margin-bottom: 2rem;">
+              <span class="badge-link iv-badge-group">
+                <a href="...">link</a>
+                <sup class="iv-badge red dot"></sup>
+              </span>
+              </p>
+            </div>
+            <div style="margin-bottom: 3rem;">
+              <pre>
+                <code>
+                  &lt;span class="iv-badge-group"&gt;<br/>
+                  &nbsp;&nbsp;...<br/>
+                  &nbsp;&nbsp;&lt;sup class="iv-badge red dot"&gt;&lt;/sup&gt;<br/>
+                  &lt;/span&gt;
+                </code>
+              </pre>
+            </div>
+
+          </div>
+        </section>
+
+        <!--Breadcrumb-->
+        <section id="breadcrumb" class="docs-section">
+          <h1 class="section-title">Breadcrumb</h1>
+          <div class="section-body">
+            <p>A breadcrumb provides contextual path of the current page within the hierarchy.</p>
+            <ul class="iv-breadcrumb">
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">Profile</a>
+              </li>
+              <li>
+                <span>Settings</span>
+              </li>
+            </ul>
+
+            <div>
+              <pre>
+                <code>
+                  &lt;ul class="iv-breadcrumb"&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Home&lt;/a&gt;<br/>
+                  &nbsp;&nbsp;&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;a href="#"&gt;Profile&lt;/a&gt;<br/>
+                  &nbsp;&nbsp;&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span&gt;Settings&lt;/span&gt;<br/>
+                  &nbsp;&nbsp;&lt;/li&gt;<br/>
+                  &lt;/ul&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--Buttons-->
+        <section id="buttons" class="docs-section">
+          <h1 class="section-title">Buttons</h1>
+          <div class="section-body">
+            <p>Buttons are user interface elements which allows users to take actions throughout the project. It is important
+            that they have ample click space and help communicate the importance of their actions. IVORY provides 3 types of
+            buttons.</p>
+
+            <h4>Primary Buttons</h4>
+            <div style="margin-bottom:2rem;">
+              <p>IVORY primary buttons are defined with blue color. Use <span class="code">.btn-primary</span> class along with the button style
+              class.</p>
+
+              <h6 class="section-subtitle">Solid Buttons</h6>
+              <p>Solid buttons are used to highlight the primary actions. To avoid confusing users, don’t use more than one primary solid
+              button within a section or view.</p>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div style="margin-bottom: 1rem;">
+                    <button class="iv-btn btn-primary">Confirm</button> &nbsp;
+                    <button class="iv-btn btn-primary btn-sm">ADD</button>
+                  </div>
+                  <div style="margin-bottom: 1rem;">
+                    <button class="iv-btn btn-primary btn-ro">Confirm</button> &nbsp;
+                    <button class="iv-btn btn-primary btn-ro btn-sm ">ADD</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                    </code>
+                  </pre>
+                </div>
+              </div>
+
+              <h6 class="section-subtitle">Outline Buttons</h6>
+              <p>Outline buttons are used to indicate the secondary actions, when they are along with the solid buttons. Multiple Outline buttons can
+              be used in a section.</p>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div style="margin-bottom: 1rem;">
+                    <button class="iv-btn-o btn-primary">Confirm</button> &nbsp;
+                    <button class="iv-btn-o btn-primary btn-sm">Confirm</button>
+                  </div>
+                  <div>
+                    <button class="iv-btn-o btn-primary btn-ro">Confirm</button> &nbsp;
+                    <button class="iv-btn-o btn-primary btn-ro btn-sm">Confirm</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn-o btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-primary btn-ro"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-primary btn-ro btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                    </code>
+                  </pre>
+                </div>
+              </div>
+
+              <h6 class="section-subtitle">Flat Buttons</h6>
+              <p>Flat buttons have significant purpose, don't get confused with hyperlink. Flat buttons can be used inline
+              scenarios where user can identify this as a button.</p>
+
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <button class="iv-btn-f btn-primary">Confirm</button> &nbsp;
+                  <button class="iv-btn-f btn-primary btn-sm">Confirm</button>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn-f btn-primary"&gt;Confirm&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-f btn-primary btn-sm"&gt;Confirm&lt;/button&gt;<br>
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
+            <h4>Grey-Scale Buttons</h4>
+            <div style="margin-bottom: 2rem;">
+              <h6 class="section-subtitle">Solid Buttons</h6>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <button class="iv-btn">Default</button> &nbsp;
+                  <button class="iv-btn btn-ro">Default</button>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn"&gt;Default&lt;/button&gt;<br/>
+                      &lt;button class="iv-btn btn-ro&gt;Default&lt;/button&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+
+              <h6 class="section-subtitle">Outline Buttons</h6>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <button class="iv-btn-o">Default</button> &nbsp;
+                  <button class="iv-btn-o btn-ro">Default</button>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn-o"&gt;Default&lt;/button&gt;<br/>
+                      &lt;button class="iv-btn-o btn-ro"&gt;Default&lt;/button&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+
+              <h6 class="section-subtitle">Flat Buttons</h6>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <button class="iv-btn-f">Default</button>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn-f"&gt;Default&lt;/button&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
+            <h4>Disabled State</h4>
+            <div style="margin-bottom: 2rem;">
+              <p>You can disable the button by adding <span class="code">disabled</span> attribute to it.</p>
+              <div>
+                <button class="iv-btn" disabled>Submit</button>
+                <button class="iv-btn-o" disabled>Submit</button>
+                <button class="iv-btn-f" disabled>Submit</button>
+              </div>
+            </div>
+
+            <h4>Colored Buttons</h4>
+            <div style="margin-bottom: 2rem;">
+              <p>IVORY provides the buttons 2 other colors: Red & Green. Red and Green buttons are used for a call to action.</p>
+              <div class="row">
+                <div class="col-12 col-lg-5">
+                  <div style="margin-bottom: 1rem;">
+                    <button class="iv-btn btn-primary btn-danger">Delete</button>
+                    <button class="iv-btn-o btn-primary btn-danger">Delete</button>
+                  </div>
+                  <div>
+                    <button class="iv-btn btn-primary btn-success">Approve</button>
+                    <button class="iv-btn-o btn-primary btn-success">Approve</button>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                  <pre>
+                    <code>
+                      &lt;button class="iv-btn btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-primary btn-danger"&gt;Delete&lt;/button&gt;<br>
+                      &lt;button class="iv-btn btn-primary btn-success"&gt;Approve&lt;/button&gt;<br>
+                      &lt;button class="iv-btn-o btn-primary btn-success"&gt;Approve&lt;/button&gt;
+                    </code>
+                  </pre>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!--Checkbox-->
+        <section id="checkbox" class="docs-section">
+          <h1 class="section-title">Checkbox</h1>
+          <div class="section-body">
+            <div class="iv-checkbox">
+              <input type="checkbox" id="check1" />
+              <label for="check1">Checkbox</label>
+            </div>
+            <div class="iv-checkbox">
+              <input type="checkbox" id="check2" checked />
+              <label for="check2">Checked Checkbox</label>
+            </div>
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;div class="iv-checkbox"&gt;<br/>
+                  &nbsp;&nbsp;&lt;input type="checkbox" id="check1" /&gt;<br/>
+                  &nbsp;&nbsp;&lt;label for="check1">Checkbox&lt;label&gt;<br/>
+                  &lt;div&gt;<br/>
+                  &lt;div class="iv-checkbox"&gt;<br/>
+                  &nbsp;&nbsp;&lt;input type="checkbox" id="check2" checked /&gt;<br/>
+                  &nbsp;&nbsp;&lt;label for="check2">Checked Checkbox&lt;/label&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+            <h6 class="section-subtitle">Disabled</h6>
+            <p>The checkbox can be disabled by <span class="code">disabled</span> attribute on the checkbox input.</p>
+            <div class="iv-checkbox">
+              <input type="checkbox" id="check3" disabled />
+              <label for="check3">Disabled Checkbox</label>
+            </div>
+            <div class="iv-checkbox">
+              <input type="checkbox" id="check4" disabled checked />
+              <label for="check4">Checkbox disabled & checked</label>
+            </div>
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;div class="iv-checkbox"&gt;<br/>
+                  &nbsp;&nbsp;&lt;input type="checkbox" id="check3" disabled /&gt;<br/>
+                  &nbsp;&nbsp;&lt;label for="check3">Disabled Checkbox&lt;label&gt;<br/>
+                  &lt;div&gt;<br/>
+                  &lt;div class="iv-checkbox"&gt;<br/>
+                  &nbsp;&nbsp;&lt;input type="checkbox" id="check4" disabled checked /&gt;<br/>
+                  &nbsp;&nbsp;&lt;label for="check4">Checkbox disabled & checked&lt;/label&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--File-->
+        <section id="file" class="docs-section">
+          <h1 class="section-title">Input File</h1>
+          <div class="section-body">
+
+            <p>The file input uses the native HTML File Input.</p>
+
+            <div style="margin-bottom: 2rem;">
+              <div class="iv-file">
+                <label tabindex="0" for="upload1" class="iv-file-select" role="button">Browse to upload</label>
+                <input id="upload1" type="file" accept />
+              </div>
+            </div>
+            <div>
+              <pre>
+                <code>
+                  &lt;div class="iv-file"&gt;<br/>
+                  &nbsp;&nbsp;&lt;label tabindex="0" for="upload1" class="iv-file-select" role="button"&gt;Browse to upload&lt;/label&gt;<br/>
+                  &nbsp;&nbsp;&lt;input id="upload1" type="file" accept /&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--Form-->
+        <section id="form" class="docs-section">
+          <h1 class="section-title">Form</h1>
+
+          <div class="section-body">
+            <h6 class="section-subtitle">Standard Form</h6>
+            <p>In IVORY standard form, the label and the form element will be arranged one after one in a row manner.</p>
+            <div style="margin-bottom: 4rem;">
+              <div class="iv-form" style="max-width: 500px;">
+                <div class="form-field">
+                  <label class="form-label">Username</label>
+                  <input class="iv-input" type="text" />
+                </div>
+                <div class="form-field">
+                  <label class="form-label">Password</label>
+                  <input class="iv-input" type="password" />
+                </div>
+                <button class="iv-btn btn-primary">Signin</button>
+              </div>
+            </div>
+
+            <h6 class="section-subtitle">Horizontally Aligned Form</h6>
+            <p>In horizontal form, label & form element are aligned side-by-side.</p>
+            <div style="margin-bottom: 4rem;">
+              <div class="iv-form form-horizontal" style="max-width: 640px;">
+                <div class="form-field">
+                  <label class="form-label">Firstname</label>
+                  <input class="iv-input" type="text" />
+                </div>
+                <div class="form-field">
+                  <label class="form-label">Lastname</label>
+                  <input class="iv-input" type="text" />
+                </div>
+                <div class="form-field">
+                  <label class="form-label">Email</label>
+                  <input class="iv-input" type="text" />
+                </div>
+                <div class="form-field">
+                  <label class="form-label">Password</label>
+                  <input class="iv-input" type="password" />
+                </div>
+                <button class="iv-btn btn-primary">Register</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Grid-->
+        <section id="grid" class="docs-section">
+          <h1 class="section-title">Grid</h1>
+          <div class="section-body">
+            <p>IVORY provides a 12-column mobile first grid system built with flexbox and is fully responsive.</p>
+
+            <p>The below examples will give you an idea of how to build Flexbox grid structure using IVORY.</p>
+
+            <h6 class="section-subtitle">Basic Grid</h6>
+            <div class="example-grid">
+              <div class="row">
+                <div class="col-12 col-md-1">One</div>
+                <div class="col-12 col-md-11">Eleven</div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-2">Two</div>
+                <div class="col-12 col-md-10">Ten</div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-3">Three</div>
+                <div class="col-12 col-md-9">Nine</div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-4">Four</div>
+                <div class="col-12 col-md-8">Eight</div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-5">Five</div>
+                <div class="col-12 col-md-7">Seven</div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-6">Six</div>
+                <div class="col-12 col-md-6">Six</div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;div class="row"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-1"&gt;One&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-11"&gt;Eleven&lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="row"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-2"&gt;Two&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-10"&gt;Ten&lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="row"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-3"&gt;Three&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-9"&gt;Nine&lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="row"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-4"&gt;Four&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-8"&gt;Eight&lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="row"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-5"&gt;Five&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-7"&gt;Seven&lt;/div&gt;<br/>
+                  &lt;/div&gt;<br/>
+                  &lt;div class="row"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-6"&gt;Six&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col-6"&gt;Six&lt;/div&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+            <h6 class="section-subtitle">Gutter</h6>
+            <p>IVORY grid has the gutter width	of 30px i.e. 15px on each side of a column. IVORY also provides the gutter
+              less grid system. To avail the gutter less grid layout, add <span class="code">.no-gutter</span> class to the row
+              container.</p>
+
+            <div class="example-grid">
+              <div class="row no-gutter">
+                <div class="col-12">Twelve</div>
+              </div>
+              <div class="row no-gutter">
+                <div class="col-6">Six</div>
+                <div class="col-6">Six</div>
+              </div>
+              <div class="row no-gutter">
+                <div class="col-4">Four</div>
+                <div class="col-4">Four</div>
+                <div class="col-4">Four</div>
+              </div>
+              <div class="row no-gutter">
+                <div class="col-3">Three</div>
+                <div class="col-3">Three</div>
+                <div class="col-3">Three</div>
+                <div class="col-3">Three</div>
+              </div>
+            </div>
+
+            <h6 class="section-subtitle">Equal Width Columns</h6>
+            <p>You no need do much, to create the equal width columns. It's became more simpler with IVORY. In a row just create
+              the <span class="code">div</span>s with <span class="code">.col</span> class. How many <span class="code">div</span>s
+              you create, those number of equal width columns will be created.</p>
+            <div class="example-grid">
+              <div class="row">
+                <div class="col">one</div>
+                <div class="col">Two</div>
+                <div class="col">Three</div>
+                <div class="col">Four</div>
+                <div class="col">Five</div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;div class="row"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col"&gt;One&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col"&gt;Two&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col"&gt;Three&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col"&gt;Four&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="col"&gt;Five&lt;/div&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+
+            <h6 class="section-subtitle">Responsive</h6>
+            <p>The breakpoints of responsive grid as below:</p>
+
+            <p>Extra small devices (portrait phones, less than 576px) <br/>
+              No media query since this is the default</p>
+
+            <p>Small devices (landscape phones, 576px and up) <br/>
+              <pre><code>@media (min-width: 576px) { ... }</code></pre></p>
+
+            <p>Medium devices (tablets, 768px and up) <br />
+              <pre><code>@media (min-width: 768px) { ... }</code></pre></p>
+
+            <p>Large devices (large desktops, 1200px and up) <br/>
+              <pre><code>@media (min-width: 1200px) { ... }</code></pre></p>
+
+          </div>
+        </section>
+
+        <!--Input-->
+        <section id="input" class="docs-section">
+          <h1 class="section-title">Input</h1>
+          <div class="section-body">
+            <p>IVORY follows the native input element for the input field, which should be having the class <span class="code">.iv-input</span></p>
+            <div class="row">
+              <div class="col-4">
+                <input class="iv-input" type="text" placeholder="Enter Text Here" value="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--List-->
+        <section id="list" class="docs-section">
+          <h1 class="section-title">List</h1>
+          <div style="margin-bottom: 2rem;">
+            <p>IVORY provides 2 types of lists; native HTML lists & styled lists.</p>
+
+            <p>The HTML suuports 3 types of lists by default: Unordered, Ordered and Description list. Just add
+              <span class="code">.iv-list</span> to your <span class="code">&lt;ul&gt;</span> or <span class="code">&lt;ol&gt;</span>
+              or <span class="code">&lt;dl&gt;</span>.</p>
+          </div>
+
+          <h4>Native HTML Lists</h4>
+
+          <div style="margin-bottom: 2rem;">
+            <h6 class="section-subtitle">Unordered List</h6>
+            <p>For Unordered List you can use the addon classes like: <span class="code">.disc</span>, <span class="code">.circle</span>,
+              <span class="code">.square</span> to display the respective list styles. Here is an example:</p>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <ul class="iv-list disc">
+                  <li>Amsterdam</li>
+                  <li>Manali</li>
+                  <li>Monaco</li>
+                  <li>Milano</li>
+                  <li>Auckland</li>
+                  <li>Florance</li>
+                </ul>
+              </div>
+              <div class="col-12 col-md-6">
+                <pre>
+                  <code>
+                    &lt;ul class="iv-list disc"&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Amsterdam&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Manali&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Monaco&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Milano&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Auckland&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Florance&lt;/li&gt;<br/>
+                    &lt;/ul&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <h6 class="section-subtitle">Ordered List</h6>
+            <p>For Ordered List you can use the addon classes like: <span class="code">.decimal</span>, <span class="code">.lower-alpha</span>,
+              <span class="code">.upper-roman</span> to display the respective list styles. Here is an example:</p>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <ol class="iv-list decimal">
+                  <li>One</li>
+                  <li>Two</li>
+                  <li>Three</li>
+                  <li>Four</li>
+                  <li>Five</li>
+                </ol>
+              </div>
+              <div class="col-12 col-md-6">
+                <pre>
+                  <code>
+                    &lt;ol class="iv-list decimal"&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;One&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Two&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Three&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Four&lt;/li&gt;<br/>
+                    &nbsp;&nbsp;&lt;li&gt;Five&lt;/li&gt;<br/>
+                    &lt;/ol&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-bottom: 2rem;">
+            <h6 class="section-subtitle">Description List</h6>
+            <p>Here is an example for description list:</p>
+            <div class="row">
+              <div class="col-12 col-md-6">
+                <dl class="iv-list">
+                  <dt>Coffee</dt>
+                  <dd>Black Coffee</dd>
+                  <dd>Cappuccino</dd>
+                  <dd>Espresso</dd>
+                  <dd>Flat White</dd>
+                  <dd>Macchiato</dd>
+                  <dt>Tea</dt>
+                  <dd>Green Tea</dd>
+                  <dd>Lemon Tea</dd>
+                  <dd>Fermented Tea</dd>
+                  <dd>Herbal Tea</dd>
+                </dl>
+              </div>
+              <div class="col-12 col-md-6">
+                <pre>
+                  <code>
+                    &lt;dl class="iv-list"&gt;<br/>
+                    &nbsp;&nbsp;&lt;dt&gt;Coffee&lt;/dt&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Black Coffee&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Cappuccino&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Espresso&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Flat White&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Macchiato&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dt&gt;Tea&lt;/dt&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Green Tea&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Lemon Tea&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Fermented Tea&lt;/dd&gt;<br/>
+                    &nbsp;&nbsp;&lt;dd&gt;Herbal Tea&lt;/dd&gt;<br/>
+                    &lt;/dl&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+          </div>
+
+          <h4>Styled Lists:</h4>
+
+          <p>Styled lists will be used for various documentation purposes. </p>
+
+          <h6>Styled list 1</h6>
+          <div class="row" style="margin-bottom: 2rem;">
+            <div class="col-12 col-md-6">
+              <ul class="iv-styled-list1">
+                <li>Head</li>
+                <li>Shoulders</li>
+                <li>Knees</li>
+                <li>Toes</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <pre>
+                <code>
+                  &lt;ul class="iv-styled-list1"&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Head&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Shoulders&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Knees&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Toes&lt;/li&gt;<br/>
+                  &lt;/ul&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+
+          <h6>Styled list 2</h6>
+          <div class="row" style="margin-bottom: 2rem;">
+            <div class="col-12 col-md-6">
+              <ul class="iv-styled-list2">
+                <li>Lorem dolor amet sit</li>
+                <li>Lorem ipsum dolor sit amet consecutor adipiscingLorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet</li>
+                <li>Lorem ipsum dolor sit amet consecutor adipiscingLorem ipsum dolor sit amet</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <pre>
+                <code>
+                  &lt;ul class="iv-styled-list2"&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;One&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Two&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Three&lt;/li&gt;<br/>
+                  &nbsp;&nbsp;&lt;li&gt;Four&lt;/li&gt;<br/>
+                  &lt;/ul&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+
+        </section>
+
+        <!--Progress-->
+        <section id="progress" class="docs-section">
+          <h1 class="section-title">Progress</h1>
+          <div class="section-body">
+            <p>To incorporate the IVORY progress bar use <span class="code">.iv-progress</span> class on top of the HTML native
+              <span class="code">progress</span> element. IVORY provides the progress bar in two variants.</p>
+
+            <div style="margin-bottom: 2rem;">
+              <p class="p-bold">Regular variant</p>
+              <progress class="iv-progress" value="30" max="100"> 30% </progress>
+              <div style="margin-top: 1rem;">
+                <pre>
+                  <code>
+                    &lt;progress class="iv-progress" value="30" max="100"&gt; 30% &lt;/progress&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p class="p-bold">Small variant</p>
+              <progress class="iv-progress progress-sm" value="30" max="100"> 30% </progress>
+              <div style="margin-top: 1rem;">
+                <pre>
+                  <code>
+                    &lt;progress class="iv-progress progress-sm" value="30" max="100"&gt; 30% &lt;/progress&gt;
+                  </code>
+                </pre>
+              </div>
+            </div>
+
+          </div>
+        </section>
+
+        <!--Radio-->
+        <section id="radio" class="docs-section">
+          <h1 class="section-title">Radio</h1>
+          <div class="section-body">
+
+            <div class="iv-radio">
+              <input type="radio" id="radio1" name="myradio1" />
+              <label for="radio1">Radio Option 1</label>
+            </div>
+
+            <div class="iv-radio">
+              <input type="radio" id="radio2" name="myradio1" checked />
+              <label for="radio2">Radio Option 2</label>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;div class="iv-radio"&gt;<br/>
+                  &nbsp;&nbsp;&lt;input type="radio" id="radio1" name="myradio1" /&gt;<br/>
+                  &nbsp;&nbsp;&lt;label for="radio1">Radio Option 1&lt;label&gt;<br/>
+                  &lt;div&gt;<br/>
+                  &lt;div class="iv-radio"&gt;<br/>
+                  &nbsp;&nbsp;&lt;input type="radio" id="radio2" name="myradio1" checked /&gt;<br/>
+                  &nbsp;&nbsp;&lt;label for="radio2">Radio Option 2&lt;/label&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+            <h6 class="section-subtitle">Disabled</h6>
+            <p>The radio can be disabled by the <span class="code">disabled</span> attribute on the radio input</p>
+            <div class="iv-radio">
+              <input type="radio" id="radio3" name="myradio2" disabled />
+              <label for="radio3">Radio Option 1</label>
+            </div>
+
+            <div class="iv-radio">
+              <input type="radio" id="radio4" name="myradio2" disabled />
+              <label for="radio4">Radio Option 2</label>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;div class="iv-radio"&gt;<br/>
+                  &nbsp;&nbsp;&lt;input type="radio" id="radio3" name="myradio2" disabled /&gt;<br/>
+                  &nbsp;&nbsp;&lt;label for="radio3">Radio Option 1&lt;label&gt;<br/>
+                  &lt;div&gt;<br/>
+                  &lt;div class="iv-radio"&gt;<br/>
+                  &nbsp;&nbsp;&lt;input type="radio" id="radio4" name="myradio2" disabled /&gt;<br/>
+                  &nbsp;&nbsp;&lt;label for="radio4">Radio Option 2&lt;/label&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+            <h4>Tabler Radio</h4>
+            <p>Tabler radio buttons are useful in various scenarios, especially in e-commerce applications.</p>
+            <h6>Example:</h6>
+            <div style="margin-bottom: 2rem;">
+              <p class="p-bold">Select Size</p>
+              <div class="iv-tabler">
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblr1" name="mytblr1" value="S" />
+                  <label class="tabler-button" for="tblr1">S</label>
+                </div>
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblr2" name="mytblr1" value="M" />
+                  <label class="tabler-button" for="tblr2">M</label>
+                </div>
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblr3" name="mytblr1" value="L" />
+                  <label class="tabler-button" for="tblr3">L</label>
+                </div>
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblr4" name="mytblr1" value="XL" />
+                  <label class="tabler-button" for="tblr4">XL</label>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p class="p-bold">Select Color</p>
+              <div class="iv-tabler">
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblrbk" name="mytblr2" value="Black" />
+                  <label class="tabler-button" for="tblrbk">Black</label>
+                </div>
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblrwh" name="mytblr2" value="White" />
+                  <label class="tabler-button" for="tblrwh">White</label>
+                </div>
+                <div class="tabler-item">
+                  <input type="radio" class="tabler-input" id="tblrbl" name="mytblr2" value="Blue" />
+                  <label class="tabler-button" for="tblrbl">Blue</label>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;div class="iv-tabler"&gt;<br/>
+                  &nbsp;&nbsp;&lt;div class="tabler-item"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;input type="radio" class="tabler-input" id="t1" name="my-tabler" value="Black" /&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;label class="tabler-button" for="t1"&gt;Black&lt;/label&gt;<br/>
+                  &nbsp;&nbsp;&lt;/div&gt;<br/>
+                  &nbsp;&nbsp;...<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--Select-->
+        <section id="select" class="docs-section">
+          <h1 class="section-title">Select</h1>
+          <div class="section-body">
+            <p>A select box gives the provision to select one item from the list items.</p>
+            <p>Here is an example for sample dropdown</p>
+            <div class="row">
+              <div class="col-4">
+                <div class="iv-select">
+                  <select placeholder="Select">
+                    <option value="1">Maryland</option>
+                    <option value="2">Chicago</option>
+                    <option value="3">Hamilton</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+
+            <div style="margin: 2rem 0">
+              <pre>
+                <code>
+                  &lt;div class="iv-select"&gt;<br/>
+                  &nbsp;&nbsp;&lt;select placeholder="Select"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="1"&gt;Maryland&lt;/option&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="2"&gt;Chicago&lt;/option&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="3"&gt;Hamilton&lt;/option&gt;<br/>
+                  &nbsp;&nbsp;&lt;/select&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+
+          </div>
+        </section>
+
+        <!--Spinner-->
+        <section id="spinner" class="docs-section">
+          <h1 class="section-title">Spinner</h1>
+          <div class="section-body">
+            <p>A loading spinner is used for indicating a loading state of a page or section. It can be colored according to the applied
+              colors on the current page.</p>
+            <p>IVORY provides the spinner in 5 sizes:</p>
+            <div style="width: 420px; margin-bottom: 2rem;">
+              <div class="row">
+                <div class="col">
+                  <div class="iv-spinner-16"></div>
+                </div>
+                <div class="col">
+                  <div class="iv-spinner-24"></div>
+                </div>
+                <div class="col">
+                  <div class="iv-spinner-32"></div>
+                </div>
+                <div class="col">
+                  <div class="iv-spinner-40"></div>
+                </div>
+                <div class="col">
+                  <div class="iv-spinner-48"></div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <pre>
+                <code>
+                  &lt;div class="iv-spinner-16"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="iv-spinner-24"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="iv-spinner-32"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="iv-spinner-40"&gt;&lt;/div&gt;<br/>
+                  &lt;div class="iv-spinner-48"&gt;&lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--More-->
+        <section id="more" class="docs-section">
+          <h1 class="section-title">More</h1>
+          <div class="section-body">
+            <div style="margin-bottom: 2rem;">
+              <p>'More' button is very helpful is in expand/collapse and lazy loading use cases.</p>
+            </div>
+
+            <h6>Example:</h6>
+            <div style="margin-bottom: 2rem;">
+              <div class="iv-more">
+                <button class="iv-btn-f btn-sm">
+                  Show More
+                </button>
+              </div>
+            </div>
+
+            <div class="margin-bottom: 2rem;">
+              <div class="iv-more">
+                <button class="iv-btn-f btn-sm">
+                  Show Less
+                </button>
+              </div>
+            </div>
+
+            <div>
+              <pre>
+                <code>
+                  &lt;div class="iv-more"&gt;<br/>
+                  &nbsp;&nbsp;&lt;button class="iv-btn-f btn-sm"&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;More<br/>
+                  &nbsp;&nbsp;&lt;/button&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--Table-->
+        <section id="table" class="docs-section">
+          <h1 class="section-title">Table</h1>
+          <div class="section-body">
+            <p>A table is used to display the collection of structured data in row column manner.</p>
+
+            <div style="margin-bottom: 2rem;">
+              <table class="iv-table">
+                <thead>
+                  <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Age</th>
+                    <th>City</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                    <td>32</td>
+                    <td>Barcelona</td>
+                  </tr>
+                  <tr>
+                    <td>Jane</td>
+                    <td>Doe</td>
+                    <td>28</td>
+                    <td>Milan</td>
+                  </tr>
+                  <tr>
+                    <td>Joe</td>
+                    <td>Doe</td>
+                    <td>8</td>
+                    <td>Monaco</td>
+                  </tr>
+                  <tr>
+                    <td>Jim</td>
+                    <td>Doe</td>
+                    <td>6</td>
+                    <td>Florance</td>
+                  </tr>
+                  <tr>
+                    <td>Jene</td>
+                    <td>Doe</td>
+                    <td>3</td>
+                    <td>Rotterdam</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;table class="iv-table"&gt;<br/>
+                  &nbsp;&nbsp;&lt;thead&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Firstname&lt;/th&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Lastname&lt;/th&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;Age&lt;/th&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;th&gt;City&lt;/th&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                  &nbsp;&nbsp;&lt;/thead&gt;<br/>
+                  &nbsp;&nbsp;&lt;tbody&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;John&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Doe&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;32&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;td&gt;Barcelona&lt;/td&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/tr&gt;<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;...<br/>
+                  &nbsp;&nbsp;&lt;/tbody&gt;<br/>
+                  &lt;/table&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--Textarea-->
+        <section id="textarea" class="docs-section">
+          <h1 class="section-title">Textarea</h1>
+          <div class="section-body">
+            <p>Textarea is used to enter long text input.</p>
+            <p>Just to add the class <span class="code">iv-textarea</span> to native textarea. </p>
+            <div class="row">
+              <div class="col-6">
+                <textarea class="iv-textarea"></textarea>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!--Toggle Switch-->
+        <section id="toggle" class="docs-section">
+          <h1 class="section-title">Toggle Switch</h1>
+          <div class="section-body">
+            <p>Toggle Switch is an on/off control, built on top of the checkbox. It can be toggled by clicking.</p>
+            <h6>Here is a sample toggle</h6>
+            <div class="iv-toggle-switch" style="margin-bottom: 2rem;">
+              <input type="checkbox" name="phone" value="phone" id="phone">
+              <label for="phone"></label>
+            </div>
+            <div>
+              <pre>
+                <code>
+                  &lt;div class="iv-toggle-switch"&gt;<br/>
+                  &nbsp;&nbsp;&lt;input type="checkbox" name="phone" value="phone" id="phone"&gt;<br/>
+                  &nbsp;&nbsp;&lt;label for="phone"&gt;&lt;/label&gt;<br/>
+                  &lt;/div&gt;
+                </code>
+              </pre>
+            </div>
+          </div>
+        </section>
+
+        <!--Tooltip-->
+        <section id="tooltip" class="docs-section">
+          <h1 class="section-title">Tooltip</h1>
+          <div class="section-body">
+            <div style="margin-bottom: 2rem;">
+              <p>A tooltip provides a short details about a specific text or element on the UI in a pop-over. The tip is shown on mouse enter,
+                and is hidden on mouse leave. The Tooltip doesn't support complex text or operations.</p>
+
+              <h6>Tooltip Directions:</h6>
+              <p>IVORY tooltip supports 8 directions, defined by using one of the following classes with the <code>.tooltip-content</code>
+                class:<br/>
+                <code>.top</code><br/>
+                <code>.right</code><br/>
+                <code>.bottom</code><br/>
+                <code>.left</code><br/>
+                <code>.top-left</code><br/>
+                <code>.top-right</code><br/>
+                <code>.bottom-right</code><br/>
+                <code>.bottom-left</code>
+              </p>
+
+              <h6>Tooltip Size:</h6>
+              <p>The size of the tooltip content box can be changed. IVORY provides 3 different sizes, with the following classes:<br/>
+                .tooltip-xs<br/>
+                .tooltip-md<br/>
+                .tooltip-lg
+              </p>
+            </div>
+
+            <h6>Example:</h6>
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for top tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs top">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for bottom tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs left">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs right">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for top-left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs top-left">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for top-right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs top-right">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for bottom-right tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom-right">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <p>Here is an example for bottom-left tooltip. <a class="iv-tooltip">Hover me <span class="tooltip-content tooltip-xs bottom-left">A tooltip provides a short description of a
+                UI element.</span></a> to preview.</p>
+            </div>
+
+            <div style="margin-bottom: 2rem;">
+              <pre>
+                <code>
+                  &lt;p&gt; <br/>
+                  &nbsp;&nbsp;&lt;a class="iv-tooltip"&gt;Hover me<br/>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;span class="tooltip-content tooltip-xs top"&gt;Tooltip text&lt;/span&gt;<br/>
+                  &nbsp;&nbsp;&lt;/a&gt;<br/>
+                  &lt;/p&gt;
+                </code>
+              </pre>
+            </div>
+
+          </div>
+        </section>
+
+      </section>
+    </div>
 
   </body>
 </html>
