@@ -4,7 +4,9 @@
   -ms-box-sizing: border-box;
   box-sizing: border-box;
 }
-
+body {
+  overflow-x: hidden;
+}
 .hero {
   position: relative;
   background-image: url('./assets/hero_background.png');
