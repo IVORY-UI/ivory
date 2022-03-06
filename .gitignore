@@ -9,12 +9,3 @@ Desktop.ini
 
 # Node Modules
 node_modules/
-
-# Package Lock
-package-lock.json
-
-# Firebase
-.firebase/
-.firebaserc
-firebase.json
-public/
