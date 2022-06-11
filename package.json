@@ -17,7 +17,7 @@
     "build:styles": "node-sass --include-path scss src/ivory.scss dist/ivory.min.css --output-style compressed && node-sass --include-path css src/montserrat-font.css dist/montserrat-font.css",
     "copy:files": "cp package.json dist/ && cp readme.md dist/",
     "build": "npm run clean && npm run build:styles && npm run copy:files",
-    "pub:ivory": "npm publish dist"
+    "publish:ivory": "npm publish dist"
   },
   "dependencies": {},
   "devDependencies": {
