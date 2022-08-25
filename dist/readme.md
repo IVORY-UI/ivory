@@ -1,8 +1,8 @@
 # IVORY
 
-IVORY is a CSS framework, specially created for web applications and committed to improve the experience of users. It gives you all the basic integrants to build your pages faster and easier.
+A simple and modern CSS framework for developing powerful web interfaces faster and easier. It is a lightweight framework, just ~6KB. It gives you all the basic integrants to build your pages faster and easier.
 
-Documentation : http://ivoryui.com
+Documentation : https://ivoryui.com
 
 ## How to use
 
@@ -29,7 +29,7 @@ IVORY supports all the latest browsers.
 
 ## Contributing
 
-The IVORY team welcomes contributions from the community. For more detailed information, 
+The IVORY team welcomes contributions from the community. For more detailed information,
 see [CONTRIBUTING.md](https://github.com/IVORY-UI/ivory/blob/master/.github/CONTRIBUTING.md).
 
 ## Feedback
@@ -52,4 +52,3 @@ Satyasai Vallampati
 ## License
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-
