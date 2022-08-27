@@ -82,10 +82,3 @@ a {
     text-decoration: underline;
   }
 }
-
-$weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
-@each $i in $weights{
-  .bold-#{$i} {
-    font-weight: $i;
-  }
-}
