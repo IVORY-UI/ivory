@@ -2,7 +2,6 @@
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  font-weight: 500;
   color: #161616;
 }
 %small-heading {
@@ -19,7 +18,7 @@
 }
 h1 {
   @extend %big-heading;
-  font-size: 2rem;
+  font-size: 2.25rem;
   line-height: 2.75rem;
 }
 h2 {
@@ -36,52 +35,43 @@ h4 {
   @extend %small-heading;
   font-size: 1.25rem;
   line-height: 2rem;
-  font-weight: 500;
 }
 h5 {
   @extend %small-heading;
   font-size: 1.125rem;
   line-height: 1.9rem;
-  font-weight: 600;
 }
 h6 {
   @extend %small-heading;
   font-size: 1rem;
   line-height: 1.75rem;
-  font-weight: 500;
 }
 h6>b {
   @extend %small-heading;
   font-size: 1rem;
   line-height: 1.75rem;
-  font-weight: 600;
 }
 p {
   @extend %p-default;
   display: block;
   font-size: 0.875rem;
-  font-weight: 400;
 }
 p>b {
   @extend %p-default;
   font-size: 0.875rem;
-  font-weight: 600;
 }
 p>small {
   @extend %p-default;
   font-size: 0.75rem;
-  font-weight: 500;
 }
 p>small>b {
   @extend %p-default;
   font-size: 0.75rem;
-  font-weight: 600;
 }
 .small-label {
   @extend %p-default;
   font-size: 0.75rem;
   color: #777 !important;
-  font-weight: 500;
 }
 a {
   text-decoration: none;
@@ -90,5 +80,12 @@ a {
   &:hover, &:focus {
     color: #005CB9;
     text-decoration: underline;
+  }
+}
+
+$weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
+@each $i in $weights{
+  .bold-#{$i} {
+    font-weight: $i;
   }
 }
