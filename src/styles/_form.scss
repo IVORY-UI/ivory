@@ -6,8 +6,8 @@
   font-weight: 400;
   border: 1px solid #B7B7B7;
   border-radius: 0.1875rem;
-  background-color: $iv-light;
-  color: $iv-dark;
+  background-color: color(light);
+  color: color(dark);
 }
 .iv-input {
   @extend %default-form-element;
