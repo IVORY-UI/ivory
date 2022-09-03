@@ -1,77 +1,51 @@
-%big-heading {
+%heading-default {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  color: #161616;
-}
-%small-heading {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: $iv-neutral-9;
 }
 %p-default {
+  display: block;
   margin-top: 0;
   margin-bottom: 1rem;
   line-height: 1.75rem;
-  color: #212121;
 }
 h1 {
-  @extend %big-heading;
+  @extend %heading-default;
   font-size: 2.25rem;
   line-height: 2.75rem;
 }
 h2 {
-  @extend %big-heading;
-  font-size: 1.75rem;
+  @extend %heading-default;
+  font-size: 2rem;
   line-height: 2.5rem;
 }
 h3 {
-  @extend %big-heading;
-  font-size: 1.5rem;
+  @extend %heading-default;
+  font-size: 1.75rem;
   line-height: 2.25rem;
 }
 h4 {
-  @extend %small-heading;
-  font-size: 1.25rem;
+  @extend %heading-default;
+  font-size: 1.5rem;
   line-height: 2rem;
 }
 h5 {
-  @extend %small-heading;
-  font-size: 1.125rem;
+  @extend %heading-default;
+  font-size: 1.25rem;
   line-height: 1.9rem;
 }
 h6 {
-  @extend %small-heading;
-  font-size: 1rem;
-  line-height: 1.75rem;
-}
-h6>b {
-  @extend %small-heading;
-  font-size: 1rem;
+  @extend %heading-default;
+  font-size: 1.125rem;
   line-height: 1.75rem;
 }
 p {
   @extend %p-default;
-  display: block;
   font-size: 0.875rem;
 }
-p>b {
-  @extend %p-default;
-  font-size: 0.875rem;
-}
-p>small {
+small {
   @extend %p-default;
   font-size: 0.75rem;
-}
-p>small>b {
-  @extend %p-default;
-  font-size: 0.75rem;
-}
-.small-label {
-  @extend %p-default;
-  font-size: 0.75rem;
-  color: #777 !important;
 }
 a {
   text-decoration: none;
