@@ -26,7 +26,7 @@
   border: 1px solid #E8EBED;
   &.btn-primary {
     @include btn-s-colors(blue-7, blue-7);
-    color: $iv-light;
+    color: color(light);
     &:hover, &:focus {
       outline: none;
       @include btn-s-colors(blue-8, blue-8);
@@ -34,7 +34,7 @@
   }
   &.btn-success {
     @include btn-s-colors(green-7, green-7);
-    color: $iv-light;
+    color: color(light);
     &:hover, &:focus {
       outline: none;
       @include btn-s-colors(green-8, green-8);
@@ -42,7 +42,7 @@
   }
   &.btn-danger {
     @include btn-s-colors(red-7, red-7);
-    color: $iv-light;
+    color: color(light);
     &:hover, &:focus {
       outline: none;
       @include btn-s-colors(red-8, red-8);
