@@ -1,15 +1,23 @@
 %button {
   border: none;
-  height: 2rem;
+  height: 2.25rem;
   margin: 0.75rem 0;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem;
   border-radius: 0.25rem;
   font-weight: 500;
   font-size: 0.875rem;
-  line-height: 1.75rem;
+  line-height: 2rem;
   color: color(gray-7);
   background-color: color(gray-3);
   outline: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
+  letter-spacing: 0.1rem;
   cursor: pointer;
   &:hover, &:focus {
     outline: none;
@@ -135,8 +143,7 @@
 }
 .btn-sm {
   height: 1.75rem;
-  padding-left: 0.875rem;
-  padding-right: 0.875rem;
+  padding: 0 1rem;
   font-size: 0.75rem;
   line-height: 1.5rem;
   border-radius: 0.25rem;
