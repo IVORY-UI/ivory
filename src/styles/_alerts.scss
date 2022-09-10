@@ -21,7 +21,7 @@
   margin: 1.25rem 0;
   border-radius: 0.25rem;
   padding: 0.32rem 1rem;
-  color: color(neutral-7);
+  color: color(gray-7);
   .alert-icon {
     flex: 0 0 1.0416666667rem;
     align-self: flex-start;
@@ -34,13 +34,13 @@
     top: 0.688rem;
     right: 0.688rem;
     font-size: 1rem;
-    color: color(neutral-7);
+    color: color(gray-7);
     cursor: pointer;
     height: 1rem;
     width: 1rem;
     line-height: 1rem;
     &:hover {
-      color: color(neutral-9);
+      color: color(gray-9);
     }
   }
   &.success {

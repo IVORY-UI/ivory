@@ -7,13 +7,13 @@
   font-weight: 500;
   font-size: 0.875rem;
   line-height: 1.75rem;
-  color: color(neutral-7);
-  background-color: color(neutral-3);
+  color: color(gray-7);
+  background-color: color(gray-3);
   outline: none;
   cursor: pointer;
   &:hover, &:focus {
     outline: none;
-    background-color: color(neutral-1);
+    background-color: color(gray-1);
   }
 }
 @mixin btn-s-colors($background, $border) {
@@ -65,7 +65,7 @@
 /* Outline Buttons */
 .iv-btn-o {
   @extend %button;
-  border: 1px solid color(neutral-6);
+  border: 1px solid color(gray-6);
   background: color(light);
   &.btn-primary {
     border: 1px solid color(blue-7);

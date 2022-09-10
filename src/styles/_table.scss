@@ -1,6 +1,6 @@
 .iv-table {
   border-collapse: separate;
-  border: 1px solid color(neutral-3);
+  border: 1px solid color(gray-3);
   border-radius: .25rem;
   margin: 1rem 0 0;
   max-width: 100%;
@@ -9,13 +9,13 @@
   line-height: 1.5rem;
   color: color(dark);
   thead {
-    background-color: color(neutral-1);
+    background-color: color(gray-1);
     border-radius: .25rem .25rem 0 0;
     font-weight: 600;
     tr {
       th {
         padding: 0.5rem;
-        border-right: 1px solid color(neutral-3);
+        border-right: 1px solid color(gray-3);
         &:last-child {
           border-right: none;
         }
@@ -40,8 +40,8 @@
     tr {
       td {
         padding: 0.5rem;
-        border-top: 1px solid color(neutral-3);
-        border-right: 1px solid color(neutral-3);
+        border-top: 1px solid color(gray-3);
+        border-right: 1px solid color(gray-3);
         &:last-child {
           border-right: none;
         }

@@ -7,7 +7,7 @@
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  line-height: 1.75rem;
+  line-height: 1.5rem;
 }
 h1 {
   @extend %heading-default;
@@ -32,7 +32,7 @@ h4 {
 h5 {
   @extend %heading-default;
   font-size: 1.25rem;
-  line-height: 1.9rem;
+  line-height: 2rem;
 }
 h6 {
   @extend %heading-default;

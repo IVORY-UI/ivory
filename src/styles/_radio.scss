@@ -24,7 +24,7 @@
         content: "";
         @extend %radio-defaults;
         display: inline-block;
-        border: 1px solid color(neutral-4);
+        border: 1px solid color(gray-4);
         box-sizing: border-box;
         border-radius: 50%;
         cursor: pointer;
@@ -36,7 +36,7 @@
         cursor: not-allowed;
         &::before {
           cursor: not-allowed;
-          background-color: color(neutral-1);
+          background-color: color(gray-1);
         }
       }
     }
