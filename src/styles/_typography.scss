@@ -44,8 +44,7 @@ p {
   font-size: 0.875rem;
 }
 small {
-  @extend %p-default;
-  font-size: 0.75rem;
+  font-size: 80%;
 }
 a {
   text-decoration: none;
