@@ -1,7 +1,13 @@
-%heading-default {
+
+%big-heading {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
+}
+%small-heading {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
 }
 %p-default {
   display: block;
@@ -10,32 +16,32 @@
   line-height: 1.5rem;
 }
 h1 {
-  @extend %heading-default;
+  @extend %big-heading;
   font-size: 2.25rem;
   line-height: 2.75rem;
 }
 h2 {
-  @extend %heading-default;
+  @extend %big-heading;
   font-size: 2rem;
   line-height: 2.5rem;
 }
 h3 {
-  @extend %heading-default;
+  @extend %big-heading;
   font-size: 1.75rem;
   line-height: 2.25rem;
 }
 h4 {
-  @extend %heading-default;
+  @extend %small-heading;
   font-size: 1.5rem;
   line-height: 2rem;
 }
 h5 {
-  @extend %heading-default;
+  @extend %small-heading;
   font-size: 1.25rem;
   line-height: 2rem;
 }
 h6 {
-  @extend %heading-default;
+  @extend %small-heading;
   font-size: 1.125rem;
   line-height: 1.75rem;
 }
