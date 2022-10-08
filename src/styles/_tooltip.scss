@@ -57,11 +57,10 @@ $inverse-dir: ('top': 'bottom', 'bottom': 'top', 'left': 'right', 'right': 'left
     padding: 0.5rem 1rem;
     color: color(light);
     background-color: color(gray-9);
-    font-size: 0.75rem;
-    line-height: 1.25rem;
     border-radius: 0.5rem;
     box-sizing: border-box;
     z-index: 9999;
+    @include text-size(0.75rem, 1.25rem);
     &::before {
       content: '';
       position: absolute;

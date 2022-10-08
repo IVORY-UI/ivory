@@ -4,8 +4,6 @@
   margin: 0.75rem 0;
   padding: 0 1.5rem;
   border-radius: 0.25rem;
-  font-size: 0.875rem;
-  line-height: 2rem;
   color: color(gray-7);
   background-color: color(gray-3);
   outline: none;
@@ -17,6 +15,7 @@
   text-transform: uppercase;
   vertical-align: middle;
   cursor: pointer;
+  @include text-size(0.875rem, 2rem);
   &:hover, &:focus {
     outline: none;
     background-color: color(gray-1);
@@ -142,9 +141,8 @@
 .btn-sm {
   height: 1.75rem;
   padding: 0 1rem;
-  font-size: 0.75rem;
-  line-height: 1.5rem;
   border-radius: 0.25rem;
+  @include text-size(0.75rem, 1.5rem);
   &.btn-ro {
     border-radius: 1rem;
   }
