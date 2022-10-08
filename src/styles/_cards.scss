@@ -1,0 +1,23 @@
+.iv-card {
+  @include culture-default-border("border");
+  border-radius: 3px;
+
+  &-header {
+    @include culture-default-border("border-bottom");
+    padding: 16px 24px;
+
+    &-text {
+      margin: unset;
+    }
+  }
+
+  &-content {
+    padding: 24px;
+    text-align: justify;
+  }
+
+  &-footer {
+    @include culture-default-border("border-top");
+    padding: 16px 24px;
+  }
+}

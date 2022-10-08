@@ -1,9 +1,9 @@
 /* Cross browser hacks */
 @mixin transform($transforms) {
-	-webkit-transform: $transforms;
-	-moz-transform: $transforms;
-	-ms-transform: $transforms;
-	transform: $transforms;
+  -webkit-transform: $transforms;
+  -moz-transform: $transforms;
+  -ms-transform: $transforms;
+  transform: $transforms;
 }
 @mixin webappearance($property) {
   -webkit-appearance: $property;
@@ -16,6 +16,11 @@
   margin-left: $left;
   margin-right: $right;
 }
+
+@mixin culture-default-border($dir) {
+  #{$dir}: 1px solid color(gray-3);
+}
+
 @mixin text-size($size, $height) {
   font-size: $size;
   line-height: $height;
