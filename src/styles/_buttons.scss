@@ -21,36 +21,37 @@
     background-color: color(gray-1);
   }
 }
-@mixin btn-s-colors($background, $border) {
+@mixin btn-solid-colors($background, $border) {
   background-color: color($background);
   border-color: color($border);
 }
+
 /* Solid Buttons */
 .iv-btn {
   @extend %button;
   border: 1px solid #E8EBED;
   &.btn-primary {
-    @include btn-s-colors(blue-7, blue-7);
+    @include btn-solid-colors(blue-7, blue-7);
     color: color(light);
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors(blue-8, blue-8);
+      @include btn-solid-colors(blue-8, blue-8);
     }
   }
   &.btn-success {
-    @include btn-s-colors(green-7, green-7);
+    @include btn-solid-colors(green-7, green-7);
     color: color(light);
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors(green-8, green-8);
+      @include btn-solid-colors(green-8, green-8);
     }
   }
   &.btn-danger {
-    @include btn-s-colors(red-7, red-7);
+    @include btn-solid-colors(red-7, red-7);
     color: color(light);
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors(red-8, red-8);
+      @include btn-solid-colors(red-8, red-8);
     }
   }
   &.disabled, &:disabled, &[disabled] {
@@ -60,13 +61,14 @@
     border: none;
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.25));
+      @include btn-solid-colors(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.25));
     }
   }
   &.btn-ro {
     border-radius: 1.5rem;
   }
 }
+
 /* Outline Buttons */
 .iv-btn-o {
   @extend %button;
@@ -106,6 +108,7 @@
     border-radius: 1.5rem;
   }
 }
+
 /* Flat Buttons */
 .iv-btn-f {
   @extend %button;
@@ -138,6 +141,8 @@
     cursor: not-allowed;
   }
 }
+
+/* Buttons with different sizes  */
 .btn-sm {
   height: 1.75rem;
   padding: 0 1rem;

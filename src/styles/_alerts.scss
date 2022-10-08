@@ -1,7 +1,7 @@
 @mixin alert-variant($background, $border, $iconcolor) {
   background-color: color($background);
   border: 1px solid color($border);
-  .icon {
+  .iv-alert-icon {
     color: color($iconcolor);
   }
 }
@@ -43,41 +43,41 @@
       color: color(gray-9);
     }
   }
-  &.success {
+  &-success {
     @include alert-variant(green-0, green-4, green-7);
   }
-  &.info {
+  &-info {
     @include alert-variant(blue-0, blue-3, blue-6);
   }
-  &.warning {
+  &-warning {
     @include alert-variant(yellow-0, yellow-5, yellow-7);
   }
-  &.error {
+  &-error {
     @include alert-variant(red-0, red-3, red-6);
   }
 }
-.iv-alert-banner {
+.iv-banner {
   @extend %alert-default;
-  .content {
+  &-content {
     position: relative;
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
     padding: 0.5rem 0;
   }
-  &.error {
+  &-error {
     @include alert-banner(red-7, light);
   }
-  &.warning {
+  &-warning {
     @include alert-banner(yellow-7, dark);
   }
-  &.info {
+  &-info {
     @include alert-banner(blue-7, light);
   }
 }
 @media only screen and (max-width: 960px) {
-  .iv-alert-banner {
-    .content {
+  .iv-banner {
+    &-content {
       padding-left: 1rem;
       padding-right: 1rem;
     }
