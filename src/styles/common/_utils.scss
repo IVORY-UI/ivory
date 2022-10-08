@@ -1,15 +1,44 @@
-/* font weight utility classes */
+/* Font weight utility classes */
 $weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 @each $i in $weights {
-  .bold-#{$i} {
+  .text-#{$i} {
     font-weight: $i;
   }
 }
 
-.iv-shadow {
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+/* Common utility classes */
+.auto-left {
+  margin-left: auto
+}
+.auto-right {
+  margin-right: auto;
+}
+.float-right {
+  float: right;
+}
+.float-left	{
+  float: left;
+}
+.float-none	{
+  float: none;
+}
+.clear-left {
+  clear: left;
+}
+.clear-right {
+  clear: right;
+}
+.clear-both	{
+  clear: both;
+}
+.clear-none	{
+  clear: none;
+}
+.no-border {
+  border: none !important;
 }
 
-.iv-no-border {
-  border: none !important;
+/* IVORY specific utility classes */
+.iv-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

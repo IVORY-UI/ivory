@@ -29,10 +29,13 @@ h6 {
 }
 p {
   @extend %typo;
-  @include text-size(1rem, 1.5rem);
-}
-small {
-  font-size: 80%;
+  @include text-size(0.875rem, 1.5rem);
+  &.text-16 {
+    @include text-size(1rem, 1.75rem);
+  }
+  &.text-12 {
+    @include text-size(0.75rem, 1.25rem);
+  }
 }
 a {
   text-decoration: none;
