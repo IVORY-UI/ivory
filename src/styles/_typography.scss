@@ -1,53 +1,35 @@
-
-%big-heading {
+%typo {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-}
-%small-heading {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-%p-default {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  line-height: 1.5rem;
 }
 h1 {
-  @extend %big-heading;
-  font-size: 2.25rem;
-  line-height: 2.75rem;
+  @extend %typo;
+  @include text-size(2.25rem, 2.75rem);
 }
 h2 {
-  @extend %big-heading;
-  font-size: 2rem;
-  line-height: 2.5rem;
+  @extend %typo;
+  @include text-size(2rem, 2.5rem);
 }
 h3 {
-  @extend %big-heading;
-  font-size: 1.75rem;
-  line-height: 2.25rem;
+  @extend %typo;
+  @include text-size(1.75rem, 2.25rem);
 }
 h4 {
-  @extend %small-heading;
-  font-size: 1.5rem;
-  line-height: 2rem;
+  @extend %typo;
+  @include text-size(1.5rem, 2rem);
 }
 h5 {
-  @extend %small-heading;
-  font-size: 1.25rem;
-  line-height: 2rem;
+  @extend %typo;
+  @include text-size(1.25rem, 2rem);
 }
 h6 {
-  @extend %small-heading;
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+  @extend %typo;
+  @include text-size(1.125rem, 1.75rem);
 }
 p {
-  @extend %p-default;
-  font-size: 1rem;
+  @extend %typo;
+  @include text-size(1rem, 1.5rem);
 }
 small {
   font-size: 80%;
@@ -55,7 +37,7 @@ small {
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #2285F6;
+  color: color(blue-6);
   &:hover, &:focus {
     color: color(blue-8);
     text-decoration: underline;

@@ -14,9 +14,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 0.8125rem;
-    line-height: 1.75rem;
     cursor: pointer;
+    @include text-size(0.8125rem, 1.75rem);
   }
   &:hover, &:focus {
     @extend %defualt-element-focus

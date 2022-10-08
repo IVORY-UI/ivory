@@ -4,8 +4,7 @@ ul.iv-list, ol.iv-list, dl.iv-list {
   text-indent: 0.5rem;
   font-size: 0.875rem;
   li {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+		@include text-size(0.875rem, 1.5rem);
   }
 }
 ul.iv-list {
@@ -39,13 +38,11 @@ ol.iv-list li ol.iv-list {
 }
 dl.iv-list {
   dt {
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+		@include text-size(0.875rem, 1.5rem);
     font-weight: 500;
   }
   dd {
-    font-size: 0.813rem;
-    line-height: 1.5rem;
+    @include text-size(0.813rem, 1.5rem);
     margin-left: 1rem;
   }
 }
@@ -58,8 +55,7 @@ ul.iv-styled-list1 {
     list-style-type: none;
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+		@include text-size(0.875rem, 1.5rem);
   }
   li:before {
     content: '';
@@ -83,8 +79,7 @@ ul.iv-styled-list2 {
     -webkit-box-align: center;
     align-items: center;
     padding: 12px 0;
-    font-size: 0.875rem;
-    line-height: 1.5rem;
+		@include text-size(0.875rem, 1.5rem);
     &:before {
       content: counters(index, ".", decimal-leading-zero);
       font-size: 1.5rem;

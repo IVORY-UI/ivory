@@ -34,9 +34,8 @@
     position: relative;
     cursor: pointer;
     color: color(gray-6);
-    font-size: 0.875rem;
-    line-height: 1.5rem;
     min-width: 2.375rem;
+    @include text-size(0.875rem, 1.5rem);
   }
   input[type="radio"]:checked+.tabler-button {
     border-color: color(blue-6);

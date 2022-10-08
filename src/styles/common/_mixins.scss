@@ -20,3 +20,8 @@
 @mixin culture-default-border($dir) {
   #{$dir}: 1px solid color(gray-3);
 }
+
+@mixin text-size($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}

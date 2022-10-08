@@ -5,9 +5,8 @@
   margin: 1rem 0 0;
   max-width: 100%;
   width: 100%;
-  font-size: 0.813rem;
-  line-height: 1.5rem;
   color: color(dark);
+  @include text-size(0.813rem, 1.5rem);
   thead {
     background-color: color(gray-1);
     border-radius: .25rem .25rem 0 0;
