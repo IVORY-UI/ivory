@@ -3,10 +3,6 @@
   margin-top: 0;
   margin-bottom: 1rem;
 }
-@mixin text-size($size, $height) {
-  font-size: $size;
-  line-height: $height;
-}
 h1 {
   @extend %typo;
   @include text-size(2.25rem, 2.75rem);

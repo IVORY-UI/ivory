@@ -16,3 +16,7 @@
   margin-left: $left;
   margin-right: $right;
 }
+@mixin text-size($size, $height) {
+  font-size: $size;
+  line-height: $height;
+}
