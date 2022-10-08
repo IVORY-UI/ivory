@@ -1,7 +1,15 @@
 /* font weight utility classes */
 $weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
-@each $i in $weights{
+@each $i in $weights {
   .bold-#{$i} {
     font-weight: $i;
   }
+}
+
+.iv-shadow {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.iv-no-border {
+  border: none !important;
 }
