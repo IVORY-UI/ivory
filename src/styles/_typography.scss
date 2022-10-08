@@ -57,7 +57,7 @@ a {
   cursor: pointer;
   color: #2285F6;
   &:hover, &:focus {
-    color: #005CB9;
+    color: color(blue-8);
     text-decoration: underline;
   }
 }
