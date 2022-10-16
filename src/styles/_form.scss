@@ -4,7 +4,7 @@
   width: 100%;
   font-size: 0.8125rem;
   font-weight: 400;
-  border: 1px solid #B7B7B7;
+  border: 1px solid color(gray-4);
   border-radius: 0.1875rem;
   background-color: color(light);
   color: color(dark);
@@ -56,30 +56,27 @@
     @extend %defualt-element-focus
   }
 }
-.iv-form {
-  .form-field {
-    margin-bottom: 1rem;
+.iv-field {
+  margin-bottom: 1rem;
+}
+.iv-label {
+  position: relative;
+  display: block;
+  @include text-size(0.875rem, 1.875rem);
+}
+.iv-form-horizontal {
+  .iv-field {
+    display: flex;
+    flex-flow: row;
   }
-  .form-label {
-    position: relative;
-    display: block;
-    font-size: 0.875rem;
-    line-height: 30px;
+  .iv-label {
+    display: flex;
+    width: 40%;
   }
-  &.form-horizontal {
-    .form-field {
-      display: flex;
-      flex-flow: row;
-      .form-label {
-        display: flex;
-        width: 40%;
-      }
-      .iv-input,
-      .iv-select,
-      .iv-textarea {
-        display: flex;
-        width: 60%;
-      }
-    }
+  .iv-input,
+  .iv-select,
+  .iv-textarea {
+    display: flex;
+    width: 60%;
   }
 }

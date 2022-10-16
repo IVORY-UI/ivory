@@ -1,31 +1,31 @@
 ul.iv-list, ol.iv-list, dl.iv-list {
-	margin-bottom: 1rem;
-	list-style-position: inside;
+  margin-bottom: 1rem;
+  list-style-position: inside;
   text-indent: 0.5rem;
   font-size: 0.875rem;
   li {
-		@include text-size(0.875rem, 1.5rem);
+	@include text-size(0.875rem, 1.5rem);
   }
 }
 ul.iv-list {
-  &.square {
+  &-square {
     list-style-type: square;
   }
-  &.circle {
+  &-circle {
     list-style-type: circle;
   }
-  &.disc {
+  &-disc {
     list-style-type: disc;
   }
 }
 ol.iv-list {
-  &.decimal {
+  &-decimal {
     list-style-type: decimal;
   }
-  &.lower-alpha {
+  &-lower-alpha {
     list-style-type: lower-alpha;
   }
-  &.upper-roman {
+  &-upper-roman {
     list-style-type: upper-roman;
   }
 }
@@ -38,7 +38,7 @@ ol.iv-list li ol.iv-list {
 }
 dl.iv-list {
   dt {
-		@include text-size(0.875rem, 1.5rem);
+	@include text-size(0.875rem, 1.5rem);
     font-weight: 500;
   }
   dd {
@@ -47,7 +47,7 @@ dl.iv-list {
   }
 }
 
-ul.iv-styled-list1 {
+ul.iv-styled-list {
   margin: 0;
   padding-left: 1.2rem;
   li {
@@ -55,7 +55,7 @@ ul.iv-styled-list1 {
     list-style-type: none;
     padding-left: 1.5rem;
     margin-bottom: 0.5rem;
-		@include text-size(0.875rem, 1.5rem);
+	  @include text-size(0.875rem, 1.5rem);
   }
   li:before {
     content: '';
@@ -70,33 +70,5 @@ ul.iv-styled-list1 {
     border-color: color(blue-5);
     transform-origin: bottom left;
     transform: rotate(45deg);
-  }
-}
-ul.iv-styled-list2 {
-  li {
-    counter-increment: index;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
-    padding: 12px 0;
-		@include text-size(0.875rem, 1.5rem);
-    &:before {
-      content: counters(index, ".", decimal-leading-zero);
-      font-size: 1.5rem;
-      text-align: right;
-      font-weight: 700;
-      min-width: 50px;
-      padding-right: 12px;
-      font-feature-settings: "tnum";
-      font-variant-numeric: tabular-nums;
-      align-self: flex-start;
-      background-color: color(blue-3);
-      -webkit-background-clip: text;
-      background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    &+li {
-      border-top: 1px solid rgba(255,255,255,0.2);
-    }
   }
 }
