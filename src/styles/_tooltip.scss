@@ -64,16 +64,16 @@ $inverse-dir: ('top': 'bottom', 'bottom': 'top', 'left': 'right', 'right': 'left
   position: relative;
   display: inline-block;
   .tooltip-xs {
-    width: 160px;
+    width: 10rem;
   }
   .tooltip-sm {
-    width: 240px;
+    width: 15rem;
   }
   .tooltip-md {
-    width: 360px;
+    width: 20rem;
   }
   .tooltip-lg {
-    width: 440px;
+    width: 25rem;
   }
   .tooltip-content {
     display: none;
