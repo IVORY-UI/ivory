@@ -1,12 +1,11 @@
-/* Font weight utility classes */
+// Font weights
 $weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 @each $i in $weights {
   .text-#{$i} {
     font-weight: $i;
   }
 }
-
-/* Common utility classes */
+// Floats, Clear & Tilts
 .auto-left {
   margin-left: auto
 }
@@ -34,9 +33,29 @@ $weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 .clear-none	{
   clear: none;
 }
+// Borders
 .no-border {
   border: none !important;
 }
+.rounded-xs {
+  border-radius: 0.125rem;
+}
+.rounded-sm {
+  border-radius: 0.25rem;
+}
+.rounded-md {
+  border-radius: 0.375rem;
+}
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+.rounded-full {
+  border-radius: 9999px;
+}
+// Margin Top
 .mt-1_5 {
   margin-top: 1.5rem;
 }
@@ -55,6 +74,7 @@ $weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 .mt-4 {
   margin-top: 4rem;
 }
+// Margin Bottom
 .mb-1_5 {
   margin-bottom: 1.5rem;
 }
@@ -73,8 +93,7 @@ $weights: 100, 200, 300, 400, 500, 600, 700, 800, 900;
 .mb-4 {
   margin-bottom: 4rem;
 }
-
-/* IVORY specific utility classes */
+// shadows
 .iv-shadow {
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
