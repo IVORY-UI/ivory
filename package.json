@@ -21,7 +21,7 @@
   "scripts": {
     "clean": "node ./scripts/build/clean",
     "build:styles": "node-sass --include-path scss src/ivory.scss dist/ivory.min.css --output-style compressed",
-    "copy:files": "cp package.json dist/ && cp readme.md dist/",
+    "copy:files": "cp package.json dist/ && cp README.md dist/",
     "build": "npm run clean && npm run build:styles && npm run copy:files",
     "publish:ivory": "npm publish dist"
   },
