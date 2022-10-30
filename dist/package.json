@@ -8,9 +8,15 @@
   },
   "keywords": [
     "CSS",
-    "library",
-    "framework",
-    "components"
+    "components",
+    "grid",
+    "responsive",
+    "scss",
+    "css-framework",
+    "grid-layout",
+    "scss-mixins",
+    "scss-framework",
+    "design-system"
   ],
   "scripts": {
     "clean": "node ./scripts/build/clean",
