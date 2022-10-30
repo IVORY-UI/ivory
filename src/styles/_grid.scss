@@ -1,7 +1,7 @@
 $gutter: 1.25;
 $grid-columns: 12;
 $col-slug: col !default;
-$breakpoints: 576px, 768px, 1024px;
+$breakpoints: 576px, 768px, 992px, 1200px, 1400px;
 @mixin col-gutter($colspan, $total) {
   $w: (100 / $total) * $colspan;
   flex: 0 0 calc(#{$w}% - #{$gutter}rem);
@@ -15,8 +15,12 @@ $breakpoints: 576px, 768px, 1024px;
     @return col-sm;
   } @else if ($break == 768px) {
     @return col-md;
-  } @else if ($break == 1024px) {
+  } @else if ($break == 992px) {
     @return col-lg;
+  } @else if ($break == 1200px) {
+    @return col-xl;
+  } @else if ($break == 1400px) {
+    @return col-xxl;
   }
 }
 .row {
