@@ -3,17 +3,17 @@
   border-radius: 3px;
   &-header {
     @include culture-default-border("border-bottom");
-    padding: 16px 24px;
+    padding: 1rem;
     &-text {
       margin: unset;
     }
   }
   &-content {
-    padding: 24px;
+    padding: 1rem;
     text-align: justify;
   }
   &-footer {
     @include culture-default-border("border-top");
-    padding: 16px 24px;
+    padding: 1rem;
   }
 }
