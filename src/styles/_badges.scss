@@ -1,24 +1,23 @@
 .iv-badge {
   padding: 0 0.313rem;
-  background-color: $iv-neutral-7;
-  color: $iv-light;
+  background-color: color(gray-7);
+  color: color(light);
   display: inline-block;
-  font-size: 0.75rem;
+  @include text-size(0.75rem, 1rem);
   font-weight: 400;
-  line-height: 1rem;
   min-width: 0.938rem;
   border-radius: 0.5rem;
   text-align: center;
-  &.success, &.green {
-    background-color: $iv-green-7;
+  &-success {
+    background-color: color(green-7);
   }
-  &.warning, &.yellow {
-    background-color: $iv-yellow-7;
+  &-warning {
+    background-color: color(yellow-7);
   }
-  &.error, &.danger, &.red {
-    background-color: $iv-red-7;
+  &-error {
+    background-color: color(red-7);
   }
-  &.dot {
+  &-dot {
     width: 0.375rem;
     height: 0.375rem;
     border-radius: 50%;

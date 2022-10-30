@@ -24,7 +24,7 @@
         content: "";
         @extend %radio-defaults;
         display: inline-block;
-        border: 1px solid $iv-neutral-4;
+        border: 1px solid color(gray-4);
         box-sizing: border-box;
         border-radius: 50%;
         cursor: pointer;
@@ -36,14 +36,14 @@
         cursor: not-allowed;
         &::before {
           cursor: not-allowed;
-          background-color: $iv-neutral-1;
+          background-color: color(gray-1);
         }
       }
     }
     &:checked {
       & + label {
         &::before {
-          box-shadow: inset 0 0 0 0.313rem $iv-blue-6;
+          box-shadow: inset 0 0 0 0.313rem color(blue-6);
           border: none;
         }
       }
@@ -53,10 +53,10 @@
           cursor: not-allowed;
           &::before {
             cursor: not-allowed;
-            box-shadow: inset 0 0 0 0.313rem $iv-blue-6;
+            box-shadow: inset 0 0 0 0.313rem color(blue-6);
           }
         }
       }
     }
-  }  
+  }
 }

@@ -1,13 +1,13 @@
 @mixin alert-variant($background, $border, $iconcolor) {
-  background-color: $background;
-  border: 1px solid $border;
-  .icon {
-    color: $iconcolor;
+  background-color: color($background);
+  border: 1px solid color($border);
+  .iv-alert-icon {
+    color: color($iconcolor);
   }
 }
 @mixin alert-banner($background, $color) {
-  background-color: $background;
-  color: $color;
+  background-color: color($background);
+  color: color($color);
 }
 %alert-default {
   position: relative;
@@ -21,63 +21,61 @@
   margin: 1.25rem 0;
   border-radius: 0.25rem;
   padding: 0.32rem 1rem;
-  color: $iv-neutral-7;
+  color: color(gray-7);
   .alert-icon {
     flex: 0 0 1.0416666667rem;
     align-self: flex-start;
     padding-right: 0.5625rem;
-    font-size: 1.5rem;
-    line-height: 1.75rem;
+    @include text-size(1.5rem, 1.75rem);
   }
   .action {
     position: absolute;
     top: 0.688rem;
     right: 0.688rem;
-    font-size: 1rem;
-    color: $iv-neutral-7;
+    color: color(gray-7);
     cursor: pointer;
     height: 1rem;
     width: 1rem;
-    line-height: 1rem;
+    @include text-size(1rem, 1rem);
     &:hover {
-      color: $iv-neutral-9;
+      color: color(gray-9);
     }
   }
-  &.success {
-    @include alert-variant($iv-green-0, $iv-green-4, $iv-green-7);
+  &-success {
+    @include alert-variant(green-0, green-4, green-7);
   }
-  &.info {
-    @include alert-variant($iv-blue-0, $iv-blue-3, $iv-blue-6);
+  &-info {
+    @include alert-variant(blue-0, blue-3, blue-6);
   }
-  &.warning {
-    @include alert-variant($iv-yellow-0, $iv-yellow-5, $iv-yellow-7);
+  &-warning {
+    @include alert-variant(yellow-0, yellow-5, yellow-7);
   }
-  &.error {
-    @include alert-variant($iv-red-0, $iv-red-3, $iv-red-6);
+  &-error {
+    @include alert-variant(red-0, red-3, red-6);
   }
 }
-.iv-alert-banner {
+.iv-banner {
   @extend %alert-default;
-  .content {
+  &-content {
     position: relative;
     width: 100%;
     max-width: 960px;
     margin: 0 auto;
     padding: 0.5rem 0;
   }
-  &.error {
-    @include alert-banner($iv-red-7, $iv-light);
+  &-error {
+    @include alert-banner(red-7, light);
   }
-  &.warning {
-    @include alert-banner($iv-yellow-7, $iv-dark);
+  &-warning {
+    @include alert-banner(yellow-7, dark);
   }
-  &.info {
-    @include alert-banner($iv-blue-7, $iv-light);
+  &-info {
+    @include alert-banner(blue-7, light);
   }
 }
 @media only screen and (max-width: 960px) {
-  .iv-alert-banner {
-    .content {
+  .iv-banner {
+    &-content {
       padding-left: 1rem;
       padding-right: 1rem;
     }

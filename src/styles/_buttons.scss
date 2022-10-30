@@ -1,51 +1,57 @@
 %button {
   border: none;
-  height: 2rem;
+  height: 2.25rem;
   margin: 0.75rem 0;
-  padding: 0 1.25rem;
+  padding: 0 1.5rem;
   border-radius: 0.25rem;
-  font-weight: 500;
-  font-size: 0.875rem;
-  line-height: 1.75rem;
-  color: $iv-neutral-7;
-  background-color: $iv-neutral-3;
+  color: color(gray-7);
+  background-color: color(gray-3);
   outline: none;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: middle;
   cursor: pointer;
+  @include text-size(0.875rem, 2rem);
   &:hover, &:focus {
     outline: none;
-    background-color: $iv-neutral-1;
+    background-color: color(gray-1);
   }
 }
-@mixin btn-s-colors($background, $border) {
-  background-color: $background;
-  border-color: $border;
+@mixin btn-solid-colors($background, $border) {
+  background-color: color($background);
+  border-color: color($border);
 }
+
 /* Solid Buttons */
 .iv-btn {
   @extend %button;
   border: 1px solid #E8EBED;
   &.btn-primary {
-    @include btn-s-colors($iv-blue-7, $iv-blue-7);
-    color: $iv-light;
+    @include btn-solid-colors(blue-7, blue-7);
+    color: color(light);
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors($iv-blue-8, $iv-blue-8);
+      @include btn-solid-colors(blue-8, blue-8);
     }
   }
   &.btn-success {
-    @include btn-s-colors($iv-green-7, $iv-green-7);
-    color: $iv-light;
+    @include btn-solid-colors(green-7, green-7);
+    color: color(light);
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors($iv-green-8, $iv-green-8);
+      @include btn-solid-colors(green-8, green-8);
     }
   }
   &.btn-danger {
-    @include btn-s-colors($iv-red-7, $iv-red-7);
-    color: $iv-light;
+    @include btn-solid-colors(red-7, red-7);
+    color: color(light);
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors($iv-red-8, $iv-red-8);
+      @include btn-solid-colors(red-8, red-8);
     }
   }
   &.disabled, &:disabled, &[disabled] {
@@ -55,44 +61,45 @@
     border: none;
     &:hover, &:focus {
       outline: none;
-      @include btn-s-colors(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.25));
+      @include btn-solid-colors(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.25));
     }
   }
   &.btn-ro {
     border-radius: 1.5rem;
   }
 }
+
 /* Outline Buttons */
 .iv-btn-o {
   @extend %button;
-  border: 1px solid $iv-neutral-6;
-  background: $iv-light;
+  border: 1px solid color(gray-6);
+  background: color(light);
   &.btn-primary {
-    border: 1px solid $iv-blue-7;
-    color: $iv-blue-7;
+    border: 1px solid color(blue-7);
+    color: color(blue-7);
     &:hover {
       outline: none;
       background-color: #F4F9FF;
     }
   }
   &.btn-success {
-    border: 1px solid $iv-green-7;
-    color: $iv-green-8;
+    border: 1px solid color(green-7);
+    color: color(green-8);
     &:hover {
       outline: none;
-      background-color: $iv-green-0;
+      background-color: color(green-0);
     }
   }
   &.btn-danger {
-    border: 1px solid $iv-red-7;
-    color: $iv-red-7;
+    border: 1px solid color(red-7);
+    color: color(red-7);
     &:hover {
       outline: none;
-      background-color: $iv-red-0;
+      background-color: color(red-0);
     }
   }
   &.disabled, &:disabled, &[disabled] {
-    background: $iv-light;
+    background: color(light);
     border: 1px solid #D9D9D9;
     color: rgba(0, 0, 0, 0.25);
     cursor: not-allowed;
@@ -101,30 +108,31 @@
     border-radius: 1.5rem;
   }
 }
+
 /* Flat Buttons */
 .iv-btn-f {
   @extend %button;
-  background: $iv-light;
+  background: color(light);
   border: none;
   &.btn-primary {
-    color: $iv-blue-7;
+    color: color(blue-7);
     &:hover {
       outline: none;
       background-color: #E3EFFE;
     }
   }
   &.btn-success {
-    color: $iv-green-8;
+    color: color(green-8);
     &:hover {
       outline: none;
-      background-color: $iv-green-1;
+      background-color: color(green-1);
     }
   }
   &.btn-danger {
-    color: $iv-red-7;
+    color: color(red-7);
     &:hover {
       outline: none;
-      background-color: $iv-red-1;
+      background-color: color(red-1);
     }
   }
   &.disabled, &:disabled, &[disabled] {
@@ -133,13 +141,13 @@
     cursor: not-allowed;
   }
 }
+
+/* Buttons with different sizes  */
 .btn-sm {
   height: 1.75rem;
-  padding-left: 0.875rem;
-  padding-right: 0.875rem;
-  font-size: 0.75rem;
-  line-height: 1.5rem;
+  padding: 0 1rem;
   border-radius: 0.25rem;
+  @include text-size(0.75rem, 1.5rem);
   &.btn-ro {
     border-radius: 1rem;
   }

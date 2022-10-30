@@ -1,94 +1,48 @@
-%big-heading {
+%typo {
   display: block;
   margin-top: 0;
   margin-bottom: 1rem;
-  font-weight: 500;
-  color: #161616;
-}
-%small-heading {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-  color: $iv-neutral-9;
-}
-%p-default {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  line-height: 1.75rem;
-  color: #212121;
 }
 h1 {
-  @extend %big-heading;
-  font-size: 2rem;
-  line-height: 2.75rem;
+  @extend %typo;
+  @include text-size(2.25rem, 2.75rem);
 }
 h2 {
-  @extend %big-heading;
-  font-size: 1.75rem;
-  line-height: 2.5rem;
+  @extend %typo;
+  @include text-size(2rem, 2.5rem);
 }
 h3 {
-  @extend %big-heading;
-  font-size: 1.5rem;
-  line-height: 2.25rem;
+  @extend %typo;
+  @include text-size(1.75rem, 2.25rem);
 }
 h4 {
-  @extend %small-heading;
-  font-size: 1.25rem;
-  line-height: 2rem;
-  font-weight: 500;
+  @extend %typo;
+  @include text-size(1.5rem, 2rem);
 }
 h5 {
-  @extend %small-heading;
-  font-size: 1.125rem;
-  line-height: 1.9rem;
-  font-weight: 600;
+  @extend %typo;
+  @include text-size(1.25rem, 2rem);
 }
 h6 {
-  @extend %small-heading;
-  font-size: 1rem;
-  line-height: 1.75rem;
-  font-weight: 500;
-}
-h6>b {
-  @extend %small-heading;
-  font-size: 1rem;
-  line-height: 1.75rem;
-  font-weight: 600;
+  @extend %typo;
+  @include text-size(1.125rem, 1.75rem);
 }
 p {
-  @extend %p-default;
-  display: block;
-  font-size: 0.875rem;
-  font-weight: 400;
-}
-p>b {
-  @extend %p-default;
-  font-size: 0.875rem;
-  font-weight: 600;
-}
-p>small {
-  @extend %p-default;
-  font-size: 0.75rem;
-  font-weight: 500;
-}
-p>small>b {
-  @extend %p-default;
-  font-size: 0.75rem;
-  font-weight: 600;
-}
-.small-label {
-  @extend %p-default;
-  font-size: 0.75rem;
-  color: #777 !important;
-  font-weight: 500;
+  @extend %typo;
+  @include text-size(0.875rem, 1.5rem);
+  &.text-16 {
+    @include text-size(1rem, 1.75rem);
+  }
+  &.text-12 {
+    @include text-size(0.75rem, 1.25rem);
+  }
 }
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #2285F6;
+  color: color(blue-6);
   &:hover, &:focus {
-    color: #005CB9;
+    color: color(blue-8);
     text-decoration: underline;
   }
 }

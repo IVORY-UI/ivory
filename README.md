@@ -1,6 +1,6 @@
 # IVORY
 
-A modern CSS framework gives you all the basic integrants to build your web pages faster and easier. It is a lightweight framework, just ~6KB in size.
+A modern CSS framework to build your web pages faster and easier.
 
 For full documentation, visit https://ivoryui.com
 

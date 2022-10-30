@@ -2,7 +2,7 @@
   position: relative;
   height: 2rem;
   max-width: 20rem;
-  background-color: $iv-neutral-0;
+  background-color: color(gray-0);
   border: 1px solid #B7B7B7;
   border-radius: 0.1875rem;
   input[type="file"] {
@@ -14,9 +14,8 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 0.8125rem;
-    line-height: 1.75rem;
     cursor: pointer;
+    @include text-size(0.8125rem, 1.75rem);
   }
   &:hover, &:focus {
     @extend %defualt-element-focus

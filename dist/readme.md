@@ -1,31 +1,8 @@
 # IVORY
 
-A simple and modern CSS framework for developing powerful web interfaces faster and easier. It is a lightweight framework, just ~6KB. It gives you all the basic integrants to build your pages faster and easier.
+A modern CSS framework to build your web pages faster and easier.
 
-Documentation : https://ivoryui.com
-
-## How to use
-
-### Install via npm:
-
-```shell
-npm i ivoryui-ivory --save
-```
-
-import the following files to your project:
-```shell
-node_modules/ivoryui-ivory/ivory.min.css
-```
-
-### Load the files from CDN:
-
-```shell
-<link rel="stylesheet" href="https://unpkg.com/ivoryui-ivory/ivory.min.css" />
-```
-
-## Browser Support
-
-IVORY supports all the latest browsers.
+For full documentation, visit https://ivoryui.com
 
 ## Contributing
 
@@ -46,8 +23,8 @@ Your support inspires & encourage us more. If you are interested to make a donat
 
 ## Authors
 
-Lakshmikanth Vallampati<br/>
-Satyasai Vallampati
+Lakshmikanth Vallampati & contributors
+
 
 ## License
 

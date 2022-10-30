@@ -2,7 +2,7 @@ $directions: 'top', 'right', 'bottom', 'left';
 $inverse-dir: ('top': 'bottom', 'bottom': 'top', 'left': 'right', 'right': 'left');
 @mixin tooltip-position-system() {
   @each $dir in $directions {
-    .#{$dir} {
+    .tooltip-#{$dir} {
       $inverse: map-get($inverse-dir, $dir);
       #{$inverse}: calc(100% + 0.5rem);
       @if (($dir == top) or ($dir == bottom)) {
@@ -16,7 +16,7 @@ $inverse-dir: ('top': 'bottom', 'bottom': 'top', 'left': 'right', 'right': 'left
       }
       &::before {
         border-#{$inverse}-width: 0;
-        border-#{$dir}-color: $iv-neutral-9;
+        border-#{$dir}-color: color(gray-9);
         @if ($dir=="top" or $dir=="bottom") {
           #{$dir}: 100%;
           #{$inverse}: auto;
@@ -31,60 +31,78 @@ $inverse-dir: ('top': 'bottom', 'bottom': 'top', 'left': 'right', 'right': 'left
     }
   }
 }
-@mixin corner-tooltip-system($dirX, $dirY) {
-  .#{$dirX}-#{$dirY} {
-    $inverseX: map-get($inverse-dir, $dirX);
-    $inverseY: map-get($inverse-dir, $dirY);
-    #{$inverseX}: calc(100% + 0.75rem);
-    #{$inverseY}: calc(100% - 0.75rem);
-    border-#{$inverseX}-#{$inverseY}-radius: 0;
-    &:before {
-      #{$inverseX}: -0.75rem;
-      #{$inverseY}: 0;
-      border-#{$dirX}: 0.375rem solid $iv-neutral-9;
-      border-#{$inverseX}: 0.375rem solid transparent;
-      border-#{$inverseY}: 0.375rem solid $iv-neutral-9;
-      border-#{$dirY}: 0.375rem solid transparent;
+@mixin cornered($dirY, $dirX) {
+  $inverseX: map-get($inverse-dir, $dirX);
+  $inverseY: map-get($inverse-dir, $dirY);
+  .tooltip-#{$dirY}-#{$dirX} {
+    #{$inverseY}: calc(100% + 0.75rem);
+    #{$inverseX}: calc(100% - 0.75rem);
+    border-#{$inverseY}-#{$inverseX}-radius: 0;
+  }
+}
+@mixin corneredY($dirY) {
+  $inverseY: map-get($inverse-dir, $dirY);
+  .tooltip {
+    &-#{$dirY}-right::before, &-#{$dirY}-left::before {
+      #{$inverseY}: -0.75rem;
+      border-#{$dirY}: 0.375rem solid color(gray-9);
+      border-#{$inverseY}: 0.375rem solid transparent;
+    }
+  }
+}
+@mixin corneredX($dirX) {
+  $inverseX: map-get($inverse-dir, $dirX);
+  .tooltip {
+    &-top-#{$dirX}::before, &-bottom-#{$dirX}::before {
+      #{$inverseX}: 0;
+      border-#{$dirX}: 0.375rem solid transparent;
+      border-#{$inverseX}: 0.375rem solid color(gray-9);
     }
   }
 }
 .iv-tooltip {
   position: relative;
   display: inline-block;
+  .tooltip-xs {
+    width: 10rem;
+  }
+  .tooltip-sm {
+    width: 15rem;
+  }
+  .tooltip-md {
+    width: 20rem;
+  }
+  .tooltip-lg {
+    width: 25rem;
+  }
   .tooltip-content {
     display: none;
     position: absolute;
     padding: 0.5rem 1rem;
-    color: $iv-light;
-    background-color: $iv-neutral-9;
-    font-size: 0.75rem;
-    line-height: 1.25rem;
+    color: color(light);
+    background-color: color(gray-9);
     border-radius: 0.5rem;
     box-sizing: border-box;
     z-index: 9999;
+    @include text-size(0.75rem, 1.25rem);
     &::before {
       content: '';
       position: absolute;
       border: 0.5rem solid transparent;
     }
-    &.tooltip-xs {
-      width: 200px;
-    }
-    &.tooltip-md {
-      width: 420px;
-    }
-    &.tooltip-lg {
-      width: 640px;
-    }
   }
-  @include tooltip-position-system;
-  @include corner-tooltip-system(top,right);
-  @include corner-tooltip-system(top,left);
-  @include corner-tooltip-system(bottom,right);
-  @include corner-tooltip-system(bottom,left);
   &:hover {
     .tooltip-content {
       display: block;
     }
   }
+  @include tooltip-position-system;
+  @include cornered(top,right);
+  @include cornered(top,left);
+  @include cornered(bottom,right);
+  @include cornered(bottom,left);
+  @include corneredY(top);
+  @include corneredY(bottom);
+  @include corneredX(right);
+  @include corneredX(left);
 }

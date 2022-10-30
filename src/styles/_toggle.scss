@@ -20,7 +20,7 @@
     margin: 0;
     &:checked~label{
       &:before {
-        background-color: $iv-blue-4;
+        background-color: color(blue-4);
       }
       &:after {
         left: 1rem;
@@ -39,7 +39,7 @@
       transform: none;
       border: none;
       top: 0;
-      background: $iv-neutral-3;
+      background: color(gray-3);
       box-shadow: none;
       width: 2rem;
       height: 1rem;
@@ -47,10 +47,10 @@
       cursor: pointer;
     }
     &:after {
-      background: $iv-light -webkit-linear-gradient(transparent, rgba(0,0,0,.05));
-      background: $iv-light -moz-linear-gradient(transparent, rgba(0,0,0,.05));
-      background: $iv-light -o-linear-gradient(transparent, rgba(0,0,0,.05));
-      background: $iv-light linear-gradient(transparent, rgba(0,0,0,.05));
+      background: color(light) -webkit-linear-gradient(transparent, rgba(0,0,0,.05));
+      background: color(light) -moz-linear-gradient(transparent, rgba(0,0,0,.05));
+      background: color(light) -o-linear-gradient(transparent, rgba(0,0,0,.05));
+      background: color(light) linear-gradient(transparent, rgba(0,0,0,.05));
       position: absolute;
       content: ''!important;
       opacity: 1;
