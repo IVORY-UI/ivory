@@ -5,20 +5,19 @@
   padding: 0 1.5rem;
   border-radius: 0.25rem;
   color: color(gray-7);
-  background-color: color(gray-3);
+  background-color: color(gray-1);
   outline: none;
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
   text-align: center;
   text-decoration: none;
-  text-transform: uppercase;
   vertical-align: middle;
   cursor: pointer;
   @include text-size(0.875rem, 2rem);
   &:hover, &:focus {
     outline: none;
-    background-color: color(gray-1);
+    background-color: color(gray-2);
   }
 }
 @mixin btn-solid-colors($background, $border) {
@@ -29,7 +28,7 @@
 /* Solid Buttons */
 .iv-btn {
   @extend %button;
-  border: 1px solid #E8EBED;
+  border: 1px solid color(gray-3);
   &.btn-primary {
     @include btn-solid-colors(blue-7, blue-7);
     color: color(light);
@@ -79,7 +78,7 @@
     color: color(blue-7);
     &:hover {
       outline: none;
-      background-color: #F4F9FF;
+      background-color: color(blue-0);
     }
   }
   &.btn-success {
