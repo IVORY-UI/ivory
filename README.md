@@ -1,6 +1,6 @@
 # IVORY
 
-A modern CSS framework to build your web pages faster and easier.
+Modern and powerful CSS framework, prebuilt with grid system, elegant design and flexible components helps you to develop powerful interfaces faster and easier.
 
 For full documentation, visit https://ivoryui.com
 
