@@ -1,0 +1,98 @@
+@use "../common/colors" as colors;
+@use "../common/mixins" as mixins;
+
+/* Container Queries Support */
+
+// Container query utilities
+.iv-container {
+  @include mixins.container;
+  
+  &-query {
+    @include mixins.container-query(640px);
+  }
+}
+
+// Responsive container queries
+@container (min-width: 640px) {
+  .cq-sm\:d-none { display: none !important; }
+  .cq-sm\:d-block { display: block !important; }
+  .cq-sm\:d-flex { display: flex !important; }
+  .cq-sm\:d-grid { display: grid !important; }
+  .cq-sm\:grid-cols-2 { grid-template-columns: repeat(2, 1fr) !important; }
+  .cq-sm\:grid-cols-3 { grid-template-columns: repeat(3, 1fr) !important; }
+  .cq-sm\:grid-cols-4 { grid-template-columns: repeat(4, 1fr) !important; }
+}
+
+@container (min-width: 768px) {
+  .cq-md\:d-none { display: none !important; }
+  .cq-md\:d-block { display: block !important; }
+  .cq-md\:d-flex { display: flex !important; }
+  .cq-md\:d-grid { display: grid !important; }
+  .cq-md\:grid-cols-2 { grid-template-columns: repeat(2, 1fr) !important; }
+  .cq-md\:grid-cols-3 { grid-template-columns: repeat(3, 1fr) !important; }
+  .cq-md\:grid-cols-4 { grid-template-columns: repeat(4, 1fr) !important; }
+  .cq-md\:grid-cols-6 { grid-template-columns: repeat(6, 1fr) !important; }
+}
+
+@container (min-width: 1024px) {
+  .cq-lg\:d-none { display: none !important; }
+  .cq-lg\:d-block { display: block !important; }
+  .cq-lg\:d-flex { display: flex !important; }
+  .cq-lg\:d-grid { display: grid !important; }
+  .cq-lg\:grid-cols-2 { grid-template-columns: repeat(2, 1fr) !important; }
+  .cq-lg\:grid-cols-3 { grid-template-columns: repeat(3, 1fr) !important; }
+  .cq-lg\:grid-cols-4 { grid-template-columns: repeat(4, 1fr) !important; }
+  .cq-lg\:grid-cols-6 { grid-template-columns: repeat(6, 1fr) !important; }
+  .cq-lg\:grid-cols-12 { grid-template-columns: repeat(12, 1fr) !important; }
+}
+
+// Container query mixins for components
+@mixin card-container-query {
+  @container (min-width: 400px) {
+    .iv-card {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 1rem;
+      
+      &-header {
+        border-bottom: none;
+        border-right: 1px solid colors.color(gray-3);
+      }
+    }
+  }
+  
+  @container (min-width: 600px) {
+    .iv-card {
+      grid-template-columns: 1fr 3fr;
+    }
+  }
+}
+
+@mixin form-container-query {
+  @container (min-width: 500px) {
+    .iv-form-horizontal {
+      .iv-field {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+      
+      .iv-label {
+        flex: 0 0 120px;
+        text-align: right;
+      }
+      
+      .iv-input,
+      .iv-select,
+      .iv-textarea {
+        flex: 1;
+      }
+    }
+  }
+}
+
+// Apply container queries to components
+.iv-container {
+  @include card-container-query;
+  @include form-container-query;
+} 

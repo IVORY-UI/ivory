@@ -1,17 +1,22 @@
+@use "sass:math";
+@use "./common/colors" as colors;
+@use "./common/mixins" as mixins;
+
 @keyframes spinnerrotate {
   0% {
-    @include transform(rotate(0deg));
+    @include mixins.transform(rotate(0deg));
   }
   100% {
-    @include transform(rotate(360deg));
+    @include mixins.transform(rotate(360deg));
   }
 }
+
 @for $i from 2 through 6 {
-  $size: ($i / 2) * 16;
+  $size: math.div($i, 2) * 16;
   .iv-spinner-#{$size} {
     height: #{$size + 'px'};
     width: #{$size + 'px'};
-    border: #{$i + 'px'} solid color(gray-4);
+    border: #{$i + 'px'} solid colors.color(gray-4);
   }
 }
 .iv-spinner-16,
@@ -21,7 +26,7 @@
 .iv-spinner-48 {
   position: relative;
   border-radius: 50%;
-  border-left-color: color(gray-7);
-  @include transform(translateZ(0));
-  @include animate(spinnerrotate, 1.1s, infinite, linear);
+  border-left-color: colors.color(gray-7);
+  @include mixins.transform(translateZ(0));
+  @include mixins.animate(spinnerrotate, 1.1s, infinite, linear);
 }

@@ -1,0 +1,427 @@
+// IVORY Utility Generator
+// Generates utility classes from design tokens
+
+@use "sass:map";
+@use "./tokens" as tokens;
+
+// =============================================================================
+// COLOR UTILITIES
+// =============================================================================
+
+// Background colors
+@each $color-name, $color-shades in tokens.$ivory-colors {
+  @each $shade, $value in $color-shades {
+    .bg-#{$color-name}-#{$shade} {
+      background-color: #{$value};
+    }
+  }
+}
+
+// Text colors
+@each $color-name, $color-shades in tokens.$ivory-colors {
+  @each $shade, $value in $color-shades {
+    .text-#{$color-name}-#{$shade} {
+      color: #{$value};
+    }
+  }
+}
+
+// Border colors
+@each $color-name, $color-shades in tokens.$ivory-colors {
+  @each $shade, $value in $color-shades {
+    .border-#{$color-name}-#{$shade} {
+      border-color: #{$value};
+    }
+  }
+}
+
+// =============================================================================
+// SPACING UTILITIES
+// =============================================================================
+
+// Margin utilities
+@each $size, $value in tokens.$ivory-spacing {
+  .m-#{$size} { margin: #{$value}; }
+  .mt-#{$size} { margin-top: #{$value}; }
+  .mr-#{$size} { margin-right: #{$value}; }
+  .mb-#{$size} { margin-bottom: #{$value}; }
+  .ml-#{$size} { margin-left: #{$value}; }
+  .mx-#{$size} { 
+    margin-left: #{$value}; 
+    margin-right: #{$value}; 
+  }
+  .my-#{$size} { 
+    margin-top: #{$value}; 
+    margin-bottom: #{$value}; 
+  }
+}
+
+// Padding utilities
+@each $size, $value in tokens.$ivory-spacing {
+  .p-#{$size} { padding: #{$value}; }
+  .pt-#{$size} { padding-top: #{$value}; }
+  .pr-#{$size} { padding-right: #{$value}; }
+  .pb-#{$size} { padding-bottom: #{$value}; }
+  .pl-#{$size} { padding-left: #{$value}; }
+  .px-#{$size} { 
+    padding-left: #{$value}; 
+    padding-right: #{$value}; 
+  }
+  .py-#{$size} { 
+    padding-top: #{$value}; 
+    padding-bottom: #{$value}; 
+  }
+}
+
+// Gap utilities (for grid and flexbox)
+@each $size, $value in tokens.$ivory-spacing {
+  .gap-#{$size} { gap: #{$value}; }
+  .gap-x-#{$size} { column-gap: #{$value}; }
+  .gap-y-#{$size} { row-gap: #{$value}; }
+}
+
+// =============================================================================
+// TYPOGRAPHY UTILITIES
+// =============================================================================
+
+// Font families
+@each $family, $value in tokens.$ivory-font-families {
+  .font-#{$family} {
+    font-family: #{$value};
+  }
+}
+
+// Font sizes
+@each $size, $value in tokens.$ivory-font-sizes {
+  .text-#{$size} {
+    font-size: #{$value};
+  }
+}
+
+// Font weights
+@each $weight, $value in tokens.$ivory-font-weights {
+  .font-#{$weight} {
+    font-weight: #{$value};
+  }
+}
+
+// Line heights
+@each $height, $value in tokens.$ivory-line-heights {
+  .leading-#{$height} {
+    line-height: #{$value};
+  }
+}
+
+// Text alignment
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+
+// Text decoration
+.underline { text-decoration: underline; }
+.no-underline { text-decoration: none; }
+.line-through { text-decoration: line-through; }
+
+// Text transform
+.uppercase { text-transform: uppercase; }
+.lowercase { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.normal-case { text-transform: none; }
+
+// =============================================================================
+// BORDER UTILITIES
+// =============================================================================
+
+// Border width
+@each $width, $value in tokens.$ivory-border-widths {
+  .border-#{$width} {
+    border-width: #{$value};
+  }
+}
+
+// Border radius
+@each $size, $value in tokens.$ivory-border-radius {
+  .rounded-#{$size} {
+    border-radius: #{$value};
+  }
+}
+
+// Border style
+.border-solid { border-style: solid; }
+.border-dashed { border-style: dashed; }
+.border-dotted { border-style: dotted; }
+.border-none { border-style: none; }
+
+// =============================================================================
+// SHADOW UTILITIES
+// =============================================================================
+
+@each $size, $value in tokens.$ivory-shadows {
+  .shadow-#{$size} {
+    box-shadow: #{$value};
+  }
+}
+
+// =============================================================================
+// DISPLAY UTILITIES
+// =============================================================================
+
+.block { display: block; }
+.inline-block { display: inline-block; }
+.inline { display: inline; }
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.grid { display: grid; }
+.inline-grid { display: inline-grid; }
+.hidden { display: none; }
+
+// =============================================================================
+// FLEXBOX UTILITIES
+// =============================================================================
+
+// Flex direction
+.flex-row { flex-direction: row; }
+.flex-row-reverse { flex-direction: row-reverse; }
+.flex-col { flex-direction: column; }
+.flex-col-reverse { flex-direction: column-reverse; }
+
+// Flex wrap
+.flex-wrap { flex-wrap: wrap; }
+.flex-nowrap { flex-wrap: nowrap; }
+.flex-wrap-reverse { flex-wrap: wrap-reverse; }
+
+// Flex grow/shrink
+.flex-1 { flex: 1 1 0%; }
+.flex-auto { flex: 1 1 auto; }
+.flex-initial { flex: 0 1 auto; }
+.flex-none { flex: none; }
+
+// Justify content
+.justify-start { justify-content: flex-start; }
+.justify-end { justify-content: flex-end; }
+.justify-center { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around { justify-content: space-around; }
+.justify-evenly { justify-content: space-evenly; }
+
+// Align items
+.items-start { align-items: flex-start; }
+.items-end { align-items: flex-end; }
+.items-center { align-items: center; }
+.items-baseline { align-items: baseline; }
+.items-stretch { align-items: stretch; }
+
+// Align self
+.self-auto { align-self: auto; }
+.self-start { align-self: flex-start; }
+.self-end { align-self: flex-end; }
+.self-center { align-self: center; }
+.self-stretch { align-self: stretch; }
+
+// =============================================================================
+// POSITIONING UTILITIES
+// =============================================================================
+
+.static { position: static; }
+.fixed { position: fixed; }
+.absolute { position: absolute; }
+.relative { position: relative; }
+.sticky { position: sticky; }
+
+// Z-index
+@each $level, $value in tokens.$ivory-z-index {
+  .z-#{$level} {
+    z-index: #{$value};
+  }
+}
+
+// =============================================================================
+// SIZING UTILITIES
+// =============================================================================
+
+// Width
+.w-auto { width: auto; }
+.w-full { width: 100%; }
+.w-screen { width: 100vw; }
+.w-min { width: min-content; }
+.w-max { width: max-content; }
+.w-fit { width: fit-content; }
+
+// Height
+.h-auto { height: auto; }
+.h-full { height: 100%; }
+.h-screen { height: 100vh; }
+.h-min { height: min-content; }
+.h-max { height: max-content; }
+.h-fit { height: fit-content; }
+
+// =============================================================================
+// OVERFLOW UTILITIES
+// =============================================================================
+
+.overflow-auto { overflow: auto; }
+.overflow-hidden { overflow: hidden; }
+.overflow-visible { overflow: visible; }
+.overflow-scroll { overflow: scroll; }
+
+.overflow-x-auto { overflow-x: auto; }
+.overflow-x-hidden { overflow-x: hidden; }
+.overflow-x-visible { overflow-x: visible; }
+.overflow-x-scroll { overflow-x: scroll; }
+
+.overflow-y-auto { overflow-y: auto; }
+.overflow-y-hidden { overflow-y: hidden; }
+.overflow-y-visible { overflow-y: visible; }
+.overflow-y-scroll { overflow-y: scroll; }
+
+// =============================================================================
+// CURSOR UTILITIES
+// =============================================================================
+
+.cursor-auto { cursor: auto; }
+.cursor-default { cursor: default; }
+.cursor-pointer { cursor: pointer; }
+.cursor-wait { cursor: wait; }
+.cursor-text { cursor: text; }
+.cursor-move { cursor: move; }
+.cursor-help { cursor: help; }
+.cursor-not-allowed { cursor: not-allowed; }
+
+// =============================================================================
+// TRANSITION UTILITIES
+// =============================================================================
+
+@each $transition, $value in tokens.$ivory-transitions {
+  .transition-#{$transition} {
+    transition: #{$value};
+  }
+}
+
+@each $duration, $value in tokens.$ivory-durations {
+  .duration-#{$duration} {
+    transition-duration: #{$value};
+  }
+}
+
+@each $easing, $value in tokens.$ivory-easings {
+  .ease-#{$easing} {
+    transition-timing-function: #{$value};
+  }
+}
+
+// =============================================================================
+// RESPONSIVE UTILITIES
+// =============================================================================
+
+@each $breakpoint, $value in tokens.$ivory-breakpoints {
+  @media (min-width: #{$value}) {
+    // Color utilities
+    @each $color-name, $color-shades in tokens.$ivory-colors {
+      @each $shade, $color-value in $color-shades {
+        .#{$breakpoint}\:bg-#{$color-name}-#{$shade} {
+          background-color: #{$color-value};
+        }
+        .#{$breakpoint}\:text-#{$color-name}-#{$shade} {
+          color: #{$color-value};
+        }
+      }
+    }
+    
+    // Spacing utilities
+    @each $size, $spacing-value in tokens.$ivory-spacing {
+      .#{$breakpoint}\:m-#{$size} { margin: #{$spacing-value}; }
+      .#{$breakpoint}\:p-#{$size} { padding: #{$spacing-value}; }
+      .#{$breakpoint}\:gap-#{$size} { gap: #{$spacing-value}; }
+    }
+    
+    // Typography utilities
+    @each $size, $font-value in tokens.$ivory-font-sizes {
+      .#{$breakpoint}\:text-#{$size} { font-size: #{$font-value}; }
+    }
+    
+    // Display utilities
+    .#{$breakpoint}\:block { display: block; }
+    .#{$breakpoint}\:flex { display: flex; }
+    .#{$breakpoint}\:grid { display: grid; }
+    .#{$breakpoint}\:hidden { display: none; }
+    
+    // Flex direction
+    .#{$breakpoint}\:flex-row { flex-direction: row; }
+    .#{$breakpoint}\:flex-col { flex-direction: column; }
+    
+    // Grid columns
+    .#{$breakpoint}\:grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+    .#{$breakpoint}\:grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .#{$breakpoint}\:grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+    .#{$breakpoint}\:grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+    .#{$breakpoint}\:grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+    .#{$breakpoint}\:grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+  }
+}
+
+// =============================================================================
+// DARK MODE UTILITIES
+// =============================================================================
+
+[data-theme="dark"] {
+  // Dark mode color overrides
+  @each $color-name, $color-shades in tokens.$ivory-colors {
+    @each $shade, $value in $color-shades {
+      .dark\:bg-#{$color-name}-#{$shade} {
+        background-color: #{$value};
+      }
+      .dark\:text-#{$color-name}-#{$shade} {
+        color: #{$value};
+      }
+    }
+  }
+}
+
+// =============================================================================
+// FOCUS UTILITIES
+// =============================================================================
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+}
+
+.focus\:ring:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+.focus\:ring-2:focus {
+  --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+  --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+  box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+}
+
+// =============================================================================
+// HOVER UTILITIES
+// =============================================================================
+
+@each $color-name, $color-shades in tokens.$ivory-colors {
+  @each $shade, $value in $color-shades {
+    .hover\:bg-#{$color-name}-#{$shade}:hover {
+      background-color: #{$value};
+    }
+    .hover\:text-#{$color-name}-#{$shade}:hover {
+      color: #{$value};
+    }
+  }
+}
+
+.hover\:shadow-lg:hover {
+  box-shadow: #{map.get(tokens.$ivory-shadows, lg)};
+}
+
+.hover\:scale-105:hover {
+  transform: scale(1.05);
+}
+
+.hover\:scale-110:hover {
+  transform: scale(1.1);
+} 

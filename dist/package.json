@@ -1,7 +1,7 @@
 {
   "name": "ivoryui-ivory",
   "description": "A modern CSS framework to build your web pages faster and easier.",
-  "version": "6.0.1",
+  "version": "7.0.0",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/IVORY-UI/ivory.git"
@@ -16,24 +16,49 @@
     "grid-layout",
     "scss-mixins",
     "scss-framework",
-    "design-system"
+    "design-system",
+    "utility-first",
+    "modern-css"
   ],
+  "main": "dist/ivory.css",
+  "style": "dist/ivory.min.css",
   "scripts": {
-    "clean": "node ./scripts/build/clean",
-    "build:styles": "node-sass --include-path scss src/ivory.scss dist/ivory.min.css --output-style compressed",
-    "copy:files": "cp package.json dist/ && cp README.md dist/",
-    "build": "npm run clean && npm run build:styles && npm run copy:files",
+    "clean": "rimraf dist",
+    "build:styles": "sass src/ivory.scss dist/ivory.css --style=expanded",
+    "build:styles:min": "sass src/ivory.scss dist/ivory.min.css --style=compressed",
+    "build:utils": "sass src/utils.scss dist/utils.css --style=expanded",
+    "build:utils:min": "sass src/utils.scss dist/utils.min.css --style=compressed",
+    "build:components": "sass src/components.scss dist/components.css --style=expanded",
+    "build:components:min": "sass src/components.scss dist/components.min.css --style=compressed",
+    "build": "npm run clean && npm run build:styles && npm run build:styles:min && npm run build:utils && npm run build:utils:min && npm run build:components && npm run build:components:min && npm run copy:files",
+    "copy:files": "cp package.json dist/ && cp README.md dist/ && cp LICENSE dist/",
+    "dev": "sass --watch src:dist",
+    "lint": "stylelint \"src/**/*.scss\"",
+    "lint:fix": "stylelint \"src/**/*.scss\" --fix",
+    "test": "npm run lint",
+    "prepublishOnly": "npm run build",
     "publish:ivory": "npm publish dist"
   },
   "dependencies": {},
   "devDependencies": {
-    "cpy-cli": "^4.0.0",
-    "del": "^6.0.0",
-    "node-sass": "^7.0.1",
-    "npm-run-all": "^4.1.5"
+    "sass": "^1.69.0",
+    "rimraf": "^5.0.5",
+    "stylelint": "^15.11.0",
+    "stylelint-config-standard-scss": "^11.1.0",
+    "stylelint-scss": "^5.3.1",
+    "postcss": "^8.4.31",
+    "autoprefixer": "^10.4.16",
+    "cssnano": "^6.0.1",
+    "esbuild": "^0.19.8"
   },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
   "author": {
     "name": "Lakshmikanth Vallampati",
     "url": "https://github.com/kanthvallampati/"
-  }
+  },
+  "license": "MIT"
 }

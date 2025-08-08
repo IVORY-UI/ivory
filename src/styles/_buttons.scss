@@ -1,11 +1,14 @@
+@use "./common/tokens" as tokens;
+@use "./common/mixins" as mixins;
+
 %button {
   border: none;
   height: 2.25rem;
   margin: 0.75rem 0;
   padding: 0 1.5rem;
   border-radius: 0.25rem;
-  color: color(gray-7);
-  background-color: color(gray-1);
+  color: tokens.ivory-color(neutral, 700);
+  background-color: tokens.ivory-color(neutral, 100);
   outline: none;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -14,43 +17,43 @@
   text-decoration: none;
   vertical-align: middle;
   cursor: pointer;
-  @include text-size(0.875rem, 2rem);
+  @include mixins.text-size(0.875rem, 2rem);
   &:hover, &:focus {
     outline: none;
-    background-color: color(gray-2);
+    background-color: tokens.ivory-color(neutral, 200);
   }
 }
-@mixin btn-solid-colors($background, $border) {
-  background-color: color($background);
-  border-color: color($border);
+@mixin btn-solid-colors($color-name, $shade) {
+  background-color: tokens.ivory-color($color-name, $shade);
+  border-color: tokens.ivory-color($color-name, $shade);
 }
 
 /* Solid Buttons */
 .iv-btn {
   @extend %button;
-  border: 1px solid color(gray-3);
+  border: 1px solid tokens.ivory-color(neutral, 300);
   &.btn-primary {
-    @include btn-solid-colors(blue-7, blue-7);
-    color: color(light);
+    @include btn-solid-colors(primary, 700);
+    color: tokens.ivory-color(neutral, 50);
     &:hover, &:focus {
       outline: none;
-      @include btn-solid-colors(blue-8, blue-8);
+      @include btn-solid-colors(primary, 800);
     }
   }
   &.btn-success {
-    @include btn-solid-colors(green-7, green-7);
-    color: color(light);
+    @include btn-solid-colors(success, 700);
+    color: tokens.ivory-color(neutral, 50);
     &:hover, &:focus {
       outline: none;
-      @include btn-solid-colors(green-8, green-8);
+      @include btn-solid-colors(success, 800);
     }
   }
   &.btn-danger {
-    @include btn-solid-colors(red-7, red-7);
-    color: color(light);
+    @include btn-solid-colors(error, 700);
+    color: tokens.ivory-color(neutral, 50);
     &:hover, &:focus {
       outline: none;
-      @include btn-solid-colors(red-8, red-8);
+      @include btn-solid-colors(error, 800);
     }
   }
   &.disabled, &:disabled, &[disabled] {
@@ -60,7 +63,8 @@
     border: none;
     &:hover, &:focus {
       outline: none;
-      @include btn-solid-colors(rgba(0, 0, 0, 0.12), rgba(0, 0, 0, 0.25));
+      background-color: rgba(0, 0, 0, 0.12);
+      border-color: rgba(0, 0, 0, 0.12);
     }
   }
   &.btn-ro {
@@ -71,34 +75,34 @@
 /* Outline Buttons */
 .iv-btn-o {
   @extend %button;
-  border: 1px solid color(gray-6);
-  background: color(light);
+  border: 1px solid tokens.ivory-color(neutral, 600);
+  background: tokens.ivory-color(neutral, 50);
   &.btn-primary {
-    border: 1px solid color(blue-7);
-    color: color(blue-7);
+    border: 1px solid tokens.ivory-color(primary, 700);
+    color: tokens.ivory-color(primary, 700);
     &:hover {
       outline: none;
-      background-color: color(blue-0);
+      background-color: tokens.ivory-color(primary, 100);
     }
   }
   &.btn-success {
-    border: 1px solid color(green-7);
-    color: color(green-8);
+    border: 1px solid tokens.ivory-color(success, 700);
+    color: tokens.ivory-color(success, 800);
     &:hover {
       outline: none;
-      background-color: color(green-0);
+      background-color: tokens.ivory-color(success, 100);
     }
   }
   &.btn-danger {
-    border: 1px solid color(red-7);
-    color: color(red-7);
+    border: 1px solid tokens.ivory-color(error, 700);
+    color: tokens.ivory-color(error, 700);
     &:hover {
       outline: none;
-      background-color: color(red-0);
+      background-color: tokens.ivory-color(error, 100);
     }
   }
   &.disabled, &:disabled, &[disabled] {
-    background: color(light);
+    background: tokens.ivory-color(neutral, 50);
     border: 1px solid #D9D9D9;
     color: rgba(0, 0, 0, 0.25);
     cursor: not-allowed;
@@ -111,27 +115,27 @@
 /* Flat Buttons */
 .iv-btn-f {
   @extend %button;
-  background: color(light);
+  background: tokens.ivory-color(neutral, 50);
   border: none;
   &.btn-primary {
-    color: color(blue-7);
+    color: tokens.ivory-color(primary, 700);
     &:hover {
       outline: none;
       background-color: #E3EFFE;
     }
   }
   &.btn-success {
-    color: color(green-8);
+    color: tokens.ivory-color(success, 800);
     &:hover {
       outline: none;
-      background-color: color(green-1);
+      background-color: tokens.ivory-color(success, 100);
     }
   }
   &.btn-danger {
-    color: color(red-7);
+    color: tokens.ivory-color(error, 700);
     &:hover {
       outline: none;
-      background-color: color(red-1);
+      background-color: tokens.ivory-color(error, 100);
     }
   }
   &.disabled, &:disabled, &[disabled] {
@@ -146,7 +150,7 @@
   height: 1.75rem;
   padding: 0 1rem;
   border-radius: 0.25rem;
-  @include text-size(0.75rem, 1.5rem);
+  @include mixins.text-size(0.75rem, 1.5rem);
   &.btn-ro {
     border-radius: 1rem;
   }

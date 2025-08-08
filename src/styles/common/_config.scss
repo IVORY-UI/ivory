@@ -1,0 +1,243 @@
+// IVORY Configuration
+// Override design tokens here to customize the framework
+
+// =============================================================================
+// CUSTOMIZATION GUIDE
+// =============================================================================
+
+// To customize IVORY, override these variables before importing the framework:
+
+// Example customizations:
+/*
+// Custom primary color
+$ivory-primary: #6366f1;
+
+// Custom spacing scale
+$ivory-spacing: (
+  0: 0,
+  1: 0.25rem,
+  2: 0.5rem,
+  4: 1rem,
+  8: 2rem,
+  16: 4rem,
+  32: 8rem
+);
+
+// Custom breakpoints
+$ivory-breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
+
+// Custom border radius
+$ivory-border-radius: (
+  none: 0,
+  sm: 0.25rem,
+  base: 0.5rem,
+  lg: 1rem,
+  full: 9999px
+);
+*/
+
+// =============================================================================
+// FEATURE FLAGS
+// =============================================================================
+
+// Enable/disable features
+$ivory-enable-dark-mode: true !default;
+$ivory-enable-container-queries: true !default;
+$ivory-enable-animations: true !default;
+$ivory-enable-utilities: true !default;
+$ivory-enable-components: true !default;
+
+// =============================================================================
+// OUTPUT CONTROL
+// =============================================================================
+
+// Control which utilities are generated
+$ivory-generate-colors: true !default;
+$ivory-generate-spacing: true !default;
+$ivory-generate-typography: true !default;
+$ivory-generate-borders: true !default;
+$ivory-generate-shadows: true !default;
+$ivory-generate-layout: true !default;
+$ivory-generate-interactivity: true !default;
+
+// =============================================================================
+// PREFIX CONFIGURATION
+// =============================================================================
+
+// Customize class prefixes
+$ivory-prefix: '' !default;
+$ivory-component-prefix: 'iv-' !default;
+
+// =============================================================================
+// RESPONSIVE CONFIGURATION
+// =============================================================================
+
+// Enable/disable responsive variants
+$ivory-responsive-spacing: true !default;
+$ivory-responsive-typography: true !default;
+$ivory-responsive-layout: true !default;
+
+// =============================================================================
+// DARK MODE CONFIGURATION
+// =============================================================================
+
+// Dark mode strategy
+$ivory-dark-mode: 'class' !default; // 'class' or 'media'
+
+// Dark mode color overrides
+$ivory-dark-colors: () !default;
+
+// =============================================================================
+// ANIMATION CONFIGURATION
+// =============================================================================
+
+// Default animation duration
+$ivory-animation-duration: 150ms !default;
+
+// Default animation easing
+$ivory-animation-easing: cubic-bezier(0.4, 0, 0.2, 1) !default;
+
+// =============================================================================
+// GRID CONFIGURATION
+// =============================================================================
+
+// Grid columns
+$ivory-grid-columns: 12 !default;
+
+// Grid gutters
+$ivory-grid-gutters: (
+  sm: 0.5rem,
+  md: 1rem,
+  lg: 1.5rem
+) !default;
+
+// =============================================================================
+// COMPONENT CONFIGURATION
+// =============================================================================
+
+// Button variants
+$ivory-button-variants: (
+  primary: true,
+  secondary: true,
+  success: true,
+  warning: true,
+  error: true,
+  info: true
+) !default;
+
+// Card variants
+$ivory-card-variants: (
+  default: true,
+  elevated: true,
+  outlined: true,
+  filled: true
+) !default;
+
+// =============================================================================
+// UTILITY GENERATION HELPERS
+// =============================================================================
+
+// Generate utility classes conditionally
+@mixin generate-utility($property, $values, $prefix: '') {
+  @if $ivory-enable-utilities {
+    @each $name, $value in $values {
+      .#{$prefix}#{$name} {
+        #{$property}: #{$value};
+      }
+    }
+  }
+}
+
+// Generate responsive utilities
+@mixin generate-responsive-utility($property, $values, $prefix: '') {
+  @if $ivory-enable-utilities and $ivory-responsive-spacing {
+    @each $breakpoint, $breakpoint-value in $ivory-breakpoints {
+      @media (min-width: #{$breakpoint-value}) {
+        @each $name, $value in $values {
+          .#{$breakpoint}\:#{$prefix}#{$name} {
+            #{$property}: #{$value};
+          }
+        }
+      }
+    }
+  }
+}
+
+// Generate dark mode utilities
+@mixin generate-dark-utility($property, $values, $prefix: '') {
+  @if $ivory-enable-utilities and $ivory-enable-dark-mode {
+    [data-theme="dark"] {
+      @each $name, $value in $values {
+        .dark\:#{$prefix}#{$name} {
+          #{$property}: #{$value};
+        }
+      }
+    }
+  }
+}
+
+// =============================================================================
+// THEME CONFIGURATION
+// =============================================================================
+
+// Theme configuration
+$ivory-themes: (
+  light: (
+    background: #ffffff,
+    foreground: #000000,
+    primary: #3b82f6,
+    secondary: #64748b,
+    accent: #f59e0b,
+    muted: #f1f5f9,
+    border: #e2e8f0
+  ),
+  dark: (
+    background: #0f172a,
+    foreground: #ffffff,
+    primary: #60a5fa,
+    secondary: #94a3b8,
+    accent: #fbbf24,
+    muted: #1e293b,
+    border: #334155
+  )
+) !default;
+
+// =============================================================================
+// ACCESSIBILITY CONFIGURATION
+// =============================================================================
+
+// Focus ring configuration
+$ivory-focus-ring-width: 2px !default;
+$ivory-focus-ring-color: #3b82f6 !default;
+$ivory-focus-ring-offset: 2px !default;
+
+// Reduced motion support
+$ivory-reduced-motion: true !default;
+
+// High contrast mode support
+$ivory-high-contrast: true !default;
+
+// =============================================================================
+// PERFORMANCE CONFIGURATION
+// =============================================================================
+
+// Purge unused styles
+$ivory-purge: false !default;
+
+// Optimize for production
+$ivory-optimize: false !default;
+
+// =============================================================================
+// DEBUG CONFIGURATION
+// =============================================================================
+
+// Enable debug mode
+$ivory-debug: false !default;
+
+// Show token values in dev tools
+$ivory-debug-tokens: false !default; 

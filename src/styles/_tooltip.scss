@@ -1,9 +1,13 @@
+@use "sass:map";
+@use "./common/colors" as colors;
+@use "./common/mixins" as mixins;
+
 $directions: 'top', 'right', 'bottom', 'left';
 $inverse-dir: ('top': 'bottom', 'bottom': 'top', 'left': 'right', 'right': 'left');
 @mixin tooltip-position-system() {
   @each $dir in $directions {
     .tooltip-#{$dir} {
-      $inverse: map-get($inverse-dir, $dir);
+      $inverse: map.get($inverse-dir, $dir);
       #{$inverse}: calc(100% + 0.5rem);
       @if (($dir == top) or ($dir == bottom)) {
         #{$dir}: auto;
@@ -16,7 +20,7 @@ $inverse-dir: ('top': 'bottom', 'bottom': 'top', 'left': 'right', 'right': 'left
       }
       &::before {
         border-#{$inverse}-width: 0;
-        border-#{$dir}-color: color(gray-9);
+        border-#{$dir}-color: colors.color(gray-9);
         @if ($dir=="top" or $dir=="bottom") {
           #{$dir}: 100%;
           #{$inverse}: auto;
@@ -32,8 +36,8 @@ $inverse-dir: ('top': 'bottom', 'bottom': 'top', 'left': 'right', 'right': 'left
   }
 }
 @mixin cornered($dirY, $dirX) {
-  $inverseX: map-get($inverse-dir, $dirX);
-  $inverseY: map-get($inverse-dir, $dirY);
+  $inverseX: map.get($inverse-dir, $dirX);
+  $inverseY: map.get($inverse-dir, $dirY);
   .tooltip-#{$dirY}-#{$dirX} {
     #{$inverseY}: calc(100% + 0.75rem);
     #{$inverseX}: calc(100% - 0.75rem);
@@ -41,22 +45,22 @@ $inverse-dir: ('top': 'bottom', 'bottom': 'top', 'left': 'right', 'right': 'left
   }
 }
 @mixin corneredY($dirY) {
-  $inverseY: map-get($inverse-dir, $dirY);
+  $inverseY: map.get($inverse-dir, $dirY);
   .tooltip {
     &-#{$dirY}-right::before, &-#{$dirY}-left::before {
       #{$inverseY}: -0.75rem;
-      border-#{$dirY}: 0.375rem solid color(gray-9);
+      border-#{$dirY}: 0.375rem solid colors.color(gray-9);
       border-#{$inverseY}: 0.375rem solid transparent;
     }
   }
 }
 @mixin corneredX($dirX) {
-  $inverseX: map-get($inverse-dir, $dirX);
+  $inverseX: map.get($inverse-dir, $dirX);
   .tooltip {
     &-top-#{$dirX}::before, &-bottom-#{$dirX}::before {
       #{$inverseX}: 0;
       border-#{$dirX}: 0.375rem solid transparent;
-      border-#{$inverseX}: 0.375rem solid color(gray-9);
+      border-#{$inverseX}: 0.375rem solid colors.color(gray-9);
     }
   }
 }
@@ -79,12 +83,12 @@ $inverse-dir: ('top': 'bottom', 'bottom': 'top', 'left': 'right', 'right': 'left
     display: none;
     position: absolute;
     padding: 0.5rem 1rem;
-    color: color(light);
-    background-color: color(gray-9);
+    color: colors.color(light);
+    background-color: colors.color(gray-9);
     border-radius: 0.5rem;
     box-sizing: border-box;
     z-index: 9999;
-    @include text-size(0.75rem, 1.25rem);
+    @include mixins.text-size(0.75rem, 1.25rem);
     &::before {
       content: '';
       position: absolute;

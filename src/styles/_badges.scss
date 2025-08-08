@@ -1,21 +1,24 @@
+@use "./common/tokens" as tokens;
+@use "./common/mixins" as mixins;
+
 .iv-badge {
   padding: 0 0.313rem;
-  background-color: color(gray-7);
-  color: color(light);
+  background-color: tokens.ivory-color(neutral, 700);
+  color: tokens.ivory-color(neutral, 50);
   display: inline-block;
-  @include text-size(0.75rem, 1rem);
+  @include mixins.text-size(0.75rem, 1rem);
   font-weight: 400;
   min-width: 0.938rem;
   border-radius: 0.5rem;
   text-align: center;
   &-success {
-    background-color: color(green-7);
+    background-color: tokens.ivory-color(success, 700);
   }
   &-warning {
-    background-color: color(yellow-7);
+    background-color: tokens.ivory-color(warning, 700);
   }
   &-error {
-    background-color: color(red-7);
+    background-color: tokens.ivory-color(error, 700);
   }
   &-dot {
     width: 0.375rem;

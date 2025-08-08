@@ -1,3 +1,6 @@
+@use "sass:math";
+@use "./colors" as colors;
+
 /* Cross browser hacks */
 @mixin transform($transforms) {
   -webkit-transform: $transforms;
@@ -5,10 +8,12 @@
   -ms-transform: $transforms;
   transform: $transforms;
 }
+
 @mixin animate($anim, $time, $end, $style) {
   -webkit-animation: $anim $time $end $style;
   animation: $anim $time $end $style;
 }
+
 @mixin webappearance($property) {
   -webkit-appearance: $property;
   -moz-appearance: $property;
@@ -21,10 +26,192 @@
   margin-left: $left;
   margin-right: $right;
 }
+
 @mixin culture-default-border($dir) {
-  #{$dir}: 1px solid color(gray-3);
+  #{$dir}: 1px solid colors.color(gray-3);
 }
+
 @mixin text-size($size, $height) {
   font-size: $size;
   line-height: $height;
+}
+
+/* Modern CSS Features */
+
+// Container Queries
+@mixin container($name: "container") {
+  container-type: inline-size;
+  container-name: $name;
+}
+
+@mixin container-query($size, $name: "container") {
+  @container #{$name} (min-width: #{$size}) {
+    @content;
+  }
+}
+
+// CSS Grid Mixins
+@mixin grid($columns: 1, $gap: 0) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  gap: $gap;
+}
+
+@mixin grid-area($area) {
+  grid-area: $area;
+}
+
+// Aspect Ratio
+@mixin aspect-ratio($width, $height) {
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    padding-bottom: percentage(math.div($height, $width));
+  }
+  > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+// Modern Focus Styles
+@mixin focus-ring($color: colors.color(blue-5), $offset: 2px) {
+  &:focus-visible {
+    outline: 2px solid $color;
+    outline-offset: $offset;
+  }
+}
+
+// Backdrop Filter
+@mixin backdrop-blur($amount: 10px) {
+  backdrop-filter: blur($amount);
+  -webkit-backdrop-filter: blur($amount);
+}
+
+// Modern Shadows
+@mixin shadow-sm {
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+@mixin shadow {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+
+@mixin shadow-md {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@mixin shadow-lg {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+@mixin shadow-xl {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+// Responsive Typography
+@mixin fluid-type($min-vw, $max-vw, $min-size, $max-size) {
+  font-size: clamp($min-size, calc(#{$min-size} + #{strip-unit($max-size - $min-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})), $max-size);
+}
+
+// Strip unit helper
+@function strip-unit($value) {
+  @if type-of($value) == "number" and not unitless($value) {
+    @return math.div($value, ($value * 0 + 1));
+  }
+  @return $value;
+}
+
+// Dark Mode Support
+@mixin dark-mode {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+}
+
+// Reduced Motion Support
+@mixin reduced-motion {
+  @media (prefers-reduced-motion: reduce) {
+    @content;
+  }
+}
+
+// Print Styles
+@mixin print {
+  @media print {
+    @content;
+  }
+}
+
+// High Contrast Mode
+@mixin high-contrast {
+  @media (prefers-contrast: high) {
+    @content;
+  }
+}
+
+// Modern Button States
+@mixin button-states {
+  transition: all 0.2s ease-in-out;
+  
+  &:hover {
+    transform: translateY(-1px);
+    @include shadow-md;
+  }
+  
+  &:active {
+    transform: translateY(0);
+    @include shadow-sm;
+  }
+  
+  &:focus-visible {
+    @include focus-ring;
+  }
+}
+
+// Glass Morphism Effect
+@mixin glass($background: rgba(255, 255, 255, 0.1), $border: rgba(255, 255, 255, 0.2)) {
+  background: $background;
+  border: 1px solid $border;
+  @include backdrop-blur(10px);
+  @include shadow-lg;
+}
+
+// Modern Card Styles
+@mixin card {
+  background: color(light);
+  border-radius: 0.5rem;
+  @include shadow;
+  transition: all 0.2s ease-in-out;
+  
+  &:hover {
+    @include shadow-md;
+    transform: translateY(-2px);
+  }
+}
+
+// Loading States
+@mixin loading {
+  position: relative;
+  overflow: hidden;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+    animation: loading 1.5s infinite;
+  }
+}
+
+@keyframes loading {
+  0% { left: -100%; }
+  100% { left: 100%; }
 }

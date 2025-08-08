@@ -1,8 +1,10 @@
+@use "./common/mixins" as mixins;
+
 .iv-card {
-  @include culture-default-border("border");
+  @include mixins.culture-default-border("border");
   border-radius: 3px;
   &-header {
-    @include culture-default-border("border-bottom");
+    @include mixins.culture-default-border("border-bottom");
     padding: 1rem;
     &-text {
       margin: unset;
@@ -13,7 +15,7 @@
     text-align: justify;
   }
   &-footer {
-    @include culture-default-border("border-top");
+    @include mixins.culture-default-border("border-top");
     padding: 1rem;
   }
 }

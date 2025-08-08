@@ -1,3 +1,6 @@
+@use "./common/mixins" as mixins;
+@use "./common/colors" as colors;
+
 %typo {
   display: block;
   margin-top: 0;
@@ -5,44 +8,44 @@
 }
 h1 {
   @extend %typo;
-  @include text-size(2.25rem, 2.75rem);
+  @include mixins.text-size(2.25rem, 2.75rem);
 }
 h2 {
   @extend %typo;
-  @include text-size(2rem, 2.5rem);
+  @include mixins.text-size(2rem, 2.5rem);
 }
 h3 {
   @extend %typo;
-  @include text-size(1.75rem, 2.25rem);
+  @include mixins.text-size(1.75rem, 2.25rem);
 }
 h4 {
   @extend %typo;
-  @include text-size(1.5rem, 2rem);
+  @include mixins.text-size(1.5rem, 2rem);
 }
 h5 {
   @extend %typo;
-  @include text-size(1.25rem, 2rem);
+  @include mixins.text-size(1.25rem, 2rem);
 }
 h6 {
   @extend %typo;
-  @include text-size(1.125rem, 1.75rem);
+  @include mixins.text-size(1.125rem, 1.75rem);
 }
 p {
   @extend %typo;
-  @include text-size(0.875rem, 1.5rem);
+  @include mixins.text-size(0.875rem, 1.5rem);
   &.text-16 {
-    @include text-size(1rem, 1.75rem);
+    @include mixins.text-size(1rem, 1.75rem);
   }
   &.text-12 {
-    @include text-size(0.75rem, 1.25rem);
+    @include mixins.text-size(0.75rem, 1.25rem);
   }
 }
 a {
   text-decoration: none;
   cursor: pointer;
-  color: color(blue-6);
+  color: colors.color(blue-6);
   &:hover, &:focus {
-    color: color(blue-8);
+    color: colors.color(blue-8);
     text-decoration: underline;
   }
 }

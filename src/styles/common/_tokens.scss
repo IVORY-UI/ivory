@@ -1,0 +1,404 @@
+@use "sass:map";
+
+// IVORY Design Tokens
+// A comprehensive design system foundation
+
+// =============================================================================
+// COLOR TOKENS
+// =============================================================================
+
+// Base colors
+$ivory-colors: (
+  // Primary palette
+  primary: (
+    50: #eff6ff,
+    100: #dbeafe,
+    200: #bfdbfe,
+    300: #93c5fd,
+    400: #60a5fa,
+    500: #3b82f6,
+    600: #2563eb,
+    700: #1d4ed8,
+    800: #1e40af,
+    900: #1e3a8a,
+    950: #172554
+  ),
+  
+  // Neutral palette
+  neutral: (
+    50: #f8fafc,
+    100: #f1f5f9,
+    200: #e2e8f0,
+    300: #cbd5e1,
+    400: #94a3b8,
+    500: #64748b,
+    600: #475569,
+    700: #334155,
+    800: #1e293b,
+    900: #0f172a,
+    950: #020617
+  ),
+  
+  // Semantic colors
+  success: (
+    50: #f0fdf4,
+    100: #dcfce7,
+    200: #bbf7d0,
+    300: #86efac,
+    400: #4ade80,
+    500: #22c55e,
+    600: #16a34a,
+    700: #15803d,
+    800: #166534,
+    900: #14532d,
+    950: #052e16
+  ),
+  
+  warning: (
+    50: #fffbeb,
+    100: #fef3c7,
+    200: #fde68a,
+    300: #fcd34d,
+    400: #fbbf24,
+    500: #f59e0b,
+    600: #d97706,
+    700: #b45309,
+    800: #92400e,
+    900: #78350f,
+    950: #451a03
+  ),
+  
+  error: (
+    50: #fef2f2,
+    100: #fee2e2,
+    200: #fecaca,
+    300: #fca5a5,
+    400: #f87171,
+    500: #ef4444,
+    600: #dc2626,
+    700: #b91c1c,
+    800: #991b1b,
+    900: #7f1d1d,
+    950: #450a0a
+  ),
+  
+  info: (
+    50: #f0f9ff,
+    100: #e0f2fe,
+    200: #bae6fd,
+    300: #7dd3fc,
+    400: #38bdf8,
+    500: #0ea5e9,
+    600: #0284c7,
+    700: #0369a1,
+    800: #075985,
+    900: #0c4a6e,
+    950: #082f49
+  )
+);
+
+// =============================================================================
+// SPACING TOKENS
+// =============================================================================
+
+$ivory-spacing: (
+  0: 0,
+  1: 0.25rem,   // 4px
+  2: 0.5rem,    // 8px
+  3: 0.75rem,   // 12px
+  4: 1rem,      // 16px
+  5: 1.25rem,   // 20px
+  6: 1.5rem,    // 24px
+  8: 2rem,      // 32px
+  10: 2.5rem,   // 40px
+  12: 3rem,     // 48px
+  16: 4rem,     // 64px
+  20: 5rem,     // 80px
+  24: 6rem,     // 96px
+  32: 8rem,     // 128px
+  40: 10rem,    // 160px
+  48: 12rem,    // 192px
+  56: 14rem,    // 224px
+  64: 16rem     // 256px
+);
+
+// =============================================================================
+// TYPOGRAPHY TOKENS
+// =============================================================================
+
+$ivory-font-families: (
+  sans: ('Inter', 'system-ui', 'sans-serif'),
+  serif: ('Georgia', 'serif'),
+  mono: ('JetBrains Mono', 'monospace')
+);
+
+$ivory-font-sizes: (
+  xs: 0.75rem,    // 12px
+  sm: 0.875rem,   // 14px
+  base: 1rem,     // 16px
+  lg: 1.125rem,   // 18px
+  xl: 1.25rem,    // 20px
+  '2xl': 1.5rem,  // 24px
+  '3xl': 1.875rem, // 30px
+  '4xl': 2.25rem,  // 36px
+  '5xl': 3rem,     // 48px
+  '6xl': 3.75rem,  // 60px
+  '7xl': 4.5rem,   // 72px
+  '8xl': 6rem,     // 96px
+  '9xl': 8rem      // 128px
+);
+
+$ivory-font-weights: (
+  'thin': 100,
+  'extralight': 200,
+  'light': 300,
+  'normal': 400,
+  'medium': 500,
+  'semibold': 600,
+  'bold': 700,
+  'extrabold': 800,
+  'black': 900
+);
+
+$ivory-line-heights: (
+  none: 1,
+  tight: 1.25,
+  snug: 1.375,
+  normal: 1.5,
+  relaxed: 1.625,
+  loose: 2
+);
+
+// =============================================================================
+// BORDER TOKENS
+// =============================================================================
+
+$ivory-border-widths: (
+  0: 0,
+  1: 1px,
+  2: 2px,
+  4: 4px,
+  8: 8px
+);
+
+$ivory-border-radius: (
+  none: 0,
+  sm: 0.125rem,   // 2px
+  base: 0.25rem,  // 4px
+  md: 0.375rem,   // 6px
+  lg: 0.5rem,     // 8px
+  xl: 0.75rem,    // 12px
+  '2xl': 1rem,    // 16px
+  '3xl': 1.5rem,  // 24px
+  full: 9999px
+);
+
+// =============================================================================
+// SHADOW TOKENS
+// =============================================================================
+
+$ivory-shadows: (
+  none: none,
+  sm: '0 1px 2px 0 rgb(0 0 0 / 0.05)',
+  base: '0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)',
+  md: '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
+  lg: '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
+  xl: '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
+  '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
+  inner: 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)'
+);
+
+// =============================================================================
+// BREAKPOINT TOKENS
+// =============================================================================
+
+$ivory-breakpoints: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px
+);
+
+// =============================================================================
+// Z-INDEX TOKENS
+// =============================================================================
+
+$ivory-z-index: (
+  auto: auto,
+  0: 0,
+  10: 10,
+  20: 20,
+  30: 30,
+  40: 40,
+  50: 50,
+  dropdown: 1000,
+  sticky: 1020,
+  fixed: 1030,
+  modal-backdrop: 1040,
+  modal: 1050,
+  popover: 1060,
+  tooltip: 1070
+);
+
+// =============================================================================
+// ANIMATION TOKENS
+// =============================================================================
+
+$ivory-transitions: (
+  none: none,
+  all: all 150ms cubic-bezier(0.4, 0, 0.2, 1),
+  colors: color 150ms cubic-bezier(0.4, 0, 0.2, 1),
+  opacity: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1),
+  shadow: box-shadow 150ms cubic-bezier(0.4, 0, 0.2, 1),
+  transform: transform 150ms cubic-bezier(0.4, 0, 0.2, 1)
+);
+
+$ivory-easings: (
+  linear: linear,
+  in: cubic-bezier(0.4, 0, 1, 1),
+  out: cubic-bezier(0, 0, 0.2, 1),
+  in-out: cubic-bezier(0.4, 0, 0.2, 1)
+);
+
+$ivory-durations: (
+  75: 75ms,
+  100: 100ms,
+  150: 150ms,
+  200: 200ms,
+  300: 300ms,
+  500: 500ms,
+  700: 700ms,
+  1000: 1000ms
+);
+
+// =============================================================================
+// GRID TOKENS
+// =============================================================================
+
+$ivory-grid: (
+  columns: 12,
+  gutters: (
+    sm: map.get($ivory-spacing, 2),
+    md: map.get($ivory-spacing, 4),
+    lg: map.get($ivory-spacing, 6)
+  ),
+  breakpoints: $ivory-breakpoints
+);
+
+// =============================================================================
+// COMPONENT TOKENS
+// =============================================================================
+
+$ivory-components: (
+  button: (
+    padding: (
+      sm: map.get($ivory-spacing, 2) map.get($ivory-spacing, 3),
+      md: map.get($ivory-spacing, 3) map.get($ivory-spacing, 4),
+      lg: map.get($ivory-spacing, 4) map.get($ivory-spacing, 6)
+    ),
+    border-radius: map.get($ivory-border-radius, md),
+    font-weight: map.get($ivory-font-weights, medium),
+    transition: map.get($ivory-transitions, all)
+  ),
+  
+  card: (
+    padding: map.get($ivory-spacing, 6),
+    border-radius: map.get($ivory-border-radius, lg),
+    shadow: map.get($ivory-shadows, base),
+    border: 1px solid map.get(map.get($ivory-colors, neutral), 200)
+  ),
+  
+  input: (
+    padding: map.get($ivory-spacing, 3) map.get($ivory-spacing, 4),
+    border-radius: map.get($ivory-border-radius, md),
+    border: 1px solid map.get(map.get($ivory-colors, neutral), 300),
+    focus-ring: 2px solid map.get(map.get($ivory-colors, primary), 500)
+  )
+);
+
+// =============================================================================
+// CSS CUSTOM PROPERTIES
+// =============================================================================
+
+:root {
+  // Color tokens
+  @each $color-name, $color-shades in $ivory-colors {
+    @each $shade, $value in $color-shades {
+      --ivory-color-#{$color-name}-#{$shade}: #{$value};
+    }
+  }
+  
+  // Spacing tokens
+  @each $size, $value in $ivory-spacing {
+    --ivory-spacing-#{$size}: #{$value};
+  }
+  
+  // Typography tokens
+  @each $size, $value in $ivory-font-sizes {
+    --ivory-font-size-#{$size}: #{$value};
+  }
+  
+  @each $weight, $value in $ivory-font-weights {
+    --ivory-font-weight-#{$weight}: #{$value};
+  }
+  
+  // Border tokens
+  @each $size, $value in $ivory-border-radius {
+    --ivory-radius-#{$size}: #{$value};
+  }
+  
+  // Shadow tokens
+  @each $size, $value in $ivory-shadows {
+    --ivory-shadow-#{$size}: #{$value};
+  }
+  
+  // Animation tokens
+  @each $duration, $value in $ivory-durations {
+    --ivory-duration-#{$duration}: #{$value};
+  }
+  
+  // Grid tokens
+  --ivory-grid-columns: #{map.get($ivory-grid, columns)};
+  --ivory-grid-gutter-sm: #{map.get(map.get($ivory-grid, gutters), sm)};
+  --ivory-grid-gutter-md: #{map.get(map.get($ivory-grid, gutters), md)};
+  --ivory-grid-gutter-lg: #{map.get(map.get($ivory-grid, gutters), lg)};
+}
+
+// =============================================================================
+// UTILITY FUNCTIONS
+// =============================================================================
+
+// Get color token
+@function ivory-color($color, $shade: 500) {
+  @return map.get(map.get($ivory-colors, $color), $shade);
+}
+
+// Get spacing token
+@function ivory-spacing($size) {
+  @return map.get($ivory-spacing, $size);
+}
+
+// Get font size token
+@function ivory-font-size($size) {
+  @return map.get($ivory-font-sizes, $size);
+}
+
+// Get border radius token
+@function ivory-radius($size) {
+  @return map.get($ivory-border-radius, $size);
+}
+
+// Get shadow token
+@function ivory-shadow($size) {
+  @return map.get($ivory-shadows, $size);
+}
+
+// Get breakpoint token
+@function ivory-breakpoint($size) {
+  @return map.get($ivory-breakpoints, $size);
+}
+
+// Get z-index token
+@function ivory-z($level) {
+  @return map.get($ivory-z-index, $level);
+} 

@@ -1,30 +1,37 @@
+@use "./common/tokens" as tokens;
+
+// Breadcrumb navigation
 .iv-breadcrumb {
-  position: relative;
-  display: block;
-  margin: 1.5rem 0;
-  &>li {
-    @include text-size(0.8125rem, 1.5rem);
-    display: inline-block;
-    &::after {
-      content: '/';
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 1rem 0;
+  
+  &-item {
+    display: flex;
+    align-items: center;
+    
+    &:not(:last-child)::after {
+      content: "/";
+      margin-left: 0.5rem;
+      color: tokens.ivory-color(neutral, 500);
     }
-    &:first-child {
-      a {
-        margin-left: 0;
-      }
+  }
+  
+  &-link {
+    color: tokens.ivory-color(primary, 700);
+    text-decoration: none;
+    
+    &:hover {
+      text-decoration: underline;
     }
-    &:last-child {
-      &::after {
-        content: '';
-      }
-    }
-    a {
-      @include text-size(0.8125rem, 1.5rem);
-      margin: 0 10px;
-    }
-    span {
-      @include text-size(0.8125rem, 1.5rem);
-      margin-left: 10px;
+    
+    &.active {
+      color: tokens.ivory-color(neutral, 700);
+      text-decoration: none;
+      cursor: default;
     }
   }
 }

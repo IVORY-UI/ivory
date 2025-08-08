@@ -1,13 +1,16 @@
+@use "./common/tokens" as tokens;
+@use "./common/mixins" as mixins;
+
 %default-form-element {
   position: relative;
   display: block;
   width: 100%;
   font-size: 0.8125rem;
   font-weight: 400;
-  border: 1px solid color(gray-4);
+  border: 1px solid tokens.ivory-color(neutral, 400);
   border-radius: 0.1875rem;
-  background-color: color(light);
-  color: color(dark);
+  background-color: tokens.ivory-color(neutral, 50);
+  color: tokens.ivory-color(neutral, 900);
 }
 .iv-input {
   @extend %default-form-element;
@@ -15,14 +18,14 @@
   line-height: 2rem;
   padding: 0 0.5rem;
   &:not([readonly]):focus {
-    @extend %defualt-element-focus
+    @include mixins.focus-ring;
   }
 }
 .iv-select {
   position: relative;
   cursor: pointer;
   select {
-    @include webappearance(none);
+    @include mixins.webappearance(none);
     @extend %default-form-element;
     height: 2rem;
     line-height: 1rem;
@@ -30,7 +33,7 @@
     padding: 0 1.5rem 0 0.25rem;
     cursor: pointer;
     &:focus {
-      @extend %defualt-element-focus
+      @include mixins.focus-ring;
     }
   }
   &:after {
@@ -53,7 +56,7 @@
   min-width: 200px;
   padding: 0.5rem;
   &:not([readonly]):focus {
-    @extend %defualt-element-focus
+    @include mixins.focus-ring;
   }
 }
 .iv-field {
@@ -62,7 +65,7 @@
 .iv-label {
   position: relative;
   display: block;
-  @include text-size(0.875rem, 1.875rem);
+  @include mixins.text-size(0.875rem, 1.875rem);
 }
 .iv-form-horizontal {
   .iv-field {

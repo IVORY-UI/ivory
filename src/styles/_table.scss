@@ -1,20 +1,23 @@
+@use "./common/colors" as colors;
+@use "./common/mixins" as mixins;
+
 .iv-table {
   border-collapse: separate;
-  border: 1px solid color(gray-3);
+  border: 1px solid colors.color(gray-3);
   border-radius: .25rem;
   margin: 1rem 0 0;
   max-width: 100%;
   width: 100%;
-  color: color(dark);
-  @include text-size(0.813rem, 1.5rem);
+  color: colors.color(dark);
+  @include mixins.text-size(0.813rem, 1.5rem);
   thead {
-    background-color: color(gray-1);
+    background-color: colors.color(gray-1);
     border-radius: .25rem .25rem 0 0;
     font-weight: 600;
     tr {
       th {
         padding: 0.5rem;
-        border-right: 1px solid color(gray-3);
+        border-right: 1px solid colors.color(gray-3);
         &:last-child {
           border-right: none;
         }
@@ -33,14 +36,14 @@
     }
   }
   tbody {
-    background-color: color(light);
+    background-color: colors.color(light);
     border-radius: 0 0 .25rem .25rem;
     font-weight: 400;
     tr {
       td {
         padding: 0.5rem;
-        border-top: 1px solid color(gray-3);
-        border-right: 1px solid color(gray-3);
+        border-top: 1px solid colors.color(gray-3);
+        border-right: 1px solid colors.color(gray-3);
         &:last-child {
           border-right: none;
         }

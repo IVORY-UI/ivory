@@ -1,26 +1,41 @@
 /*! IVORY UI | MIT license | https://github.com/IVORY-UI/ivory */
 
-@import "./styles/common/colors";
-@import "./styles/common/mixins";
-@import "./styles/common/common";
-@import "./styles/common/utils";
-@import "./styles/reset";
-@import "./styles/typography";
-@import "./styles/alerts";
-@import "./styles/badges";
-@import "./styles/breadcrumb";
-@import "./styles/buttons";
-@import "./styles/checkbox";
-@import "./styles/file";
-@import "./styles/form";
-@import "./styles/grid";
-@import "./styles/list";
-@import "./styles/more";
-@import "./styles/progress";
-@import "./styles/radio";
-@import "./styles/spinner";
-@import "./styles/table";
-@import "./styles/tabler";
-@import "./styles/toggle";
-@import "./styles/tooltip";
-@import "./styles/cards";
+// Core imports
+@use "./styles/common/config";
+@use "./styles/common/tokens";
+@use "./styles/common/colors";
+@use "./styles/common/mixins";
+@use "./styles/common/common";
+@use "./styles/common/utils";
+@use "./styles/common/utilities";
+
+// Base styles
+@use "./styles/reset";
+@use "./styles/typography";
+
+// Components
+@use "./styles/alerts";
+@use "./styles/badges";
+@use "./styles/breadcrumb";
+@use "./styles/buttons";
+@use "./styles/cards";
+@use "./styles/checkbox";
+@use "./styles/dropdown";
+@use "./styles/file";
+@use "./styles/form";
+@use "./styles/grid";
+@use "./styles/list";
+@use "./styles/modal";
+@use "./styles/more";
+@use "./styles/progress";
+@use "./styles/radio";
+@use "./styles/spinner";
+@use "./styles/table";
+@use "./styles/tabler";
+@use "./styles/toggle";
+@use "./styles/tooltip";
+
+// Modern CSS Features
+@use "./styles/modern/container-queries";
+@use "./styles/modern/dark-mode";
+@use "./styles/modern/animations";

@@ -1,0 +1,151 @@
+@use "./common/colors" as colors;
+@use "./common/mixins" as mixins;
+
+.iv-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: none;
+  
+  &.active {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  &-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    @include mixins.backdrop-blur(4px);
+    animation: modal-fade-in 0.3s ease-out;
+  }
+  
+  &-content {
+    position: relative;
+    background: colors.color(light);
+    border-radius: 0.5rem;
+    @include mixins.shadow-xl;
+    max-width: 90vw;
+    max-height: 90vh;
+    overflow: auto;
+    animation: modal-slide-in 0.3s ease-out;
+    
+    @include mixins.container-query(640px) {
+      max-width: 500px;
+    }
+    
+    @include mixins.container-query(768px) {
+      max-width: 600px;
+    }
+  }
+  
+  &-header {
+    padding: 1.5rem 1.5rem 0;
+    border-bottom: 1px solid colors.color(gray-3);
+    
+    &-title {
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: colors.color(gray-9);
+    }
+    
+    &-close {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: colors.color(gray-6);
+      padding: 0.25rem;
+      border-radius: 0.25rem;
+      transition: all 0.2s ease;
+      
+      &:hover {
+        background-color: colors.color(gray-2);
+        color: colors.color(gray-8);
+      }
+      
+      &:focus-visible {
+        @include mixins.focus-ring;
+      }
+    }
+  }
+  
+  &-body {
+    padding: 1.5rem;
+  }
+  
+  &-footer {
+    padding: 0 1.5rem 1.5rem;
+    display: flex;
+    gap: 0.75rem;
+    justify-content: flex-end;
+    
+    .iv-btn {
+      margin: 0;
+    }
+  }
+  
+  // Size variants
+  &-sm .iv-modal-content {
+    max-width: 400px;
+  }
+  
+  &-lg .iv-modal-content {
+    max-width: 800px;
+  }
+  
+  &-xl .iv-modal-content {
+    max-width: 1200px;
+  }
+  
+  // Fullscreen modal
+  &-fullscreen {
+    .iv-modal-content {
+      max-width: 100vw;
+      max-height: 100vh;
+      border-radius: 0;
+    }
+  }
+}
+
+// Modal animations
+@keyframes modal-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modal-slide-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+// Modal trigger
+.iv-modal-trigger {
+  cursor: pointer;
+}
+
+// Prevent body scroll when modal is open
+body.modal-open {
+  overflow: hidden;
+} 

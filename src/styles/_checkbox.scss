@@ -1,3 +1,6 @@
+@use "./common/tokens" as tokens;
+@use "./common/mixins" as mixins;
+
 .iv-checkbox {
   position: relative;
   margin-bottom: 0.5rem;
@@ -25,7 +28,7 @@
         height: 1rem;
         width: 1rem;
         box-sizing: border-box;
-        border: 1px solid color(gray-4);
+        border: 1px solid tokens.ivory-color(neutral, 400);
         border-radius: 3px;
         cursor: pointer;
       }
@@ -35,7 +38,7 @@
         opacity: 0.65;
         cursor: not-allowed;
         &::before {
-          background-color: color(gray-1);
+          background-color: tokens.ivory-color(neutral, 100);
           cursor: not-allowed;
         }
       }
@@ -43,7 +46,7 @@
     &:checked {
       & + label {
         &::before {
-          background-color: color(blue-6);
+          background-color: tokens.ivory-color(primary, 600);
           border: none;
         }
         &::after {
@@ -51,11 +54,11 @@
           content: "";
           height: 0.313rem;
           width: 0.563rem;
-          border-left: 0.125rem solid color(light);
-          border-bottom: 0.125rem solid color(light);
+          border-left: 0.125rem solid tokens.ivory-color(neutral, 50);
+          border-bottom: 0.125rem solid tokens.ivory-color(neutral, 50);
           top: 0;
           left: 0.188rem;
-          @include transform(translateY(4px) rotate(-45deg));
+          @include mixins.transform(translateY(4px) rotate(-45deg));
         }
       }
       &:disabled {
@@ -63,7 +66,7 @@
           opacity: 0.65;
           cursor: not-allowed;
           &::before {
-            background-color: color(blue-6);
+            background-color: tokens.ivory-color(primary, 600);
             cursor: not-allowed;
           }
           &::after {

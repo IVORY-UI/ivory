@@ -1,0 +1,247 @@
+@use "../common/tokens" as tokens;
+
+/* Dark Mode Support */
+
+// Dark mode color variables
+:root {
+  // Light mode colors (default)
+  --iv-bg-primary: #ffffff;
+  --iv-bg-secondary: #f8f9fa;
+  --iv-bg-tertiary: #e9ecef;
+  --iv-text-primary: #212529;
+  --iv-text-secondary: #6c757d;
+  --iv-text-muted: #adb5bd;
+  --iv-border-primary: #dee2e6;
+  --iv-border-secondary: #ced4da;
+  --iv-shadow-color: rgba(0, 0, 0, 0.1);
+  --iv-shadow-color-lg: rgba(0, 0, 0, 0.15);
+}
+
+// Dark mode colors
+[data-theme="dark"] {
+  --iv-bg-primary: #1a1a1a;
+  --iv-bg-secondary: #2d2d2d;
+  --iv-bg-tertiary: #404040;
+  --iv-text-primary: #ffffff;
+  --iv-text-secondary: #b3b3b3;
+  --iv-text-muted: #808080;
+  --iv-border-primary: #404040;
+  --iv-border-secondary: #525252;
+  --iv-shadow-color: rgba(0, 0, 0, 0.3);
+  --iv-shadow-color-lg: rgba(0, 0, 0, 0.4);
+}
+
+// Auto dark mode detection
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --iv-bg-primary: #1a1a1a;
+    --iv-bg-secondary: #2d2d2d;
+    --iv-bg-tertiary: #404040;
+    --iv-text-primary: #ffffff;
+    --iv-text-secondary: #b3b3b3;
+    --iv-text-muted: #808080;
+    --iv-border-primary: #404040;
+    --iv-border-secondary: #525252;
+    --iv-shadow-color: rgba(0, 0, 0, 0.3);
+    --iv-shadow-color-lg: rgba(0, 0, 0, 0.4);
+  }
+}
+
+// Dark mode component overrides
+[data-theme="dark"] {
+  :root:not([data-theme="light"]) {
+    
+    // Body and general elements
+    body {
+      background-color: var(--iv-bg-primary);
+      color: var(--iv-text-primary);
+    }
+    
+    // Cards
+    .iv-card {
+      background-color: var(--iv-bg-secondary);
+      border-color: var(--iv-border-primary);
+      color: var(--iv-text-primary);
+    }
+    
+    // Buttons
+    .iv-btn {
+      background-color: var(--iv-bg-secondary);
+      border-color: var(--iv-border-primary);
+      color: var(--iv-text-primary);
+      
+      &:hover {
+        background-color: var(--iv-bg-tertiary);
+      }
+      
+      &.btn-primary {
+        background-color: tokens.ivory-color(primary, 700);
+        border-color: tokens.ivory-color(primary, 700);
+        color: tokens.ivory-color(neutral, 50);
+        
+        &:hover {
+          background-color: tokens.ivory-color(primary, 800);
+          border-color: tokens.ivory-color(primary, 800);
+        }
+      }
+    }
+    
+    // Forms
+    .iv-input,
+    .iv-select select,
+    .iv-textarea {
+      background-color: var(--iv-bg-secondary);
+      border-color: var(--iv-border-primary);
+      color: var(--iv-text-primary);
+      
+      &:focus {
+        border-color: tokens.ivory-color(primary, 500);
+        box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2);
+      }
+      
+      &::placeholder {
+        color: var(--iv-text-muted);
+      }
+    }
+    
+    // Tables
+    .iv-table {
+      background-color: var(--iv-bg-secondary);
+      border-color: var(--iv-border-primary);
+      color: var(--iv-text-primary);
+      
+      thead {
+        background-color: var(--iv-bg-tertiary);
+        
+        th {
+          border-color: var(--iv-border-primary);
+        }
+      }
+      
+      tbody {
+        background-color: var(--iv-bg-secondary);
+        
+        td {
+          border-color: var(--iv-border-primary);
+        }
+      }
+    }
+    
+    // Dropdowns
+    .iv-dropdown-menu {
+      background-color: var(--iv-bg-secondary);
+      border-color: var(--iv-border-primary);
+      box-shadow: 0 10px 15px -3px var(--iv-shadow-color-lg);
+    }
+    
+    .iv-dropdown-item {
+      color: var(--iv-text-primary);
+      
+      &:hover {
+        background-color: var(--iv-bg-tertiary);
+        color: var(--iv-text-primary);
+      }
+    }
+    
+    // Modals
+    .iv-modal-content {
+      background-color: var(--iv-bg-secondary);
+      color: var(--iv-text-primary);
+    }
+    
+    .iv-modal-backdrop {
+      background-color: rgba(0, 0, 0, 0.7);
+    }
+    
+    // Alerts
+    .iv-alert {
+      background-color: var(--iv-bg-secondary);
+      border-color: var(--iv-border-primary);
+      color: var(--iv-text-primary);
+    }
+    
+    // Shadows
+    .shadow-sm { box-shadow: 0 1px 2px 0 var(--iv-shadow-color) !important; }
+    .shadow { box-shadow: 0 1px 3px 0 var(--iv-shadow-color), 0 1px 2px 0 var(--iv-shadow-color) !important; }
+    .shadow-md { box-shadow: 0 4px 6px -1px var(--iv-shadow-color), 0 2px 4px -1px var(--iv-shadow-color) !important; }
+    .shadow-lg { box-shadow: 0 10px 15px -3px var(--iv-shadow-color), 0 4px 6px -2px var(--iv-shadow-color) !important; }
+    .shadow-xl { box-shadow: 0 20px 25px -5px var(--iv-shadow-color), 0 10px 10px -5px var(--iv-shadow-color) !important; }
+  }
+}
+
+// Theme toggle component
+.iv-theme-toggle {
+  position: relative;
+  display: inline-block;
+  width: 3rem;
+  height: 1.5rem;
+  
+  input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    
+    &:checked + .slider {
+      background-color: tokens.ivory-color(primary, 600);
+      
+      &:before {
+        transform: translateX(1.5rem);
+      }
+    }
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: tokens.ivory-color(neutral, 400);
+    transition: 0.3s;
+    border-radius: 1.5rem;
+    
+    &:before {
+      position: absolute;
+      content: "";
+      height: 1.125rem;
+      width: 1.125rem;
+      left: 0.1875rem;
+      bottom: 0.1875rem;
+      background-color: white;
+      transition: 0.3s;
+      border-radius: 50%;
+    }
+  }
+}
+
+// Dark mode utility classes
+.dark {
+  &-bg-primary { background-color: var(--iv-bg-primary) !important; }
+  &-bg-secondary { background-color: var(--iv-bg-secondary) !important; }
+  &-bg-tertiary { background-color: var(--iv-bg-tertiary) !important; }
+  &-text-primary { color: var(--iv-text-primary) !important; }
+  &-text-secondary { color: var(--iv-text-secondary) !important; }
+  &-text-muted { color: var(--iv-text-muted) !important; }
+  &-border-primary { border-color: var(--iv-border-primary) !important; }
+  &-border-secondary { border-color: var(--iv-border-secondary) !important; }
+}
+
+// Dark mode responsive utilities
+@media (prefers-color-scheme: dark) {
+  .auto-dark {
+    &-bg-primary { background-color: var(--iv-bg-primary) !important; }
+    &-bg-secondary { background-color: var(--iv-bg-secondary) !important; }
+    &-bg-tertiary { background-color: var(--iv-bg-tertiary) !important; }
+    &-text-primary { color: var(--iv-text-primary) !important; }
+    &-text-secondary { color: var(--iv-text-secondary) !important; }
+    &-text-muted { color: var(--iv-text-muted) !important; }
+    &-border-primary { border-color: var(--iv-border-primary) !important; }
+    &-border-secondary { border-color: var(--iv-border-secondary) !important; }
+  }
+}
+
+// Smooth transitions for theme switching
+* {
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+} 
