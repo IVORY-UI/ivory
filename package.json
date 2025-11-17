@@ -49,7 +49,7 @@
     "postcss": "^8.4.31",
     "autoprefixer": "^10.4.16",
     "cssnano": "^6.0.1",
-    "esbuild": "^0.19.8"
+    "esbuild": "^0.25.0"
   },
   "browserslist": [
     "> 1%",
